@@ -1,11 +1,16 @@
 header, main {
   max-width: 1090px;
   margin: 0 auto;
-  height: 50vh;
   text-align: center;
 }
 
 header {
+  height: 90vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-image: linear-gradient(to bottom, #3178d5, #2983d9, #278edc, #2e99df, #3aa3e0, #4eabe1, #5fb2e1, #70bae2, #85c2e2, #99c9e3, #acd1e4, #bed8e5);
 
 }

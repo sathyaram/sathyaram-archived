@@ -9,7 +9,7 @@
   background: #fff;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  opacity: 0.99;
+  opacity: 1;
   transition: all 500ms linear;
 
   &::after {
@@ -25,8 +25,7 @@
   }
 
   &.gone {
-    transform: translateY(calc(-100% + 20px));
-    pointer-events: none;
+    transform: translateY(calc(-100% + 25px));
     z-index:2;
 
     .logo {
