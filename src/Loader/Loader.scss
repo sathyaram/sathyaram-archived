@@ -12,9 +12,44 @@
   opacity: 0.99;
   transition: all 500ms linear;
 
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    bottom: -30px;
+    right: 0;
+    z-index: -9;
+    border-style: solid;
+    border-width: 30px 50vw 0 50vw;
+    border-color: #fff transparent transparent transparent;
+  }
+
   &.gone {
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% + 20px));
     pointer-events: none;
     z-index:2;
+
+    .logo {
+      top: 103%;
+    }
+  }
+}
+
+.logo {
+  position: fixed;
+  transition: all 500ms linear;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+  transform:translateX(-50%) translateY(-50%);
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+    img {
+      width: 90px;
+      height: auto;
+      filter: drop-shadow(5px 0 15px white);
   }
 }
