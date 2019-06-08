@@ -1,23 +1,15 @@
 // Variables
-
 $primary:  'Alegreya', serif;
 $secondary: 'Barlow', sans-serif;
-$fontawesome:  FontAwesome;
 
-$color-black:      #000;
-$color-white:      #fff;
 $color-midnight:   #222639;
 $color-twilight:   #001f6d;
 $color-slate:      #303030;
-$color-gray:       #f2f2f2;
 
-$bp-xs:    0px;
 $bp-mj:  420px;
 $bp-sm:  768px;
 $bp-md:  992px;
 $bp-lg: 1280px;
-
-$transfix: translateZ(0);
 
 /*===========
 ---GLOBALS---
@@ -54,10 +46,6 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol, ul {

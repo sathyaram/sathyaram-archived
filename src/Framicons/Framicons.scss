@@ -1,0 +1,111 @@
+// Rotate full 360 (Logo)
+@keyframes logo-rotate {
+  0%   { transform: translateX(-50%) rotate(0deg) $transfix; }
+  100% { transform: translateX(-50%) rotate(360deg) $transfix; }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Header
+
+// Title hovering effect
+@keyframes title-hover {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-12px); }
+}
+
+// The stars travelling from bottom to top
+//  Make them travel an extra 10px each side so they are out of view
+//  If stars are ever set to be bigger than 10px then we'll need to change this
+@keyframes star-travel {
+  0%   { bottom: -10px; }
+  100% { bottom: calc(100% + 10px); }
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes disappear {
+  0% { opacity: 1;}
+  100% { opacity: 0; }
+}
+
+@keyframes flash {
+  10% { background: rgba(255,255,255,1); }
+  100% { background: $color-midnight; }
+}
+
+@keyframes zoom {
+  0% { transform: translateX(-50%) translateY(-50%) scale(1); }
+  10% { transform: translateX(-50%) translateY(-50%) scale(1.2); }
+  30% { transform: translateX(-50%) translateY(-50%) scale(0.7) rotate(20deg);} 
+  50% { transform: translateX(-50%) translateY(-50%) scale(0.7) rotate(-20deg)}
+  80% { transform: translateX(-50%) translateY(-50%) scale(1.4); }
+  100% { transform: translateX(-50%) translateY(-50%) scale(1); }
+}
+
+@keyframes scrolling {
+  0% {transform:translateY(0);}
+  20% {transform:translateY(-70%);}
+  40% {transform:translateY(-10%);}
+  60% {transform:translateY(-60%);}
+  70% {transform:translateY(-30%);}
+  100% {transform:translateY(0);}
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Website/Graphic/Photography
+
+@keyframes topbun {
+  100% {
+    background:white;
+    height:4px;
+    border-radius:50px;
+  }
+  50% {
+    background: #df8b33;
+    height: 8px;
+    border-radius: 50px 50px 5px 5px;
+  }
+
+  0% {
+    background:white;
+    height:4px;
+    border-radius:50px;
+  }
+}
+
+@keyframes meat {
+  100% {
+    background:white;
+    height:4px;
+  }
+  50% {
+        background: #7d5a16;
+    height: 6px;
+  }
+
+  0% {
+    height:4px;
+    background:white;
+  }
+}
+
+@keyframes bottombun {
+  100% {
+    background:white;
+    height:4px;
+    border-radius:50px;
+  }
+  50% {
+        background: #df8b33;
+    height: 6px;
+    border-radius: 2px 2px 10px 10px;
+  }
+  0% {
+    background:white;
+    height:4px;
+    border-radius:50px;
+  }
+}

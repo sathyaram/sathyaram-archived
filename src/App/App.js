@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Blog from '../Blog/Blog';
 import About from '../About/About';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" render={() => <About />} />
         <Route path="/" render={() => <Main />} />
       </Switch>
+      <Footer />
     </div>
   );
 }

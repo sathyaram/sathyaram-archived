@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Main.scss'
 import Project from '../Project/Project'
 import projects from './projects.json'
 
