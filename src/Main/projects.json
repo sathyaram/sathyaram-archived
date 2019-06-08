@@ -1,15 +1,31 @@
 [
   {
     "title": "ExhaustNotes",
-    "subtitle": "A Car Engine Sound Library"
+    "subtitle": "A Car Engine Sound Library",
+    "tags": ["React.js", "Express.js", "AWS"],
+    "link": "https://exhaustnotes",
+    "designs": "https://dribbble.com",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"
+    ]
   },
   {
     "title": "ThatsACoolWebsite",
-    "subtitle": "A Curated Collection of Cool Websites"
+    "subtitle": "A Curated Collection of Cool Websites",
+    "tags": ["React.js", "SASS", "Netlify"]
   },
   {
     "title": "HHMI",
-    "subtitle": "Howard Huges Medical Institute"
+    "subtitle": "Howard Huges Medical Institute",
+    "tags": ["Drupal 8", "Twig/YAML", "SASS"],
+    "description": "I'm all about making the internet sexier. Let's work together!"
   },
   {
     "title": "SCLLR",
@@ -47,5 +63,4 @@
     "title": "Paul Knakk",
     "subtitle": "Country Artist"
   }
-  
 ]

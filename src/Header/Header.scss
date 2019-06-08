@@ -15,30 +15,13 @@ header {
 }
 
 h1 {
-  font-family: 'Alegreya', serif;
-  font-size: 3rem;
+  font-family: 'Aquatico';
+  font-size: 2.75rem;
   text-transform: uppercase;
 }
 
 h2 {
-  display: flex;
-  padding-top: 0.5rem;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  flex-direction: column;
 
-  
-  div {
-    flex-grow: 1;
-    padding: 0 2rem;
-    text-align: left;
-  }
-  span {
-    display: block;
-    // letter-spacing: 0.05rem;
-    font-size: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 568px) {
