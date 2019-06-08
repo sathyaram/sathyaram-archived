@@ -5,7 +5,7 @@ import './Menu.scss'
 
 class Menu extends Component {
 
-  menuTrigger = (e) => {
+  menuTrigger = () => {
     var trigger = document.querySelector('.main-menu');
     trigger.classList.toggle('open');
   }

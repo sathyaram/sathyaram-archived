@@ -18,7 +18,7 @@
     height: 0;
     bottom: -30px;
     right: 0;
-    z-index: -9;
+    z-index: -3;
     border-style: solid;
     border-width: 30px 50vw 0 50vw;
     border-color: #fff transparent transparent transparent;
@@ -39,7 +39,7 @@
   transition: all 500ms linear;
   top: 50%;
   left: 50%;
-  z-index: 12;
+  z-index: 9;
   transform:translateX(-50%) translateY(-50%);
 
   &:hover {
@@ -49,6 +49,6 @@
     img {
       width: 90px;
       height: auto;
-      filter: drop-shadow(5px 0 15px white);
+      // filter: drop-shadow(5px 0 15px white);
   }
 }

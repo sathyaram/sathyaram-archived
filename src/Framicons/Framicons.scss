@@ -1,3 +1,11 @@
+$transfix: translateZ(0);
+
+$color-midnight:   #222639;
+$color-twilight:   #001f6d;
+$color-slate:      #303030;
+$color-white:      #ffffff;
+$color-gray:       #f2f2f2;
+
 // Rotate full 360 (Logo)
 @keyframes logo-rotate {
   0%   { transform: translateX(-50%) rotate(0deg) $transfix; }
@@ -108,4 +116,493 @@
     height:4px;
     border-radius:50px;
   }
+}
+
+// The nav wraps all three links in the services section
+
+$breakpoint-sm-max: 768px;
+$breakpoint-md-max: 768px;
+$breakpoint-xs-max: 768px;
+
+.framicons {
+  display: block;
+  width: 100%;
+  margin: -30px 0 30px;
+  perspective: 1000px;
+
+  @media (max-width: $breakpoint-sm-max) {
+  }
+
+
+// The three card links
+a {
+  display: inline-block;
+  margin: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  // transform: scale(0.7);
+  // transform-origin: left;
+  // backface-visibility: hidden;
+
+  // @media (max-width: $breakpoint-md-max) {
+  //   margin: 0 10px;
+  // }
+  // @media (max-width: $breakpoint-sm-max) {
+  //   margin: 0 auto;
+  // }
+
+  &:hover,
+  &.hover {
+    .card-wrapper {
+      cursor: pointer;
+      transform: rotateY(180deg) translateZ(1px);
+      // box-shadow: 0px 0px 50px 10px #ececec;
+
+      .back {
+        background:$color-white;
+        color:$color-midnight;
+      };
+    }
+  }
+}
+
+// The wrapper inside the link
+.card-wrapper {
+  display: block;
+  position: relative;
+  background: $color-white;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  color: $color-white;
+  // box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  z-index: 1;
+  width: 350px;
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 6px;
+
+  // @media (max-width: $breakpoint-md-max) {
+  //   width: 300px;
+  //   height: 350px;
+  // }
+  // @media (max-width: $breakpoint-sm-max) {
+  //   width: 250px;
+  //   height: 300px;
+  // }
+  // @media (max-width: $breakpoint-xs-max) {
+  //   margin: auto;
+  // }
+}
+
+// Each side of the link (which flips)
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  -webkit-backface-visibility: hidden;
+           backface-visibility: hidden;
+   -webkit-transition: 0.6s;
+           transition: 0.6s;
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
+  border-radius: 6px;
+}
+
+// The front side of the link
+.front {
+  text-align: center;
+  z-index: 2;
+   -webkit-transform: rotateY(0deg);
+           transform: rotateY(0deg);
+}
+
+// The back side of the link
+.back {
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  background: $color-midnight;
+  color: $color-white;
+  font-size: 18px;
+  line-height:120%;
+  z-index:9;
+  transition: background 600ms ease;
+  -webkit-transform: rotateY(-180deg) translateZ(1px);
+           transform: rotateY(-180deg) translateZ(1px);
+
+  @media (max-width: $breakpoint-md-max) {
+    font-size: 16px;
+  }
+  @media (max-width: $breakpoint-sm-max) {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+// The vector image for each link
+.vector {
+  position: relative;
+  margin-top: 40px;
+
+  > div {
+    color: white;
+    font-size: 56px;
+    font-family: 'aquatico';
+    text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0, 0 0 30px #60c0f0;
+  }
+
+  .monitor .letters {
+      margin-top:-5px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      top: 58%;
+      opacity: 0.5;
+  }
+  .box .letters {
+    margin-top:1px;
+  }
+}
+
+// The title text for the link
+.description {
+  margin-top: 115px;
+
+  h3 {
+    color: $color-midnight;
+    font-size: 24px;
+    text-stroke: 2px $color-midnight;
+    letter-spacing: 5px;
+    font-family: 'aquatico';
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (max-width: $breakpoint-md-max) {
+      font-size: 20px;
+    }
+    @media (max-width: $breakpoint-sm-max) {
+      font-size: 18px;
+    }
+  }
+}
+
+.shape {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Websites
+
+.web {
+
+  .monitor {
+    width: 228px;
+    height: 137px;
+    background: $color-gray;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .screen {
+    // width: 168px;
+    // height: 96px;
+    width: 198px;
+    height: 107px;
+    color: $color-white;
+    text-align: center;
+    line-height: 140px;
+    font-size: 56px;
+    background: $color-midnight;
+    overflow:hidden;
+
+    .code {
+      padding:20px;
+      animation: 8s scrolling 2s forwards ease infinite;
+
+      .bar {
+        width:100%;
+        height:9px;
+        border-radius:15px;
+        background-color:#1e95f7;
+        margin-top:9px;
+
+        &:nth-child(1) {
+          width:20%;
+        }
+        &:nth-child(2) {
+          width:40%;
+          background-color:#1e95f7;
+        }
+        &:nth-child(3) {
+          width:50%;
+          background-color:white;
+        }
+        &:nth-child(4) {
+          width:70%;
+          background-color:rgb(40, 185, 252);
+        }
+
+        &:nth-child(5) {
+          background-color:white;
+        }
+
+        &:nth-child(6) {
+          background-color:white;
+        }
+
+        &:nth-child(7) {
+          width:60%;
+          background-color:white;
+        }
+
+        &:nth-child(8) {
+          width:40%;
+          background-color:white;
+        }
+        &:nth-child(9) {
+          width:30%;
+          background-color:white;
+        }
+        &:nth-child(10) {
+          width:40%;
+          background-color:rgb(40, 185, 252);
+        }
+        &:nth-child(11) {
+          width:65%;
+          background-color:rgb(40, 185, 252);
+        }
+        &:nth-child(12) {
+          width:95%;
+          background-color:rgb(218, 238, 248);
+        }
+
+        &:nth-child(12) {
+          width:95%;
+          background-color:rgb(218, 238, 248);
+        }
+
+        &:nth-child(13) {
+          width:35%;
+          background-color:rgb(218, 238, 248);
+        }
+
+        &:nth-child(14) {
+          width:25%;
+          background-color:rgb(218, 238, 248);
+        }
+
+        &:last-child {
+          width:60%;
+          background-color:rgb(20, 180, 255);
+        }
+      }
+    }
+  }
+
+  .base {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-gray;
+  }
+
+  .base::before,
+  .base::after,
+  .grey-shadow::before,
+  .grey-shadow::after {
+    position: absolute;
+    content: '';
+    top: 0;
+  }
+
+  .base:before {
+    border-left: 6px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30px solid $color-gray;
+    left: -5px;
+  }
+
+  .base:after {
+    border-right: 6px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 30px solid $color-gray;
+    right: -5px;
+  }
+
+  .base > div {
+    position: absolute;
+  }
+
+  .foot {
+    background: $color-gray;
+    z-index: 1;
+
+    &.top {
+      width: 116px;
+      height: 5px;
+      bottom: -4px;
+      left: 50%;
+      margin-left: -58px;
+    }
+
+    &.top::before,
+    &.top::after,
+    &.bottom::before {
+      position: absolute;
+      content: '';
+      top: 0px;
+    }
+
+    &.top::before {
+      border-left: 16px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 5px solid $color-gray;
+      left: -16px;
+    }
+
+    &.top::after {
+      border-right: 16px solid transparent;
+      border-left: 0px solid transparent;
+      border-bottom: 5px solid $color-gray;
+      right: -16px;
+    }
+
+    &.bottom {
+      width: 70px;
+      height: 10px;
+      border-radius: 5px;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+    }
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Graphics
+
+.graphic {
+
+  .box {
+    width: 136px;
+    height: 136px;
+    border: 8px solid $color-gray;
+    background: $color-midnight;
+    margin: 0 auto;
+    padding: 30px 20px;
+    backface-visibility: hidden;
+    animation: 6s zoom 3s forwards ease infinite;
+  }
+
+  .anchor {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -12px;
+    left: -12px;
+    background: $color-white;
+    border: 6px solid $color-gray;
+
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      top: calc(100% + 4px);
+      transform: translateY(-50%);
+    }
+    &:nth-child(4) {
+      top: calc(100% + 4px);
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    &:nth-child(5) {
+      top: calc(100% + 4px);
+      left: calc(100% + 4px);
+      transform: translateY(-50%) translateX(-50%);
+    }
+    &:nth-child(6) {
+      top: 50%;
+      left: calc(100% + 4px);
+      transform: translateY(-50%) translateX(-50%);
+    }
+    &:nth-child(7) {
+      top: calc(0% - 4px);
+      left: calc(100% + 4px);
+      transform: translateY(-50%) translateX(-50%);
+    }
+    &:nth-child(8) {
+      top: calc(0% - 4px);
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    &:nth-child(9) {
+      top: -50px;
+      left: 50%;
+      border-radius: 50px;
+      background: $color-gray;
+      transform: translateY(-50%) translateX(-50%);
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        top: 5px;
+        left: 50%;
+        background: $color-gray;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Photography
+
+.photography {
+  .photo {
+    width: 135px;
+    height: 157px;
+    margin: 0 auto;
+    padding: 13px 14px 15px;
+    top: 60%;
+    background: $color-gray;
+    border-radius: 2px;
+
+    .image {
+      width: auto;
+      background: $color-midnight;
+      height: 100px;
+      animation: 4s flash 3s forwards infinite;
+      padding:30px 20px;
+      // width: 114px;
+      // height: 100px;
+      // transition: all 200s ease;
+      // animation: flash 3s ease 1s infinite;
+    }
+
+    .letters {
+      animation: 4s disappear 3s reverse forwards ease infinite;
+      margin-top: -9px;
+    }
+  }
+}
 }
