@@ -1,5 +1,20 @@
-ul {
-  text-align: right;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 0 15px 0 rgba(#cecece,0.8);
+}
+
+.logo {  
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+    img {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(5px 0 15px white);
+  }
 }
 
 li {
@@ -7,6 +22,10 @@ li {
   
   a {
     display: inline-block;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+
+    @media screen and (min-width: 362px) {
+      padding: 1rem;
+    }
   }
 }

@@ -3,10 +3,15 @@ import './Loader.scss'
 
 class Loader extends Component {
   
+  componentDidMount() {
+    var loader = document.getElementById('loader');
+    setTimeout(function() {
+      loader.classList.add('gone');
+    }, 2000);
+  }
   render() {
     return (
-      <div className="loader">
-        
+      <div id="loader">
       </div>
     );
   }
