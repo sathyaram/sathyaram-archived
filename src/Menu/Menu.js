@@ -32,14 +32,14 @@ class Menu extends Component {
         </div>
         
         <div className="main-menu">
-          <a className="menu-trigger" onClick={this.menuTrigger}>
+          <button className="menu-trigger" onClick={this.menuTrigger}>
             <span></span>
             <span></span>
             <span></span>
-          </a>
+          </button>
           <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
+            {/* <li><Link to="/about">About</Link></li>
+            <li><Link to="/blog">Blog</Link></li> */}
             <li><Link to="/contact">Contact</Link></li>
             {/* <li><Link to="/web">Web Design/Development</Link></li>
             <li><Link to="/graphic">Graphic Design</Link></li>

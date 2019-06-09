@@ -10,7 +10,7 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
-  transition: all 500ms linear;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &::after {
     content: "";
@@ -36,7 +36,7 @@
 
 .logo {
   position: fixed;
-  transition: all 500ms linear;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   top: 50%;
   left: 50%;
   z-index: 9;

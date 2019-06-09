@@ -34,11 +34,11 @@
       "path/to/file"]
   },
   {
-    "title": "HHMI",
-    "subtitle": "Howard Hughes Medical Institute",
-    "description": "As a Front-End Developer for Forum One, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. It was quite an undertaking but overhauling a site with overly 1mil yearly page views was so fun - I got to do the whole homepage!",
+    "title": "FudTruk",
+    "subtitle": "Culinary Cuisine on Wheels",
+    "description": "As a freelance project, I got to make a website, doing branding and design vinyl wraps for an awesome food truck!",
     "tags": ["React.js", "SASS", "Netlify"],
-    "link": "https://thatsacoolwebsite.com",
+    "link": "https://fudtruk.lehigh.edu",
     "logo": "path/to/file",
     "color": "#f42737",
     "offcolor": "#131313",

@@ -6,9 +6,6 @@ class Header extends Component {
     return (
       <header role="banner">         
           <h1>Sathya Ram</h1>
-          <h2>
-           
-          </h2>
       </header>
     );
   }
