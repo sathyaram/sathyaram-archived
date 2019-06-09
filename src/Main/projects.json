@@ -1,8 +1,8 @@
 [
   {
-    "title": "ExhaustNotes",
+    "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
-    "description": "Im all about making the internet sexier. Lets work together!",
+    "description": "As a big car ethusiast, I made a central place on the internet to enjoy the loud hums and furious notes of naturally aspired vehicles.",
     "tags": ["Bob", "Joe", "Moe"],
     "link": "https://exhaustnotes.co",
     "designs": "https://dribbble.com",
@@ -17,7 +17,23 @@
       "path/to/file"]
   },
   {
-    "title": "ThatsACoolWebsite",
+    "title": "HHMI",
+    "subtitle": "Howard Hughes Medical Institute",
+    "description": "As a Front-End Developer for Forum One, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. An undertaking as the site has over 1mil yearly page views and it turned out incredibly.",
+    "tags": ["Drupal 8", "PatternLab", "Twig/YAML"],
+    "link": "https://hhmi.org",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"]
+  },
+  {
+    "title": "That's A Cool Website",
     "subtitle": "A Curated Collection of Cool Websites",
     "description": "I had this massive spreadsheet of websites I love that I figured I would just turn into a website!",
     "tags": ["React.js", "SASS", "Netlify"],
@@ -39,6 +55,38 @@
     "description": "As a freelance project, I got to make a website, doing branding and design vinyl wraps for an awesome food truck!",
     "tags": ["React.js", "SASS", "Netlify"],
     "link": "https://fudtruk.lehigh.edu",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"]
+  },
+  {
+    "title": "Lehigh Portal + Theme",
+    "subtitle": "Lehigh's Luminis Portal Redesign",
+    "description": "I created Lehigh University's Official 2018 Theme that is being used on over 50 websites and counting! It was a personal and exhilerating project that required a lot of research, iteration and understanding. Through that, I was also able to redevelop and redesign Lehigh's Campus Portal, that all students used for all their college services.",
+    "tags": ["Luminis 5", "Javascript", "HTML/CSS", "Web Design", "Analytics"],
+    "link": "https://fudtruk.lehigh.edu",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"]
+  },
+  {
+    "title": "Oscars Trivia",
+    "subtitle": "Browser Game",
+    "description": "This is a single player trivia game based on the 2018 Academy Awards (The Oscars). It tests your Oscars knowledge on two levels: a 10 question quiz that asks who won the Oscar for the most popular categories, or all the 24 Oscar categories, for the movie buffs.",
+    "tags": ["Luminis 5", "Javascript", "HTML/CSS", "Web Design", "Analytics"],
+    "link": "https://oscarstrivia.com",
     "logo": "path/to/file",
     "color": "#f42737",
     "offcolor": "#131313",

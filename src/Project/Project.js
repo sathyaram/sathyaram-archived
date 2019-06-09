@@ -8,7 +8,7 @@ class Project extends Component {
   }
   render() {
     return (
-      <article className={`project ${this.props.project.title.toLowerCase().split(' ').join('')}`}>
+      <article id={`${this.props.project.title.toLowerCase().split(' ').join('')}`}>
         <div className="heading">
           <h3 className="title" style={{ color: `${this.props.project.color}` }}>
             {this.props.project.title}
@@ -31,8 +31,8 @@ class Project extends Component {
             </ul>
             <div>
             <div className="links">
-              <a className="link" href={this.props.project.link}><i className="fas fa-globe-americas"></i>{this.props.project.link}</a>
-              <a className="designs" href={this.props.project.designs}><i className="fab fa-dribbble" aria-hidden="true"></i>View Designs</a>
+              <a className="link" target="_blank" rel="noopener noreferrer" href={this.props.project.link}><i className="fas fa-globe-americas"></i>{this.props.project.link}</a>
+              <a className="designs" target="_blank" rel="noopener noreferrer" href={this.props.project.designs}><i className="fab fa-dribbble" aria-hidden="true"></i>View Designs</a>
             </div>
             <p className="description">{this.props.project.description}</p>  
           </div>

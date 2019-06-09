@@ -14,8 +14,16 @@ article {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid rgb(218, 218, 218);
+  // border: 1px solid rgb(218, 218, 218);
   margin-bottom: 5rem;
+
+  &:not(.track):hover {
+    .text {
+      max-height: 400px;
+      opacity: 1;
+      transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
+    }
+  }
   
   .heading {
     .title {
@@ -24,7 +32,7 @@ article {
       font-family: 'Aquatico';
 
       @media screen and (min-width: 768px) {
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
 
@@ -38,8 +46,10 @@ article {
     padding: 1rem 0;
     width: 100%;
     align-items: center;
-    margin-top: 1rem;
-    border-top: 1px solid black;
+    transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
+    opacity: 0;
+    max-height: 0px;
+    
 
     @media screen and (min-width: 768px) {
       display: grid;
@@ -49,13 +59,14 @@ article {
     .description {
       font-size: 20px;
       margin-bottom: 1rem;
+      line-height: 150%;
     }
     
     .tags {
 
 
     @media screen and (min-width: 768px) {
-      padding: 1rem 2rem 1rem 0rem;
+      padding: 0 2rem 0 0;
       margin-right: 2rem;
       border-right: 1px solid black;
       text-align: right;
@@ -159,14 +170,13 @@ article {
       margin: 0 -15%;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       display: grid;
-      grid-template-rows: 200px 200px;
+      grid-template-rows: 1fr 1fr;
       grid-gap: 15px;
-      max-width: 200%;
-      overflow-x: scroll;
+      max-width: 100%;
 
       img {
         background: #ddd;
-        height: 100%;
+        height: auto;
         // border: 1px solid #bbb;
         
         &:first-child {
