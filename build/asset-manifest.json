@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e7c7951.chunk.css",
+    "main.js": "/static/js/main.7d3e8e11.chunk.js",
+    "main.js.map": "/static/js/main.7d3e8e11.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.5bceac50.chunk.js": "/static/js/2.5bceac50.chunk.js",
+    "static/js/2.5bceac50.chunk.js.map": "/static/js/2.5bceac50.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.70a48f8dcfc56f2240fabe554370ac1d.js": "/precache-manifest.70a48f8dcfc56f2240fabe554370ac1d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3e7c7951.chunk.css.map": "/static/css/main.3e7c7951.chunk.css.map",
+    "static/media/ram-logo-white.svg": "/static/media/ram-logo-white.071e62f2.svg"
+  }
+}
