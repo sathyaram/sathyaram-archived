@@ -21,19 +21,23 @@ class Main extends Component {
           <Framicons />
         </section>
         <section>
-        <Switch>
+        {projects.map(function(project, i) {
+          return (
+            <Project key={i} project={project} projectTags={project.tags} />
+          )
+        }
+        )}
+        
+          
+        </section>
+      </main>
+      /* <Switch>
           <Route path="/web" render={() => projects.map((project, i) => (
             <Project key={i} project={project} />
           ))} />
           <Route path="/graphic" render={() => <Graphic />} />
-          <Route path="/photography" render={() => <Photography />} />
-          <Route path="/" render={() => projects.map((project, i) => (
-            <Project key={i} project={project} />
-          ))} />
-        </Switch>
-          
-        </section>
-      </main>
+          <Route path="/photography" render={() => <Photography />} />   />*/  
+        // </Switch>}
     );
   }
 }

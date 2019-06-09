@@ -2,8 +2,8 @@
   {
     "title": "ExhaustNotes",
     "subtitle": "A Car Engine Sound Library",
-    "tags": ["React.js", "Express.js", "AWS"],
-    "description": "I'm all about making the internet sexier. Let's work together!",
+    "description": "Im all about making the internet sexier. Lets work together!",
+    "tags": ["Bob", "Joe", "Moe"],
     "link": "https://exhaustnotes.co",
     "designs": "https://dribbble.com",
     "logo": "path/to/file",
@@ -14,54 +14,39 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"
-    ]
+      "path/to/file"]
   },
   {
     "title": "ThatsACoolWebsite",
     "subtitle": "A Curated Collection of Cool Websites",
-    "tags": ["React.js", "SASS", "Netlify"]
+    "description": "I had this massive spreadsheet of websites I love that I figured I would just turn into a website!",
+    "tags": ["React.js", "SASS", "Netlify"],
+    "link": "https://thatsacoolwebsite.com",
+    "designs": "https://dribbble.com",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"]
   },
   {
     "title": "HHMI",
-    "subtitle": "Howard Huges Medical Institute",
-    "tags": ["Drupal 8", "Twig/YAML", "SASS"],
-    "description": "I'm all about making the internet sexier. Let's work together!"
-  },
-  {
-    "title": "SCLLR",
-    "subtitle": "South Carolian License Leasing Registry"
-  },
-  {
-    "title": "FudTruk",
-    "subtitle": "Culinary Cuisine on Wheels"
-  },
-  {
-    "title": "Lehigh Portal/Websites",
-    "subtitle": "A Real Impact"
-  },
-  {
-    "title": "Lehigh 2018",
-    "subtitle": "The Definitive Theme"
-  },
-  {
-    "title": "Astral Air Parts",
-    "subtitle": "Small but Mighty"
-  },
-  {
-    "title": "Gertrude Hawk",
-    "subtitle": "Master Chocolatier"
-  },
-  {
-    "title": "Oscars Trivia",
-    "subtitle": "2018 Trivia Quiz"
-  },
-  {
-    "title": "Keystone Munitions",
-    "subtitle": "Ammunitions Crafters"
-  },
-  {
-    "title": "Paul Knakk",
-    "subtitle": "Country Artist"
+    "subtitle": "Howard Hughes Medical Institute",
+    "description": "As a Front-End Developer for Forum One, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. It was quite an undertaking but overhauling a site with overly 1mil yearly page views was so fun - I got to do the whole homepage!",
+    "tags": ["React.js", "SASS", "Netlify"],
+    "link": "https://thatsacoolwebsite.com",
+    "logo": "path/to/file",
+    "color": "#f42737",
+    "offcolor": "#131313",
+    "images": [
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file",
+      "path/to/file"]
   }
 ]
