@@ -1,5 +1,5 @@
 section:last-child {
-  padding: 80px 0;
+  padding: 80px 0 0;
   background: #f7f7f7;
 
   @media screen and (max-width: 500px) {
@@ -19,17 +19,22 @@ article {
   justify-content: center;
   flex-direction: column;
   // border: 1px solid rgb(218, 218, 218);
-  margin-bottom: 5rem;
+  
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
 
   @media screen and (max-width: 500px) {
     padding: 4rem 2rem;
   }
 
-  &:not(.track):hover {
-    .text {
-      max-height: 500px;
-      opacity: 1;
-      transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
+  .information {
+    &:hover {
+      .text {
+        max-height: 500px;
+        opacity: 1;
+        transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
+      }
     }
   }
   
@@ -42,6 +47,7 @@ article {
       font-size: 2rem;
       letter-spacing: 5px;
       font-family: 'Aquatico';
+      line-height: 100%;
 
       @media screen and (min-width: 768px) {
         font-size: 3rem;
@@ -50,6 +56,7 @@ article {
 
     .subtitle {
       font-size: 1.25rem;
+      margin-top: 0.5rem;
 
       @media screen and (min-width: 768px) {
         font-size: 2rem;
@@ -59,7 +66,7 @@ article {
   }
 
   .text {
-    padding: 1rem 0;
+    margin: 1rem 0;
     width: 100%;
     align-items: center;
     transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
@@ -84,8 +91,8 @@ article {
     }
     
     .tags {
-      text-align: center;
       font-size: .75rem;
+      margin-bottom: 1rem;
 
 
     @media screen and (min-width: 768px) {
@@ -93,13 +100,15 @@ article {
       margin-right: 2rem;
       border-right: 1px solid black;
       text-align: right;
+      font-size: 1rem;
+
     }
       
 
       li {
         padding: 5px;
         display:inline-block;
-        margin: 5px;
+        margin: 2px;
         border: 1px solid rgb(187, 187, 187);
 
         @media screen and (min-width: 768px) {
@@ -111,7 +120,7 @@ article {
   }
 
   .links {
-    margin: 1.5rem 0 1rem;
+    margin: 1rem 0;
     width: 100%;
 
 
@@ -166,9 +175,9 @@ article {
 
     @media screen and (max-width: 500px) {
       font-size: 14px;
-      padding: 15px 0px;
+      padding: 10px 0px;
+      background: #eee;
       border-top: 2px solid #ccc;
-      border-bottom: 2px solid #ccc;
     }
 
       &:before {
