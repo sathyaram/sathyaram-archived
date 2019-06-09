@@ -214,7 +214,7 @@ $breakpoint-xs-max: 768px;
   // The three card links
   a {
     display: inline-block;
-    margin: 0 25px;
+    margin: 0;
     text-align: center;
     text-decoration: none;
     z-index: 1;
@@ -228,6 +228,10 @@ $breakpoint-xs-max: 768px;
     // @media (max-width: $breakpoint-sm-max) {
     //   margin: 0 auto;
     // }
+
+    @media screen and (min-width: 372px) {
+      margin: 0 25px;
+    }
 
     &:hover {
 
