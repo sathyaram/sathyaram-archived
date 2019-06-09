@@ -41,6 +41,7 @@
   left: 50%;
   z-index: 9;
   transform:translateX(-50%) translateY(-50%);
+  animation: loading 1s ease;
 
   &:hover {
     opacity: 1;
@@ -50,5 +51,31 @@
       width: 100px;
       height: auto;
       // filter: drop-shadow(5px 0 15px white);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+
+  20% {
+    transform: translate(150%, -50%);
+  }
+
+  40% {
+    transform: translate(-50%, 150%);
+  }
+
+  60% {
+    transform: translate(-250%, -50%);
+  }
+
+  80% {
+    transform: translate(-50%, -300%);
+  }
+
+  100% {
+    transform: translateX(-50%, -50%)
   }
 }
