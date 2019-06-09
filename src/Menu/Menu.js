@@ -33,11 +33,13 @@ class Menu extends Component {
         
         <div className="main-menu">
           <button className="menu-trigger" onClick={this.menuTrigger}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
-          <ul>
+          <ul className="menu">
             {/* <li><Link to="/about">About</Link></li>
             <li><Link to="/blog">Blog</Link></li> */}
             <li><Link to="/contact">Contact</Link></li>
