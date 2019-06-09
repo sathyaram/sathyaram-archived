@@ -7,14 +7,8 @@ class Project extends Component {
     super(props);
   }
   render() {
-    // var {ar} = this.props.projects.tags;
-    // console.log(ar);
-    // console.log(this.props.projectTags);
-    // var list = this.props.projectTags.map(tag =>  <li>{tag}</li>);
-
     return (
       <article className={`project ${this.props.project.title.toLowerCase().split(' ').join('')}`}>
-
         <div className="heading">
           <h3 className="title" style={{ color: `${this.props.project.color}` }}>
             {this.props.project.title}
@@ -40,8 +34,7 @@ class Project extends Component {
               <a className="link" href={this.props.project.link}><i className="fas fa-globe-americas"></i>{this.props.project.link}</a>
               <a className="designs" href={this.props.project.designs}><i className="fab fa-dribbble" aria-hidden="true"></i>View Designs</a>
             </div>
-            <p className="description">{this.props.project.description}</p>
-            
+            <p className="description">{this.props.project.description}</p>  
           </div>
         </div>
         <div className="track" style={{ backgroundColor: `${this.props.project.offcolor}` }}>
@@ -53,11 +46,6 @@ class Project extends Component {
             <img src="https://picsum.photos/503/502" /> 
           </div>
         </div>
-              
-        <ul>
-         {/* {list} */}
-        </ul> 
-          
       </article>
     );
   }
