@@ -41,9 +41,9 @@ class Menu extends Component {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/web">Web Design/Development</Link></li>
+            {/* <li><Link to="/web">Web Design/Development</Link></li>
             <li><Link to="/graphic">Graphic Design</Link></li>
-            <li><Link to="/photography">Photography</Link></li>      
+            <li><Link to="/photography">Photography</Link></li>       */}
           </ul>
         </div>
       </nav>
