@@ -16,7 +16,7 @@
   &:hover {
     transform: translateX(calc(100% - 90px));
 
-    .menu-trigger {
+    .trigger {
       width: 90px;
     }
 
@@ -95,7 +95,7 @@
   }
 }
 
-.menu-trigger {
+.trigger {
   cursor: pointer;
   background: none;
   outline: none;

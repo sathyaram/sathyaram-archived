@@ -12,27 +12,27 @@ class Menu extends Component {
 
   render() {
     return (
-      <nav> 
+      <nav>
         <div className="social-media">
-          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">
+          <a aria-label="instagram" target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">
             <i className="fab fa-instagram" aria-hidden="true"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">
+          <a aria-label="dribbble" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">
             <i className="fab fa-dribbble" aria-hidden="true"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://flickr.com/sathyaramphotography">
+          <a aria-label="flickr" target="_blank" rel="noopener noreferrer" href="https://flickr.com/sathyaramphotography">
             <i className="fab fa-flickr" aria-hidden="true"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">
+          <a aria-label="codepen" target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">
             <i className="fab fa-codepen" aria-hidden="true"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/sathyaram">
+          <a aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/sathyaram">
             <i className="fab fa-github" aria-hidden="true"></i>
           </a>
         </div>
-        
+
         <div className="main-menu">
-          <button className="menu-trigger" onClick={this.menuTrigger}>
+          <button className="trigger" aria-label="menu trigger" name="trigger" onClick={this.menuTrigger}>
             <div className="hamburger">
               <span></span>
               <span></span>
@@ -40,8 +40,8 @@ class Menu extends Component {
             </div>
           </button>
           <ul className="menu">
-            {/* <li><Link to="/about">About</Link></li>
-            <li><Link to="/blog">Blog</Link></li> */}
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             {/* <li><Link to="/web">Web Design/Development</Link></li>
             <li><Link to="/graphic">Graphic Design</Link></li>
