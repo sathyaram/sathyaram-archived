@@ -5,6 +5,7 @@
   top: 0;
   height: 100vh;
   z-index: 8;
+  display: flex;
   background: #fff;
   transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translateX(calc(100% - 30px));
@@ -15,10 +16,6 @@
 
   &:hover {
     transform: translateX(calc(100% - 90px));
-
-    .trigger {
-      width: 90px;
-    }
 
     .hamburger {
       transform: translateY(-50%) rotate(-180deg);
@@ -32,15 +29,15 @@
   }
 
   ul {
-    padding: 20%;
+    padding: 2.25rem 0;
 
     li {
       display: block;
 
       a {
         display: block;
-        font-size: 2.5rem;
-        padding: 1rem 0.5rem;
+        font-size: 2rem;
+        padding: 1rem;
         background: linear-gradient(90deg, #70d5ff, #0059bc);
         background-clip: text;
         -webkit-background-clip: text;
@@ -95,28 +92,28 @@
   }
 }
 
-.trigger {
+.menu-trigger {
   cursor: pointer;
   background: none;
   outline: none;
   border: none;
-  width: 30px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  padding: 0;
+  width: 90px;
   background: #fff;
-  height: 100vh;
+  height: 100%;
   display: flex;
   z-index: 7;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 
+  &:hover {
+    background: linear-gradient(to right, rgba(112,213,255, 0.6) 0%,rgba(255,255,255,1) 100%); 
+  }
+
   * {
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-
-  
 
   .hamburger {
     position: absolute;
@@ -157,8 +154,6 @@
   text-align: center;
   transition: width 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-  
-
   &:hover {
     width: 90px;
 
@@ -194,7 +189,7 @@
       margin-left: 14px;
 
       &:not(:first-child) {
-        margin-top: 15px;
+        margin-top: 2rem;
       }
     }
 
@@ -271,3 +266,4 @@
     }
   }
 }
+

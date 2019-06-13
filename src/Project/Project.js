@@ -32,9 +32,9 @@ const Project = props => (
     <div className="track" style={{ backgroundColor: props.project.offcolor ? props.project.offcolor : 'blue' }}>
       <div className="grid">
 
-        {props.project.images.map(pic =>
-          <img src={pic} key={pic} alt={pic} />
-        )}
+      <video width="400" loop autoPlay muted>
+           <source src="/videos/en.mp4" type="video/mp4"></source>
+          </video>
 
       </div>
     </div>
