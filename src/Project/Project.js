@@ -3,7 +3,7 @@ import './Project.scss'
 import './Projects.scss'
 
 const Project = props => (
-  <article id={props.project.title.toLowerCase().split(' ').join('')} style={{ backgroundColor: props.project.offcolor ? props.project.offcolor : 'skyblue' }}>
+  <article id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }}>
     <div className="information">
       <div className="heading">
         <h3 className="title" style={{ color: `${props.project.color}` }}>
@@ -38,9 +38,20 @@ const Project = props => (
           <div key={pic}>{pic}</div>
         )} */}
 
-        {props.project.images.map(pic =>
-          <img src={pic} key={pic} alt={pic} />
-        )}
+        {/* {props.project.images.map(pic =>
+          <div dangerouslySetInnerHTML={{__html: {pic}}}></div>
+        )} */}
+        {props.project.images[0]}
+        {props.project.videos[0]}
+        {props.project.images.map((item, i) => {
+          const vids = props.project.videos[i];
+          return (
+            <div>
+            <div key={item}>{item}</div>
+            <div>{vids}</div>
+            </div>
+          );
+        })}
       </div>
     </div>
     </div>

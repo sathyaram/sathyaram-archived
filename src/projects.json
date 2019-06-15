@@ -8,14 +8,22 @@
     "designs": "https://dribbble.com",
     "logo": "path/to/file",
     "color": "#f42737",
-    "offcolor": "#131313",
+    "offcolor": "linear-gradient(to right, rgba(142, 217, 249, 0.6) 0%,rgba(255,255,255,1) 100%)",
     "images": [
+      "asdfasdfasdvo",
       "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
       "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
       "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"],
+      "videos": [
+        "bbbisduquajf",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
+      
   },
+  
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
@@ -30,7 +38,13 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"]
+      "path/to/file"],
+      "videos": [
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   },
   {
     "title": "That's A Cool Website",
@@ -47,7 +61,13 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"]
+      "path/to/file"],
+      "videos": [
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   },
   {
     "title": "FudTruk",
@@ -63,7 +83,13 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"]
+      "path/to/file"],
+      "videos": [
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   },
   {
     "title": "Lehigh Portal + Theme",
@@ -79,7 +105,13 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"]
+      "path/to/file"],
+      "videos": [
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   },
   {
     "title": "Oscars Trivia",
@@ -95,6 +127,12 @@
       "path/to/file",
       "path/to/file",
       "path/to/file",
-      "path/to/file"]
+      "path/to/file"],
+      "videos": [
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   }
 ]
