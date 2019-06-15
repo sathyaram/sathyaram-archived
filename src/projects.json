@@ -8,19 +8,16 @@
     "designs": "https://dribbble.com",
     "logo": "path/to/file",
     "color": "#f42737",
-    "offcolor": "linear-gradient(to right, rgba(142, 217, 249, 0.6) 0%,rgba(255,255,255,1) 100%)",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(156deg, rgb(49, 49, 49), rgb(7, 7, 7))",
     "images": [
-      "asdfasdfasdvo",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"],
+      "/images/en-mobile.jpg",
+      "/images/en-button.gif",
+      "/images/en-grid.png"
+      ],
       "videos": [
-        "bbbisduquajf",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
+        "/videos/en2.mp4",
+        "/videos/en.mp4"]
       
   },
   
@@ -28,23 +25,21 @@
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
     "description": "As a Front-End Developer for Forum One, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. An undertaking as the site has over 1mil yearly page views and it turned out incredibly.",
-    "tags": ["Drupal 8", "SCSS", "Twig/YAML", "PatternLab" ],
+    "tags": ["Drupal 8", "PatternLab", "Twig/YAML", "SCSS" ],
     "link": "https://biointeractive.org",
     "logo": "path/to/file",
-    "color": "#f42737",
-    "offcolor": "#131313",
+    "color": "#bcfdff",
+    "half": true,
+    "textcolor": "#000000",
+    "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
     "images": [
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"],
+      "/images/en-mobile.jpg",
+      "/images/en-button.gif",
+      "/images/en-grid.png"
+      ],
       "videos": [
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
+        "/videos/en2.mp4",
+        "/videos/en.mp4"]
   },
   {
     "title": "That's A Cool Website",
@@ -54,8 +49,8 @@
     "link": "https://thatsacoolwebsite.com",
     "designs": "https://dribbble.com",
     "logo": "path/to/file",
-    "color": "#f42737",
-    "offcolor": "#131313",
+    "color": "#ffffff",
+    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
     "images": [
       "path/to/file",
       "path/to/file",
@@ -76,8 +71,8 @@
     "tags": ["Drupal 7", "HTML/CSS", "jQuery", "Web Design", "Graphic Design", "Video", "Photography"],
     "link": "https://fudtruk.lehigh.edu",
     "logo": "path/to/file",
-    "color": "#f42737",
-    "offcolor": "#131313",
+    "color": "#ffda67",
+    "offcolor": "linear-gradient(20deg, #f05a26, #FAAF40)",
     "images": [
       "path/to/file",
       "path/to/file",
@@ -98,8 +93,9 @@
     "tags": ["Luminis 5", "Javascript", "HTML/CSS", "Web Design", "Analytics/Tag Manager"],
     "link": "https://fudtruk.lehigh.edu",
     "logo": "path/to/file",
-    "color": "#f42737",
-    "offcolor": "#131313",
+    "color": "#d0a678",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(45deg, rgb(37, 21, 0) 0%, rgb(94, 36, 0) 100%)",
     "images": [
       "path/to/file",
       "path/to/file",
@@ -120,8 +116,8 @@
     "tags": ["Javascript", "HTML/CSS", "Web Design"],
     "link": "https://oscarstrivia.com",
     "logo": "path/to/file",
-    "color": "#f42737",
-    "offcolor": "#131313",
+    "color": "#d49600",
+    "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images": [
       "path/to/file",
       "path/to/file",

@@ -5,9 +5,22 @@ class About extends Component {
   render() {
     return (
       <main className="about">
-        {/* Background Image like https://fabianirsara.com/about */}
         <div className="about-header">
-          Hey 
+          Hey you, it's me!
+          <br></br>
+          <br></br>
+
+          I'm Sathya Ram,
+          an Indian dude who loves to make creative shit with polish.
+          <br></br>
+          <br></br>
+          I live in Alexandria, Virginia and work full time
+          as a Front-End Developer for a wholesome agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>. 
+          <br></br>
+          <br></br>
+          In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, write some sloppy stories,
+          think about going to the gym, waste my life on reddit, and watch a metric fudgeton of television and movies.
+
         </div>
 
       </main>
