@@ -9,7 +9,7 @@
     "logo": "path/to/file",
     "color": "#f42737",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(156deg, rgb(49, 49, 49), rgb(7, 7, 7))",
+    "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "images": [
       "/images/en-mobile.jpg",
       "/images/en-button.gif",
@@ -33,82 +33,14 @@
     "textcolor": "#000000",
     "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
     "images": [
-      "/images/en-mobile.jpg",
-      "/images/en-button.gif",
-      "/images/en-grid.png"
+      "/images/hhmi-mobile2.jpg",
+      "/images/hhmi2.gif"
+      
       ],
       "videos": [
-        "/videos/en2.mp4",
-        "/videos/en.mp4"]
-  },
-  {
-    "title": "That's A Cool Website",
-    "subtitle": "A Curated Collection of Cool Websites",
-    "description": "I had this massive spreadsheet of websites I love that I figured I would just turn into a website!",
-    "tags": ["React", "SCSS", "Netlify"],
-    "link": "https://thatsacoolwebsite.com",
-    "designs": "https://dribbble.com",
-    "logo": "path/to/file",
-    "color": "#ffffff",
-    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
-    "images": [
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"],
-      "videos": [
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
-  },
-  {
-    "title": "FudTruk",
-    "subtitle": "Culinary Cuisine on Wheels",
-    "description": "As a freelance project, I got to make a website, doing branding and design vinyl wraps for an awesome food truck!",
-    "tags": ["Drupal 7", "HTML/CSS", "jQuery", "Web Design", "Graphic Design", "Video", "Photography"],
-    "link": "https://fudtruk.lehigh.edu",
-    "logo": "path/to/file",
-    "color": "#ffda67",
-    "offcolor": "linear-gradient(20deg, #f05a26, #FAAF40)",
-    "images": [
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"],
-      "videos": [
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
-  },
-  {
-    "title": "Lehigh Portal + Theme",
-    "subtitle": "Lehigh's Luminis Portal Redesign",
-    "description": "I created Lehigh University's Official 2018 Theme that is being used on over 50 websites and counting! It was a personal and exhilerating project that required a lot of research, iteration and understanding. Through that, I was also able to redevelop and redesign Lehigh's Campus Portal, that all students used for all their college services.",
-    "tags": ["Luminis 5", "Javascript", "HTML/CSS", "Web Design", "Analytics/Tag Manager"],
-    "link": "https://fudtruk.lehigh.edu",
-    "logo": "path/to/file",
-    "color": "#d0a678",
-    "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(45deg, rgb(37, 21, 0) 0%, rgb(94, 36, 0) 100%)",
-    "images": [
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"],
-      "videos": [
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
-  },
+        "/videos/hhmi.mp4"]
+    },
+  
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
@@ -117,18 +49,12 @@
     "link": "https://oscarstrivia.com",
     "logo": "path/to/file",
     "color": "#d49600",
+    "half": true,
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images": [
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"],
+      "/images/oscarstrivia.gif",
+      "/images/oscarsanimated.png"],
       "videos": [
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
-        "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
+        "/videos/oscarstrivia.mp4"]
   }
 ]
