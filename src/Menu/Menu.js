@@ -5,6 +5,11 @@ import './Menu.scss'
 
 class Menu extends Component {
 
+  getOffOfMe = () => {
+    var trigger = document.querySelector('.main-menu');
+    trigger.classList.remove('open');
+  }
+
   menuTrigger = () => {
     var trigger = document.querySelector('.main-menu');
     trigger.classList.toggle('open');
@@ -40,9 +45,9 @@ class Menu extends Component {
             </div>
           </button>
           <ul className="menu">
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
+            <li><Link onClick={this.getOffOfMe} to="/blog">Blog</Link></li>
+            <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
           </ul>
         </div>
       </nav>

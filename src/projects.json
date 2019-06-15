@@ -10,11 +10,11 @@
     "color": "#f42737",
     "offcolor": "#131313",
     "images": [
-      "/en.mp4",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file",
-      "path/to/file"]
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>",
+      "<video width='400' loop autoPlay muted><source src='/videos/en.mp4' type='video/mp4'></source></video>"]
   },
   {
     "title": "HHMI",

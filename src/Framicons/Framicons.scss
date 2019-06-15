@@ -171,6 +171,7 @@ $color-gray: #f2f2f2;
 $breakpoint-sm-max: 768px;
 $breakpoint-md-max: 768px;
 $breakpoint-xs-max: 768px;
+$breakpoint-max: 1184px;
 
 .role {
   display: flex;
@@ -185,6 +186,10 @@ $breakpoint-xs-max: 768px;
   font-weight: bold;
   font-family: 'Aquatico';
   transition: transform 300ms ease;
+
+  @media (max-width: $breakpoint-max) {
+    color: $color-midnight;
+  }
   
   div {
     flex-grow: 1;
@@ -207,9 +212,7 @@ $breakpoint-xs-max: 768px;
   width: 100%;
   margin: -90px 0 30px;
   perspective: 1000px;
-  
-  @media (max-width: $breakpoint-sm-max) {
-  }
+
 
   // The three card links
   a {
@@ -228,8 +231,12 @@ $breakpoint-xs-max: 768px;
     // @media (max-width: $breakpoint-sm-max) {
     //   margin: 0 auto;
     // }
-
     @media screen and (min-width: 372px) {
+      margin: 10px 25px;
+
+    }
+
+    @media screen and (min-width: $breakpoint-max) {
       margin: 0 25px;
     }
 

@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import './About.scss';
 
 class About extends Component {
   render() {
     return (
-      <div className="About">
+      <main className="about">
         {/* Background Image like https://fabianirsara.com/about */}
-      </div>
+        <div className="about-header">
+          Hey 
+        </div>
+
+      </main>
     );
   }
 }

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './Blog.scss';
 
 class Blog extends Component {
   render() {
     return (
-      <div className="blog">
-        
-      </div>
+      <main className="blog">
+        Coming soon!
+      </main>
     );
   }
 }
