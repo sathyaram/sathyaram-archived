@@ -11,7 +11,12 @@ const Project = props => (
         <h4 className="subtitle" style={{ color: `${props.project.textcolor}` }}>{props.project.subtitle}</h4>
         <div className="links">
           <a className="link" target="_blank" rel="noopener noreferrer" href={props.project.link}><i style={{ color: `${props.project.color}` }} className="fas fa-globe-americas"></i>{props.project.link}</a>
-          {props.project.designs ? <a className="designs" target="_blank" rel="noopener noreferrer" href={props.project.designs}><i className="fab fa-dribbble" aria-hidden="true"></i>View Designs</a> : null}
+          {props.project.designs 
+            ? 
+            <a className="designs" target="_blank" rel="noopener noreferrer" href={props.project.designs}><i className="fab fa-dribbble" aria-hidden="true"></i>View Designs</a> 
+            :
+             null
+             }
         </div>
       </div>
       <div className="text" style={{ color: `${props.project.textcolor}` }}>

@@ -23,7 +23,7 @@ article {
     .text {
       max-height: 500px;
       opacity: 1;
-      transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
+        transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
     }
   }
 
@@ -68,15 +68,17 @@ article {
   .text {
     margin: 2rem 0;
     width: 100%;
-    align-items: center;
-    transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
-    opacity: 0;
-    max-height: 0px;
+    align-items: flex-start;
+    
     
 
     @media screen and (min-width: 768px) {
       display: grid;
-      grid-template-columns: 1fr 5fr;
+      grid-template-columns: auto 5fr;
+      opacity: 0;
+       max-height: 0px;
+      transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
+
     }
 
     .description {
@@ -108,12 +110,14 @@ article {
       li {
         padding: 5px;
         display:inline-block;
-        margin: 2px;
         border: 1px solid rgb(187, 187, 187);
+        margin: 2px;
 
         @media screen and (min-width: 768px) {
-          padding: 2px 0;
+          padding: 4px 0;
           border: none;
+          display: block;
+          margin: 0;
         }
       }
     }
@@ -156,7 +160,7 @@ article {
       padding: 10px 20px;
       color: black;
       border-radius: 1px;
-      background: linear-gradient(172deg, rgba(249, 249, 249, 0.2) 2%, rgba(249, 249, 249, 0.6));
+      background: linear-gradient(172deg, rgba(249, 249, 249, 0.25) 2%, rgba(249, 249, 249, 0.55));
       display: flex;
       align-items: center;
       // border-bottom: 1px solid black;
@@ -178,6 +182,7 @@ article {
       font-size: 14px;
       padding: 10px 0px;
       border-top: 2px solid #eee;
+      font-weight: bold;
     }
 
       &:before {
@@ -215,6 +220,8 @@ article {
 
   .track {
     display: flex;
+    margin: 0 auto;
+    max-width: 1080px;
 
     .grid {
       margin: 0rem;

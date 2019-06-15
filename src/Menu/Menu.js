@@ -15,6 +15,19 @@ class Menu extends Component {
     trigger.classList.toggle('open');
   }
 
+  
+  closeMenu = () => {
+    var trigger = document.querySelector('.main-menu');
+    document.addEventListener("click", function(e) {
+      if (e.target.closest(".main-menu")) return;
+        trigger.classList.remove("open");
+    });
+  }
+
+  componentDidMount() {
+    this.closeMenu();
+  }
+
   render() {
     return (
       <nav>
@@ -39,6 +52,7 @@ class Menu extends Component {
         <div className="main-menu">
           <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
             <div className="hamburger">
+              <div className="menu-title">Menu</div>
               <span></span>
               <span></span>
               <span></span>

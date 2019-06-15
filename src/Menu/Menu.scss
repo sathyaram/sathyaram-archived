@@ -23,6 +23,10 @@
     .hamburger {
       transform: translateY(-50%) rotate(-180deg);
 
+      .menu-title {
+        opacity: 1;
+
+      }
     }
   }
 
@@ -33,6 +37,9 @@
 
   ul {
     padding: 2.25rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     li {
       display: block;
@@ -123,10 +130,12 @@
     top: 50%;
     transform: translateY(-50%);
     left: -18px;
+    
 
     @media screen and (max-width: 450px) {
       left: -15px;
     }
+
     span {
       display: block;
       width: 36px;
@@ -139,6 +148,19 @@
         width: 30px;
         
       }
+    }
+
+    .menu-title {
+      position: absolute;
+      transform: rotate(180deg);
+      left: -55px;
+      bottom: 5px;
+      font-size: 13px;
+      color: #2b6496;
+      letter-spacing: 2px;
+      font-family: 'Aquatico';
+      opacity: 0;
+      transition: opacity 800ms ease;
     }
   }
 }
