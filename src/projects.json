@@ -40,8 +40,8 @@
     "half": true,
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
-    "images": ["coolsite.gif" ,"coolwebsite.png"],
-    "videos": ["/videos/coolwebsite.mp4"]
+    "images": ["coolwebsite.png"],
+    "videos": ["/videos/coolwebsite.mp4", "/videos/coolwebsite2.mp4"]
   },
   {
     "title": "FudTruk",
