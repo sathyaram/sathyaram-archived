@@ -2,46 +2,90 @@
   {
     "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
-    "description": "As a big car enthusiast, I made a central place on the internet to enjoy the loud hums and furious notes of naturally aspired vehicles.",
+    "description": "As a huge car enthusiast, I made a safe haven on the internet to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today!",
     "tags": ["React", "Express", "AWS Lightsail", "MongoDB", "SCSS"],
     "link": "https://exhaustnotes.co",
-    "designs": "https://dribbble.com",
     "github": "https://github.com/sathyaram/exhaustnotes",
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
-    "images": [
-      "en-mobile.jpg",
-      "en-button.gif",
-      "en-grid.png"
-      ],
-      "videos": [
-        "/videos/en2.mp4",
-        "/videos/en.mp4"]
-      
+    "images": ["en-mobile.jpg", "en-button.gif", "en-grid.png"],
+    "videos": ["/videos/en2.mp4", "/videos/en.mp4"]
   },
-  
+
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
-    "description": "As a Front-End Developer, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. An undertaking as the site has over 1mil yearly page views and it turned out incredibly.",
-    "tags": ["Drupal 8", "PatternLab", "Twig/YAML", "SCSS" ],
+    "description": "At ForumOne, I worked with a full team on HHMI's Biointeractive.org, a website/tool, with over half a million yearly page views, that brings together a variety of data-rich activities, case studies,high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8 with another Front-End Developer.",
+    "tags": ["Drupal 8", "PatternLab", "Twig/YAML", "SCSS"],
     "link": "https://biointeractive.org",
     "role": "ForumOne",
     "color": "#bcfdff",
     "half": true,
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
-    "images": [
-      "hhmi-mobile2.jpg",
-      "hhmi2.gif"
-      
-      ],
-      "videos": [
-        "/videos/hhmi.mp4"]
-    },
-
+    "images": ["hhmi-mobile2.jpg"],
+    "videos": ["/videos/hhmi.mp4", "/videos/hhmi2.mp4"]
+  },
+  {
+    "title": "That's A Cool Website",
+    "subtitle": "A Curated Collection of Cool Websites",
+    "description": "Another website for designspiration? Ah, well, this one is a website for websites, but specifically designer, developer, agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
+    "tags": ["React", "SCSS", "Netlify"],
+    "link": "https://thatsacoolwebsite.com",
+    "github": "https://github.com/sathyaram/thatsacoolwebsite",
+    "role": "Personal Project",
+    "color": "cyan",
+    "half": true,
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
+    "images": ["coolsite.gif" ,"coolwebsite.png"],
+    "videos": ["/videos/coolwebsite.mp4"]
+  },
+  {
+    "title": "FudTruk",
+    "subtitle": "Voted Lehigh Valley's Best Food Truck",
+    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I had the opportunity to completely brand them, from their logo, to their color scheme, to the vinyl wrap for the truck all of which I incorporated in their website. It was an amazing experience!",
+    "half": true,
+    "tags": [
+      "Drupal 7",
+      "jQuery",
+      "Web Design",
+      "Graphic Design",
+      "Photo/Video"
+    ],
+    "designs": "https://dribbble.com/sathyaram/projects/915857-Fudtruk",
+    "link": "https://fudtruk.lehigh.edu",
+    "role": "Freelance Project",
+    "color": "#ffda67",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(20deg, #f05a26, #FAAF40)",
+    "images": ["fudtruk-uc.jpg"],
+    "videos": ["/videos/fudtruk.mp4", "/videos/fudtruk2.mp4"]
+  },
+  {
+    "title": "Lehigh Portal Redesign & Development",
+    "subtitle": "Lehigh's Luminis 5 Campus Portal",
+    "description": "At Lehigh, I was the Portal Administrator and had the opportunity to completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested and moderized coat of paint as well as add development improvements, like layout restructure for easily accessible information, browser compatability and continually updating content for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
+    "tags": [
+      "Luminis 5",
+      "Javascript",
+      "HTML/CSS",
+      "Web Design",
+      "Google Analytics",
+      "Tag Manager"
+    ],
+    "half": true,
+    "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
+    "link": "https://fudtruk.lehigh.edu",
+    "role": "Lehigh",
+    "color": "#d0a678",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(45deg, rgb(37, 21, 0) 0%, rgb(94, 36, 0) 100%)",
+    "images": ["portal-outside.jpg"],
+    "videos": ["/videos/connectlehigh.mp4", "/videos/portal-mobile.mp4"]
+  },
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
@@ -54,10 +98,7 @@
     "half": true,
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
-    "images": [
-      "oscarstrivia.gif",
-      "oscarsanimated.png"],
-      "videos": [
-        "/videos/oscarstrivia.mp4"]
+    "images": ["oscarstrivia.gif", "oscarsanimated.png"],
+    "videos": ["/videos/oscarstrivia.mp4"]
   }
 ]

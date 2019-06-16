@@ -26,7 +26,7 @@
 
   &.gone {
     transform: translateY(calc(-100% + 25px));
-    z-index:2;
+    z-index:6;
 
     .logo {
       top: 102%;
