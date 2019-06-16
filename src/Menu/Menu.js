@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss'
+import resume from './../SathyaRam_Resume2018.pdf';
 
 
 class Menu extends Component {
@@ -58,11 +59,17 @@ class Menu extends Component {
               <span></span>
             </div>
           </button>
-          <ul className="menu">
-            <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
-            <li><Link onClick={this.getOffOfMe} to="/blog">Blog</Link></li>
-            <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
-          </ul>
+          <div className="menus">
+            <ul className="menu">
+              <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
+              <li><Link onClick={this.getOffOfMe} to="/blog">Blog</Link></li>
+              <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
+            </ul>
+            <div className="mini-menu">
+              <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>/// 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>      
+          </div>
+          </div>
         </div>
       </nav>
     );

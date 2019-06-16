@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.scss';
-import me from './../me.jpg';
 
 class About extends Component {
   render() {
@@ -13,7 +12,6 @@ class About extends Component {
 
           I'm Sathya Ram,
           <br></br>
-          {/* <img src={me} alt="sathya ram" ></img> */}
           a dude who loves to make creative ...anything! Must be polished, though*
           <br></br>
           <br></br>

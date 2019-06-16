@@ -44,7 +44,7 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a Front-End Developer who specializes in building websites from scratch! I make websites in Drupal 8, Wordpress, Grav and React! I’ve developed responsive applications, websites and themes with HTML5, CSS3, SASS, Javascript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency. I aim for crisp code with a critical eye for detail.
+                            I’m a guy who loves theming, CSS and making websites from scratch! I build websites in Drupal 7/8, Wordpress, Grav and React! I’ve developed responsive applications, websites and themes with HTML5, SASS/CSS, Javascript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency focused on mission-driven non-profit/government clients.
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry.
+                            I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry. I aim for pixel perfection, with a critical eye for detail.  
                         </div>
                     </div>
                 </div>

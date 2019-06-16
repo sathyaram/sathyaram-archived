@@ -56,13 +56,28 @@
 
   }
 
-  ul {
-    padding: 2.25rem 1rem;
+  .menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mini-menu {
+    a {
+      padding: 1rem;
+    }
+  }
+
+  ul.menu {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
-    width: 100%;
+
 
     li {
       width: 80%;
