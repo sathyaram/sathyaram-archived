@@ -162,3 +162,5 @@ img {
   height: auto;
 }
 
+::-moz-selection { background-color:rgba(112, 213, 255, 0.25)}
+::selection { background-color: rgba(112, 213, 255, 0.25) }

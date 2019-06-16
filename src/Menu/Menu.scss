@@ -10,6 +10,22 @@
   transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translateX(calc(100% - 30px));
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+    height: 100%;
+    transform: translateX(0%);
+    background: rgba(0,0,0,0.5);
+    background: linear-gradient(135deg, rgba(112, 213, 255, 0.5), rgba(0, 89, 188, 0.8));
+    opacity: 0;
+    transition: transform 500ms ease, opacity 500ms ease;
+    pointer-events: none;
+}
+
   @media screen and (max-width: 500px) {
     width: 80%;
   }
@@ -32,20 +48,27 @@
 
   &.open {
     transform: translateX(10%);
-    // box-shadow: 0 0 15px 0 rgba(#cecece,0.8);
+
+    &:after {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+
   }
 
   ul {
-    padding: 2.25rem 0;
+    padding: 2.25rem 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #fff;
+    width: 100%;
 
     li {
-      display: block;
+      width: 80%;
 
       a {
-        display: block;
+        display: inline-block;
         font-size: 2rem;
         padding: 1rem;
         background: linear-gradient(90deg, #70d5ff, #0059bc);

@@ -5,7 +5,7 @@ class Blog extends Component {
   render() {
     return (
       <main className="blog">
-        Coming soon!
+        <div>Coming soon!</div>
       </main>
     );
   }

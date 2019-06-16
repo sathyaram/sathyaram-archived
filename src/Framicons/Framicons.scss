@@ -215,7 +215,7 @@ $breakpoint-max: 1184px;
 
 
   // The three card links
-  a {
+  .web, .graphic, .photography {
     display: inline-block;
     margin: 0;
     text-align: center;
@@ -242,12 +242,12 @@ $breakpoint-max: 1184px;
 
     &:hover {
 
-      .role {
+      .skills {
         transform: translateY(-30px);
         text-shadow: 0 0 20px white;
       }
       .card-wrapper {
-        cursor: pointer;
+        cursor: url('./../ram-logo-white.png'), auto;
         transform: translateY(-30px) rotateY(180deg) translateZ(1px);
         // box-shadow: 0px 0px 50px 10px #ececec;
 

@@ -21,6 +21,10 @@ h1 {
   text-transform: uppercase;
   padding: 0 3rem;
 
+  &:hover {
+    cursor: url('./../ram-logo-white.png'), auto;
+  }
+
   @media screen and (max-width: 400px) {
     font-size: 3rem;
   }

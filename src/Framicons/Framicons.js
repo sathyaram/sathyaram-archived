@@ -6,7 +6,7 @@ class Framicons extends Component {
     render() {
         return (
             <div className="framicons">
-                <Link to="/web" className="web">
+                <div className="web">
                 <div className="skills">
               <span>Front-End</span> 
               Developer 
@@ -48,8 +48,8 @@ class Framicons extends Component {
                             I’m a Front-End Developer who specializes in building websites from scratch! I make websites in Drupal 8, Wordpress, Grav and React! I’ve developed responsive applications, websites and themes with HTML5, CSS3, SASS, Javascript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency. I aim for crisp code with a critical eye for detail.
                         </div>
                     </div>
-                </Link>
-                <Link to="/graphic" className="graphic">
+                </div>
+                <div className="graphic">
                 <div className="skills">
               <span>Graphic &amp; Web</span>
               Designer 
@@ -78,8 +78,8 @@ class Framicons extends Component {
                             I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry.
                         </div>
                     </div>
-                </Link>
-                <Link to="/photography" className="photography">
+                </div>
+                <div className="photography">
                 <div className="skills">
               <span>Everything</span>
               Photographer
@@ -102,7 +102,7 @@ class Framicons extends Component {
                             I’m an everything photographer, so I literally shoot anything and everything. My portfolio ranges from portraits to nature to landscapes to space. My photos can be found on a variety of publications such as PBS NewsHour, Acuman and InStyle magazine and Lehigh websites/magazines. Having  professional photography skills has taken my websites, designs and my eye for quality to a new level.
                         </div>
                     </div>
-                </Link>
+                </div>
             </div>
         );
     }

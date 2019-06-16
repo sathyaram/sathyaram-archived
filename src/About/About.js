@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <main className="about">
         <div className="about-header">
-          Hey you, it's me!
+          Hey hey,
           <br></br>
           <br></br>
 
@@ -18,7 +18,7 @@ class About extends Component {
           as a Front-End Developer for a wholesome agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>. 
           <br></br>
           <br></br>
-          In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, write some sloppy stories,
+          In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, dream up short film ideas,
           think about going to the gym, waste my life on reddit, and watch a metric fudgeton of television and movies.
 
         </div>

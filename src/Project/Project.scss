@@ -207,18 +207,29 @@ a.website-link {
   a.designs {
     padding: 10px;
     display:inline-block;
+    transition: background 300ms ease;
 
     i {
       margin-right: 5px;
     }
   }
 
-  a.github i {
-    color: #552775;
+  a.github  {
+    &:hover {
+      background: rgba(85, 39, 117,0.25);
+    }
+    i {
+      color: #552775;
+    }
   }
 
-  a.designs i {
-    color: #e83e80;
+  a.designs {
+    &:hover {
+      background: rgba(232, 62, 128, 0.25);
+    }
+    i {
+      color: #e83e80;
+    }
   }
 }
 
@@ -243,6 +254,7 @@ a.website-link {
   border-radius: 5px;
   box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.5);
   border: 1px solid white;
+  font-weight: bold;
 
   &:before {
     width: 26px;

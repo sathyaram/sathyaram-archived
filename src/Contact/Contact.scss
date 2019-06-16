@@ -1,7 +1,49 @@
 .contact {
-  height: 100vh;
+  height: calc(100vh - 40px);
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   flex-direction: column;
+  background: radial-gradient(ellipse at bottom, #001f6d 0%, #000000 100%);
+  color: #60c0f0;
+  font-family: "Aquatico";
+  letter-spacing: 2px;
+  padding: 0 6rem;
+  word-break: break-word;
+
+  a {
+    margin-top: 1rem;
+    font-size: 3.75rem;
+    text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0,
+      0 0 30px #60c0f0;
+    color: white;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+
+  
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
