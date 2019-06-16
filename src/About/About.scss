@@ -2,19 +2,38 @@
   padding: 30% 10rem 10%;
   text-align: left;
   font-family: 'Aquatico';
-  background-image: url('/images/about.jpg');
+  background-image:  linear-gradient(
+    rgba(0, 0, 0, 0.60), 
+    rgba(0, 0, 0, 0.60)
+  ),url('/images/about.jpg');
   background-size: cover;
+  background-position: center 42%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  @media screen and (max-width: 800px) {
+    padding: 30% 2rem 10%;
+  }
 }
 
 .about-header {
   max-width: 80%;
   width: 100%;
   color: #fff;
-  font-size: 70px;
+  font-size: 66px;
+
+  @media screen and (max-width: 800px) {
+    max-width: 100%;
+    font-size: 42px;
+    padding: 30% 4rem 10%;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+
+  }
+  
   // text-shadow: 0 0 25px rgba(0, 0, 0, 0.5),
   // 0 5px 35px rgba(0, 0, 0, 0.5),
   // 0 10px 45px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 1px #ffffff;
 }
