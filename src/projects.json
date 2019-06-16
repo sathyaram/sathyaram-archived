@@ -98,7 +98,7 @@
     "half": true,
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
-    "images": ["oscarstrivia.gif", "oscarsanimated.png"],
-    "videos": ["/videos/oscarstrivia.mp4"]
+    "images":  ["oscarsanimated.png"],
+    "videos": ["/videos/oscarstrivia.mp4", "/videos/oscars.mp4"]
   }
 ]
