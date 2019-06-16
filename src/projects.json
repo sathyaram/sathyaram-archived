@@ -6,14 +6,15 @@
     "tags": ["React", "Express", "AWS Lightsail", "MongoDB", "SCSS"],
     "link": "https://exhaustnotes.co",
     "designs": "https://dribbble.com",
-    "logo": "path/to/file",
+    "github": "https://github.com/sathyaram/exhaustnotes",
+    "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "images": [
-      "/images/en-mobile.jpg",
-      "/images/en-button.gif",
-      "/images/en-grid.png"
+      "en-mobile.jpg",
+      "en-button.gif",
+      "en-grid.png"
       ],
       "videos": [
         "/videos/en2.mp4",
@@ -24,36 +25,38 @@
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
-    "description": "As a Front-End Developer for Forum One, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. An undertaking as the site has over 1mil yearly page views and it turned out incredibly.",
+    "description": "As a Front-End Developer, I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8. An undertaking as the site has over 1mil yearly page views and it turned out incredibly.",
     "tags": ["Drupal 8", "PatternLab", "Twig/YAML", "SCSS" ],
     "link": "https://biointeractive.org",
-    "logo": "path/to/file",
+    "role": "ForumOne",
     "color": "#bcfdff",
     "half": true,
-    "textcolor": "#000000",
+    "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
     "images": [
-      "/images/hhmi-mobile2.jpg",
-      "/images/hhmi2.gif"
+      "hhmi-mobile2.jpg",
+      "hhmi2.gif"
       
       ],
       "videos": [
         "/videos/hhmi.mp4"]
     },
-  
+
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
     "description": "This is a single player trivia game based on the 2018 Academy Awards (The Oscars). It tests your Oscars knowledge on two levels: a 10 question quiz that asks who won the Oscar for the most popular categories, or all the 24 Oscar categories, for the movie buffs.",
     "tags": ["Javascript", "HTML/CSS", "Web Design"],
     "link": "https://oscarstrivia.com",
-    "logo": "path/to/file",
+    "role": "Personal Project",
+    "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
     "half": true,
+    "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images": [
-      "/images/oscarstrivia.gif",
-      "/images/oscarsanimated.png"],
+      "oscarstrivia.gif",
+      "oscarsanimated.png"],
       "videos": [
         "/videos/oscarstrivia.mp4"]
   }

@@ -7,12 +7,10 @@ class Framicons extends Component {
         return (
             <div className="framicons">
                 <Link to="/web" className="web">
-                <div className="role">
+                <div className="skills">
               <span>Front-End</span> 
               Developer 
             </div>
-            
-            
                     <div className="card-wrapper">
                         <div className="front side">
                             <div className="vector">
@@ -47,12 +45,12 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a web developer who specializes in Drupal websites and have worked in Wordpress and Grav. I’ve developed responsive applications, websites and themes with HTML5, CSS3, SASS, Javascript, PHP, and Express. I’m currently in the intensive General Assembly coding bootcamp learning React.js, Python, Django and much more. I aim for crisp code with a critical eye for detail.
+                            I’m a Front-End Developer who specializes in building websites from scratch! I make websites in Drupal 8, Wordpress, Grav and React! I’ve developed responsive applications, websites and themes with HTML5, CSS3, SASS, Javascript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency. I aim for crisp code with a critical eye for detail.
                         </div>
                     </div>
                 </Link>
                 <Link to="/graphic" className="graphic">
-                <div className="role">
+                <div className="skills">
               <span>Graphic &amp; Web</span>
               Designer 
             </div>
@@ -77,12 +75,12 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a graphic design major who pushes the confines of creativity as I strive to use my design lens with everything I do. I care strongly about user experiences and make sure that and visual appeal are at the forefront of my mind every step of my design process. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry.
+                            I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry.
                         </div>
                     </div>
                 </Link>
                 <Link to="/photography" className="photography">
-                <div className="role">
+                <div className="skills">
               <span>Everything</span>
               Photographer
             </div>
@@ -101,7 +99,7 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m experienced in a wide range of photography. My portfolio ranges from portraits to nature to landscapes to space. My photos can be found on a variety of publications such as PBS NewsHour, Acuman and InStyle magazine and Lehigh websites/magazines. Having  professional photography skills has taken my website, graphic designs and my eye for quality to a new level.
+                            I’m an everything photographer, so I literally shoot anything and everything. My portfolio ranges from portraits to nature to landscapes to space. My photos can be found on a variety of publications such as PBS NewsHour, Acuman and InStyle magazine and Lehigh websites/magazines. Having  professional photography skills has taken my websites, designs and my eye for quality to a new level.
                         </div>
                     </div>
                 </Link>
