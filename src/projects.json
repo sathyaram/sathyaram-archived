@@ -2,7 +2,7 @@
   {
     "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
-    "description": "As a huge car enthusiast, I made a safe haven on the internet to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today!",
+    "description": "As a huge car enthusiast, I was surprised to find there wasn't a place on the internet to hear Exhaust Notes, or car engine rev sounds. So, I made a hotrod haven to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today.",
     "tags": ["React", "Express", "AWS Lightsail", "MongoDB", "SCSS"],
     "link": "https://exhaustnotes.co",
     "github": "https://github.com/sathyaram/exhaustnotes",
@@ -78,7 +78,7 @@
     ],
     "half": true,
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
-    "link": "https://fudtruk.lehigh.edu",
+    "link": "https://connect.lehigh.edu",
     "role": "Lehigh",
     "color": "#d0a678",
     "textcolor": "#ffffff",
