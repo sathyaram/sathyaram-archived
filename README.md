@@ -23,8 +23,9 @@ The React site for Sathya Ram.
 
  # To Do
  [X] Triangle Menus
- - Half Projects
+ [X] Half Projects
  - Create Form
- - Add Graphic/Photography Sections
+ [X] Add Graphic/Photography Links
  - Create Hero Scene
  - Add Music to Hero
+ - Create Photography Boquet

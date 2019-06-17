@@ -78,7 +78,7 @@
         &:nth-of-type(2) {
           opacity: 0;
         }
-        &:last-child {
+        &:nth-of-type(3) {
           margin-top: -5px;
           transform-origin: center center;
           transform: rotate(45deg);
@@ -96,10 +96,73 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
     padding: 17.5%;
     background-color: white;
+  }
+
+  .mcmenu {
+    a {
+      padding: 0 1rem 1.25rem;
+      color: black;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-size: 26px;
+      text-shadow: none;
+      position: relative;
+
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+
+        &:first-child {
+          color: tomato;
+        }
+
+        &:last-child {
+          color: #e83e80;
+        }
+      }
+
+      &::before {
+        content: '✧';
+        font-size: 14px;
+        position: absolute;
+        top: 7.5px;
+        left: -5px;
+      }
+
+      &::after {
+        font-size: 8px;
+        position: absolute;
+        letter-spacing: 1px;
+        left: 15px;
+        bottom: 2px;
+        opacity: 0;
+        transition: opacity 300ms ease;
+
+      }
+
+      &:first-child {
+       
+        &::after {
+        content:'This will take you to my Instagram where most of my work is.';
+          
+        }
+      }
+
+      &:last-child {
+        &::after {
+        content:'This will take you to my Dribbble where most of my work is.';
+
+        }
+      }
+    }
   }
 
   .mini-menu {

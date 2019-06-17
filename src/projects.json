@@ -30,21 +30,6 @@
     "videos": ["/videos/hhmi.mp4", "/videos/hhmi2.mp4"]
   },
   {
-    "title": "That's A Cool Website",
-    "subtitle": "A Curated Collection of Cool Websites",
-    "description": "Another website for designspiration? Ah, well, this one is a website for websites, but specifically designer, developer, agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
-    "tags": ["React", "SCSS", "Netlify"],
-    "link": "https://thatsacoolwebsite.com",
-    "github": "https://github.com/sathyaram/thatsacoolwebsite",
-    "role": "Personal Project",
-    "color": "cyan",
-    "half": "small",
-    "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
-    "images": ["coolwebsite.png"],
-    "videos": ["/videos/coolwebsite.mp4", "/videos/coolwebsite2.mp4"]
-  },
-  {
     "title": "FudTruk",
     "subtitle": "Voted Lehigh Valley's Best Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I had the opportunity to completely brand them, from their logo, to their color scheme, to the vinyl wrap for the truck all of which I incorporated in their website. It was an amazing experience!",
@@ -66,6 +51,7 @@
     "images": ["fudtruk-uc.jpg"],
     "videos": ["/videos/fudtruk.mp4", "/videos/fudtruk2.mp4"]
   },
+
   {
     "title": "Lehigh Portal Redesign & Development",
     "subtitle": "Lehigh's Luminis 5 Campus Portal",
@@ -88,6 +74,22 @@
     "images": ["portal-outside.jpg"],
     "videos": ["/videos/connectlehigh.mp4", "/videos/portal-mobile.mp4"]
   },
+  {
+    "title": "That's A Cool Website",
+    "subtitle": "A Curated Collection of Cool Websites",
+    "description": "Another website for designspiration? Ah, well, this one is a website for websites, but specifically designer, developer, agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
+    "tags": ["React", "SCSS", "Netlify"],
+    "link": "https://thatsacoolwebsite.com",
+    "github": "https://github.com/sathyaram/thatsacoolwebsite",
+    "role": "Personal Project",
+    "color": "cyan",
+    "half": "small",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
+    "images": ["coolwebsite.png"],
+    "videos": ["/videos/coolwebsite.mp4", "/videos/coolwebsite2.mp4"]
+  },
+  
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",

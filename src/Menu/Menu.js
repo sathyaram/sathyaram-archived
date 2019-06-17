@@ -52,10 +52,10 @@ class Menu extends Component {
 
         <div className="main-menu">
           <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
+              <span></span>
+              <span></span>
+              <span></span>
               <div className="menu-title">Menu</div>
-              <span></span>
-              <span></span>
-              <span></span>
           </button>
           <div className="menus">
             <ul className="menu">
@@ -63,8 +63,13 @@ class Menu extends Component {
               <li><Link onClick={this.getOffOfMe} to="/blog">Blog</Link></li>
               <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
             </ul>
+            <div className="mcmenu">
+              <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Photography</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">Graphic Design</a>
+            </div>
             <div className="mini-menu">
-              <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>✧ 
+              <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a> 
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
             </div>
           </div>
