@@ -311,10 +311,6 @@ $breakpoint-max: 1184px;
     @media (max-width: $breakpoint-md-max) {
       font-size: 16px;
     }
-    @media (max-width: $breakpoint-sm-max) {
-      padding: 10px;
-      font-size: 14px;
-    }
   }
 
   // The vector image for each link

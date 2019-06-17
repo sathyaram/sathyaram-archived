@@ -6,7 +6,7 @@ import projects from './../projects.json'
 class Main extends Component {
   render() {
     return (
-      <main>
+      <main id="home" role="main" className="home">
         <Header />
         <section>
           {projects.map(function (project, i) {
