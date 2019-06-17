@@ -5,8 +5,11 @@ class Contact extends Component {
   render() {
     return (
       <main className="contact">
-        Let's talk about the realness.
+         <header role="banner">
+         Let's talk about the realness.
         <a href="mailto:sathyatheram@gmail.com">sathyatheram@gmail.com</a>
+         </header>
+        
       </main>
     );
   }

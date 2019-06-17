@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Project from '../Project/Project'
 import Header from '../Header/Header';
-import Framicons from '../Framicons/Framicons'
 import projects from './../projects.json'
 
 class Main extends Component {
@@ -9,7 +8,6 @@ class Main extends Component {
     return (
       <main>
         <Header />
-        <Framicons />
         <section>
           {projects.map(function (project, i) {
             return (

@@ -187,9 +187,6 @@ $breakpoint-max: 1184px;
   font-family: 'Aquatico';
   transition: transform 300ms ease;
 
-  @media (max-width: $breakpoint-max) {
-    color: $color-midnight;
-  }
   
   div {
     flex-grow: 1;
@@ -210,7 +207,7 @@ $breakpoint-max: 1184px;
 .framicons {
   display: block;
   width: 100%;
-  margin: -90px 0 30px;
+  margin: -100px 0 30px;
   perspective: 1000px;
 
 
@@ -221,15 +218,8 @@ $breakpoint-max: 1184px;
     text-align: center;
     text-decoration: none;
     z-index: 1;
-    
-    @media screen and (min-width: 372px) {
-      margin: 10px 25px;
-
-    }
-
-    @media screen and (min-width: $breakpoint-max) {
-      margin: 0 25px;
-    }
+    margin: 25px 25px 10px;
+   
 
     &:hover {
 
@@ -269,14 +259,10 @@ $breakpoint-max: 1184px;
     @media (max-width: $breakpoint-md-max) {
       width: 300px;
       height: 350px;
-    }
-    @media (max-width: $breakpoint-sm-max) {
-      width: 250px;
-      height: 300px;
-    }
-    @media (max-width: $breakpoint-xs-max) {
       margin: 0 auto;
+
     }
+
   }
 
   // Each side of the link (which flips)

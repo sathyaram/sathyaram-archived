@@ -4,9 +4,14 @@ import './Blog.scss';
 class Blog extends Component {
   render() {
     return (
-      <main className="blog">
-        <div>Coming soon!</div>
-      </main>
+      <>
+        <main className="blog">
+          <header role="banner">
+            <h1>Coming Soon!</h1>
+          </header>
+        </main>
+      </>
+    
     );
   }
 }

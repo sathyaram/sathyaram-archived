@@ -4,12 +4,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: radial-gradient(ellipse at bottom, #001f6d 0%, #000000 100%);
-  color: #60c0f0;
   font-family: "Aquatico";
   letter-spacing: 2px;
-  padding: 0 6rem;
   word-break: break-word;
+
+  header {
+    color: #60c0f0;
+    background: radial-gradient(ellipse at bottom, #001f6d 0%, #000000 100%);
+  }
 
   a {
     margin-top: 1rem;
@@ -24,24 +26,4 @@
   }
 }
 
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
+

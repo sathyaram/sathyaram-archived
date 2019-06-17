@@ -5,11 +5,14 @@ class About extends Component {
   render() {
     return (
       <main className="about">
+         <header role="banner">
+          So <h1>About</h1> Me
+         </header>
         <div className="about-header">
-          Hey hey,
+          
           <br></br>
           <br></br>
-
+      
           I'm Sathya Ram,
           <br></br>
           a dude who loves to make creative ...anything! Must be polished, though*

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Framicons from '../Framicons/Framicons'
 import './Header.scss'
 
 class Header extends Component {
@@ -6,6 +7,7 @@ class Header extends Component {
     return (
       <header role="banner">
         <h1>Sathya Ram</h1>
+        <Framicons />
       </header>
     );
   }
