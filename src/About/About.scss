@@ -1,11 +1,9 @@
 .about {
   padding: 30% 10rem 10%;
   text-align: left;
-  font-family: 'Aquatico';
-  background-image:  linear-gradient(
-    rgba(0, 0, 0, 0.60), 
-    rgba(0, 0, 0, 0.60)
-  ),url('/images/about.jpg');
+  font-family: "Aquatico";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/about.jpg");
   background-size: cover;
   background-position: center 42%;
   background-repeat: no-repeat;
@@ -30,10 +28,5 @@
 
   @media screen and (max-width: 600px) {
     font-size: 32px;
-
   }
-  
-  // text-shadow: 0 0 25px rgba(0, 0, 0, 0.5),
-  // 0 5px 35px rgba(0, 0, 0, 0.5),
-  // 0 10px 45px rgba(0, 0, 0, 0.5);
 }

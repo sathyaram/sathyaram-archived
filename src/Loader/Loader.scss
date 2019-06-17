@@ -26,7 +26,7 @@
 
   &.gone {
     transform: translateY(calc(-100% + 25px));
-    z-index:6;
+    z-index: 6;
 
     .logo {
       top: 102%;
@@ -52,11 +52,11 @@
   top: 50%;
   left: 50%;
   z-index: 9;
-  transform:translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   animation: loading 1s ease;
 
   &:hover {
-    filter: drop-shadow(0 -5px 10px rgba(74, 74, 74,0.2));    
+    filter: drop-shadow(0 -5px 10px rgba(74, 74, 74, 0.2));
 
     &::before {
       -webkit-animation: pulse 2s 0.25s infinite;
@@ -68,9 +68,9 @@
       animation: pulse 2s infinite;
     }
   }
-    img {
-      width: 100px;
-      height: auto;
+  img {
+    width: 100px;
+    height: auto;
   }
 
   &::before {
@@ -87,7 +87,7 @@
     z-index: -1;
     transform: translateZ(-1px);
     transform-style: preserve-3d;
-}
+  }
 
   &::after {
     width: 0;

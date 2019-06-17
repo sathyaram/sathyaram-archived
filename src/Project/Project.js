@@ -2,7 +2,7 @@ import React from "react";
 import './Project.scss'
 
 const Project = props => (
-  <article id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }}>
+  <article id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }} className={props.project.half === 'split' ? 'split' : 'full'}>
     <div className="information">
       <div className="eyebrow">
         <div className={`role ${props.project.role}`} style={{ color: `${props.project.textcolor}` }}>
@@ -49,7 +49,40 @@ const Project = props => (
     </div>
     <div className="track">
 
-      {props.project.half ?
+      {props.project.half === 'split'
+        ?
+        <>
+          <div className="half-row">
+            {props.project.videos[1]
+              ?
+              <>
+                <video loop autoPlay muted>
+                  <source src={props.project.videos[0]} type="video/mp4"></source>
+                </video>
+                <video loop autoPlay muted>
+                  <source src={props.project.videos[1]} type="video/mp4"></source>
+                </video>
+              </>
+              :
+              <>
+
+                <video loop autoPlay muted>
+                  <source src={props.project.videos[0]} type="video/mp4"></source>
+                </video>
+                <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
+
+              </>}
+          </div>
+
+        </>
+
+        :
+        <>
+
+        </>
+      }
+
+      {props.project.half === "small" ?
 
         <>
           <div className="row">
@@ -78,33 +111,43 @@ const Project = props => (
           </div>
         </>
         :
-
-        <div className="grid">
-          <video loop autoPlay muted>
-            <source src={props.project.videos[0]} type="video/mp4"></source>
-          </video>
-
-          <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
-
-          {props.project.videos[1] ?
-            <>
-              <video loop autoPlay muted>
-                <source src={props.project.videos[1]} type="video/mp4"></source>
-              </video>
-              <img src={`/images/${props.project.images[1]}`} alt={props.project.images[1]} />
-              <img src={`/images/${props.project.images[2]}`} alt={props.project.images[2]} />
-            </>
-            :
-            <>
-              <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
-              <img src={`/images/${props.project.images[1]}`} alt={props.project.images[1]} />
-              <img src={`/images/${props.project.images[2]}`} alt={props.project.images[2]} />
-              <img src={`/images/${props.project.images[3]}`} alt={props.project.images[3]} />
-            </>
-          }
-        </div>
-
+        <>
+        </>
       }
+      {props.project.half === "grid"
+        ?
+        <>
+          <div className="grid">
+            <video loop autoPlay muted>
+              <source src={props.project.videos[0]} type="video/mp4"></source>
+            </video>
+
+            <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
+
+            {props.project.videos[1] ?
+              <>
+                <video loop autoPlay muted>
+                  <source src={props.project.videos[1]} type="video/mp4"></source>
+                </video>
+                <img src={`/images/${props.project.images[1]}`} alt={props.project.images[1]} />
+                <img src={`/images/${props.project.images[2]}`} alt={props.project.images[2]} />
+              </>
+              :
+              <>
+                <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
+                <img src={`/images/${props.project.images[1]}`} alt={props.project.images[1]} />
+                <img src={`/images/${props.project.images[2]}`} alt={props.project.images[2]} />
+                <img src={`/images/${props.project.images[3]}`} alt={props.project.images[3]} />
+              </>
+            }
+          </div>
+        </>
+        :
+        <>
+        </>
+      }
+
+
 
     </div>
   </article>

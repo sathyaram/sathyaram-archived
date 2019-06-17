@@ -9,6 +9,7 @@
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
+    "half": "grid",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "images": ["en-mobile.jpg", "en-button.gif", "en-grid.png"],
     "videos": ["/videos/en2.mp4", "/videos/en.mp4"]
@@ -22,7 +23,7 @@
     "link": "https://biointeractive.org",
     "role": "ForumOne",
     "color": "#bcfdff",
-    "half": true,
+    "half": "small",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
     "images": ["hhmi-mobile2.jpg"],
@@ -37,7 +38,7 @@
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
     "color": "cyan",
-    "half": true,
+    "half": "small",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
     "images": ["coolwebsite.png"],
@@ -47,13 +48,14 @@
     "title": "FudTruk",
     "subtitle": "Voted Lehigh Valley's Best Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I had the opportunity to completely brand them, from their logo, to their color scheme, to the vinyl wrap for the truck all of which I incorporated in their website. It was an amazing experience!",
-    "half": true,
+    "half": "small",
     "tags": [
       "Drupal 7",
       "jQuery",
       "Web Design",
       "Graphic Design",
-      "Photo/Video"
+      "Photography",
+      "Videography"
     ],
     "designs": "https://dribbble.com/sathyaram/projects/915857-Fudtruk",
     "link": "https://fudtruk.lehigh.edu",
@@ -76,7 +78,7 @@
       "Google Analytics",
       "Tag Manager"
     ],
-    "half": true,
+    "half": "small",
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
     "link": "https://connect.lehigh.edu",
     "role": "Lehigh University",
@@ -95,10 +97,37 @@
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
-    "half": true,
+    "half": "small",
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images":  ["oscarsanimated.png"],
     "videos": ["/videos/oscarstrivia.mp4", "/videos/oscars.mp4"]
+  },
+  {
+    "title": "Gertrude Hawk Goodies",
+    "subtitle": "Rewards Microsite",
+    "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards microsite where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
+    "tags": ["Wordpress", "jQuery", "HTML/SCSS", "PHP"],
+    "link": "https://gertrudehawkgoodies.com",
+    "role": "Weidenhammer",
+    "color": "#e5d09a",
+    "half": "split",
+    "textcolor": "rgb(242, 233, 243)",
+    "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
+    "images":  ["gertrudehawk.png"],
+    "videos": ["/videos/hawkchocolate.mp4"]
+  },
+  {
+    "title": "Astral Air Parts",
+    "subtitle": "Aircraft Part Supplier",
+    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. I was given designs and tasked to bring this website to life exactly.",
+    "tags":["Wordpress", "jQuery", "HTML/SCSS", "PHP"],
+    "link": "http://astralairparts.com",
+    "role": "Weidenhammer",
+    "color": "#ee5c23",
+    "half": "split",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
+    "videos": ["/videos/astral.mp4", "/videos/astral2.mp4"]
   }
 ]

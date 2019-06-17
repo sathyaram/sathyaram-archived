@@ -22,10 +22,109 @@ article {
     padding: 4rem 2rem;
   }
 
-  .information {
-    max-width: 576px;
-    margin: 0 auto;
+  &.split {
+    width: 50%;
+    padding: 2rem 4rem;
+    display: inline-block;
+    vertical-align: top;
 
+    @media screen and (max-width: 865px) {
+      padding: 2rem;
+    }
+
+    .heading .title {
+      letter-spacing: 2px;
+
+      @media screen and (max-width: 865px) {
+      font-size: 1.5rem;
+      }
+    }
+
+    .description {
+      @media screen and (max-width: 865px) {
+        display: none;
+        }
+    }
+
+    a.website-link {
+      word-break: break-all;
+
+      @media screen and (max-width: 665px) {
+        font-size: 12px;
+        }
+    }
+
+    .text {
+      grid-template-columns: auto;
+
+      .tags {
+
+        li {
+          padding: 5px !important;
+          display: inline-block;
+          border: 1px solid #bbbbbb;
+          margin: 2px;
+        }
+        @media screen and (min-width: 768px) {
+          border: none;
+          border-bottom: 1px solid black;
+          text-align: left;
+          padding:0 0 1rem 0;
+          margin: 0 0 1.2rem 0;
+        }
+      }
+    }
+
+    .information {
+      display: inline-block;
+      width: 50%;
+      @media screen and (max-width: 1165px) {
+        display: block;
+        width: 100%;
+      }
+    }
+    
+
+    .track {
+      max-width: 350px;
+      display: inline-block;
+      width: 50%;
+      margin: 0;
+
+      @media screen and (max-width: 1165px) {
+        display: block;
+        width: 100%;
+      }
+
+      .half-row {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        margin-right: -4rem;
+        margin-left: 2rem;
+
+        @media screen and (max-width: 1165px) {
+         margin: 0;
+        }
+
+        > * {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+  &.full {
+    .text, 
+    .eyebrow {
+      @media screen and (min-width: 768px) {
+        opacity: 0;
+        max-height: 0px;
+        transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
+      }
+    }
     &:hover {
       .text,
       .eyebrow {
@@ -36,21 +135,31 @@ article {
     }
   }
 
+  .information {
+    max-width: 576px;
+    margin: 0 auto;
+
+    
+  }
+
   .heading {
-    // padding: 0 2rem;
 
     @media screen and (max-width: 500px) {
       text-align: center;
     }
+
     .title {
       font-size: 2rem;
-      letter-spacing: 5px;
       font-family: "Aquatico";
       line-height: 100%;
+      letter-spacing: 3px;
+
 
       @media screen and (min-width: 768px) {
         font-size: 3rem;
+        letter-spacing: 5px;
       }
+
     }
 
     .subtitle {
@@ -71,9 +180,6 @@ article {
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: auto 5fr;
-      opacity: 0;
-      max-height: 0px;
-      transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
     }
 
     .description {
@@ -152,10 +258,10 @@ article {
       padding: 10px 0px;
       border-top: 2px solid #eee;
       background: linear-gradient(
-      322deg,
-      rgba(249, 249, 249, 0.4) 4%,
-      rgba(249, 249, 249, 0.9)
-    );
+        322deg,
+        rgba(249, 249, 249, 0.4) 4%,
+        rgba(249, 249, 249, 0.9)
+      );
     }
 
     i {
@@ -249,11 +355,7 @@ article {
       justify-content: center;
     }
 
-    @media screen and (min-width: 768px) {
-      opacity: 0;
-      max-height: 0px;
-      transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
-    }
+   
   }
 
   .role {
@@ -277,7 +379,6 @@ article {
     }
 
     &.ForumOne {
-      // background: rgb(255, 138, 138);
       &::before {
         content: url("./../f1.svg");
       }
@@ -285,14 +386,19 @@ article {
 
     &.Lehigh {
       &::before {
-       content: url("./../lehigh.svg");
+        content: url("./../lehigh.svg");
       }
     }
 
     &.Project {
-      // background: linear-gradient(135deg, rgba(112, 213, 255, 0.5), rgba(0, 89, 188, 0.8));
       &::before {
         content: url("./../ram-logo-white.svg");
+      }
+    }
+
+    &.Weidenhammer {
+      &::before {
+        content: url("./../weidenhammer.svg");
       }
     }
   }
@@ -316,10 +422,8 @@ article {
       }
 
       > * {
-        // background: #ddd;
         height: auto;
         width: 100%;
-        // border: 1px solid #bbb;
 
         &:first-child {
           grid-row: 1 / 3;

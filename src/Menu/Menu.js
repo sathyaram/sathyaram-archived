@@ -16,12 +16,12 @@ class Menu extends Component {
     trigger.classList.toggle('open');
   }
 
-  
+
   closeMenu = () => {
     var trigger = document.querySelector('.main-menu');
-    document.addEventListener("click", function(e) {
+    document.addEventListener("click", function (e) {
       if (e.target.closest(".main-menu")) return;
-        trigger.classList.remove("open");
+      trigger.classList.remove("open");
     });
   }
 
@@ -52,12 +52,10 @@ class Menu extends Component {
 
         <div className="main-menu">
           <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
-            <div className="hamburger">
               <div className="menu-title">Menu</div>
               <span></span>
               <span></span>
               <span></span>
-            </div>
           </button>
           <div className="menus">
             <ul className="menu">
@@ -66,9 +64,9 @@ class Menu extends Component {
               <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
             </ul>
             <div className="mini-menu">
-              <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>/// 
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>      
-          </div>
+              <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>✧ 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
+            </div>
           </div>
         </div>
       </nav>

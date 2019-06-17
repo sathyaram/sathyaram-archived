@@ -6,9 +6,9 @@ class Framicons extends Component {
         return (
             <div className="framicons">
                 <div className="web">
-                <div className="skills">
-              <span>Front-End</span> 
-              Developer 
+                    <div className="skills">
+                        <span>Front-End</span>
+                        Developer
             </div>
                     <div className="card-wrapper">
                         <div className="front side">
@@ -49,9 +49,9 @@ class Framicons extends Component {
                     </div>
                 </div>
                 <div className="graphic">
-                <div className="skills">
-              <span>Graphic &amp; Web</span>
-              Designer 
+                    <div className="skills">
+                        <span>Graphic &amp; Web</span>
+                        Designer
             </div>
                     <div className="card-wrapper">
                         <div className="front side">
@@ -74,14 +74,14 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry. I aim for pixel perfection, with a critical eye for detail.  
+                            I’m a Graphic Design major who pushes the confines of creativity. If you’re looking for a cookie-cutter designer - look elsewhere. I aim to make designs that are fresh and advance the industry. I aim for pixel perfection, with a critical eye for detail.
                         </div>
                     </div>
                 </div>
                 <div className="photography">
-                <div className="skills">
-              <span>Everything</span>
-              Photographer
+                    <div className="skills">
+                        <span>Everything</span>
+                        Photographer
             </div>
                     <div className="card-wrapper">
                         <div className="front side">

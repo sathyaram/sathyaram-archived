@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Project from '../Project/Project'
 import Header from '../Header/Header';
-
 import Framicons from '../Framicons/Framicons'
 import projects from './../projects.json'
 

@@ -221,16 +221,7 @@ $breakpoint-max: 1184px;
     text-align: center;
     text-decoration: none;
     z-index: 1;
-    // transform: scale(0.7);
-    // transform-origin: left;
-    // backface-visibility: hidden;
-
-    // @media (max-width: $breakpoint-md-max) {
-    //   margin: 0 10px;
-    // }
-    // @media (max-width: $breakpoint-sm-max) {
-    //   margin: 0 auto;
-    // }
+    
     @media screen and (min-width: 372px) {
       margin: 10px 25px;
 
@@ -249,7 +240,7 @@ $breakpoint-max: 1184px;
       .card-wrapper {
         cursor: url('./../ram-logo-white.png'), auto;
         transform: translateY(-30px) rotateY(180deg) translateZ(1px);
-        // box-shadow: 0px 0px 50px 10px #ececec;
+        box-shadow: 0px 30px 40px -10px #d4d4d4;
 
         .back {
           background: $color-white;

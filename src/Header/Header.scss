@@ -1,4 +1,5 @@
-header, main {
+header,
+main {
   text-align: center;
   padding: 0 30px;
 }
@@ -11,18 +12,31 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, #3178d5, #2983d9, #278edc, #2e99df, #3aa3e0, #4eabe1, #5fb2e1, #70bae2, #85c2e2, #99c9e3, #acd1e4, #bed8e5);
-
+  background-image: linear-gradient(
+    to bottom,
+    #3178d5,
+    #2983d9,
+    #278edc,
+    #2e99df,
+    #3aa3e0,
+    #4eabe1,
+    #5fb2e1,
+    #70bae2,
+    #85c2e2,
+    #99c9e3,
+    #acd1e4,
+    #bed8e5
+  );
 }
 
 h1 {
-  font-family: 'Aquatico';
+  font-family: "Aquatico";
   font-size: 4.75rem;
   text-transform: uppercase;
   padding: 0 3rem;
 
   &:hover {
-    cursor: url('./../ram-logo-white.png'), auto;
+    cursor: url("./../ram-logo-white.png"), auto;
   }
 
   @media screen and (max-width: 400px) {
@@ -30,20 +44,16 @@ h1 {
   }
 }
 
-
-
-
 @media screen and (min-width: 568px) {
   h1 {
     font-size: 7rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
     flex-direction: row;
 
     span {
-      // letter-spacing: 0.25rem;
       font-size: 0.75rem;
     }
   }
