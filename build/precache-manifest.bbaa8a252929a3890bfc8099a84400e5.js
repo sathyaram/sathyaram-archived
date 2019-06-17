@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4e990bfc5d94fe6959aa2a1a4c75959",
+    "revision": "694e2e9e6961e5c5d28214648cfa3cba",
     "url": "/index.html"
   },
   {
-    "revision": "2cc04d06eb22ef0b9e0c",
-    "url": "/static/css/main.144c3ac7.chunk.css"
+    "revision": "5ea2e00e22e9cb806618",
+    "url": "/static/css/main.8d349122.chunk.css"
   },
   {
     "revision": "5950e5f8bb4c5e50b3e1",
     "url": "/static/js/2.1b9ad1bf.chunk.js"
   },
   {
-    "revision": "2cc04d06eb22ef0b9e0c",
-    "url": "/static/js/main.fc50505e.chunk.js"
+    "revision": "5ea2e00e22e9cb806618",
+    "url": "/static/js/main.8191846e.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "071e62f2f802ddac0ede2273ef0abe19",
     "url": "/static/media/ram-logo-white.071e62f2.svg"
+  },
+  {
+    "revision": "dd921c8c647910c0a2cf7930f4935803",
+    "url": "/static/media/weidenhammer.dd921c8c.svg"
   }
 ]);
