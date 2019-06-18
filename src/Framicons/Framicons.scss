@@ -16,19 +16,6 @@ $color-gray: #f2f2f2;
   }
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Header
-
-// Title hovering effect
-@keyframes title-hover {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-12px);
-  }
-}
-
 // The stars travelling from bottom to top
 //  Make them travel an extra 10px each side so they are out of view
 //  If stars are ever set to be bigger than 10px then we'll need to change this
