@@ -30,7 +30,7 @@ article {
     display: inline-block;
     vertical-align: top;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
       width: 100%;
     }
 
@@ -102,7 +102,6 @@ article {
       max-width: 350px;
       display: inline-block;
       width: 50%;
-      margin: 0;
 
       @media screen and (max-width: 1165px) {
         display: block;
