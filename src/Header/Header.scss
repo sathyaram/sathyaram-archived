@@ -29,9 +29,11 @@ main {
 #home {
   header {
     height: auto;
+    padding: 0;
   }
   h1 {
   height: 100vh;
+
     
   }
 }
@@ -86,9 +88,9 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  &:hover {
-    cursor: url("./../ram-logo-white.png"), auto;
-  }
+  // &:hover {
+  //   cursor: url("./../ram-logo-white.png"), auto;
+  // }
 
   @media screen and (max-width: 400px) {
     font-size: 3rem;

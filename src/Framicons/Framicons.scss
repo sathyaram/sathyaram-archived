@@ -207,7 +207,7 @@ $breakpoint-max: 1184px;
 .framicons {
   display: block;
   width: 100%;
-  margin: -100px 0 30px;
+  margin: -140px 0 30px;
   perspective: 1000px;
 
 
@@ -218,7 +218,11 @@ $breakpoint-max: 1184px;
     text-align: center;
     text-decoration: none;
     z-index: 1;
-    margin: 25px 25px 10px;
+    margin: 65px 25px 0px;
+
+    @media screen and (max-width: 400px) {
+     margin: 65px 0 0;
+    }
    
 
     &:hover {
@@ -230,7 +234,7 @@ $breakpoint-max: 1184px;
       .card-wrapper {
         cursor: url('./../ram-logo-white.png'), auto;
         transform: translateY(-30px) rotateY(180deg) translateZ(1px);
-        box-shadow: 0px 30px 40px -10px #d4d4d4;
+        box-shadow: 0px 40px 40px -10px rgba(0,0,0,0.15);
 
         .back {
           background: $color-white;

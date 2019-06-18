@@ -11,12 +11,14 @@ The React site for Sathya Ram.
 - Oscars Trivia
 
 ## Minor Projects
-- Gertrude Hawk Goodies
-- Astral Air Parts
-- Lehigh Engineering
-- Lehigh AAD
+[X] Gertrude Hawk Goodies
+[X] Astral Air Parts
 - Keystone Munitions
 - Paul Knakk
+
+- Lehigh Engineering
+- Lehigh AAD
+
 - Fusion
 - Powerhouse
 - Lehigh TE

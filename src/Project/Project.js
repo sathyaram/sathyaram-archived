@@ -78,7 +78,7 @@ const Project = props => (
 
         :
         <>
-
+      
         </>
       }
 
