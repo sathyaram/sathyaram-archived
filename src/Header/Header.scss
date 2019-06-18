@@ -139,6 +139,11 @@ figure {
   padding: 3rem;
   width:50%;
   height: 50%;
+  z-index: 7;
+
+  @media screen and (max-width: 700px) {
+    z-index: 1;
+  }
 }
 
 @keyframes animateclouds {
@@ -146,6 +151,25 @@ figure {
 	left: 101%;
 	}
 }
+
+// .bridge {
+//   border-top: 3px solid brown;
+//   background: brown;
+//   position: absolute;
+//   top: 20%;
+//   left: 35%;
+//   width: 200px;
+//   height: 50px;
+//   position: absolute;
+//   top: 0%;
+//   left: 23%;
+//   border-radius: 50%/100px 100px 0 0;
+//   z-index: 9;
+//   border: solid 3px #000;
+//   border-color: black transparent transparent transparent;
+//   border-radius: 50%/50% 50% 0 0;
+//   transform: rotate(202deg);
+// }
 
 .sun {
   width: 200px;
@@ -192,7 +216,7 @@ figure {
     height: 100px;
     top: -45px;
     left: 25px;
-    z-index: 2;
+    z-index: 7;
     background: #f0f8ff;
     border-radius: 50%;
     border-left: 3px solid #e8f0f7;
@@ -209,7 +233,7 @@ figure {
     border-radius: 50%;
     border-left: 3px solid #e8f0f7;
     width: 60px;
-    z-index: 3;
+    z-index: 7;
     height: 60px;
     top: -20px;
     left: 100px;
@@ -219,13 +243,14 @@ figure {
     top: 20%;
     animation: animateclouds 75s 3s infinite linear;
     transform: scale(0.7);
-    z-index: 4;
+    z-index: 8;
   }
 
   &.cloud2 {
     top: 40%;
     animation: animateclouds 50s 5s infinite linear;
     transform: scale(0.92);
+    z-index: 0;
   }
 }
 
@@ -235,6 +260,7 @@ figure {
   height: 16px;
   border-radius: 5px;
   background: linear-gradient(180deg,rgb(0, 252, 0), limegreen);
+  background: linear-gradient(0deg,#65b306, #acf036);
   position: absolute;
   opacity: 0.95;
   animation: title-hover 2s ease-in-out infinite alternate;
@@ -246,18 +272,22 @@ figure {
   .waterfall {
     width:15px;
     height: 200px;
-    background-image: linear-gradient(0deg, #73e1ff, #0da6ff);
+    background-image: linear-gradient(0deg,rgba(115, 225, 255, 0.0),  #73e1ff, #0da6ff);
     margin-left:25px;
     margin-top: 0px;
     border-top-left-radius: 4px;
 
     &.waterfall2 {
       width: 25px;
-      height: 600px;
-      background-image: linear-gradient(0deg, #73e1ff, #0da6ff);
+      height: 500px;
       margin-left: 80px;
       border-top-left-radius: 0;
       border-top-right-radius: 6px;
+      background-image: linear-gradient(0deg, rgba(115, 225, 255, 0), rgba(115, 225, 255, 0.7), #0da6ff)
+    }
+
+    &.waterfall3 {
+      width: 5px;
     }
   }
   
@@ -271,6 +301,8 @@ figure {
     border-bottom-right-radius: 50% 50%;
     height: 30px;
     background:  #bb8738;
+    background:  #dd9c42;
+    background:  #bd7c26;
     // border-bottom: 30px solid #ca923f;
     // border-left: 25px solid transparent;
     // border-right: 25px solid transparent;
@@ -286,6 +318,7 @@ figure {
   &.island1 {
     bottom: 0;
     right: 0;
+    z-index: 7;
   }
 
   &.island2 {
@@ -297,6 +330,12 @@ figure {
     &::after {
       height: 60px;
       width: 135px;
+      
     }
+  }
+
+  &.island3 {
+    top: 20%;
+    left: 38%;
   }
 }
