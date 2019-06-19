@@ -23,9 +23,9 @@ class About extends Component {
           <br></br>
           <br></br>
           
-          {/* As far as development, I'm really into animated interations, SVGs, Javascript Animation, Gatsby.js, and trying to make CSS art lately. 
+          As far as development, I've got a thing for animated interactions, SVGs, Analytics, Javascript Animation, and CSS Wizardy.
           <br></br>
-          <br></br> */}
+          <br></br>
           In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, dream up short film ideas,
           think about going to the gym, draw poorly, waste my life redditing, and watch a metric fudgeton of television and movies.
           <br></br>

@@ -140,11 +140,12 @@ figure {
   width: calc(100vw - 180px);
   height: calc(100vh - 120px);
   margin: 60px;
+  pointer-events: none;
 }
 
 @keyframes animateclouds {
 	100% {
-	  left: 105%;
+	  transform: translateX(110vw);
 	}
 }
 
@@ -201,7 +202,7 @@ figure {
   border-left: 3px solid #e8f0f7;
   // border-bottom: 3px solid #dde9f4;
   box-shadow: 0 0.5rem 1rem 0.5rem rgba(239, 239, 239, 0.1);
-  left: -20rem;
+  transform: translateX(-30vw);
   width: 12rem;
   height: 4rem;
   top: 70%;
@@ -237,15 +238,15 @@ figure {
 
   &.cloud1 {
     top: 20%;
-    animation: animateclouds 75s 3s infinite linear;
-    transform: scale(0.7);
+    animation: animateclouds 75s 4s infinite linear;
+    transform: scale(0.7) translateX(-30vw);
     z-index: 8;
   }
 
   &.cloud2 {
     top: 40%;
-    animation: animateclouds 50s 5s infinite linear;
-    transform: scale(0.92);
+    animation: animateclouds 50s 1s infinite linear;
+    transform: scale(0.92) translateX(-30vw);
     z-index: 0;
   }
 }

@@ -7,7 +7,8 @@ The React site for Sathya Ram.
 - HHMI
 - ThatsACoolWebsite
 - FudTruk
-- Lehigh Portal + Theme Redesign
+- Lehigh Portal
+- Theme Redesign
 - Oscars Trivia
 
 ## Minor Projects
