@@ -16,7 +16,6 @@ class Menu extends Component {
     trigger.classList.toggle('open');
   }
 
-
   closeMenu = () => {
     var trigger = document.querySelector('.main-menu');
     document.addEventListener("click", function (e) {

@@ -1,25 +1,27 @@
 .main-menu {
   width: 60%;
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   height: 100vh;
   z-index: 8;
   display: flex;
   background: #fff;
   transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: translateX(100%);
+  transform: translateX(-100%);
 
   &::before {
     content: "";
     position: absolute;
     height: 0;
     top: 0;
-    left: -29px;
+    right: -29px;
     z-index: 5;
     border-style: solid;
     border-width: 50vh 30px 50vh 0;
     border-color: transparent #fff transparent transparent;
+    border-width: 50vh 0 50vh 30px;
+    border-color: transparent transparent transparent #fff;
   }
 
   &::after {
@@ -48,7 +50,7 @@
 
 
   &:hover {
-    transform: translateX(calc(100% - 4rem));
+    transform: translateX(-95%);
 
     .menu-trigger {
       transform: translateY(-50%) rotate(-180deg);
@@ -60,7 +62,7 @@
   }
 
   &.open {
-    transform: translateX(10%);
+    transform: translateX(-10%);
 
     &:after {
       opacity: 1;
@@ -264,7 +266,7 @@
   top: 50%;
   padding: 22px 12px;
   transform: translateY(-50%);
-  left: -60px;
+  right: -60px;
   transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:hover {
@@ -274,8 +276,7 @@
     .menu-title {
       text-shadow: 1px 3px 13px rgba(30, 149, 247, 0.7);
     }
-}
- 
+  }
 
   * {
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -313,7 +314,7 @@
   width: 30px;
   position: fixed;
   top: 0px;
-  left: 0px;
+  right: 0px;
   background: #fff;
   height: 100vh;
   display: flex;
@@ -321,7 +322,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transition: width 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:hover {
     width: 90px;
@@ -333,13 +334,13 @@
   }
 
   a {
-    margin-left: 12px;
+    margin-left: -18px;
     background: linear-gradient(135deg, #70d5ff, #0059bc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #52a2e4;
-    padding: 5px 0;
+    padding: 8px 0;
     font-size: 26px;
     display: inline-block;
     border-radius: 50%;

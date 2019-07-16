@@ -8,27 +8,25 @@ The React site for Sathya Ram.
 - ThatsACoolWebsite
 - FudTruk
 - Lehigh Portal
-- Theme Redesign
+- Lehigh2018 Theme
 - Oscars Trivia
 
 ## Minor Projects
-[X] Gertrude Hawk Goodies
-[X] Astral Air Parts
+- [X] Gertrude Hawk Goodies
+- [X] Astral Air Parts
 - Keystone Munitions
 - Paul Knakk
-
 - Lehigh Engineering
 - Lehigh AAD
-
 - Fusion
 - Powerhouse
 - Lehigh TE
 
  # To Do
- [X] Triangle Menus
- [X] Half Projects
+ - [X] Triangle Menus
+ - [X] Half Projects
  - Create Form
- [X] Add Graphic/Photography Links
+ - [X] Add Graphic/Photography Links
  - Create Hero Scene
  - Add Music to Hero
  - Create Photography Boquet

@@ -51,7 +51,6 @@
     "images": ["fudtruk-uc.jpg"],
     "videos": ["/videos/fudtruk.mp4", "/videos/fudtruk2.mp4"]
   },
-
   {
     "title": "Lehigh Portal Redesign & Development",
     "subtitle": "Lehigh's Luminis 5 Campus Portal",
@@ -89,7 +88,6 @@
     "images": ["coolwebsite.png"],
     "videos": ["/videos/coolwebsite.mp4", "/videos/coolwebsite2.mp4"]
   },
-
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
@@ -104,60 +102,5 @@
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images": ["oscarsanimated.png"],
     "videos": ["/videos/oscarstrivia.mp4", "/videos/oscars.mp4"]
-  },
-  {
-    "title": "Gertrude Hawk Goodies",
-    "subtitle": "Rewards Microsite",
-    "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards microsite where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
-    "tags": ["Wordpress", "jQuery", "HTML/SCSS", "PHP"],
-    "link": "https://gertrudehawkgoodies.com",
-    "role": "Weidenhammer",
-    "color": "#e5d09a",
-    "half": "split",
-    "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
-    "images": ["gertrudehawk.png"],
-    "videos": ["/videos/hawkchocolate.mp4"]
-  },
-  {
-    "title": "Astral Air Parts",
-    "subtitle": "Aircraft Part Supplier",
-    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A small but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
-    "tags": ["Wordpress", "jQuery", "HTML/SCSS", "PHP"],
-    "link": "http://astralairparts.com",
-    "role": "Weidenhammer",
-    "color": "#ee5c23",
-    "half": "split",
-    "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
-    "videos": ["/videos/astral.mp4", "/videos/astral2.mp4"]
-  },
-  {
-    "title": "Keystone Munitions",
-    "subtitle": "Premium Ammunition",
-    "description": "You need solid, accurate, reliable ammunition, Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before.",
-    "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
-    "link": "http://keystonemunitions.com",
-    "role": "Freelance Project",
-    "color": "#f8b700",
-    "half": "split",
-    "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "linear-gradient(to left top, rgb(251, 199, 82), rgb(49, 48, 35), rgb(0, 0, 0))",
-    "images": ["keystoneammunition.png"],
-    "videos": ["/videos/keystone.mp4"]
-  },
-  {
-    "title": "Paul Knakk",
-    "subtitle": "Country Musician",
-    "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is currently in hiatus." ,
-    "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
-    "link": "http://paulknakk.com",
-    "role": "Freelance Project",
-    "color": "#ffebac",
-    "half": "split",
-    "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(to right top, #973141, #862937, #75222e, #641a25, #54131d)",
-    "images": ["paulknakk3.png"],
-    "videos": ["/videos/paulknakk.mp4"]
   }
 ]
