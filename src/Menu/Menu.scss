@@ -15,7 +15,7 @@
     position: absolute;
     height: 0;
     top: 0;
-    right: -30px;
+    right: -29px;
     z-index: 5;
     border-style: solid;
     border-width: 50vh 30px 50vh 0;
@@ -49,7 +49,9 @@
   }
 
   &:hover {
-    transform: translateX(-95%);
+    @media screen and (min-width: 500px) {
+      transform: translateX(-95%);
+    }
 
     .menu-trigger {
       transform: translateY(-50%) rotate(-180deg);
@@ -317,7 +319,7 @@
     position: absolute;
     height: 0;
     top: 0;
-    left: -30px;
+    left: -29px;
     z-index: 0;
     border-style: solid;
     border-width: 50vh 30px 50vh 0;
@@ -338,13 +340,10 @@
   }
 
   &:hover {
-    // transform: translateX(-30px);
-    &::before {
-      transform: translateX(-45px);
-    }
-
-    &::after {
-      transform: translateX(-45px);
+    &::before, &::after {
+      @media screen and (min-width: 500px) {
+        transform: translateX(-45px);
+      }
     }
   }
 
