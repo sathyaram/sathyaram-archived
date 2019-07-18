@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <header role="banner">
-        {/* <figure>
+        <figure>
           <div className="sun"></div>
           <div className="cloud cloud1"></div>
           <div className="cloud cloud2"></div>
@@ -21,10 +21,7 @@ class Header extends Component {
               <div className="waterfall waterfall2"></div>
             </div>
           </div>
-          <div className="island island3">
-            <div className="waterfall waterfall3"></div>
-          </div>
-        </figure> */}
+        </figure>
         <h1><span>Sathya Ram</span></h1>
         <Framicons />
       </header>
