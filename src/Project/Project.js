@@ -78,7 +78,7 @@ const Project = props => (
 
         :
         <>
-      
+
         </>
       }
 
@@ -108,6 +108,20 @@ const Project = props => (
                 <img src={`/images/${props.project.images[1]}`} alt={props.project.images[1]} />
               </>
             }
+          </div>
+        </>
+        :
+        <>
+        </>
+      }
+
+      {props.project.half === "two" ?
+        <>
+          <div className="two">
+            <video loop autoPlay muted>
+              <source src={props.project.videos[0]} type="video/mp4"></source>
+            </video>
+            <img src={`/images/${props.project.images[0]}`} alt={props.project.images[0]} />
           </div>
         </>
         :

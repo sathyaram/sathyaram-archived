@@ -7,9 +7,9 @@ class Framicons extends Component {
             <div className="framicons">
                 <div className="web">
                     <div className="skills">
-                        <span>Front-End</span>
+                        <span>Front-End </span>
                         Developer
-            </div>
+                    </div>
                     <div className="card-wrapper">
                         <div className="front side">
                             <div className="vector">
@@ -50,7 +50,7 @@ class Framicons extends Component {
                 </div>
                 <div className="graphic">
                     <div className="skills">
-                        <span>Graphic &amp; Web</span>
+                        <span>Graphic &amp; Web </span>
                         Designer
             </div>
                     <div className="card-wrapper">
@@ -80,7 +80,7 @@ class Framicons extends Component {
                 </div>
                 <div className="photography">
                     <div className="skills">
-                        <span>Everything</span>
+                        <span>Everything </span>
                         Photographer
             </div>
                     <div className="card-wrapper">

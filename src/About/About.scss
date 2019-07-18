@@ -23,14 +23,12 @@
 
 
 .about-header {
-  max-width: 80%;
   padding: 0 10rem 10%;
   width: 100%;
   color: #fff;
   font-size: 66px;
 
   @media screen and (max-width: 800px) {
-    max-width: 100%;
     font-size: 42px;
     padding: 30% 4rem 10%;
   }

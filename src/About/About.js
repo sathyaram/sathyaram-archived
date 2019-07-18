@@ -15,7 +15,7 @@ class About extends Component {
       
           I'm Sathya Ram,
           <br></br>
-          a dude who loves to make creative ...anything! Must be polished, though*
+          a dude who loves to make creative ...anything! Polish is a must**
           <br></br>
           <br></br>
           I live in Alexandria, Virginia and work full time
@@ -23,7 +23,7 @@ class About extends Component {
           <br></br>
           <br></br>
           
-          As far as development, I've got a thing for animated interactions, SVGs, Analytics, Javascript Animation, and CSS Wizardy.
+          As far as development, I've got a thing for animated interactions, SVGs, Web Analytics, and CSS Wizardy. I'm trying to get better at Javascript Animation, Gatsby.js, and TweenMax.
           <br></br>
           <br></br>
           In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, dream up short film ideas,
