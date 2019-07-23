@@ -195,8 +195,6 @@ $breakpoint-max: 1184px;
   display: block;
   width: 100%;
   margin: -140px 0 30px;
-  perspective: 1000px;
-
 
   // The three card links
   .web, .graphic, .photography {
@@ -206,6 +204,7 @@ $breakpoint-max: 1184px;
     text-decoration: none;
     z-index: 1;
     margin: 65px 25px 0px;
+    perspective: 1000px;
 
     @media screen and (max-width: 400px) {
      margin: 65px 0 0;
@@ -290,14 +289,13 @@ $breakpoint-max: 1184px;
     padding: 30px;
     top: 0;
     left: 0;
-    background: $color-midnight;
+    background: $color-white;
     color: $color-white;
     font-size: 18px;
     line-height: 120%;
     z-index: 9;
     transition: background 600ms ease;
-    -webkit-transform: rotateY(-180deg) translateZ(1px);
-    transform: rotateY(-180deg) translateZ(1px);
+    transform: rotateY(-180deg) translateZ(60px);
 
     @media (max-width: $breakpoint-md-max) {
       font-size: 16px;
@@ -308,7 +306,8 @@ $breakpoint-max: 1184px;
   .vector {
     position: relative;
     margin-top: 40px;
-
+    transform: translateZ(60px);
+    
     > div {
       color: white;
       font-size: 56px;

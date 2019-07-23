@@ -53,7 +53,7 @@
   left: 50%;
   z-index: 9;
   transform: translateX(-50%) translateY(-50%);
-  animation: loading 1s ease;
+  animation: loading 1.5s ease;
 
   &:hover {
     filter: drop-shadow(0 -5px 10px rgba(74, 74, 74, 0.2));

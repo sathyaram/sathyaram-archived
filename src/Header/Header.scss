@@ -58,22 +58,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(
-    to bottom,
-    #3178d5,
-    #2983d9,
-    #278edc,
-    #2e99df,
-    #3aa3e0,
-    #4eabe1,
-    #5fb2e1,
-    #70bae2,
-    #85c2e2,
-    #99c9e3,
-    #acd1e4,
-    #bed8e5
-  );
-  background-image: linear-gradient(to bottom, #4489e4, #4598e6, #429ee4, #46a9ea, #54b6ef, #60b6e8, #85c7ec, #97cdea, #aed6ea, #ddedf6, #ffffff, #ffffff);
+  background-color: #3178d5;
   background-image: linear-gradient(
     to bottom,
     #3178d5,
@@ -103,14 +88,11 @@ h1 {
   background-color: transparent;
 
   span {
-    background: linear-gradient(0deg, white 40%, #93d8fb 100%); 
+    background-color: white;
+    background-image: linear-gradient(0deg, white 40%, #93d8fb 100%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  // &:hover {
-  //   cursor: url("./../ram-logo-white.png"), auto;
-  // }
 
   @media screen and (max-width: 400px) {
     font-size: 3rem;
