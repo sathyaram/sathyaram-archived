@@ -249,12 +249,12 @@ article {
     font-size: 18px;
     display: block;
     padding: 8px 20px;
-    color: black;
+    color: #1a1a1a;
     border-radius: 5px;
     background: linear-gradient(
       322deg,
-      rgba(249, 249, 249, 0.3) 4%,
-      rgba(249, 249, 249, 0.85)
+      rgba(249, 249, 249, 0.8) 4%,
+      rgba(249, 249, 249, 0.9)
     );
     display: flex;
     align-items: center;
@@ -317,7 +317,7 @@ article {
     &:hover,
     &:focus,
     &:active {
-      color: black;
+      color:#24afda;
     }
     &:hover:before,
     &:focus:before,
