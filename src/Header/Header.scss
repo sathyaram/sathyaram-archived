@@ -33,6 +33,10 @@ header,
 main {
   text-align: center;
   padding: 0 30px;
+
+  @media screen and (min-width: 800px) {
+    padding: 0 60px;
+  }
 }
 
 #home {
