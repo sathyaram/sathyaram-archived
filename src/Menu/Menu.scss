@@ -137,15 +137,28 @@
         }
       }
 
+      &:first-child {
+        &::before { 
+          content: "\f16d";
+        }
+      }
+
+      &:last-child {
+        &::before {
+          content: "\f17d";
+        }
+      }
+
       &::before {
         content: "✧";
         font-size: 14px;
         position: absolute;
-        top: 7.5px;
-        left: -5px;
+        top: 10.5px;
+        left: -10px;
+        font-family: "Font Awesome 5 Brands";
 
         @media screen and (max-width: 600px) {
-          top: 2.5px;
+          top: 7px;
         }
       }
 
@@ -190,7 +203,7 @@
 
       a {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 1rem;
         background: linear-gradient(90deg, #70d5ff, #0059bc);
         background-clip: text;
