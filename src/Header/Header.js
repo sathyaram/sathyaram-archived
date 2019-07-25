@@ -3,6 +3,21 @@ import Framicons from '../Framicons/Framicons'
 import './Header.scss'
 
 class Header extends Component {
+
+  mouseMe = () => {
+    let origin = document.querySelector("figure");
+
+    origin.addEventListener("mousemove", e => {
+      let { clientX: x, clientY: y } = e;
+      origin.style.perspectiveOrigin = `${x}px ${y}px`;
+    });
+    
+  }
+
+  componentDidMount() {
+    this.mouseMe();
+  }
+
   render() {
     return (
       <header role="banner">

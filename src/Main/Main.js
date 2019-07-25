@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Project from '../Project/Project'
+import React, { Component, lazy, Suspense } from 'react';
 import Header from '../Header/Header';
-import projects from './../projects.json'
+import projects from './../projects.json';
+const Project = lazy(() => import('../Project/Project'));
 
 class Main extends Component {
   render() {
@@ -11,7 +11,9 @@ class Main extends Component {
         <section>
           {projects.map(function (project, i) {
             return (
-              <Project key={i} project={project} />
+              <Suspense fallback={<div className="lazyLoading">Loading...</div>}>
+                <Project key={i} project={project} />
+              </Suspense>
             )
           }
           )}
