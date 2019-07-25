@@ -74,6 +74,24 @@
     "videos": ["/videos/connectlehigh.mp4", "/videos/portal-mobile.mp4"]
   },
   {
+    "title": "SCLLR",
+    "subtitle": "South Carolina Department of Labor, Licensing & Regulation",
+    "description": "I had the opportunity to develop a site with Grav CMS on this quick turn-around project. The Labor and Licensing Department needed a static site, just flat files as a final delivery for their rigid hosting structure, that also had a CMS component, so they could easily edit content - a natural fit for Grav, along with the BlackHole plugin that allows for static site generation. A super cool and progressive build!",
+    "tags": [
+      "Grav CMS",
+      "Twig/YAML",
+      "SCSS"
+    ],
+    "half": "two",
+    "link": "https://www.llr.sc.gov",
+    "role": "ForumOne",
+    "color": "#7db956",
+    "textcolor": "#ffffff",
+    "offcolor": "linear-gradient(270deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
+    "images": ["scllr.png"],
+    "videos": ["/videos/scllr.mp4"]
+  },
+  {
     "title": "That's A Cool Website",
     "subtitle": "A Curated Collection of Cool Websites",
     "description": "Another website for designspiration? Ah, well, this one is a website for websites, but specifically designer, developer, agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
