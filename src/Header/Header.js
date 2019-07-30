@@ -11,6 +11,10 @@ class Header extends Component {
       let { clientX: x, clientY: y } = e;
       origin.style.perspectiveOrigin = `${x}px ${y}px`;
     });
+
+    origin.addEventListener("mouseleave", e => {
+      origin.style.perspectiveOrigin = `50% 50%`;
+    })
     
   }
 

@@ -56,7 +56,6 @@
   animation: loading 1.5s ease;
 
   &:hover {
-    filter: drop-shadow(0 -5px 10px rgba(74, 74, 74, 0.2));
 
     &::before {
       -webkit-animation: pulse 2s 0.25s infinite;
