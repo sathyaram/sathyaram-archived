@@ -6,7 +6,9 @@ class About extends Component {
     return (
       <main className="about">
          <header role="banner">
+           <div className="branding">
           So <h1>About</h1> Me
+          </div>
          </header>
         <div className="about-header">
           
@@ -15,7 +17,11 @@ class About extends Component {
       
           I'm Sathya Ram,
           <br></br>
-          a dude who loves to make creative ...anything! Polish is a must**
+          a dude who loves to make creative ...anything! 
+          <br></br>
+          Mostly websites, graphics and photos.
+          <br></br>
+          *Polish is a must with me
           <br></br>
           <br></br>
           I live in Alexandria, Virginia and work full time

@@ -8,6 +8,13 @@
   letter-spacing: 2px;
   word-break: break-word;
 
+  .branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   header {
     color: #60c0f0;
     background: radial-gradient(ellipse at bottom, #001f6d 0%, #000000 100%);

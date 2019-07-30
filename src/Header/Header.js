@@ -37,7 +37,27 @@ class Header extends Component {
             </div>
           </div>
         </figure>
-        <h1><span>Sathya Ram</span></h1>
+        <div className="branding">
+          <h1>
+            <span>Sathya Ram</span>
+          </h1>
+          {/* <h2>
+            <span>Web Designer + Developer</span>
+            <span>CSS Junkie</span>
+            <span>PC Gamer</span>
+            <span>Film Buff</span>
+            <span>Potterhead</span>
+          </h2> */}
+         
+        </div>
+        
+        {/* <div className="pronounce">
+            <i className="far fa-comment"></i>
+            <div className="explanation">
+              <span>How to pronounce my name:</span><br></br>
+              Sa-thee-uhh Ram
+            </div>
+          </div> */}
         <Framicons />
       </header>
     );

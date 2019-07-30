@@ -32,36 +32,18 @@
 header,
 main {
   text-align: center;
-  padding: 0 30px;
-
-  @media screen and (min-width: 800px) {
-    padding: 0 60px;
-  }
 }
 
-#home {
-  header {
-    height: auto;
-    padding: 0;
-  }
-  h1 {
-  height: 100vh;
-
-    
-  }
+main {
+  padding: 0 30px;
 }
 
 header {
   width: 100%;
-  height: 100vh;
-  display: flex;
+  height: auto;
   color: white;
-  display: flex;
   position: relative;
   overflow-x: hidden;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   perspective: 100px;
   background-color: #3178d5;
   background-image: linear-gradient(
@@ -79,19 +61,65 @@ header {
     #ffffff,
     #ffffff
   );
+  background-image: radial-gradient(ellipse at 50% 68%, #142c63 0, #151436 45%, #000 150%);
 }
+
+
+.branding {
+  height: 100vh;
+  width: 100%;
+  padding: 0 3rem;
+  z-index: 15;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  pointer-events: none;
+  
+}
+
+.pronounce {
+  padding-top: 1rem;
+  font-size: 20px;
+  position: absolute;
+
+
+  i {
+    font-size: 16px;
+  }
+  &:hover {
+    .explanation {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.explanation {
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  color: black;
+  padding: 0.5rem 1rem 1rem;
+  pointer-events: none;
+  background-color: white;
+  font-style: italic;
+  border-radius: 3px;
+
+  span {
+    font-size: 12px;
+    font-style: normal;
+  }
+}
+
 
 h1 {
   font-family: "Aquatico";
   font-size: 4.75rem;
   text-transform: uppercase;
-  padding: 0 3rem;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  pointer-events: none;
+
 
   span {
     background-color: white;
@@ -125,10 +153,11 @@ figure {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - 180px);
-  height: calc(100vh - 120px);
-  margin: 60px;
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
   perspective: 100px;
+  // z-index: -1;
   // pointer-events: none;
   
   > div {
@@ -164,14 +193,18 @@ figure {
 .sun {
   width: 200px;
   height: 200px;
-  background: #fefefe;
+  background-color: #fefefe;
   border-radius: 50%;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
+
   position: absolute;
-  top: 15%;
-  left: 75%;
+  top: 25%;
+  left: 65%;
   transform: translateX(-50%);
+  transition: background-color 1s ease;
+
+  &:hover {
+    background-color: #ffe000;
+  }
 
   &::before {
     content: "";

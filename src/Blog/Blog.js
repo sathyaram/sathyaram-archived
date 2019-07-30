@@ -7,7 +7,9 @@ class Blog extends Component {
       <>
         <main className="blog">
           <header role="banner">
+            <div className="branding">
             <h1>Coming Soon!</h1>
+            </div>
           </header>
         </main>
       </>
