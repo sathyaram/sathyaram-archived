@@ -53,7 +53,7 @@
   left: 50%;
   z-index: 9;
   transform: translateX(-50%) translateY(-50%);
-  animation: loading 1.5s ease;
+  animation: loading 2s ease;
 
   &:hover {
 
@@ -107,6 +107,7 @@
 
 @keyframes loading {
   0% {
+    opacity: 1;
     transform: translate(-50%, -250%);
   }
 

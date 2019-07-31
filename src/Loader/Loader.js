@@ -10,7 +10,7 @@ class Loader extends Component {
     var loader = document.getElementById('loader');
     setTimeout(function() {
       loader.classList.add('gone');
-    }, 1500);
+    }, 2000);
   }
   render() {
     return (

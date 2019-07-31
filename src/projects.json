@@ -2,7 +2,7 @@
   {
     "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
-    "description": "As a huge car enthusiast, I was surprised to find there wasn't a place on the internet to hear Exhaust Notes, or car engine rev sounds. So, I made a hotrod haven to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today.",
+    "description": "As a huge car enthusiast, I was surprised to find there wasn't a place on the internet to hear exhaust notes, or car engine rev sounds. So, I made a hotrod haven to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today.",
     "tags": ["React", "Express", "AWS Lightsail", "MongoDB", "SCSS", "Web Design"],
     "link": "https://exhaustnotes.co",
     "github": "https://github.com/sathyaram/exhaustnotes",
@@ -14,11 +14,10 @@
     "images": ["en-mobile.jpg", "en-button.gif", "en-grid.png"],
     "videos": ["/videos/en2.mp4", "/videos/en.mp4"]
   },
-
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
-    "description": "At ForumOne, I worked with a full team on HHMI's Biointeractive.org, a website/tool, with over half a million yearly page views, that brings together a variety of data-rich activities, case studies,high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8 with another Front-End Developer.",
+    "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/web tool, with over half a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8.",
     "tags": ["Drupal 8", "PatternLab", "Twig/YAML", "SCSS"],
     "link": "https://biointeractive.org",
     "role": "ForumOne",
@@ -32,7 +31,7 @@
   {
     "title": "FudTruk",
     "subtitle": "Voted Lehigh Valley's Best Food Truck",
-    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I had the opportunity to completely brand them, from their logo, to their color scheme, to the vinyl wrap for the truck all of which I incorporated in their website. It was an amazing experience!",
+    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
     "half": "small",
     "tags": [
       "Drupal 7",
@@ -54,7 +53,7 @@
   {
     "title": "Lehigh Portal Redesign & Development",
     "subtitle": "Lehigh's Luminis 5 Campus Portal",
-    "description": "At Lehigh, I was the Portal Administrator and had the opportunity to completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested coat of paint as well as added development improvements, like layout restructure for easily accessible information, browser compatability and continually updating content for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
+    "description": "While working at Lehigh, I was the Campus Portal administrator and completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested coat of paint as well as added development improvements, like layout restructure for easily accessible information, browser compatability and continually updating content for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
     "tags": [
       "Luminis 5",
       "Javascript",
@@ -76,7 +75,7 @@
   {
     "title": "SCLLR",
     "subtitle": "South Carolina Department of Labor, Licensing & Regulation",
-    "description": "I had the opportunity to develop a site with Grav CMS on this quick turn-around project. The Labor and Licensing Department needed a static site, just flat files as a final delivery for their rigid hosting structure, that also had a CMS component, so they could easily edit content - a natural fit for Grav, along with the BlackHole plugin that allows for static site generation. A super cool and progressive build!",
+    "description": "On this quick turn-around project, South Carolina's Labor and Licensing Department needed a lightweight, static site for their rigid hosting structure, but that also had CMS capabilities, so they could easily edit their content - a natural fit for Grav CMS, along with the BlackHole plugin that allows for static site generation. This was a super cool and progressive new build!",
     "tags": [
       "Grav CMS",
       "Twig/YAML",
@@ -94,7 +93,7 @@
   {
     "title": "That's A Cool Website",
     "subtitle": "A Curated Collection of Cool Websites",
-    "description": "Another website for designspiration? Ah, well, this one is a website for websites, but specifically designer, developer, agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
+    "description": "Another website for designspiration? Well, actually, this one is a website of websites, but specifically designer, developer, and agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
     "tags": ["React", "SCSS", "Web Design", "Netlify"],
     "link": "https://thatsacoolwebsite.com",
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
@@ -124,7 +123,7 @@
   {
     "title": "Gertrude Hawk Goodies",
     "subtitle": "Rewards Program Microsite",
-    "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards microsite where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
+    "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards website where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
     "tags": ["Wordpress", "jQuery", "HTML/SCSS", "PHP"],
     "link": "https://gertrudehawkgoodies.com",
     "role": "Weidenhammer",
@@ -152,7 +151,7 @@
   {
     "title": "Keystone Munitions",
     "subtitle": "Premium Ammunition",
-    "description": "You need solid, accurate, reliable ammunition, Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before.",
+    "description": "You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before and counting.",
     "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
     "link": "http://keystonemunitions.com",
     "role": "Freelance Project",
@@ -166,7 +165,7 @@
   {
     "title": "Paul Knakk",
     "subtitle": "Country Musician",
-    "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is currently in hiatus." ,
+    "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus." ,
     "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
