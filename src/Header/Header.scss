@@ -45,23 +45,24 @@ header {
   position: relative;
   overflow-x: hidden;
   perspective: 100px;
-  background-color: #3178d5;
-  background-image: linear-gradient(
-    to bottom,
-    #3178d5,
-    #2983d9,
-    #278edc,
-    #2e99df,
-    #3aa3e0,
-    #4eabe1,
-    #71bce6,
-    #85c4e6,
-    #99cce6,
-    #aed1e4,
-    #ffffff,
-    #ffffff
-  );
-  background-image: radial-gradient(ellipse at 50% 68%, #142c63 0, #151436 45%, #000 150%);
+  animation: colorChange 25s ease infinite alternate;
+  // background-color: #3178d5;
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   #3178d5,
+  //   #2983d9,
+  //   #278edc,
+  //   #2e99df,
+  //   #3aa3e0,
+  //   #4eabe1,
+  //   #71bce6,
+  //   #85c4e6,
+  //   #99cce6,
+  //   #aed1e4,
+  //   #ffffff,
+  //   #ffffff
+  // );
+  // background-image: radial-gradient(ellipse at 50% 68%, #142c63 0, #151436 45%, #000 150%);
 }
 
 
@@ -165,6 +166,9 @@ figure {
 }
 
 @keyframes animateclouds {
+  0% {
+    left: -10%;
+  }
 	100% {
 	  transform: translateX(110vw);
 	}
@@ -239,14 +243,14 @@ figure {
 
   &.cloud1 {
     top: 20%;
-    animation: animateclouds 75s 4s infinite linear;
+    animation: animateclouds 75s infinite linear;
     transform: scale(0.7) translateX(-30vw);
     z-index: 8;
   }
 
   &.cloud2 {
     top: 40%;
-    animation: animateclouds 50s 1s infinite linear;
+    animation: animateclouds 50s infinite linear;
     transform: scale(0.92) translateX(-30vw);
     z-index: 0;
   }
@@ -351,3 +355,14 @@ figure {
     left: 38%;
   }
 }
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(13, 156, 223);
+  }
+
+  100% {
+    background-color: rgb(1, 18, 54);
+  }
+}
+

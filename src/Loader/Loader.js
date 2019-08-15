@@ -8,9 +8,9 @@ class Loader extends Component {
   
   componentDidMount() {
     var loader = document.getElementById('loader');
-    setTimeout(function() {
+    window.addEventListener("load", function() {
       loader.classList.add('gone');
-    }, 2000);
+    });
   }
   render() {
     return (
