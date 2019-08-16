@@ -11,10 +11,10 @@ class About extends Component {
           </div>
          </header>
         <div className="about-header">
-          
+        <div className="parallax">  
           <br></br>
           <br></br>
-      
+     
           I'm Sathya Ram,
           <br></br>
           a dude who loves to make creative ...anything! 
@@ -23,13 +23,14 @@ class About extends Component {
           <br></br>
           *Polish is a must with me
           <br></br>
+        </div>
           <br></br>
           I live in Alexandria, Virginia and work full time
           as a Front-End Developer for a wholesome agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>. 
           <br></br>
           <br></br>
           
-          As far as development, I've got a thing for animated interactions, SVGs, Web Analytics, and CSS Wizardy. I'm trying to get better at Javascript Animation, Gatsby.js, and TweenMax.
+          As far as website development, I've got a thing for animated interactions, SVGs, Web Analytics, and CSS Wizardy. I'm trying to get better at Javascript Animation, React, Gatsby.js, and TweenMax.
           <br></br>
           <br></br>
           In my non-existant free time, I gorge on video games, <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">shoot some neat photos</a>, dream up short film ideas,

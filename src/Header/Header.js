@@ -30,14 +30,10 @@ class Header extends Component {
     player.pause();
   }
 
-  componentDidMount() {
-  }
-
   render() {
     return (
       <header role="banner">
-        <div className="planet"></div>
-        <div  id="space" className="space">
+        <div id="space" className="space">
           <div className="stars"></div>
           <div className="stars"></div>
           <div className="stars"></div>
@@ -248,12 +244,13 @@ class Header extends Component {
           <div className="stars"></div>
         </div>
         <div className="branding">
+          <div className="planet"></div>
           <h1><span>Sathya Ram</span></h1>
           <h2>
             <span>Web Designer + Developer</span>
-            <span>CSS Junkie</span>
-            <span>PC Gamer</span>
-            <span>Film Buff</span>
+            <span>CSS Enthusiast</span>
+            <span>Avid PC Gamer</span>
+            <span>Film Nerd</span>
             <span>Potterhead</span>
           </h2>
           <div className="soundClip">
@@ -267,15 +264,15 @@ class Header extends Component {
               <source src={bgmusic} type="audio/mp3"></source>
             </audio>
           </div>
+          <div className="pronounce">
+            <i class="fas fa-comment"></i>
+            <div className="explanation">
+              Sa-thee-uh Ram
+            </div>
+          </div>
         </div>
         
-        {/* <div className="pronounce">
-            <i className="far fa-comment"></i>
-            <div className="explanation">
-              <span>How to pronounce my name:</span><br></br>
-              Sa-thee-uhh Ram
-            </div>
-          </div> */}
+        
         <Framicons />
       </header>
     );
