@@ -198,6 +198,17 @@
   .mini-menu {
     a {
       padding: 1rem;
+
+      &:nth-child(1), 
+      &:nth-child(3) {
+        &::after {
+          content: '';
+          background: blue;
+          height: 1px;
+          padding-top: 1px;
+          width: 100%;
+        }
+      }
     }
   }
 
