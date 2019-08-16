@@ -24,21 +24,6 @@ header {
   overflow: hidden;
   perspective: 100px;
   background-color: #3178d5;
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   #3178d5,
-  //   #2983d9,
-  //   #278edc,
-  //   #2e99df,
-  //   #3aa3e0,
-  //   #4eabe1,
-  //   #71bce6,
-  //   #85c4e6,
-  //   #99cce6,
-  //   #aed1e4,
-  //   #ffffff,
-  //   #ffffff
-  // );
   background-image: radial-gradient(
     ellipse at 50% 36%,
     #142c63 0,
@@ -61,7 +46,7 @@ header {
 }
 
 .pronounce {
-  padding-top: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 12px;
   z-index: 5;
   font-weight: bold;
@@ -84,8 +69,8 @@ header {
   padding: 0.35rem 1.5rem;
   background-color: rgba(255,255,255,0.9);
   font-style: italic;
-  border-top: 3px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  // border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.2);
 
   span {
@@ -216,7 +201,7 @@ h2 {
   }
 }
 
-@for $i from 1 through 200 {
+@for $i from 1 through 2000 {
   $randomNum: random(8) + px;
   .stars:nth-child(#{$i}) {
     top: percentage(random(100) / 100);
@@ -229,7 +214,7 @@ h2 {
 
 .planet {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   width: 225px;
   transform: translate(-50%, -50%);
@@ -240,9 +225,24 @@ h2 {
   border-radius:50%;
 }
 
-.soundClip {
+.addStar {
   position: absolute;
   top: 50px;
+  right: 25px;
+  width: 38px;
+  color: white;
+  background: none;
+  outline: none;
+  border: 1px solid white;
+
+  &:active {
+    background: rgb(253, 229, 90);
+  }
+}
+
+.soundClip {
+  position: absolute;
+  top: 75px;
   right: 20px;
 
   audio {

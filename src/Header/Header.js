@@ -30,6 +30,15 @@ class Header extends Component {
     player.pause();
   }
 
+  addStars = () => {
+    for (let x = 0; x < 15; x++) {
+      var newStar = document.createElement('div');
+      let space = document.getElementById("space");
+      newStar.className = 'stars';
+      space.appendChild(newStar);
+    }
+  }
+
   render() {
     return (
       <header role="banner">
@@ -244,6 +253,9 @@ class Header extends Component {
           <div className="stars"></div>
         </div>
         <div className="branding">
+          <button className="addStar" onClick={this.addStars}>
+          <i className="fas fa-star"></i>
+          </button>
           <div className="planet"></div>
           <div className="hoverwrap">
             <div className="pronounce">
@@ -272,10 +284,10 @@ class Header extends Component {
               <source src={bgmusic} type="audio/mp3"></source>
             </audio>
           </div>
-          
+
         </div>
-        
-        
+
+
         <Framicons />
       </header>
     );

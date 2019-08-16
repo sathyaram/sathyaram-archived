@@ -15,7 +15,7 @@ class Loader extends Component {
   render() {
     return (
       <div id="loader">
-        <div className="logo">
+        <div id="logo" name="logo" className="logo">
           <Link to="/">
             <img src={logo} alt="ram logo"/>
           </Link>
