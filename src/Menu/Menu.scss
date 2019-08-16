@@ -1,7 +1,7 @@
 .main-menu {
   width: 65%;
   position: fixed;
-  left: 10px;
+  left: 0;
   top: 0;
   height: 100vh;
   z-index: 8;
@@ -50,6 +50,7 @@
 
   @media screen and (max-width: 500px) {
     width: 80%;
+    left: 10px;
   }
 
   &:hover {
@@ -380,7 +381,7 @@
   width: 60px;
   position: fixed;
   top: 0px;
-  right: -50px;
+  right: -54px;
   background: #fff;
   height: 100vh;
   display: flex;
@@ -451,6 +452,14 @@
     position: relative;
     text-shadow: 1px 3px 3px rgba(30, 149, 247, 0.25);
 
+    @media screen and (max-width: 800px) {
+        margin-left: -66px !important;
+  
+        &::before {
+          pointer-events: auto;
+        }
+    }
+
     i {
       background-color: #3178d5;
       background-image: linear-gradient(270deg, #70d5ff, #0059bc);
@@ -494,7 +503,7 @@
     }
 
     &:nth-child(1) {
-      margin-left: -54px;
+      margin-left: -53px;
       &::after {
         background: radial-gradient(
           circle at 33% 100%,
@@ -523,6 +532,7 @@
     }
 
     &:nth-child(3) {
+      margin-left: -65px;
       &::after {
         background: linear-gradient(
           to right,
@@ -548,7 +558,7 @@
     }
 
     &:nth-child(5) {
-      margin-left: -54px;
+      margin-left: -53px;
       &::after {
         background: #552775;
       }

@@ -34,7 +34,7 @@ class Header extends Component {
     for (let x = 0; x < 15; x++) {
       var newStar = document.createElement('div');
       let space = document.getElementById("space");
-      newStar.className = 'stars';
+      newStar.className = 'new stars';
       space.appendChild(newStar);
     }
   }

@@ -170,7 +170,6 @@ h2 {
   }
   100% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    
   }
 }
 
@@ -192,13 +191,25 @@ h2 {
     position: absolute;
     border-radius: 50%;
     background: #fff;
-    animation: startravel 35s linear infinite;
   }
 
   @media screen and (min-width: 1600px) {
     width: 2000px;
     height: 2000px;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.new.stars {
+  animation: 500ms fadeIn ease;
 }
 
 @for $i from 1 through 2000 {
