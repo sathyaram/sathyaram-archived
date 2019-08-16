@@ -63,13 +63,12 @@ header {
 .pronounce {
   padding-top: 1rem;
   font-size: 12px;
-  position: absolute;
-  top: 31%;
   z-index: 5;
   font-weight: bold;
   opacity: 0;
   transition: opacity 500ms ease;
   pointer-events: none;
+  display: inline-block;
 
   i {
     font-size: 20px;
@@ -95,26 +94,13 @@ header {
   }
 }
 
-h1 {
-  font-family: "Aquatico";
-  font-size: 4.75rem;
-  line-height: 100%;
-  text-transform: uppercase;
-
-  &:hover ~ .pronounce {
+.hoverwrap {
+  &:hover {
+    .pronounce {
       opacity: 1;
       pointer-events: auto;
-  }
-
-  span {
-    background-color: white;
-    background-image: linear-gradient(0deg, white 40%, #93d8fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 300ms ease;
-    text-shadow: none;
-
-    &:hover {
+    }
+    span {
       padding: 0 10px;
       color: #fff;
       text-align: center;
@@ -125,6 +111,22 @@ h1 {
       text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
       transform: translateY(0px);
     }
+  }
+}
+
+h1 {
+  font-family: "Aquatico";
+  font-size: 4.75rem;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  span {
+    background-color: white;
+    background-image: linear-gradient(0deg, white 40%, #93d8fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 300ms ease;
+    text-shadow: none;
   }
 
   @media screen and (max-width: 400px) {
@@ -227,7 +229,7 @@ h2 {
 
 .planet {
   position: absolute;
-  top: 365px;
+  top: 50%;
   left: 50%;
   width: 225px;
   transform: translate(-50%, -50%);

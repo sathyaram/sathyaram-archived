@@ -245,7 +245,15 @@ class Header extends Component {
         </div>
         <div className="branding">
           <div className="planet"></div>
-          <h1><span>Sathya Ram</span></h1>
+          <div className="hoverwrap">
+            <div className="pronounce">
+              <i class="fas fa-comment"></i>
+              <div className="explanation">
+                Sa-thee-uh Ram
+              </div>
+            </div>
+            <h1><span>Sathya Ram</span></h1>
+          </div>
           <h2>
             <span>Web Designer + Developer</span>
             <span>CSS Enthusiast</span>
@@ -264,12 +272,7 @@ class Header extends Component {
               <source src={bgmusic} type="audio/mp3"></source>
             </audio>
           </div>
-          <div className="pronounce">
-            <i class="fas fa-comment"></i>
-            <div className="explanation">
-              Sa-thee-uh Ram
-            </div>
-          </div>
+          
         </div>
         
         
