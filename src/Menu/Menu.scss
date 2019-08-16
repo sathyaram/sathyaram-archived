@@ -60,7 +60,7 @@
     @media screen and (min-width: 800px) {
       &:not(.open) {
         .menu-trigger {
-          transform: translateY(-50%) translateX(-45px) rotate(-180deg);
+          transform: translateY(-50%) translateX(-45px);
 
           
 
@@ -112,7 +112,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    padding: 17.5%;
+    padding: 12% 17.5%;
     background-color: white;
   }
 
@@ -331,12 +331,12 @@
       background-color: #3fc3f7;
       left: 0;
       top: 0;
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
 
     &:nth-of-type(1) {
       &::after {
-        transition: transform 200ms ease 200ms;
+        transition: transform 300ms ease 200ms;
       }
     }
 
@@ -348,15 +348,15 @@
 
     &:nth-of-type(3) {
       &::after {
-        transition: transform  600ms ease 600ms;
+        transition: transform 500ms ease 600ms;
       }
     }
   }
 
   .menu-title {
     position: absolute;
-    transform: rotate(180deg);
-    left: -66px;
+    // transform: rotate(180deg);
+    right: -66px;
     top: 25px;
     font-size: 17px;
     color: black;
@@ -366,7 +366,7 @@
     letter-spacing: 2px;
     font-family: "Aquatico";
     opacity: 0;
-    transition: opacity 200ms ease;
+    transition: opacity 200ms ease 100ms;
   }
 }
 
