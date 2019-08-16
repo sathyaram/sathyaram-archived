@@ -7,7 +7,7 @@ import bgmusic from './../chill3.mp3'
 class Header extends Component {
 
   mouseMe = () => {
-    let origin = document.querySelector(".space");
+    let origin = document.getElementById("space");
 
     origin.addEventListener("mousemove", e => {
       let { clientX: x, clientY: y } = e;
@@ -31,14 +31,13 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    this.mouseMe();
   }
 
   render() {
     return (
       <header role="banner">
         <div className="planet"></div>
-        <div className="space">
+        <div  id="space" className="space">
           <div className="stars"></div>
           <div className="stars"></div>
           <div className="stars"></div>

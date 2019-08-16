@@ -197,6 +197,7 @@ $breakpoint-max: 1184px;
   margin: -140px 0 0;
   padding-bottom: 30px;
   position: relative;
+  z-index: 2;
 
   &::after {
     content: '';
