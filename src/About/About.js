@@ -5,31 +5,31 @@ class About extends Component {
   render() {
     return (
       <main className="about">
-         <header role="banner">
-           <div className="branding">
-          So <h1>About</h1> Me
+        <header role="banner">
+          <div className="branding">
+            So <h1>About</h1> Me
           </div>
-         </header>
+        </header>
         <div className="about-header">
-        <div className="parallax">  
+          <div className="parallax">
+            <br></br>
+            <br></br>
+
+            I'm Sathya Ram,
           <br></br>
+            a dude who loves to make creative ...anything!
           <br></br>
-     
-          I'm Sathya Ram,
+            Mostly websites, graphics and photos.
           <br></br>
-          a dude who loves to make creative ...anything! 
+            *Polish is a must with me
           <br></br>
-          Mostly websites, graphics and photos.
-          <br></br>
-          *Polish is a must with me
-          <br></br>
-        </div>
+          </div>
           <br></br>
           I live in Alexandria, Virginia and work full time
-          as a Front-End Developer for a wholesome agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>. 
+          as a Front-End Developer for a mission-driven agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>.
           <br></br>
           <br></br>
-          
+
           As far as website development, I've got a thing for animated interactions, SVGs, Web Analytics, and CSS Wizardy. I'm trying to get better at Javascript Animation, React, Gatsby.js, and TweenMax.
           <br></br>
           <br></br>

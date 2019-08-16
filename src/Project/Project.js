@@ -160,9 +160,6 @@ const Project = props => (
         <>
         </>
       }
-
-
-
     </div>
   </article>
 )

@@ -75,7 +75,6 @@ article {
       margin: 1rem 0 0;
 
       .tags {
-
         li {
           padding: 5px !important;
           display: inline-block;
@@ -398,7 +397,7 @@ article {
       z-index: 5;
     }
 
-    &.ForumOne {
+    &.Forum {
       &::before {
         content: url("./../f1.svg");
       }

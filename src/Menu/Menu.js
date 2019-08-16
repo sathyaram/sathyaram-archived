@@ -6,37 +6,65 @@ import resume from './../SathyaRam_Resume2018.pdf';
 
 class Menu extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpened: false,
+    };
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    // Menu newly opened.
+    if (this.state.isOpened && !prevState.isOpened) {
+      this.addEvents();
+    } else if (!this.state.isOpened && prevState.isOpened) {
+      // Menu closed, we no longer need events.
+      this.removeEvents();
+    }
+  }
+
   getOffOfMe = () => {
-    var trigger = document.querySelector('.main-menu');
-    trigger.classList.remove('open');
+    this.setState({ isOpened: false });
   }
 
   menuTrigger = () => {
-    var trigger = document.querySelector('.main-menu');
-    trigger.classList.toggle('open');
+    this.setState(state => ({
+      isOpened: !state.isOpened,
+    }));
   }
 
-  closeMenu = () => {
-    var trigger = document.querySelector('.main-menu');
-    document.addEventListener("click", function (e) {
-      if (e.target.closest(".main-menu")) return;
-      trigger.classList.remove("open");
-    });
+  handleClick = e => {
+    if (e.target.closest(".main-menu")) return;
+
+    this.setState({ isOpened: false });
   }
 
-  componentDidMount() {
-    this.closeMenu();
+  addEvents() {
+    document.addEventListener("click", this.handleClick);
+  }
+
+  removeEvents() {
+    document.removeEventListener("click", this.handleClick);
   }
 
   render() {
+    const { isOpened } = this.state;
+    const menuClasses = [
+      'main-menu'
+    ];
+    if (isOpened) {
+      menuClasses.push('open');
+    };
+
     return (
       <nav>
-        <div className="main-menu">
+        <div className={menuClasses.join(' ')}>
           <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
-              <span></span>
-              <span></span>
-              <span></span>
-              <div className="menu-title">Menu</div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div className="menu-title">Menu</div>
           </button>
           <div className="menus">
             <ul className="menu">
@@ -50,7 +78,7 @@ class Menu extends Component {
             </div>
             <div className="mini-menu">
               <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a> 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
             </div>
           </div>
