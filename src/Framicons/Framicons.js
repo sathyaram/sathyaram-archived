@@ -44,7 +44,7 @@ class Framicons extends Component {
                             </div>
                         </div>
                         <div className="back side">
-                            I’m a guy who loves theming, CSS and making websites from scratch! I build websites in Drupal 7/8, WordPress, Grav and React. I’ve developed responsive applications, websites and themes with HTML5, SASS/CSS, Javascript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency focused on mission-driven non-profit and government clients.
+                            I’m a guy who loves theming, CSS and making websites from scratch! I build websites in Drupal 7/8, WordPress, Grav and React. I’ve developed responsive applications, websites and themes with HTML5, SASS/CSS, JavaScript, React, PHP, and Express. I’m currently a Front-End Developer at Forum One, an awesome agency focused on mission-driven non-profit and government clients.
                         </div>
                     </div>
                 </div>

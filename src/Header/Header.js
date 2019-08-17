@@ -23,11 +23,15 @@ class Header extends Component {
     let player = document.getElementById('bg-music');
     player.volume = 0.1;
     player.play();
+    document.getElementById('pauseButton').style.display = 'block';
+    document.getElementById('playButton').style.display = 'none';
   }
 
   pause = () => {
     let player = document.getElementById('bg-music');
     player.pause();
+    document.getElementById('playButton').style.display = 'block';
+    document.getElementById('pauseButton').style.display = 'none';
   }
 
   addStars = () => {
@@ -253,13 +257,25 @@ class Header extends Component {
           <div className="stars"></div>
         </div>
         <div className="branding">
+          <div className="eyebrowMenu">
           <button className="addStar" onClick={this.addStars}>
-          <i className="fas fa-star"></i>
+            <span>Add More Stars</span> <i className="fas fa-star"></i>
           </button>
+            <button id="pauseButton" onClick={this.pause}>
+              <i className="fas fa-pause"></i>
+            </button>
+            <button id="playButton" onClick={this.play}>
+            < span>Listen to Background Music</span> <i className="fas fa-music"></i>
+            </button>
+            <audio id="bg-music" controls loop>
+              <source src={bgmusic} type="audio/mp3"></source>
+            </audio>
+          </div>
+         
           <div className="planet"></div>
           <div className="hoverwrap">
             <div className="pronounce">
-              <i class="fas fa-comment"></i>
+              <i className="fas fa-comment"></i>
               <div className="explanation">
                 Sa-thee-uh Ram
               </div>
@@ -273,21 +289,8 @@ class Header extends Component {
             <span>Film Nerd</span>
             <span>Potterhead</span>
           </h2>
-          <div className="soundClip">
-            <button onClick={this.pause}>
-              <i class="fas fa-pause"></i>
-            </button>
-            <button onClick={this.play}>
-              <i class="fas fa-play"></i>
-            </button>
-            <audio id="bg-music" controls loop>
-              <source src={bgmusic} type="audio/mp3"></source>
-            </audio>
-          </div>
-
+         
         </div>
-
-
         <Framicons />
       </header>
     );
