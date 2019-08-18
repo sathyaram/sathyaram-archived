@@ -99,11 +99,11 @@
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
     "color": "cyan",
-    "half": "small",
+    "half": "two",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
     "images": ["coolwebsite.png"],
-    "videos": ["/videos/coolwebsite.mp4", "/videos/coolwebsite2.mp4"]
+    "videos": ["/videos/coolwebsite.mp4"]
   },
   {
     "title": "Oscars Trivia",
@@ -114,11 +114,11 @@
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
-    "half": "small",
+    "half": "two",
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "images": ["oscarsanimated.png"],
-    "videos": ["/videos/oscarstrivia.mp4", "/videos/oscars.mp4"]
+    "videos": ["/videos/oscars.mp4"]
   },
   {
     "title": "Gertrude Hawk Goodies",

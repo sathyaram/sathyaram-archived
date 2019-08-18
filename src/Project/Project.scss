@@ -129,25 +129,6 @@ article {
     }
   }
 
-  // &.full {
-  //   .text,
-  //   .eyebrow {
-  //     @media screen and (min-width: 768px) {
-  //       opacity: 0;
-  //       max-height: 0px;
-  //       transition: max-height 500ms 500ms ease, opacity 500ms 0ms ease;
-  //     }
-  //   }
-  //   &:hover {
-  //     .text,
-  //     .eyebrow {
-  //       max-height: 500px;
-  //       opacity: 1;
-  //       transition: max-height 500ms 0ms ease, opacity 500ms 500ms ease;
-  //     }
-  //   }
-  // }
-
   .information {
     max-width: 576px;
     margin: 0 auto;
@@ -469,6 +450,10 @@ article {
       margin: 0 auto;
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 768px) { 
+        width: 100%;
+      }
 
       @media screen and (max-width: 600px) {
         grid-template-rows: 1fr 1fr;
