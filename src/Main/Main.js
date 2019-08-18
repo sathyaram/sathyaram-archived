@@ -11,9 +11,11 @@ class Main extends Component {
         <section>
           {projects.map(function (project, i) {
             return (
+              <>
               <Suspense fallback={<div className="lazyLoading">Loading...</div>}>
                 <Project key={i} project={project} />
               </Suspense>
+              </>
             )
           }
           )}

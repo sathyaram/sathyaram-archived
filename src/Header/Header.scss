@@ -70,7 +70,6 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
   font-style: italic;
   border-top: 2px solid rgba(255, 255, 255, 0.3);
-  // border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.2);
 
   span {
@@ -262,7 +261,7 @@ h2 {
   audio {
     display: none;
   }
-  
+
   button {
     background: none;
     cursor: pointer;
@@ -274,20 +273,20 @@ h2 {
     position: absolute;
     border: 1px solid transparent;
     left: 0;
-  
+
     &:hover {
       span {
         opacity: 1;
         transform: translateX(calc(-100% - 20px)) translateY(-16px);
       }
     }
-  
+
     &:nth-child(1) {
       &:active {
         background-color: rgb(255, 240, 102);
       }
     }
-  
+
     &:nth-child(2) {
       top: 60px;
       padding: 15px 17.5px;
@@ -296,7 +295,7 @@ h2 {
         background-color: rgb(65, 193, 253);
       }
     }
-  
+
     &:nth-child(3) {
       opacity: 1;
       top: 60px;
@@ -306,5 +305,3 @@ h2 {
     }
   }
 }
-
-

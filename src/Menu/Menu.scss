@@ -56,20 +56,17 @@
     @media screen and (min-width: 500px) {
       transform: translateX(calc(-100% + 45px));
     }
-    
+
     @media screen and (min-width: 800px) {
       &:not(.open) {
         .menu-trigger {
           transform: translateY(-50%) translateX(-45px);
-
-          
 
           .menu-title {
             opacity: 1;
           }
         }
       }
-      
     }
   }
 
@@ -195,7 +192,7 @@
     a {
       padding: 1rem;
 
-      &:nth-child(1), 
+      &:nth-child(1),
       &:nth-child(3) {
         text-decoration: underline;
         text-underline-position: under;
@@ -343,7 +340,7 @@
 
     &:nth-of-type(2) {
       &::after {
-        transition: transform 400ms ease 400ms ;
+        transition: transform 400ms ease 400ms;
       }
     }
 
@@ -450,11 +447,11 @@
     text-shadow: 1px 3px 3px rgba(30, 149, 247, 0.25);
 
     @media screen and (max-width: 800px) {
-        margin-left: -66px !important;
-  
-        &::before {
-          pointer-events: auto;
-        }
+      margin-left: -66px !important;
+
+      &::before {
+        pointer-events: auto;
+      }
     }
 
     i {

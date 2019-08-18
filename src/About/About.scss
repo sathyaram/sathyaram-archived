@@ -2,7 +2,7 @@
   text-align: left;
   font-family: "Aquatico";
 
-  margin:0 30px;
+  margin: 0 30px;
 
   @media screen and (max-width: 800px) {
     padding: 30% 2rem 10%;
@@ -10,35 +10,21 @@
   header {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/images/about.jpg");
+      url("/images/about.jpg");
     background-attachment: fixed;
-
   }
 
   .branding {
     flex-direction: row;
   }
 }
-
-// .parallax {
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-//   url("/images/fudtruk-uc.jpg");
-//   padding: 0 10rem 10%;
-//   width: 100%;
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position:center center;
-
-// }
-
-
 .about-header {
   padding: 0 10rem 10%;
   width: 100%;
   color: #fff;
   font-size: 56px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url("/images/about.jpg");
+    url("/images/about.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center 42%;

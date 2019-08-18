@@ -14,7 +14,6 @@ class About extends Component {
           <div className="parallax">
             <br></br>
             <br></br>
-
             I'm Sathya Ram,
           <br></br>
             a dude who loves to make creative ...anything!
@@ -29,7 +28,6 @@ class About extends Component {
           as a Front-End Developer for a mission-driven agency called <a target="_blank" rel="noopener noreferrer" href="https://forumone.com">Forum One</a>.
           <br></br>
           <br></br>
-
           As far as website development, I've got a thing for animated interactions, SVGs, Web Analytics, and CSS Wizardy. I'm trying to get better at Javascript Animation, React, Gatsby.js, and TweenMax.
           <br></br>
           <br></br>
