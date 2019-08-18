@@ -2,7 +2,7 @@ import React from "react";
 import './Project.scss'
 
 const Project = props => (
-  <article data-color={props.project.color} id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }} className={`project ${props.project.half === 'split' ? 'split' : 'full'}`}>
+  <article aria-label={props.project.title} data-color={props.project.color} id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }} className={`project ${props.project.half === 'split' ? 'split' : 'full'}`}>
     <div className="information">
       <div className="eyebrow">
         <div className={`role ${props.project.role}`} style={{ color: `${props.project.textcolor}` }}>

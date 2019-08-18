@@ -6,9 +6,9 @@ const Project = lazy(() => import('../Project/Project'));
 class Main extends Component {
   render() {
     return (
-      <main id="home" role="main" className="home">
+      <main role="main" className="home">
         <Header />
-        <section>
+        <section id="maincontent">
           {projects.map(function (project, i) {
             return (
               <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>

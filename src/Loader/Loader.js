@@ -15,6 +15,8 @@ class Loader extends Component {
   }
   render() {
     return (
+      <>
+      <a className="skip-main" href="#maincontent">Skip to Main content</a>
       <div id="loader">
         <div id="logo" name="logo" className="logo">
           <Link to="/">
@@ -22,6 +24,7 @@ class Loader extends Component {
           </Link>
         </div>
       </div>
+      </>
     );
   }
 }

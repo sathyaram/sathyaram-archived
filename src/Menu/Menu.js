@@ -61,9 +61,11 @@ class Menu extends Component {
       <nav>
         <div className={menuClasses.join(' ')}>
           <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <div className="menu-title">Menu</div>
           </button>
           <div className="menus">

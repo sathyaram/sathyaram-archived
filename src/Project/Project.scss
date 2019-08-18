@@ -248,7 +248,8 @@ article {
     }
 
     @media screen and (max-width: 500px) {
-      border-top: 2px solid #eee;
+      border-top-width: 3px;
+      border-top-style: solid;
       background: linear-gradient(
         322deg,
         rgba(249, 249, 249, 0.4) 4%,
