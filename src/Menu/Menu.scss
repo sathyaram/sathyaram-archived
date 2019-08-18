@@ -28,11 +28,11 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 200%;
     z-index: -5;
     height: 100%;
-    transform: translateX(0%);
+    transform: translateX(100%);
     background: rgba(0, 0, 0, 0.5);
     background: linear-gradient(
       135deg,
@@ -75,7 +75,7 @@
 
     &:after {
       opacity: 1;
-      transform: translateX(100%);
+
     }
 
     .menu-trigger {
@@ -353,13 +353,13 @@
 
   .menu-title {
     position: absolute;
-    right: -66px;
+    right: -75px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 17px;
     color: black;
     background-color: white;
-    padding: 5px 6px;
+    padding: 0.5rem;
     text-shadow: 0 0 15px white, 0 0 5px white;
     letter-spacing: 2px;
     font-family: "Aquatico";

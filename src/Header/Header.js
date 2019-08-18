@@ -289,7 +289,6 @@ class Header extends Component {
             <span>Film Nerd</span>
             <span>Potterhead</span>
           </h2>
-         
         </div>
         <Framicons />
       </header>

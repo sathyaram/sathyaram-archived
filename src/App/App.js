@@ -2,7 +2,6 @@ import React from 'react';
 import './App.scss';
 import Loader from '../Loader/Loader'
 import Menu from '../Menu/Menu'
-import Blog from '../Blog/Blog';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Main from '../Main/Main';
@@ -15,9 +14,8 @@ function App() {
       <Loader />
       <Menu />
       <Switch>
-        <Route path="/blog" render={() => <Blog />} />
-        <Route path="/about" render={() => <About />} />
         <Route path="/contact" render={() => <Contact />} />
+        <Route path="/about" render={() => <About />} />
         <Route path="/" render={() => <Main />} />
       </Switch>
       <Footer />

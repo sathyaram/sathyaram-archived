@@ -69,7 +69,6 @@ class Menu extends Component {
           <div className="menus">
             <ul className="menu">
               <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
-              <li><Link onClick={this.getOffOfMe} to="/blog">Blog</Link></li>
               <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
             </ul>
             <div className="mcmenu">

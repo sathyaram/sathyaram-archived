@@ -20,7 +20,6 @@ class About extends Component {
           <br></br>
             Mostly websites, graphics and photos.
           <br></br>
-            *Polish is a must with me
           <br></br>
           </div>
           <br></br>
