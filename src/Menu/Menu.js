@@ -60,14 +60,14 @@ class Menu extends Component {
     return (
       <nav>
         <div className={menuClasses.join(' ')}>
-          <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
-            <div className="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div className="burger">
+            <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div className="menu-title">Menu</div>
-          </button>
+          </div>
           <div className="menus">
             <ul className="menu">
               <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>

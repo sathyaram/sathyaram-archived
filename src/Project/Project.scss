@@ -250,17 +250,14 @@ article {
     @media screen and (max-width: 500px) {
       border-top-width: 3px;
       border-top-style: solid;
+      font-size: 1rem;
       background: linear-gradient(
         322deg,
         rgba(249, 249, 249, 0.4) 4%,
         rgba(249, 249, 249, 0.9)
       );
     }
-
-    @media screen and (max-width: 420px) {
-      font-size: 14px;
-    }
-
+    
     span {
       color: #5bc543;
       position: absolute;
@@ -277,6 +274,17 @@ article {
       i {
         margin:0 2px 0 1px;
         font-size: 0.6rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        position: static;
+        background: rgba(225, 250, 218, 0.5);
+        transform: none;
+        opacity: 1;
+        padding: 2px 0.5rem 4px;
+        margin-right: 7px;
+        margin-top: 4px;
+
       }
     }
 

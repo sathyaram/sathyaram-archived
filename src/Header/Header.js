@@ -47,6 +47,12 @@ class Header extends Component {
     return (
       <header role="banner">
         <div id="space" className="space">
+        <button className="addStar" onClick={this.addStars}>
+            <span>Add More Stars</span> <i className="fas fa-star"></i>
+          </button>
+            <button id="pauseButton" onClick={this.pause}>
+              <i className="fas fa-pause"></i>
+            </button>
           <div className="stars"></div>
           <div className="stars"></div>
           <div className="stars"></div>
