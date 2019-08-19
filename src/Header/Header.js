@@ -47,12 +47,6 @@ class Header extends Component {
     return (
       <header role="banner">
         <div id="space" className="space">
-        <button className="addStar" onClick={this.addStars}>
-            <span>Add More Stars</span> <i className="fas fa-star"></i>
-          </button>
-            <button id="pauseButton" onClick={this.pause}>
-              <i className="fas fa-pause"></i>
-            </button>
           <div className="stars"></div>
           <div className="stars"></div>
           <div className="stars"></div>
@@ -264,20 +258,20 @@ class Header extends Component {
         </div>
         <div className="branding">
           <div className="eyebrowMenu">
-          <button className="addStar" onClick={this.addStars}>
-            <span>Add More Stars</span> <i className="fas fa-star"></i>
-          </button>
-            <button id="pauseButton" onClick={this.pause}>
+            <button className="addStar" onClick={this.addStars} name="Add Stars">
+              <span>Add More Stars</span> <i className="fas fa-star"></i>
+            </button>
+            <button id="pauseButton" onClick={this.pause} name="Pause Background Music">
               <i className="fas fa-pause"></i>
             </button>
-            <button id="playButton" onClick={this.play}>
-            < span>Listen to Background Music</span> <i className="fas fa-music"></i>
+            <button id="playButton" onClick={this.play} name="Play Background Music">
+              <span>Listen to Background Music</span> <i className="fas fa-music"></i>
             </button>
             <audio id="bg-music" controls loop>
               <source src={bgmusic} type="audio/mp3"></source>
             </audio>
           </div>
-         
+
           <div className="planet"></div>
           <div className="hoverwrap">
             <div className="pronounce">
