@@ -18,7 +18,6 @@ article {
   justify-content: center;
   flex-direction: column;
 
-
   @media screen and (max-width: 1040px) {
     padding: 4rem 2rem;
     width: 100%;
@@ -69,23 +68,20 @@ article {
     .text {
       grid-template-columns: auto;
       // margin: 1rem 0 0;
-
-     
+    }
+    .tags {
+      li {
+        display: inline-block;
+        border: 1px solid #bbbbbb;
+        margin: 2px;
       }
-      .tags {
-        li {
-          display: inline-block;
-          border: 1px solid #bbbbbb;
-          margin: 2px;
-        }
-        @media screen and (min-width: 768px) {
-          border: none;
-          border-bottom: 1px solid black;
-          text-align: left;
-          padding: 0 0 1rem 0;
-          margin: 0 0 1.2rem 0;
-       
-        }
+      @media screen and (min-width: 768px) {
+        border: none;
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 0 0 1rem 0;
+        margin: 0 0 1.2rem 0;
+      }
     }
 
     .information {
@@ -139,15 +135,15 @@ article {
     }
 
     .title {
-      font-size: 2rem;
+      font-size: 3.55rem;
       font-family: "Aquatico";
       line-height: 100%;
       letter-spacing: 3px;
       font-weight: bold;
-      
+      margin-left: -3.75rem;
 
       @media screen and (min-width: 768px) {
-        letter-spacing: 5px;
+        letter-spacing: 0.5rem;
       }
       @media screen and (max-width: 1040px) {
         width: calc(100% - 5rem);
@@ -162,8 +158,6 @@ article {
     .subtitle {
       font-size: 1.25rem;
       margin-top: 0.5rem;
-
-    
     }
   }
 
@@ -187,8 +181,6 @@ article {
         font-size: 18px;
       }
     }
-
-    
   }
 
   .tags {
@@ -200,14 +192,13 @@ article {
       font-size: 0.65rem;
       margin: 0;
       position: absolute;
-      right: -5.5rem;
+      right: -5.3rem;
       top: 0rem;
     }
 
     @media screen and (max-width: 1040px) {
       right: 0;
     }
-
 
     li {
       display: inline-block;
@@ -222,6 +213,7 @@ article {
         padding: 0.15rem 0.5rem;
         border-width: 1px;
         border-style: solid;
+        border-right-width: 5px;
         display: block;
         margin: 0;
       }
@@ -245,12 +237,12 @@ article {
     transform: perspective(1px) translateZ(0);
     position: relative;
     transition: color 300ms ease, top 300ms ease, box-shadow 300ms ease;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     top: 0;
-    
+
     @media screen and (min-width: 768px) {
       display: inline-block;
     }
@@ -265,7 +257,7 @@ article {
         rgba(249, 249, 249, 0.9)
       );
     }
-    
+
     span {
       color: #5bc543;
       position: absolute;
@@ -280,7 +272,7 @@ article {
       transition: opacity 300ms ease;
 
       i {
-        margin:0 2px 0 1px;
+        margin: 0 2px 0 1px;
         font-size: 0.6rem;
       }
 
@@ -292,7 +284,6 @@ article {
         padding: 2px 0.5rem 4px;
         margin-right: 7px;
         margin-top: 4px;
-
       }
     }
 
@@ -317,7 +308,7 @@ article {
     &:active {
       color: #24afda;
       top: 3px;
-      box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
       span {
         opacity: 1;
@@ -436,7 +427,6 @@ article {
       grid-gap: 1rem;
       margin: 1.5rem -6rem 0 -3.5rem;
 
-
       @media screen and (max-width: 600px) {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -464,7 +454,6 @@ article {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         margin: 0 -5rem 0 -5rem;
-
       }
 
       > * {

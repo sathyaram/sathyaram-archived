@@ -21,10 +21,10 @@
     "tags": ["Drupal 8", "Pattern Lab", "Twig/YAML", "SCSS"],
     "link": "https://biointeractive.org",
     "role": "Forum One",
-    "color": "#bcfdff",
+    "color": "#0c6d79",
     "half": "small",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(270deg,#82BB44 0%, #178387 100%)",
+    "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
     "images": ["hhmi-mobile2.jpg"],
     "videos": ["/videos/hhmi.mp4", "/videos/hhmi2.mp4"]
   },
@@ -46,12 +46,12 @@
     "role": "Freelance Project",
     "color": "#ffda67",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(20deg, #f05a26, #FAAF40)",
+    "offcolor": "linear-gradient(130deg, #f05a26, #FAAF40)",
     "images": ["fudtruk-uc.jpg"],
     "videos": ["/videos/fudtruk.mp4", "/videos/fudtruk2.mp4"]
   },
   {
-    "title": "Lehigh Portal Redesign & Development",
+    "title": "Lehigh Portal Redesign",
     "subtitle": "Lehigh's Luminis 5 Campus Portal",
     "description": "While working at Lehigh, I was the Campus Portal administrator and completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested coat of paint as well as added development improvements, like layout restructure for easily accessible information, browser compatability and continually updating content for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
     "tags": [
@@ -68,7 +68,7 @@
     "role": "Lehigh University",
     "color": "#d0a678",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(45deg, rgb(37, 21, 0) 0%, rgb(94, 36, 0) 100%)",
+    "offcolor": "linear-gradient(-35deg, rgb(37, 21, 0) 0%, rgb(115, 45, 2) 100%)",
     "images": ["portal-outside.jpg"],
     "videos": ["/videos/connectlehigh.mp4", "/videos/portal-mobile.mp4"]
   },
@@ -86,7 +86,7 @@
     "role": "Forum One",
     "color": "#7db956",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(270deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
+    "offcolor": "linear-gradient(160deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
     "images": ["scllr.png"],
     "videos": ["/videos/scllr.mp4"]
   },
@@ -169,10 +169,10 @@
     "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
-    "color": "#ffebac",
+    "color": "#e4ce87",
     "half": "two",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(to right top, #973141, #862937, #75222e, #641a25, #54131d)",
+    "offcolor": "linear-gradient(270deg, #973141, #862937, #75222e, #641a25, #54131d)",
     "images": ["paulknakk.jpg"],
     "videos": ["/videos/paulknakk.mp4"]
   }

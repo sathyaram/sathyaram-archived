@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.scss'
-import resume from './../SathyaRam_Resume2018.pdf';
+import resume from './../SathyaRam_Resume2020.pdf';
 
 
 class Menu extends Component {
@@ -71,7 +71,6 @@ class Menu extends Component {
           <div className="menus">
             <ul className="menu">
               <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
-              <li><Link onClick={this.getOffOfMe} to="/contact">Contact</Link></li>
             </ul>
             <div className="mcmenu">
               <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Photography</a>
@@ -81,6 +80,8 @@ class Menu extends Component {
               <a target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=cq3fwlZdWhw">✧</a>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Gmail</a>
             </div>
           </div>
         </div>
@@ -100,7 +101,6 @@ class Menu extends Component {
           <a aria-label="codepen" target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">
             <i className="fab fa-codepen" aria-hidden="true"></i>
           </a>
-          
         </div>
       </nav>
     );
