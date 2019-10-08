@@ -33,9 +33,9 @@ header {
 }
 
 .branding {
-  height: 100vh;
+  height: 65vh;
   width: 100%;
-  padding: 0 5rem;
+  padding: 3rem 5rem 0;
   z-index: 15;
   display: flex;
   position: relative;
@@ -43,20 +43,28 @@ header {
   justify-content: center;
   flex-direction: column;
   background-color: transparent;
+
+  @media screen and (max-width: 800px) {
+    height: 80vh;
+  }
 }
 
 .pronounce {
   padding-bottom: 0.5rem;
-  font-size: 12px;
+  position: relative;
+  top: -2.5rem;
+  font-size: 11px;
   z-index: 5;
-  font-weight: bold;
+  font-weight: lighter;
   opacity: 0;
-  transition: opacity 500ms ease;
+  transition: all 500ms ease;
   pointer-events: none;
   display: inline-block;
+  transform: scaleX(0.9);
+
 
   i {
-    font-size: 20px;
+    font-size: 12px;
     color: white;
     text-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3), 0 -5px 20px rgba(0, 0, 0, 0.3);
   }
@@ -66,11 +74,9 @@ header {
   margin-top: -0.5rem;
   color: white;
   border-radius: 12px;
-  padding: 0.35rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.45rem 1.5rem 0.35rem;
   font-style: italic;
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(80, 220, 255, 0.7);
 
   span {
     font-size: 12px;
@@ -83,17 +89,19 @@ header {
     .pronounce {
       opacity: 1;
       pointer-events: auto;
+      transform: scaleX(1);
     }
-    span {
+    h1 span {
       padding: 0 10px;
       color: #fff;
       text-align: center;
       text-transform: uppercase;
       font-family: "aquatico", sans-serif;
       font-weight: 200;
-      letter-spacing: 2px;
-      text-shadow: 0 0 5px #fff, 0 0 10px #60c0f0, 0 0 20px #60c0f0;
+      letter-spacing: 8px;
+      text-shadow: 0 0 5px #fff, 0 0 20px #60c0f0, 0 0 50px #60c0f0;
       transform: translateY(0px);
+      cursor: url("./../ram-logo-white.png"), auto;
     }
   }
 }
@@ -103,14 +111,17 @@ h1 {
   font-size: 4.75rem;
   line-height: 100%;
   text-transform: uppercase;
+  margin-top: -3rem;
 
   span {
-    background-color: white;
-    background-image: linear-gradient(0deg, white 40%, #93d8fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background-color: white;
+    // background-image: linear-gradient(0deg, white 40%, #93d8fb 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px white, 0 0 25px white;
+
     transition: all 300ms ease;
-    text-shadow: none;
+    // text-shadow: none;
   }
 
   @media screen and (max-width: 400px) {
@@ -120,9 +131,11 @@ h1 {
 
 @media screen and (min-width: 568px) {
   h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
+  
 }
+
 
 @keyframes moveUp {
   0% {
@@ -146,19 +159,48 @@ h1 {
 }
 
 h2 {
-  height: 33px;
-  margin-top: 0.5rem;
-  overflow: hidden;
-  letter-spacing: 1px;
+  display: flex;
+  width: 100%;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
-  span {
-    transform: translateY(0px);
-    animation: 12s moveUp ease-in-out 5s infinite;
-    font-size: 1.5rem;
-    display: block;
-    padding: 0 1.5rem 1px;
-    text-shadow: 0px 0px 18px #fff;
-  }
+  
+  .skills {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    font-size: 1.25rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    flex-direction: column;
+    color: #fff;
+    flex: 1;
+    margin-bottom: -40px;
+    font-weight: bold;
+    font-family: "Aquatico";
+    transition: transform 300ms ease;
+
+    @media screen and (max-width: 960px) {
+      margin: 0;
+    }
+  
+    div {
+      flex-grow: 1;
+      padding: 0 2rem;
+      text-align: left;
+    }
+  
+    span {
+      display: block;
+      font-family: "Barlow";
+      letter-spacing: 0.25rem;
+      font-size: 0.75rem;
+      margin-bottom: 0px;
+      font-weight: normal;
+    }
+  }  
 }
 
 @keyframes spin {
@@ -209,8 +251,8 @@ h2 {
   animation: 500ms fadeIn ease;
 }
 
-@for $i from 1 through 2000 {
-  $randomNum: random(8) + px;
+@for $i from 1 through 1000 {
+  $randomNum: random(11) + px;
   .stars:nth-child(#{$i}) {
     top: percentage(random(100) / 100);
     left: percentage(random(100) / 100);
@@ -223,12 +265,13 @@ h2 {
 
 .planet {
   position: absolute;
-  top: 53%;
+  top: 54%;
   left: 50%;
-  width: 225px;
+  width: 265px;
   transform: translate(-50%, -50%);
   z-index: -1;
-  height: 225px;
+  animation: spin 30s linear infinite;
+  height: 265px;
   background-image: linear-gradient(
     66deg,
     #62a3d2 0%,
@@ -243,8 +286,13 @@ h2 {
 
 .eyebrowMenu {
   position: absolute;
-  top: 65px;
-  right: 120px;
+  top: 20px;
+  padding: 1.25rem 1.5rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   span {
     position: absolute;
@@ -269,10 +317,11 @@ h2 {
     font-size: 20px;
     padding: 15px 16px;
     width: 60px;
+    height: 60px;
     margin-top: 0.5rem;
-    position: absolute;
     border: 1px solid transparent;
     left: 0;
+    border-radius: 50px;
 
     &:hover {
       span {
@@ -281,26 +330,31 @@ h2 {
       }
     }
 
-    &:nth-child(1) {
+    &.addStar {
+      box-shadow: 0 0 3px rgb(255, 244, 147);
       &:active {
         background-color: rgb(255, 240, 102);
       }
     }
 
-    &:nth-child(2) {
+    &#playButton {
       top: 60px;
-      padding: 15px 17.5px;
+      box-shadow: 0 0 3px rgb(65, 193, 253);
       display: none;
       &:active {
         background-color: rgb(65, 193, 253);
       }
+      i {
+        margin-left: -2px;
+      }
     }
 
-    &:nth-child(3) {
+    &#pauseButton {
       opacity: 1;
       top: 60px;
+      box-shadow: 0 0 3px rgb(43, 248, 104);
+
       &:active {
-        background-color: rgb(66, 255, 145);
       }
     }
   }

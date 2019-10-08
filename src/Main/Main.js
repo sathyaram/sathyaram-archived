@@ -1,23 +1,22 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component } from 'react';
 import Header from '../Header/Header';
-import projects from './../projects.json';
-const Project = lazy(() => import('../Project/Project'));
+import Websites from '../Websites/Websites';
+import Designs from '../Designs/Designs';
+import Photography from '../Photography/Photography';
+import { Route, Switch } from 'react-router-dom';
+
 
 class Main extends Component {
   render() {
     return (
       <main role="main" className="home">
         <Header />
-        <section id="maincontent">
-          {projects.map(function (project, i) {
-            return (
-              <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>
-                <Project key={i} project={project} />
-              </Suspense>
-            )
-          }
-          )}
-        </section>
+        <Switch>
+          <Route path="/photography" render={() => <Photography />} />
+          <Route path="/designs" render={() => <Designs />} />
+          <Route path="/websites" render={() => <Websites />} />
+        </Switch>
+        
       </main>
     );
   }

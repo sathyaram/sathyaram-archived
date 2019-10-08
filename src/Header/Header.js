@@ -35,7 +35,7 @@ class Header extends Component {
   }
 
   addStars = () => {
-    for (let x = 0; x < 15; x++) {
+    for (let x = 0; x < 75; x++) {
       var newStar = document.createElement('div');
       let space = document.getElementById("space");
       newStar.className = 'new stars';
@@ -258,18 +258,20 @@ class Header extends Component {
         </div>
         <div className="branding">
           <div className="eyebrowMenu">
-            <button className="addStar" onClick={this.addStars} name="Add Stars">
-              <span>Add More Stars</span> <i className="fas fa-star"></i>
+            <button className="addStar" aria-label="add stars" onClick={this.addStars} name="Add Stars">
+              <i className="fas fa-star" ></i>
             </button>
-            <button id="pauseButton" onClick={this.pause} name="Pause Background Music">
-              <i className="fas fa-pause"></i>
-            </button>
-            <button id="playButton" onClick={this.play} name="Play Background Music">
-              <span>Listen to Background Music</span> <i className="fas fa-music"></i>
-            </button>
-            <audio id="bg-music" controls loop>
-              <source src={bgmusic} type="audio/mp3"></source>
-            </audio>
+            <div className="music-wrapper">
+              <button id="pauseButton" aria-label="pause icon" onClick={this.pause} name="Pause Background Music">
+                <i className="fas fa-pause" ></i>
+              </button>
+              <button id="playButton" aria-label="play music" onClick={this.play} name="Play Background Music">
+                <i className="fas fa-music" ></i>
+              </button>
+              <audio id="bg-music" controls loop>
+                <source src={bgmusic} type="audio/mp3"></source>
+              </audio>
+            </div>
           </div>
 
           <div className="planet"></div>
@@ -277,18 +279,32 @@ class Header extends Component {
             <div className="pronounce">
               <i className="fas fa-comment"></i>
               <div className="explanation">
-                Sa-thee-uh Ram
+                / Saa-thee-uh · Ram /
               </div>
             </div>
             <h1><span>Sathya Ram</span></h1>
+            <h2>
+              <div className="skills">
+                <span>Front-End</span>
+                Developer
+                    </div>
+              <div className="skills">
+                <span>Graphic &amp; Web</span>
+                Designer
+            </div>
+              <div className="skills">
+                <span>Professional</span>
+                Photographer
+                </div>
+            </h2>
           </div>
-          <h2>
+          {/* <h2>
             <span>Web Designer + Developer</span>
             <span>CSS Enthusiast</span>
             <span>Avid PC Gamer</span>
             <span>Film Nerd</span>
             <span>Potterhead</span>
-          </h2>
+          </h2> */}
         </div>
         <Framicons />
       </header>

@@ -151,40 +151,10 @@ $breakpoint-md-max: 768px;
 $breakpoint-xs-max: 768px;
 $breakpoint-max: 1184px;
 
-.skills {
-  display: flex;
-  padding-top: 0.5rem;
-  justify-content: center;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  flex-direction: column;
-  color: #fff;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-family: "Aquatico";
-  transition: transform 300ms ease;
-
-  div {
-    flex-grow: 1;
-    padding: 0 2rem;
-    text-align: left;
-  }
-
-  span {
-    display: block;
-    font-family: "Barlow";
-    letter-spacing: 0.25rem;
-    font-size: 0.75rem;
-    margin-bottom: 0px;
-    font-weight: normal;
-  }
-}
-
 .framicons {
   display: block;
   width: 100%;
-  margin: -140px 0 0;
+  margin: 0;
   padding-bottom: 30px;
   position: relative;
   z-index: 2;
@@ -192,7 +162,7 @@ $breakpoint-max: 1184px;
   &::after {
     content: "";
     width: 100%;
-    height: 300px;
+    height: 450px;
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -202,6 +172,7 @@ $breakpoint-max: 1184px;
       rgba(255, 255, 255, 0) 0%,
       rgba(255, 255, 255, 1) 75%
     );
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(75, 184, 236, 0.7) 50%, #fff 80%);
   }
 
   .web,
@@ -212,7 +183,7 @@ $breakpoint-max: 1184px;
     text-align: center;
     text-decoration: none;
     z-index: 1;
-    margin: 65px 25px 0px;
+    // margin: 0px 25px;
     perspective: 1000px;
 
     @media screen and (max-width: 400px) {
@@ -225,12 +196,10 @@ $breakpoint-max: 1184px;
         text-shadow: 0 0 20px white;
       }
       .card-wrapper {
-        cursor: url("./../ram-logo-white.png"), auto;
         transform: translateY(-30px) rotateY(180deg) translateZ(1px);
         box-shadow: 0px 40px 40px -10px rgba(0, 0, 0, 0.15);
 
         .back {
-          background: $color-white;
           color: $color-midnight;
         }
       }
@@ -240,16 +209,15 @@ $breakpoint-max: 1184px;
   .card-wrapper {
     display: block;
     position: relative;
-    background: $color-white;
     transform-style: preserve-3d;
     transform-origin: center center;
     color: $color-white;
     transition: box-shadow 300ms ease, transform 300ms ease;
     z-index: 1;
     width: 325px;
-    height: 400px;
+    height: 270px;
     perspective: 1000px;
-    border-radius: 6px;
+    // border-radius: 6px;
 
     @media (max-width: $breakpoint-md-max) {
       width: 300px;
@@ -261,20 +229,22 @@ $breakpoint-max: 1184px;
   .side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    border-radius: 6px;
+    // border-radius: 6px;
   }
 
   .front {
@@ -291,9 +261,10 @@ $breakpoint-max: 1184px;
     left: 0;
     background: $color-white;
     color: $color-white;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 120%;
     z-index: 9;
+    display: block;
     transition: background 600ms ease;
     transform: rotateY(-180deg) translateZ(60px);
 
@@ -304,8 +275,8 @@ $breakpoint-max: 1184px;
 
   .vector {
     position: relative;
-    margin-top: 40px;
-    transform: translateZ(60px);
+    transform: translateZ(60px) scale(0.4);
+    margin: 2rem 0 -2rem;
 
     > div {
       color: white;
@@ -328,7 +299,6 @@ $breakpoint-max: 1184px;
   }
 
   .description {
-    margin-top: 115px;
 
     h3 {
       color: $color-midnight;
@@ -357,6 +327,9 @@ $breakpoint-max: 1184px;
   }
 
   .web {
+    .card-wrapper {
+      left: 1px;
+    }
     .monitor {
       width: 228px;
       height: 137px;
@@ -618,12 +591,15 @@ $breakpoint-max: 1184px;
   }
 
   .photography {
+    .card-wrapper {
+      right: 1px;
+    }
     .photo {
       width: 135px;
       height: 157px;
       margin: 0 auto;
       padding: 13px 14px 15px;
-      top: 60%;
+      // top: 60%;
       background: $color-gray;
       border-radius: 2px;
 
