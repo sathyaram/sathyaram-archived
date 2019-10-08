@@ -7,7 +7,7 @@ class Framicons extends Component {
         return (
 
             <div className="framicons">
-                <Link to="/websites" className="web">
+                <Link to="/" className="web">
 
 
                     <div className="card-wrapper">
@@ -48,7 +48,7 @@ class Framicons extends Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/designs" className="graphic">
+                <Link to="/" className="graphic">
 
                     <div className="card-wrapper">
                         <div className="front side">
@@ -75,7 +75,7 @@ class Framicons extends Component {
                         </div>
                     </div>
                 </Link>
-                <Link className="photography" to="/photography">
+                <Link className="photography" to="/">
 
                     <div className="card-wrapper">
                         <div className="front side">

@@ -172,8 +172,8 @@ $breakpoint-max: 1184px;
     //   rgba(255, 255, 255, 0) 30%,
     //   rgba(255, 255, 255, 1) 75%
     // );
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, 
-    rgba(75, 184, 236, 0.7) 50%, #fff 80%);
+    // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, 
+    // rgba(75, 184, 236, 0.7) 50%, #fff 80%);
   }
 
   .web,
@@ -216,7 +216,7 @@ $breakpoint-max: 1184px;
     transition: box-shadow 300ms ease, transform 300ms ease;
     z-index: 1;
     width: 325px;
-    height: 270px;
+    height: 325px;
     perspective: 1000px;
     // border-radius: 6px;
 
@@ -265,7 +265,7 @@ $breakpoint-max: 1184px;
     font-size: 1rem;
     line-height: 120%;
     z-index: 9;
-    display: block;
+    display: flex;
     transition: background 600ms ease;
     transform: rotateY(-180deg) translateZ(60px);
 
@@ -276,7 +276,7 @@ $breakpoint-max: 1184px;
 
   .vector {
     position: relative;
-    transform: translateZ(60px) scale(0.4);
+    transform: translateZ(60px) scale(0.45);
     margin: 2rem 0 -2rem;
 
     > div {

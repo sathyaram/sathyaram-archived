@@ -32,16 +32,17 @@ const Project = props => (
           <span><i class="fas fa-lock"></i> https</span>{props.project.link.replace('https://', '').replace('http://', '')}
         </a>
       </div>
-      <div className="text" style={{ color: `${props.project.textcolor}` }}>
-        <ul className="tags" style={{ borderColor: `${props.project.color}` }}>
+      
+        <ul className="tags">
           {props.project.tags
             ? props.project.tags.map(item =>
-              <li style={{ borderColor: `${props.project.color}` }} key={item}>{item}</li>
+              <li style={{ borderColor: `${props.project.color}`, color: `${props.project.textcolor}` }} key={item}>{item}</li>
             )
             : null
           }
         </ul>
-        <p className="description">{props.project.description}</p>
+        <div className="text" style={{ color: `${props.project.textcolor}` }}>
+        {/* <p className="description">{props.project.description}</p> */}
       </div>
     </div>
     <div className="track">

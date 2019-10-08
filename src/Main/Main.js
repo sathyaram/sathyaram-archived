@@ -11,11 +11,12 @@ class Main extends Component {
     return (
       <main role="main" className="home">
         <Header />
-        <Switch>
-          <Route path="/photography" render={() => <Photography />} />
-          <Route path="/designs" render={() => <Designs />} />
-          <Route path="/websites" render={() => <Websites />} />
-        </Switch>
+        <Websites />
+        {/* <Switch>
+          <Route path="/" render={() => <Photography />} />
+          <Route path="/" render={() => <Designs />} />
+          <Route path="/" render={() => <Websites />} />
+        </Switch> */}
         
       </main>
     );
