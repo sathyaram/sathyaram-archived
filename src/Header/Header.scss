@@ -33,7 +33,7 @@ header {
 }
 
 .branding {
-  height: 65vh;
+  height: 75vh;
   width: 100%;
   padding: 3rem 5rem 0;
   z-index: 15;
@@ -337,24 +337,27 @@ h2 {
       }
     }
 
-    &#playButton {
-      top: 60px;
-      box-shadow: 0 0 3px rgb(65, 193, 253);
-      display: none;
-      &:active {
-        background-color: rgb(65, 193, 253);
-      }
-      i {
-        margin-left: -2px;
-      }
-    }
-
     &#pauseButton {
-      opacity: 1;
       top: 60px;
       box-shadow: 0 0 3px rgb(43, 248, 104);
 
+      display: none;
       &:active {
+      }
+      
+    }
+
+    &#playButton {
+      opacity: 1;
+      top: 60px;
+      box-shadow: 0 0 3px rgb(65, 193, 253);
+
+      &:active {
+        background-color: rgb(65, 193, 253);
+
+      }
+      i {
+        margin-left: -2px;
       }
     }
   }

@@ -155,7 +155,7 @@ $breakpoint-max: 1184px;
   display: block;
   width: 100%;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 5rem;
   position: relative;
   z-index: 2;
 
@@ -167,12 +167,13 @@ $breakpoint-max: 1184px;
     bottom: 0;
     z-index: -1;
     left: 0;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 75%
-    );
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(75, 184, 236, 0.7) 50%, #fff 80%);
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   rgba(255, 255, 255, 0) 30%,
+    //   rgba(255, 255, 255, 1) 75%
+    // );
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, 
+    rgba(75, 184, 236, 0.7) 50%, #fff 80%);
   }
 
   .web,
@@ -196,7 +197,7 @@ $breakpoint-max: 1184px;
         text-shadow: 0 0 20px white;
       }
       .card-wrapper {
-        transform: translateY(-30px) rotateY(180deg) translateZ(1px);
+        transform: rotateY(180deg) translateZ(1px);
         box-shadow: 0px 40px 40px -10px rgba(0, 0, 0, 0.15);
 
         .back {
@@ -301,7 +302,7 @@ $breakpoint-max: 1184px;
   .description {
 
     h3 {
-      color: $color-midnight;
+      color: rgb(184, 231, 253);
       font-size: 24px;
       text-stroke: 2px $color-midnight;
       letter-spacing: 5px;
