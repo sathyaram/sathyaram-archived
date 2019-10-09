@@ -3,7 +3,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 105vh;
   z-index: 9;
   display: flex;
   background: #fff;
@@ -209,7 +209,7 @@
 
   .mini-menu {
     a {
-      padding: 1rem;
+      padding: 1rem 0.5rem;
       color: #1e95f7;
 
       &:nth-child(1),
@@ -427,7 +427,7 @@
     }
 
     a {
-      margin-left: -66px !important;
+   
       @media screen and (min-width: 800px) {
         margin-left: -59px !important;
       }

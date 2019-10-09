@@ -29,7 +29,7 @@ const Project = props => (
         </h3>
         <h4 className="subtitle" style={{ color: `${props.project.textcolor}` }}>{props.project.subtitle}</h4>
         <a className="website-link" target="_blank" rel="noopener noreferrer" href={props.project.link} style={{ borderColor: `${props.project.color}` }}>
-          <span><i class="fas fa-lock"></i> https</span>{props.project.link.replace('https://', '').replace('http://', '')}
+          <span><i className="fas fa-lock"></i> https</span>{props.project.link.replace('https://', '').replace('http://', '')}
         </a>
       </div>
 

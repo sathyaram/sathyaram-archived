@@ -1,8 +1,13 @@
 section {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1040px;
+  max-width: 1080px;
   margin: 2rem auto 4rem;
+
+  @media screen and (max-width: 1080px) {
+    max-width: 780px;
+    margin: 2rem auto -2rem;
+  }
 }
 
 article {
@@ -10,15 +15,15 @@ article {
   text-align: left;
   min-height: 400px;
   width: 50%;
-  width: calc(50% - 60px);
-  margin: 30px;
+  width: calc(50% - 6rem);
+  margin: 2rem 3rem;
   display: flex;
   transition: all 300ms ease;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: 1080px) {
     padding: 4rem 2rem;
     width: 100%;
   }
@@ -67,7 +72,6 @@ article {
 
     .text {
       grid-template-columns: auto;
-      // margin: 1rem 0 0;
     }
     .tags {
       li {
@@ -140,18 +144,20 @@ article {
       line-height: 100%;
       letter-spacing: 3px;
       font-weight: bold;
-      margin-left: -3.75rem;
+      margin-left: -5.5rem;
 
       @media screen and (min-width: 768px) {
         letter-spacing: 0.5rem;
       }
-      @media screen and (max-width: 1040px) {
+      @media screen and (max-width: 1080px) {
         width: calc(100% - 5rem);
+        margin: 0;
       }
 
       @media screen and (max-width: 500px) {
         word-break: break-word;
         width: 100%;
+        font-size: 2rem;
       }
     }
 
@@ -187,6 +193,7 @@ article {
     font-size: 0.75rem;
     margin: 1rem 0;
     font-weight: bold;
+    letter-spacing: -0.5px;
 
     @media screen and (min-width: 768px) {
       font-size: 0.65rem;
@@ -196,7 +203,7 @@ article {
       top: 0rem;
     }
 
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1080px) {
       right: 0;
     }
 
@@ -226,7 +233,7 @@ article {
     display: block;
     padding: 0.5rem 1.25rem;
     color: #222222;
-    border-radius: 6px;
+    border-radius: 3px;
     background: linear-gradient(
       322deg,
       rgba(249, 249, 249, 0.3) 4%,
@@ -430,7 +437,7 @@ article {
       @media screen and (max-width: 600px) {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        margin: 0 -5rem 0 -5rem;
+        margin: 0 -1rem;
       }
 
       > * {
@@ -453,7 +460,7 @@ article {
       @media screen and (max-width: 600px) {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        margin: 0 -5rem 0 -5rem;
+        margin: 0 -1rem;
       }
 
       > * {
@@ -471,7 +478,7 @@ article {
       @media screen and (max-width: 600px) {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        margin: 0 -5rem 0 -5rem;
+        margin: 0 -1rem;
       }
 
       > * {

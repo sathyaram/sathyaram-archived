@@ -58,7 +58,7 @@ class Menu extends Component {
     };
 
     return (
-      <nav>
+      <nav role="navigation" name="navigation">
         <div className={menuClasses.join(' ')}>
           <div className="burger">
             <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
@@ -81,7 +81,7 @@ class Menu extends Component {
               <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=cq3fwlZdWhw">✧</a>
-              <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Gmail</a>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Email</a>
             </div>
           </div>
         </div>
