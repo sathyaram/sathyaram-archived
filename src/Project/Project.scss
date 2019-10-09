@@ -342,7 +342,8 @@ article {
       transition: background 300ms ease;
 
       i {
-        margin-right: 5px;
+        margin-right: -0.25rem;
+        font-size: 1rem;
       }
     }
 
@@ -404,6 +405,9 @@ article {
 
     &.Lehigh {
       &::before {
+        width: 22px;
+        left: -10px;
+        top: calc(50% + 1px);
         content: url("./../lehigh.svg");
       }
     }
