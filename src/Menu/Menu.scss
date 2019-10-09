@@ -1,9 +1,16 @@
+nav {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .main-menu {
   width: 70%;
   position: fixed;
   left: 0;
   top: 0;
-  height: 105vh;
+  height: 100%;
   z-index: 9;
   display: flex;
   background: #fff;
@@ -371,7 +378,6 @@
   font-family: "Aquatico";
   opacity: 0;
   transition: opacity 200ms ease 100ms;
-  margin-left: -2px;
 }
 
 .social-media {
@@ -380,7 +386,7 @@
   top: 0px;
   right: -60px;
   background: #fff;
-  height: 100vh;
+  height: 100%;
   display: flex;
   z-index: 8;
   flex-direction: column;

@@ -24,8 +24,12 @@ article {
   flex-direction: column;
 
   @media screen and (max-width: 1080px) {
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
     width: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0 0 2rem;
   }
 
   &.split {
@@ -212,12 +216,13 @@ article {
       border: 1px solid rgb(187, 187, 187);
       margin: 2px;
       padding: 0.35rem;
+      border-radius: 2px;
 
       @media screen and (min-width: 768px) {
         &:not(:last-child) {
           margin: 0 0 0.5rem;
         }
-        padding: 0.15rem 0.5rem;
+        padding: 0.25rem 0.5rem;
         border-width: 1px;
         border-style: solid;
         border-right-width: 5px;
@@ -405,7 +410,7 @@ article {
 
     &.Lehigh {
       &::before {
-        width: 22px;
+        width: 20px;
         left: -10px;
         top: calc(50% + 1px);
         content: url("./../lehigh.svg");
@@ -420,6 +425,9 @@ article {
 
     &.Weidenhammer {
       &::before {
+        width: 24px;
+        left: -11px;
+        top: calc(50% + 1px);
         content: url("./../weidenhammer.svg");
       }
     }
