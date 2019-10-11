@@ -9,7 +9,7 @@ class Framicons extends Component {
 
             <div className="framicons">
                 <Link to="/" className="web">
-              <ScrollAnimation animateIn="fadeInUp" delay={4700} animateOnce={true}>
+              <ScrollAnimation animateIn="fadeInUp" delay={4700} animateOnce={true} animatePreScroll={true} scrollableParentSelector='header'>
 
 
                     <div className="card-wrapper">
@@ -53,7 +53,7 @@ class Framicons extends Component {
                 </Link>
 
                 <Link to="/" className="graphic">
-              <ScrollAnimation animateIn="fadeInUp" delay={4800} animateOnce={true}>
+              <ScrollAnimation animateIn="fadeInUp" delay={4800} animateOnce={true} animatePreScroll={true} scrollableParentSelector='header'>
 
                     <div className="card-wrapper">
                         <div className="front side">
@@ -84,7 +84,7 @@ class Framicons extends Component {
 
                 
                 <Link className="photography" to="/">
-              <ScrollAnimation animateIn="fadeInUp" delay={4900} animateOnce={true}>
+              <ScrollAnimation animateIn="fadeInUp" delay={4900} animateOnce={true} animatePreScroll={true} scrollableParentSelector='header'>
 
                     <div className="card-wrapper">
                         <div className="front side">

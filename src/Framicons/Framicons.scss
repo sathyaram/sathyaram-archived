@@ -38,9 +38,11 @@ $breakpoint-max: 1184px;
     text-align: center;
     text-decoration: none;
     z-index: 1;
+    perspective: 1000px;
 
     > div {
       perspective: 1000px;
+      animation-fill-mode: none;
     }
 
     @media screen and (max-width: 400px) {
