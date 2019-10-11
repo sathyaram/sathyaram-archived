@@ -1,8 +1,10 @@
 import React from "react";
 import './Project.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const Project = props => (
-  <article aria-label={props.project.title} data-color={props.project.color} id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }} className={`project ${props.project.half === 'split' ? 'split' : 'full'}`}>
+  <ScrollAnimation animateOnce={true} animateIn="fadeInUp" aria-label={props.project.title} data-color={props.project.color} id={props.project.title.toLowerCase().split(' ').join('')} style={{ background: props.project.offcolor ? props.project.offcolor : 'skyblue' }} className={`project ${props.project.half === 'split' ? 'split' : 'full'}`}>
     <div className="information">
       <div className="eyebrow">
         <div className={`role ${props.project.role}`} style={{ color: `${props.project.textcolor}` }}>
@@ -159,7 +161,7 @@ const Project = props => (
         </>
       }
     </div>
-  </article>
+  </ScrollAnimation>
 )
 
 export default Project;
