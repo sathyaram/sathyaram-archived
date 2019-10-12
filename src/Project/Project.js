@@ -2,8 +2,10 @@ import React from "react";
 import './Project.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
+import LazyLoad from 'react-lazyload';
 
 const Project = props => (
+  <LazyLoad>
   <ScrollAnimation
     animateOnce={true}
     animateIn="fadeInUp"
@@ -162,6 +164,7 @@ const Project = props => (
       )}
     </div>
   </ScrollAnimation>
+  </LazyLoad>
 );
 
 export default Project;

@@ -8,11 +8,14 @@ class Loader extends Component {
   
   componentDidMount() {
     var loader = document.getElementById('loader');
+    loader.onclick = function() {
+      window.scroll({top: 0, left: 0, behavior: 'smooth' });
+    };
     setTimeout(function() {
       loader.classList.add('gone');
     }, 2000);
-  
   }
+  
   render() {
     return (
       <>
