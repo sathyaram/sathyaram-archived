@@ -36,7 +36,6 @@ class Menu extends Component {
 
   handleClick = e => {
     if (e.target.closest(".main-menu")) return;
-
     this.setState({ isOpened: false });
   }
 
@@ -62,9 +61,9 @@ class Menu extends Component {
         <div className={menuClasses.join(' ')}>
           <div className="burger">
             <button className="menu-trigger" aria-label="menu trigger" name="menu-trigger" onClick={this.menuTrigger}>
-                <span></span>
-                <span></span>
-                <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
             <div className="menu-title">Menu</div>
           </div>

@@ -3,36 +3,60 @@
     "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
     "description": "As a huge car enthusiast, I was surprised to find there wasn't a place on the internet to hear exhaust notes, or car engine rev sounds. So, I made a hotrod haven to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today.",
-    "tags": ["React", "Express", "AWS Lightsail", "MongoDB", "SCSS", "Web Design"],
+    "tags": [
+      "React",
+      "Express",
+      "AWS Lightsail",
+      "MongoDB",
+      "SCSS",
+      "Web Design"
+    ],
     "link": "https://exhaustnotes.co",
     "github": "https://github.com/sathyaram/exhaustnotes",
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
-    "half": "grid",
+    "type": "small",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
-    "images": ["en-mobile.jpg", "en-button.gif", "en-grid.png"],
-    "videos": ["/videos/en2.mp4", "/videos/en.mp4"]
+    "images": [
+      "en-mobile.jpg",
+      "en-button.gif",
+      "en-grid.png"
+    ],
+    "videos": [
+      "/videos/en2.mp4",
+      "/videos/en.mp4"
+    ]
   },
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
-    "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/web tool, with over half a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8.",
-    "tags": ["Drupal 8", "Pattern Lab", "Twig/YAML", "SCSS"],
+    "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8.",
+    "tags": [
+      "Drupal 8",
+      "Pattern Lab",
+      "Twig/YAML",
+      "SCSS"
+    ],
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
-    "half": "small",
+    "type": "small",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
-    "images": ["hhmi-mobile2.jpg"],
-    "videos": ["/videos/hhmi.mp4", "/videos/hhmi2.mp4"]
+    "images": [
+      "hhmi-mobile2.jpg"
+    ],
+    "videos": [
+      "/videos/hhmi.mp4",
+      "/videos/hhmi2.mp4"
+    ]
   },
   {
     "title": "FudTruk",
     "subtitle": "Lehigh Valley's Freshest Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
-    "half": "small",
+    "type": "small",
     "tags": [
       "Drupal 7",
       "jQuery",
@@ -47,8 +71,13 @@
     "color": "#ffda67",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg, #f05a26, #FAAF40)",
-    "images": ["fudtruk-uc.jpg"],
-    "videos": ["/videos/fudtruk.mp4", "/videos/fudtruk2.mp4"]
+    "images": [
+      "fudtruk-uc.jpg"
+    ],
+    "videos": [
+      "/videos/fudtruk.mp4",
+      "/videos/fudtruk2.mp4"
+    ]
   },
   {
     "title": "Lehigh Portal Redesign",
@@ -62,15 +91,20 @@
       "Google Analytics",
       "Tag Manager"
     ],
-    "half": "small",
+    "type": "small",
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
     "link": "https://connect.lehigh.edu",
     "role": "Lehigh University",
     "color": "#d0a678",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(-35deg, rgb(37, 21, 0) 0%, rgb(115, 45, 2) 100%)",
-    "images": ["portal-outside.jpg"],
-    "videos": ["/videos/connectlehigh.mp4", "/videos/portal-mobile.mp4"]
+    "images": [
+      "portal-outside.jpg"
+    ],
+    "videos": [
+      "/videos/connectlehigh.mp4",
+      "/videos/portal-mobile.mp4"
+    ]
   },
   {
     "title": "SCLLR",
@@ -81,99 +115,156 @@
       "Twig/YAML",
       "SCSS"
     ],
-    "half": "two",
+    "type": "two",
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
     "color": "#7db956",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(160deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
-    "images": ["scllr.png"],
-    "videos": ["/videos/scllr.mp4"]
+    "images": [
+      "scllr.jpg"
+    ],
+    "videos": [
+      "/videos/scllr.mp4"
+    ]
   },
   {
     "title": "That's A Cool Website",
     "subtitle": "A Curated Collection of Cool Websites",
     "description": "Another website for designspiration? Well, actually, this one is a website of websites, but specifically designer, developer, and agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
-    "tags": ["React", "SCSS", "Web Design", "Netlify"],
+    "tags": [
+      "React",
+      "SCSS",
+      "Web Design",
+      "Netlify"
+    ],
     "link": "https://thatsacoolwebsite.com",
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
     "color": "cyan",
-    "half": "two",
+    "type": "two",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
-    "images": ["coolwebsite.png"],
-    "videos": ["/videos/coolwebsite.mp4"]
+    "images": [
+      "coolwebsite.png"
+    ],
+    "videos": [
+      "/videos/coolwebsite.mp4"
+    ]
   },
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
     "description": "This is a single player trivia game based on the 2018 Academy Awards (The Oscars). It tests your Oscars knowledge on two levels: a 10 question quiz that asks who won the Oscar for the most popular categories, or all the 24 Oscar categories, for the movie buffs.",
-    "tags": ["JavaScript", "HTML/CSS", "Web Design"],
+    "tags": [
+      "JavaScript",
+      "HTML/CSS",
+      "Web Design"
+    ],
     "link": "https://oscarstrivia.com",
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
-    "half": "two",
+    "type": "two",
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
-    "images": ["oscarsanimated.png"],
-    "videos": ["/videos/oscars.mp4"]
+    "images": [
+      "oscarsanimated.png"
+    ],
+    "videos": [
+      "/videos/oscars.mp4"
+    ]
   },
   {
     "title": "Gertrude Hawk Goodies",
     "subtitle": "Rewards Program Microsite",
     "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards website where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
-    "tags": ["WordPress", "jQuery", "HTML/SCSS", "PHP"],
+    "tags": [
+      "WordPress",
+      "jQuery",
+      "HTML/SCSS",
+      "PHP"
+    ],
     "link": "https://gertrudehawkgoodies.com",
     "role": "Weidenhammer",
     "color": "#e5d09a",
-    "half": "two",
+    "type": "two",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
-    "images": ["chocolate.jpg"],
-    "videos": ["/videos/hawkchocolate.mp4"]
+    "images": [
+      "chocolate.jpg"
+    ],
+    "videos": [
+      "/videos/hawkchocolate.mp4"
+    ]
   },
   {
     "title": "Astral Air Parts",
     "subtitle": "Aircraft Part Supplier",
     "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A small but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
-    "tags": ["WordPress", "jQuery", "HTML/SCSS", "PHP"],
+    "tags": [
+      "WordPress",
+      "jQuery",
+      "HTML/SCSS",
+      "PHP"
+    ],
     "link": "http://astralairparts.com",
     "role": "Weidenhammer",
     "color": "#ee5c23",
-    "half": "two",
+    "type": "two",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
-    "images": ["astral.jpg"],
-    "videos": ["/videos/astral.mp4"]
+    "images": [
+      "astral.jpg"
+    ],
+    "videos": [
+      "/videos/astral.mp4"
+    ]
   },
   {
     "title": "Keystone Munitions",
     "subtitle": "Premium Ammunition",
     "description": "You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before and counting.",
-    "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
+    "tags": [
+      "Drupal 7",
+      "jQuery",
+      "HTML/SCSS",
+      "Web Design"
+    ],
     "link": "http://keystonemunitions.com",
     "role": "Freelance Project",
     "color": "#f8b700",
-    "half": "two",
+    "type": "two",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "linear-gradient(to left top, rgb(251, 199, 82), rgb(49, 48, 35), rgb(0, 0, 0))",
-    "images": ["keystone.jpg"],
-    "videos": ["/videos/keystone.mp4"]
+    "images": [
+      "keystone.jpg"
+    ],
+    "videos": [
+      "/videos/keystone.mp4"
+    ]
   },
   {
     "title": "Paul Knakk",
     "subtitle": "Country Musician",
-    "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus." ,
-    "tags": ["Drupal 7", "jQuery", "HTML/SCSS", "Web Design"],
+    "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus.",
+    "tags": [
+      "Drupal 7",
+      "jQuery",
+      "HTML/SCSS",
+      "Web Design"
+    ],
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
     "color": "#e4ce87",
-    "half": "two",
+    "type": "two",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, #973141, #862937, #75222e, #641a25, #54131d)",
-    "images": ["paulknakk.jpg"],
-    "videos": ["/videos/paulknakk.mp4"]
+    "images": [
+      "paulknakk.jpg"
+    ],
+    "videos": [
+      "/videos/paulknakk.mp4"
+    ]
   }
 ]

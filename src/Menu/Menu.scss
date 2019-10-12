@@ -18,6 +18,14 @@ nav {
   transform: translateX(-100%);
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
 
+  @media screen and (min-width: 800px) {
+    left: 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -50,14 +58,6 @@ nav {
     opacity: 0;
     transition: transform 500ms ease, opacity 300ms ease;
     pointer-events: none;
-  }
-
-  @media screen and (min-width: 800px) {
-    left: 30px;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 95%;
   }
 
   &:hover {
@@ -98,6 +98,7 @@ nav {
         &:nth-of-type(2) {
           opacity: 0;
         }
+
         &:nth-of-type(3) {
           margin-top: -5px;
           transform-origin: center center;
@@ -113,178 +114,178 @@ nav {
       text-shadow: 0 0 15px white, 0 0 5px white;
     }
   }
+}
 
-  .menus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
-    padding: 12% 17.5%;
-    background-color: white;
-  }
+.menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding: 12% 17.5%;
+  background-color: white;
+}
 
-  .mcmenu {
-    a {
-      padding: 1rem;
-      color: black;
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      cursor: pointer;
-      font-size: 26px;
-      text-shadow: none;
-      position: relative;
+.mcmenu {
+  a {
+    padding: 1rem;
+    color: black;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 26px;
+    text-shadow: none;
+    position: relative;
 
-      @media screen and (max-width: 600px) {
-        font-size: 20px;
-      }
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
 
-      &:hover {
-        &::after {
-          opacity: 1;
-        }
-
-        &:first-child {
-          color: tomato;
-        }
-
-        &:last-child {
-          color: #e83e80;
-        }
-      }
-
-      &:first-child {
-        &::before {
-          content: "\f16d";
-          
-          background-image: radial-gradient(
-            circle at 33% 100%,
-            #fed373 4%,
-            #f15245 30%,
-            #d92e7f 62%,
-            #9b36b7 85%,
-            #515ecf
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-
-      &:last-child {
-        &::before {
-          content: "\f17d";
-          color: #e83e80;
-        }
-      }
-
-      &::before {
-        content: "✧";
-        font-size: 37px;
-        position: absolute;
-        top: 5px;
-        z-index: 0;
-        opacity: 0.25;
-        left: -8px;
-        font-family: "Font Awesome 5 Brands";
-      }
-
+    &:hover {
       &::after {
-        font-size: 8px;
-        position: absolute;
-        letter-spacing: 1px;
-        left: 1.1rem;
-        bottom: -2px;
-        opacity: 0;
-        transition: opacity 300ms ease;
+        opacity: 1;
       }
 
       &:first-child {
-        &::after {
-          content: "This will take you to my Instagram where most of my work is.";
-        }
+        color: tomato;
       }
 
       &:last-child {
-        &::after {
-          content: "This will take you to my Dribbble where most of my work is.";
-        }
+        color: #e83e80;
       }
     }
-  }
 
-  .mini-menu {
-    a {
-      padding: 1rem 0.5rem;
-      color: #1e95f7;
-
-      &:nth-child(1),
-      &:nth-child(3),
-      &:nth-child(5)  {
-        text-decoration: underline;
-        text-underline-position: under;
-      }
-    }
-  }
-
-  ul.menu {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
-
-    li {
-      width: 80%;
-
-      a {
-        display: inline-block;
-        font-size: 2.5rem;
-        padding: 1rem;
-        background-color: #3178d5;
-        background-image: linear-gradient(90deg, #70d5ff, #0059bc);
+    &:first-child {
+      &::before {
+        content: "\f16d";
+        
+        background-image: radial-gradient(
+          circle at 33% 100%,
+          #fed373 4%,
+          #f15245 30%,
+          #d92e7f 62%,
+          #9b36b7 85%,
+          #515ecf
+        );
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: perspective(1px) translateZ(0);
-        position: relative;
-        transition-property: color;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "\f17d";
+        color: #e83e80;
+      }
+    }
+
+    &::before {
+      content: "✧";
+      font-size: 37px;
+      position: absolute;
+      top: 5px;
+      z-index: 0;
+      opacity: 0.25;
+      left: -8px;
+      font-family: "Font Awesome 5 Brands";
+    }
+
+    &::after {
+      font-size: 8px;
+      position: absolute;
+      letter-spacing: 1px;
+      left: 1.1rem;
+      bottom: -2px;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    &:first-child {
+      &::after {
+        content: "This will take you to my Instagram where most of my work is.";
+      }
+    }
+
+    &:last-child {
+      &::after {
+        content: "This will take you to my Dribbble where most of my work is.";
+      }
+    }
+  }
+}
+
+.mini-menu {
+  a {
+    padding: 1rem 0.5rem;
+    color: #1e95f7;
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5)  {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+}
+
+ul.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+
+  li {
+    width: 80%;
+
+    a {
+      display: inline-block;
+      font-size: 2.5rem;
+      padding: 1rem;
+      background-color: #3178d5;
+      background-image: linear-gradient(90deg, #70d5ff, #0059bc);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: perspective(1px) translateZ(0);
+      position: relative;
+      transition-property: color;
+      transition-duration: 0.5s;
+      text-shadow: 1px 3px 3px rgba(30, 149, 247, 0.25);
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(270deg, #70d5ff, #2676d1);
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition-property: transform;
         transition-duration: 0.5s;
-        text-shadow: 1px 3px 3px rgba(30, 149, 247, 0.25);
+        transition-timing-function: ease-out;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+        background: white;
+        -webkit-text-fill-color: white;
+      }
+      &:hover:before,
+      &:focus:before,
+      &:active:before {
+        transform: scaleX(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      }
 
-        &:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: linear-gradient(270deg, #70d5ff, #2676d1);
-          transform: scaleX(0);
-          transform-origin: 0 50%;
-          transition-property: transform;
-          transition-duration: 0.5s;
-          transition-timing-function: ease-out;
-        }
-        &:hover,
-        &:focus,
-        &:active {
-          color: white;
-          background: white;
-          -webkit-text-fill-color: white;
-        }
-        &:hover:before,
-        &:focus:before,
-        &:active:before {
-          transform: scaleX(1);
-          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-        }
-
-        @media screen and (min-width: 362px) {
-          padding: 1rem;
-        }
+      @media screen and (min-width: 362px) {
+        padding: 1rem;
       }
     }
   }
@@ -460,15 +461,15 @@ nav {
     position: relative;
     text-shadow: 1px 3px 3px rgba(30, 149, 247, 0.25);
 
-    &:nth-child(3) {
-      i {
-        font-size: 32px;
-      }
-    }
-
     @media screen and (max-width: 800px) {
       &::before {
         pointer-events: auto;
+      }
+    }
+
+    &:nth-child(3) {
+      i {
+        font-size: 32px;
       }
     }
 
