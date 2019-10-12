@@ -100,17 +100,18 @@ const Project = props => (
           <div className="row">
             {props.project.videos[1] ? (
               <>
-                <video loop autoPlay muted>
+                <video loading="lazy" loop autoPlay muted pre>
                   <source
                     src={props.project.videos[0]}
                     type="video/mp4"
                   ></source>
                 </video>
                 <img
+                  loading="lazy"
                   src={`/images/${props.project.images[0]}`}
                   alt={props.project.images[0]}
                 />
-                <video loop autoPlay muted>
+                <video loading="lazy" loop autoPlay muted>
                   <source
                     src={props.project.videos[1]}
                     type="video/mp4"
@@ -119,17 +120,19 @@ const Project = props => (
               </>
             ) : (
               <>
-                <video loop autoPlay muted>
+                <video loading="lazy" loop autoPlay muted>
                   <source
                     src={props.project.videos[0]}
                     type="video/mp4"
                   ></source>
                 </video>
                 <img
+                  loading="lazy"
                   src={`/images/${props.project.images[0]}`}
                   alt={props.project.images[0]}
                 />
                 <img
+                  loading="lazy"
                   src={`/images/${props.project.images[1]}`}
                   alt={props.project.images[1]}
                 />
@@ -144,10 +147,11 @@ const Project = props => (
       {props.project.type === "two" ? (
         <>
           <div className="two">
-            <video loop autoPlay muted>
+            <video loading="lazy" loop autoPlay muted>
               <source src={props.project.videos[0]} type="video/mp4"></source>
             </video>
             <img
+              loading="lazy"
               src={`/images/${props.project.images[0]}`}
               alt={props.project.images[0]}
             />
