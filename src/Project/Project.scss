@@ -9,7 +9,7 @@ main {
   }
 }
 
-main .animated {
+main > .animated {
   padding: 2rem 5rem 2rem 2.5rem;
   text-align: left;
   min-height: 400px;
@@ -22,6 +22,10 @@ main .animated {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  
+  &:nth-child(even):last-child:not(:only-child) {
+    margin-bottom: 3rem;
+  }
 
   @media screen and (min-width: 1080px) {
     &:nth-child(even) {
@@ -82,7 +86,7 @@ main .animated {
 }
 
 .text {
-  position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
@@ -95,7 +99,7 @@ main .animated {
     font-size: 1rem;
     padding: 0.45rem 0.4rem;
     border-radius: 1rem;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
 
     @media screen and (max-width: 1080px) {
@@ -123,9 +127,9 @@ main .animated {
     opacity: 0;
     transition: opacity 300ms linear;
     pointer-events: none;
-    z-index: 5;
+    z-index: 3;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 18px;
       width: calc(100% + 2.5rem);
     }
@@ -192,7 +196,7 @@ a.website-link {
   font-weight: bold;
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  z-index:4;
+  z-index:2;
   top: 0;
 
   @media screen and (min-width: 768px) {
@@ -277,7 +281,7 @@ a.website-link {
 .links {
   padding: 1px 10px;
   position: relative;
-  z-index: 4;
+  z-index: 3;
   @media screen and (max-width: 600px) {
     display: none;
   }
@@ -341,7 +345,7 @@ a.website-link {
     top: 50%;
     transform: translateY(-50%);
     left: -13px;
-    z-index: 2;
+    z-index: 3;
   }
 
   &.Forum {
@@ -383,7 +387,7 @@ a.website-link {
 
   .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 1.5rem -6rem 0 -3.5rem;
     grid-gap: 1rem;
 
@@ -400,6 +404,10 @@ a.website-link {
     > * {
       width: 100%;
     }
+  }
+
+  .three {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .two {

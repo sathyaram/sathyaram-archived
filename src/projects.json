@@ -16,15 +16,11 @@
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
-    "type": "three",
+    "type": "Web",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
-    "images": [
-      "en-mobile.jpg",
-      "en-button.gif",
-      "en-grid.png"
-    ],
-    "videos": [
+    "media": [
       "/videos/en2.mp4",
+      "en-mobile.jpg",
       "/videos/en.mp4"
     ]
   },
@@ -41,14 +37,12 @@
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
-    "type": "three",
+    "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
-    "images": [
-      "hhmi-mobile2.jpg"
-    ],
-    "videos": [
+    "media": [
       "/videos/hhmi.mp4",
+      "hhmi-mobile2.jpg",
       "/videos/hhmi2.mp4"
     ]
   },
@@ -56,7 +50,7 @@
     "title": "FudTruk",
     "subtitle": "Lehigh Valley's Freshest Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
-    "type": "three",
+    "type": "Web",
     "tags": [
       "Drupal 7",
       "Web Design",
@@ -70,11 +64,9 @@
     "color": "#ffda67",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg, #f05a26, #FAAF40)",
-    "images": [
-      "fudtruk-uc.jpg"
-    ],
-    "videos": [
+    "media": [
       "/videos/fudtruk.mp4",
+      "fudtruk-uc.jpg",
       "/videos/fudtruk2.mp4"
     ]
   },
@@ -90,18 +82,16 @@
       "Google Analytics",
       "Tag Manager"
     ],
-    "type": "three",
+    "type": "Web",
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
     "link": "https://connect.lehigh.edu",
     "role": "Lehigh University",
     "color": "#d0a678",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(-35deg, rgb(37, 21, 0) 0%, rgb(115, 45, 2) 100%)",
-    "images": [
-      "portal-outside.jpg"
-    ],
-    "videos": [
+    "media": [
       "/videos/connectlehigh.mp4",
+      "portal-outside.jpg",
       "/videos/portal-mobile.mp4"
     ]
   },
@@ -114,17 +104,15 @@
       "Twig/YAML",
       "SASS"
     ],
-    "type": "two",
+    "type": "Web",
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
     "color": "#7db956",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(160deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
-    "images": [
+    "media": [
+      "/videos/scllr.mp4",
       "scllr.jpg"
-    ],
-    "videos": [
-      "/videos/scllr.mp4"
     ]
   },
   {
@@ -141,14 +129,12 @@
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
     "color": "cyan",
-    "type": "two",
+    "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
-    "images": [
+    "media": [
+      "/videos/coolwebsite.mp4",
       "coolwebsite.png"
-    ],
-    "videos": [
-      "/videos/coolwebsite.mp4"
     ]
   },
   {
@@ -164,14 +150,12 @@
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
-    "type": "two",
+    "type": "Web",
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
-    "images": [
+    "media": [
+      "/videos/oscars.mp4",
       "oscarsanimated.png"
-    ],
-    "videos": [
-      "/videos/oscars.mp4"
     ]
   },
   {
@@ -187,14 +171,12 @@
     "link": "https://gertrudehawkgoodies.com",
     "role": "Weidenhammer",
     "color": "#e5d09a",
-    "type": "two",
+    "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
-    "images": [
+    "media": [
+      "/videos/hawkchocolate.mp4",
       "chocolate.jpg"
-    ],
-    "videos": [
-      "/videos/hawkchocolate.mp4"
     ]
   },
   {
@@ -210,14 +192,12 @@
     "link": "http://astralairparts.com",
     "role": "Weidenhammer",
     "color": "#ee5c23",
-    "type": "two",
+    "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
-    "images": [
+    "media": [
+      "/videos/astral.mp4",
       "astral.jpg"
-    ],
-    "videos": [
-      "/videos/astral.mp4"
     ]
   },
   {
@@ -233,14 +213,12 @@
     "link": "http://keystonemunitions.com",
     "role": "Freelance Project",
     "color": "#f8b700",
-    "type": "two",
+    "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "linear-gradient(to left top, rgb(251, 199, 82), rgb(49, 48, 35), rgb(0, 0, 0))",
-    "images": [
+    "media": [
+      "/videos/keystone.mp4",
       "keystone.jpg"
-    ],
-    "videos": [
-      "/videos/keystone.mp4"
     ]
   },
   {
@@ -256,14 +234,12 @@
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
     "color": "#e4ce87",
-    "type": "two",
+    "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, #973141, #862937, #75222e, #641a25, #54131d)",
-    "images": [
+    "media": [
+      "/videos/paulknakk.mp4",
       "paulknakk.jpg"
-    ],
-    "videos": [
-      "/videos/paulknakk.mp4"
     ]
   }
 ]

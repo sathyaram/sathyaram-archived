@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Framicons from '../Framicons/Framicons'
 import './Header.scss'
 import bgmusic from './../chill3.mp3'
 import ScrollAnimation from 'react-animate-on-scroll';
