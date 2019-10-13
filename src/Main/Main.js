@@ -1,26 +1,36 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect, useRef } from 'react';
 import projects from './../projects.json';
 const Project = lazy(() => import('../Project/Project'));
 
-class Main extends Component {
-  render() {
-    let filterData = projects;
-    if (this.props.selectedCategories.length > 0) {
-      filterData = projects.filter((w) => this.props.selectedCategories.includes(w.type));
+const Main = (props: {
+  selectedCategory: string
+}) => {
+  const main = useRef()
+  useEffect(() => {
+    if (props.selectedCategory && main.current){
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: main.current.offsetTop
+      });
     }
+  }, [props.selectedCategory])
 
-    return (
-      <main id="maincontent" role="main">
-        {filterData.map(function (project, i) {
-          return (
-            <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>
-              <Project key={i} project={project} />
-            </Suspense>
-          )
-        })}
-      </main>
-    );
-  }
+
+  const selectedProjects = props.selectedCategory ?
+    projects.filter(project => project.type === props.selectedCategory) : projects;
+
+  return (
+    <main ref={main} id="maincontent" role="main">
+      {selectedProjects.map((project, i) => {
+        return (
+          <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>
+            <Project project={project} key={i} />
+          </Suspense>
+        )
+      })}
+    </main>
+  );
 }
 
 export default Main;

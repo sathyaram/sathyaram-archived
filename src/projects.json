@@ -16,7 +16,7 @@
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
-    "type": "Web",
+    "type": "web",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "media": [
       "/videos/en2.mp4",
@@ -36,7 +36,7 @@
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
-    "type": "Web",
+    "type": "web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
     "media": [
@@ -48,7 +48,7 @@
     "title": "FudTruk",
     "subtitle": "Lehigh Valley's Freshest Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
-    "type": "Web",
+    "type": "web",
     "tags": [
       "Drupal 7",
       "Web Design",
@@ -78,7 +78,7 @@
       "Google Analytics",
       "Tag Manager"
     ],
-    "type": "Web",
+    "type": "web",
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
     "link": "https://connect.lehigh.edu",
     "role": "Lehigh University",
@@ -99,7 +99,7 @@
       "Twig/YAML",
       "SASS"
     ],
-    "type": "Web",
+    "type": "web",
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
     "color": "#7db956",
@@ -124,7 +124,7 @@
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
     "color": "cyan",
-    "type": "Web",
+    "type": "web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
     "media": [
@@ -145,7 +145,7 @@
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
     "color": "#d49600",
-    "type": "Web",
+    "type": "web",
     "textcolor": "#000000",
     "offcolor": "linear-gradient(-45deg, rgb(224, 201, 87), rgb(255, 243, 154))",
     "media": [
@@ -166,7 +166,7 @@
     "link": "https://gertrudehawkgoodies.com",
     "role": "Weidenhammer",
     "color": "#e5d09a",
-    "type": "Web",
+    "type": "web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
     "media": [
@@ -187,7 +187,7 @@
     "link": "http://astralairparts.com",
     "role": "Weidenhammer",
     "color": "#ee5c23",
-    "type": "Web",
+    "type": "web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
     "media": [
@@ -208,7 +208,7 @@
     "link": "http://keystonemunitions.com",
     "role": "Freelance Project",
     "color": "#f8b700",
-    "type": "Web",
+    "type": "web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "linear-gradient(to left top, rgb(251, 199, 82), rgb(49, 48, 35), rgb(0, 0, 0))",
     "media": [
@@ -229,7 +229,7 @@
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
     "color": "#e4ce87",
-    "type": "Web",
+    "type": "web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, #973141, #862937, #75222e, #641a25, #54131d)",
     "media": [
@@ -242,7 +242,7 @@
     "subtitle": "A Collection of People I've Shot",
     "description": "A Large Collection",
     "link": "http://paulknakk.com",
-    "type": "Photography",
+    "type": "photo",
     "media": [
       "RAM_0030.jpg",
       "paulknakk.jpg",

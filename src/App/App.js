@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import './App.scss';
 import Loader from '../Loader/Loader'
 import Menu from '../Menu/Menu'
@@ -6,28 +6,18 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
-class App extends Component {
-  state = {
-    selectedCategories: []
-  }
+const App = (props) => {
+  const [selectedCategory, setSelectedCategory] = useState()
 
-  categoryChanged = (selections) => {
-    this.setState({
-      selectedCategories: selections
-    })
-  }
-
-  render() {
-    return (
+  return (
     <>
       <Loader />
       <Menu />
       <Header />
-      <Main selectedCategories={this.state.selectedCategories}/>
-      <Footer categoryChanged={this.categoryChanged}/>
+      <Main selectedCategory={selectedCategory}/>
+      <Footer onCategoryPress={setSelectedCategory}/>
     </>
-    );
-  }
+  );
 }
 
 export default App;

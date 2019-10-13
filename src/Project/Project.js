@@ -21,7 +21,7 @@ const Project = props => (
         style={{ background: props.project.offcolor }}
         className={`project ${props.project.type}`}
       >
-        {props.project.type === 'Web' ? (
+        {props.project.type === 'web' ? (
           <>
             <div className="information">
               <div className="eyebrow">
@@ -115,7 +115,7 @@ const Project = props => (
               </div>
             </div>
           </>) : (<></>)}
-        {props.project.type === 'Graphic' ? (
+        {props.project.type === 'graphic' ? (
           <>
             <img
               loading="lazy"
@@ -124,7 +124,7 @@ const Project = props => (
             />
           </>
         ) : (<></>)}
-        {props.project.type === 'Photography' ? (
+        {props.project.type === 'photo' ? (
           <>
             <img
               loading="lazy"

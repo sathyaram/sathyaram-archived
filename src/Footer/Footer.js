@@ -1,53 +1,17 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import './Footer.scss'
 
-class Footer extends Component {
-  
-  constructor(props) {
-    super(props)
-    this.selections = [];
+const Footer = (props: {
+  onCategoryPress: string => void
+}) =>  {
+  const handleShapeClick = key => {
+    if (props.onCategoryPress) 
+      props.onCategoryPress(key)
   }
-
-  collectSelections = (e) => {
-    let main = document.getElementById('maincontent');
-    
-    let value = e.target.value;
-    let checked = e.target.checked;
-    let valueIndex = this.selections.indexOf(value);
-
-    if (checked) {
-      if (valueIndex === -1) {
-        this.selections.push(value);
-      }
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: main.offsetTop
-      });
-    } else {
-      if (valueIndex !== -1) {
-        // removing element at location of valueIndex
-        this.selections.splice(valueIndex, 1);
-      }
-    }
-    this.props.categoryChanged(this.selections);
-  }
-
-  // loading = () => {
-  //   var loader = document.getElementById('loader');
-  //   loader.classList.add('zoom');
-  
-  //   setTimeout(function () {
-  //     loader.classList.remove('zoom');
-  //   }, 1500);
-  // }
-
-  render() {
     return (
       <footer>
         <div className="filters">
-        <div className="icon">
+        <div className="icon" onClick={() => handleShapeClick('web')}>
 
             <div className="vector" >
               <div className="monitor shape">
@@ -83,7 +47,7 @@ class Footer extends Component {
           </div>
           <div className="icon">
             <div className="vector">
-              <div className="box shape">
+              <div className="box shape" onClick={() => handleShapeClick('graphic')}>
                 <div className="letters">G</div>
                 <div className="anchor"></div>
                 <div className="anchor"></div>
@@ -103,7 +67,7 @@ class Footer extends Component {
           </div>
           <div className="icon">
             <div className="vector">
-              <div className="photo shape">
+              <div className="photo shape" onClick={() => handleShapeClick('photo')}>
                 <div className="image">
                   <div className="letters">P</div>
                 </div>
@@ -121,7 +85,6 @@ class Footer extends Component {
       */}
       </footer>
     );
-  }
 }
 
 export default Footer;

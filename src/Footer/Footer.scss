@@ -19,7 +19,7 @@ footer {
     color: #0967a2;
     background-color: #ebf3f7;
   }
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -32,7 +32,6 @@ footer {
     border-color: transparent transparent #fff transparent;
   }
 }
-
 
 .filters {
   position: absolute;
@@ -72,7 +71,6 @@ $breakpoint-max: 1184px;
   position: relative;
   transform: translateZ(60px) scale(0.4);
   margin: 2rem 0 -2rem;
-  pointer-events: none;
   z-index: 1;
 
   > div {
@@ -223,87 +221,87 @@ $breakpoint-max: 1184px;
   }
 }
 
-  .base {
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    bottom: -20px;
+.base {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-gray;
+}
+
+.base::before,
+.base::after,
+.grey-shadow::before,
+.grey-shadow::after {
+  position: absolute;
+  content: "";
+  top: 0;
+}
+
+.base:before {
+  border-left: 6px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 30px solid $color-gray;
+  left: -5px;
+}
+
+.base:after {
+  border-right: 6px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 30px solid $color-gray;
+  right: -5px;
+}
+
+.base > div {
+  position: absolute;
+}
+
+.foot {
+  background: $color-gray;
+  z-index: 1;
+
+  &.top {
+    width: 116px;
+    height: 5px;
+    bottom: -4px;
     left: 50%;
-    transform: translateX(-50%);
-    background: $color-gray;
+    margin-left: -58px;
   }
 
-  .base::before,
-  .base::after,
-  .grey-shadow::before,
-  .grey-shadow::after {
+  &.top::before,
+  &.top::after,
+  &.bottom::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: 0px;
   }
 
-  .base:before {
-    border-left: 6px solid transparent;
+  &.top::before {
+    border-left: 16px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 30px solid $color-gray;
-    left: -5px;
+    border-bottom: 5px solid $color-gray;
+    left: -16px;
   }
 
-  .base:after {
-    border-right: 6px solid transparent;
+  &.top::after {
+    border-right: 16px solid transparent;
     border-left: 0px solid transparent;
-    border-bottom: 30px solid $color-gray;
-    right: -5px;
+    border-bottom: 5px solid $color-gray;
+    right: -16px;
   }
 
-  .base > div {
-    position: absolute;
+  &.bottom {
+    width: 70px;
+    height: 10px;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
   }
-
-  .foot {
-    background: $color-gray;
-    z-index: 1;
-
-    &.top {
-      width: 116px;
-      height: 5px;
-      bottom: -4px;
-      left: 50%;
-      margin-left: -58px;
-    }
-
-    &.top::before,
-    &.top::after,
-    &.bottom::before {
-      position: absolute;
-      content: "";
-      top: 0px;
-    }
-
-    &.top::before {
-      border-left: 16px solid transparent;
-      border-right: 0px solid transparent;
-      border-bottom: 5px solid $color-gray;
-      left: -16px;
-    }
-
-    &.top::after {
-      border-right: 16px solid transparent;
-      border-left: 0px solid transparent;
-      border-bottom: 5px solid $color-gray;
-      right: -16px;
-    }
-
-    &.bottom {
-      width: 70px;
-      height: 10px;
-      border-radius: 5px;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 5;
-    }
-  }
+}
 
 .web {
   .card-wrapper {
