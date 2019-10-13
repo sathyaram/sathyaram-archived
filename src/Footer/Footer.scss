@@ -12,19 +12,14 @@ footer {
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
 
   @media screen and (min-width: 500px) {
-    padding: 0rem 1rem 1.25rem;
+    padding: 0rem 1rem 1.5rem;
   }
 
   a {
     color: #0967a2;
     background-color: #ebf3f7;
   }
-
-  div {
-    font-size: 10px;
-    margin-top: 2px;
-  }
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -35,5 +30,23 @@ footer {
     border-style: solid;
     border-width: 0 50vw 30px 50vw;
     border-color: transparent transparent #fff transparent;
+  }
+}
+
+
+.filters {
+  position: absolute;
+  bottom: 0;
+  height: 170px;
+  padding: 1rem;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .vector {
+    transform: translateZ(60px) scale(0.4);
   }
 }

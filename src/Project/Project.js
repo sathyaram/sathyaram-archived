@@ -93,11 +93,12 @@ const Project = props => (
           : null}
       </ul>
       <div className="text" style={{ color: `${props.project.textcolor}` }}>
-        {/* <p className="description">{props.project.description}</p> */}
+        <i className="fab fa-readme" style={{ background: props.project.offcolor }}></i>
+        <div className="description" style={{ backgroundColor: `${props.project.color}` }}><p>{props.project.description}</p></div>
       </div>
     </div>
     <div className="track">
-      {props.project.type === "small" ? (
+      {props.project.type === "three" ? (
         <>
           <div className="row">
             {props.project.videos[1] ? (
@@ -143,10 +144,6 @@ const Project = props => (
           </div>
         </>
       ) : (
-        <></>
-      )}
-
-      {props.project.type === "two" ? (
         <>
           <div className="two">
             <video loading="lazy" loop autoPlay muted>
@@ -159,8 +156,6 @@ const Project = props => (
             />
           </div>
         </>
-      ) : (
-        <></>
       )}
     </div>
   </ScrollAnimation>

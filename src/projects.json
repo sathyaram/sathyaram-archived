@@ -16,7 +16,7 @@
     "role": "Personal Project",
     "color": "#f42737",
     "textcolor": "#ffffff",
-    "type": "small",
+    "type": "three",
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "images": [
       "en-mobile.jpg",
@@ -41,7 +41,7 @@
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
-    "type": "small",
+    "type": "three",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
     "images": [
@@ -56,10 +56,9 @@
     "title": "FudTruk",
     "subtitle": "Lehigh Valley's Freshest Food Truck",
     "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
-    "type": "small",
+    "type": "three",
     "tags": [
       "Drupal 7",
-      "jQuery",
       "Web Design",
       "Graphic Design",
       "Photography",
@@ -91,7 +90,7 @@
       "Google Analytics",
       "Tag Manager"
     ],
-    "type": "small",
+    "type": "three",
     "designs": "https://dribbble.com/shots/5308923-Lehigh-Portal",
     "link": "https://connect.lehigh.edu",
     "role": "Lehigh University",
@@ -113,7 +112,7 @@
     "tags": [
       "Grav CMS",
       "Twig/YAML",
-      "SCSS"
+      "SASS"
     ],
     "type": "two",
     "link": "https://www.llr.sc.gov",
@@ -134,7 +133,7 @@
     "description": "Another website for designspiration? Well, actually, this one is a website of websites, but specifically designer, developer, and agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
     "tags": [
       "React",
-      "SCSS",
+      "SASS",
       "Web Design",
       "Netlify"
     ],
@@ -181,7 +180,7 @@
     "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards website where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
     "tags": [
       "WordPress",
-      "jQuery",
+      "JavaScript",
       "HTML/SCSS",
       "PHP"
     ],
@@ -201,10 +200,10 @@
   {
     "title": "Astral Air Parts",
     "subtitle": "Aircraft Part Supplier",
-    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A small but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
+    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A three but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
     "tags": [
       "WordPress",
-      "jQuery",
+      "JavaScript",
       "HTML/SCSS",
       "PHP"
     ],
@@ -227,7 +226,7 @@
     "description": "You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before and counting.",
     "tags": [
       "Drupal 7",
-      "jQuery",
+      "JavaScript",
       "HTML/SCSS",
       "Web Design"
     ],
@@ -250,7 +249,7 @@
     "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus.",
     "tags": [
       "Drupal 7",
-      "jQuery",
+      "JavaScript",
       "HTML/SCSS",
       "Web Design"
     ],

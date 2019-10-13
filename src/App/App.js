@@ -5,6 +5,8 @@ import Menu from '../Menu/Menu'
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
+import { Route, Switch } from 'react-router-dom';
+      
 
 function App() {
   return (
@@ -12,7 +14,10 @@ function App() {
       <Loader />
       <Menu />
       <Header />
-      <Main />
+      <Switch>
+        <Route path="/graphic" render={() => <></>} />
+        <Route path="/" render={() => <Main />} />
+      </Switch>
       <Footer />
     </>
   );

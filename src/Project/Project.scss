@@ -6,7 +6,6 @@ main {
 
   @media screen and (max-width: 1080px) {
     max-width: 780px;
-    margin: 2rem auto -2rem;
   }
 }
 
@@ -83,23 +82,52 @@ main .animated {
 }
 
 .text {
-  // margin: 2rem 0;
-  width: 100%;
-  align-items: flex-start;
+  position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+   
+  i {
+    position: absolute;
+    right: -6rem;
+    top: 0;
+    font-size: 1rem;
+    padding: 0.45rem 0.4rem;
+    border-radius: 1rem;
+    z-index: 3;
+    cursor: pointer;
+
+    @media screen and (max-width: 1080px) {
+      right: 0;
+    }
+
+    &:hover + .description {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: auto 5fr;
   }
 
   .description {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 16px;
-    margin-bottom: 1rem;
     line-height: 150%;
-    margin-top: -0.35rem;
+    opacity: 0;
+    transition: opacity 300ms linear;
+    pointer-events: none;
+    z-index: 5;
 
     @media screen and (min-width: 768px) {
       font-size: 18px;
+      width: calc(100% + 2.5rem);
     }
   }
 }
@@ -115,7 +143,7 @@ main .animated {
     margin: 0;
     position: absolute;
     right: -5.3rem;
-    top: 0rem;
+    top: 3.25rem;
   }
 
   @media screen and (max-width: 1080px) {
@@ -164,6 +192,7 @@ a.website-link {
   font-weight: bold;
   border-bottom-width: 3px;
   border-bottom-style: solid;
+  z-index:4;
   top: 0;
 
   @media screen and (min-width: 768px) {
@@ -247,6 +276,8 @@ a.website-link {
 
 .links {
   padding: 1px 10px;
+  position: relative;
+  z-index: 4;
   @media screen and (max-width: 600px) {
     display: none;
   }
@@ -310,7 +341,7 @@ a.website-link {
     top: 50%;
     transform: translateY(-50%);
     left: -13px;
-    z-index: 5;
+    z-index: 2;
   }
 
   &.Forum {
@@ -356,6 +387,10 @@ a.website-link {
     margin: 1.5rem -6rem 0 -3.5rem;
     grid-gap: 1rem;
 
+    @media screen and (max-width: 1080px) {
+      margin: 1.5rem -6rem 0;
+    }
+
     @media screen and (max-width: 600px) {
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr;
@@ -365,10 +400,6 @@ a.website-link {
     > * {
       width: 100%;
     }
-
-    video {
-      background-color: blue;
-    }
   }
 
   .two {
@@ -377,6 +408,10 @@ a.website-link {
     margin: 1.5rem -6rem 0 -3.5rem;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 1080px) {
+      margin: 1.5rem -6rem 0;
+    }
 
     @media screen and (max-width: 600px) {
       grid-template-rows: 1fr 1fr;

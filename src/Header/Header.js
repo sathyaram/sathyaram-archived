@@ -306,7 +306,7 @@ class Header extends Component {
             </div>
           </div>
         </ScrollAnimation>
-          <Framicons />
+          {/* <Framicons /> */}
       </header>
       </ScrollAnimation>
     );
