@@ -236,5 +236,20 @@
       "/videos/paulknakk.mp4",
       "paulknakk.jpg"
     ]
+  },
+  {
+    "title": "Portraits",
+    "subtitle": "A Collection of People I've Shot",
+    "description": "A Large Collection",
+    "link": "http://paulknakk.com",
+    "type": "Photography",
+    "media": [
+      "RAM_0030.jpg",
+      "paulknakk.jpg",
+      "paulknakk.jpg",
+      "paulknakk.jpg",
+      "paulknakk.jpg",
+      "paulknakk.jpg"
+    ]
   }
 ]

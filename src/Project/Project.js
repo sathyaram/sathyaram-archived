@@ -5,6 +5,7 @@ import "animate.css/animate.min.css";
 import LazyLoad from 'react-lazyload';
 import Tilt from 'react-tilt'
 
+
 const Project = props => (
   <LazyLoad>
     <Tilt className="Tilt" options={{ max: 25 }}>
@@ -40,7 +41,7 @@ const Project = props => (
                       href={props.project.designs}
                     >
                       <i className="fab fa-dribbble" aria-hidden="true"></i>View Designs
-            </a>
+                  </a>
                   ) : null}
                   {props.project.github ? (
                     <a
@@ -51,7 +52,7 @@ const Project = props => (
                       href={props.project.github}
                     >
                       <i className="fab fa-github" aria-hidden="true"></i>View Repo
-            </a>
+                  </a>
                   ) : null}
                 </div>
               </div>
@@ -74,11 +75,10 @@ const Project = props => (
                 >
                   <span>
                     <i className="fas fa-lock"></i> https
-          </span>
+                </span>
                   {props.project.link.replace("https://", "").replace("http://", "")}
                 </a>
               </div>
-
               <ul className="tags">
                 {props.project.tags
                   ? props.project.tags.map(item => (
@@ -126,6 +126,11 @@ const Project = props => (
         ) : (<></>)}
         {props.project.type === 'Photography' ? (
           <>
+            <img
+              loading="lazy"
+              src={`/images/${props.project.media[0]}`}
+              alt={props.project.media[0]}
+            />
             <h3 className="title" style={{ color: `${props.project.color}` }}>
               {props.project.title}
             </h3>

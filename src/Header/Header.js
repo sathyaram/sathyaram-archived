@@ -286,33 +286,23 @@ class Header extends Component {
               <ScrollAnimation animateIn="fadeInUp" delay={3200} animateOnce={true}>
                 <h1><span>Sathya Ram</span></h1>
                </ScrollAnimation>
-              
               <h2>
-              <ScrollAnimation animateIn="fadeInUp" delay={3600} animateOnce={true}>
-                <div className="skills">
+              <ScrollAnimation className="skills" animateIn="fadeInUp" delay={3600} animateOnce={true}>
                   <span>Front-End</span>
                   Developer
-                    </div>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeInUp" delay={3800} animateOnce={true}>
-                <div className="skills">
+              <ScrollAnimation className="skills" animateIn="fadeInUp" delay={3800} animateOnce={true}>
                   <span>Graphic &amp; Web</span>
                   Designer
-                </div>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeInUp" delay={4000} animateOnce={true}>
-
-                <div className="skills">
+              <ScrollAnimation className="skills" animateIn="fadeInUp" delay={4000} animateOnce={true}>
                   <span>Professional</span>
                   Photographer
-                </div>
               </ScrollAnimation>
-                
               </h2>
             </div>
           </div>
         </ScrollAnimation>
-          {/* <Framicons /> */}
       </header>
       </ScrollAnimation>
     );

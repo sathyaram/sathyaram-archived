@@ -83,7 +83,6 @@ class Menu extends Component {
                 </a>
               </p>
             </div>
-           
             <div className="mcmenu">
               <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Photography</a>
               <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">Graphic Design</a>
