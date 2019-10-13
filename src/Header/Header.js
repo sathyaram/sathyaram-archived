@@ -44,7 +44,7 @@ class Header extends Component {
 
   render() {
     return (
-      <ScrollAnimation animateIn="fadeIn" duration={3} delay={2000} animateOnce={true}>
+      <ScrollAnimation animateIn="fadeIn" duration={3} delay={1000} animateOnce={true}>
       <header role="banner">
         <ScrollAnimation animateIn="fadeInUp" duration={3} delay={1800} animateOnce={true}>
           <div id="space" className="space">
@@ -283,25 +283,32 @@ class Header extends Component {
                   / Saa-thee-uh · Ram /
               </div>
               </div>
-              <ScrollAnimation animateIn="fadeInUp" delay={3800} animateOnce={true}>
+              <ScrollAnimation animateIn="fadeInUp" delay={3200} animateOnce={true}>
                 <h1><span>Sathya Ram</span></h1>
                </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeInUp" delay={4200} animateOnce={true}>
+              
               <h2>
+              <ScrollAnimation animateIn="fadeInUp" delay={3600} animateOnce={true}>
                 <div className="skills">
                   <span>Front-End</span>
                   Developer
                     </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp" delay={3800} animateOnce={true}>
                 <div className="skills">
                   <span>Graphic &amp; Web</span>
                   Designer
                 </div>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeInUp" delay={4000} animateOnce={true}>
+
                 <div className="skills">
                   <span>Professional</span>
                   Photographer
                 </div>
-              </h2>
               </ScrollAnimation>
+                
+              </h2>
             </div>
           </div>
         </ScrollAnimation>

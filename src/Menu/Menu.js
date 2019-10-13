@@ -68,9 +68,22 @@ class Menu extends Component {
             <div className="menu-title">Menu</div>
           </div>
           <div className="menus">
-            <ul className="menu">
-              <li><Link onClick={this.getOffOfMe} to="/about">About</Link></li>
-            </ul>
+            <div className="hire-me">
+              <p>
+                <span>Available for freelance work.</span> 
+                <br></br><br></br> 
+                ↣ from-scratch websites
+                <br></br>
+                ↣ cutting-edge web designs
+                <br></br>
+                ↣ lifestyle, portrait, &amp; studio photography
+                <br></br>
+                <br></br>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Hit me up to get <u>rates</u> or to get <u>real</u>.
+                </a>
+              </p>
+            </div>
+           
             <div className="mcmenu">
               <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Photography</a>
               <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">Graphic Design</a>

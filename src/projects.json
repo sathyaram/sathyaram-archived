@@ -20,8 +20,7 @@
     "offcolor": "linear-gradient(325deg, rgb(49, 49, 49), rgb(9, 9, 9))",
     "media": [
       "/videos/en2.mp4",
-      "en-mobile.jpg",
-      "/videos/en.mp4"
+      "en-mobile.jpg"
     ]
   },
   {
@@ -42,8 +41,7 @@
     "offcolor": "linear-gradient(130deg,#82BB44 0%, #178387 100%)",
     "media": [
       "/videos/hhmi.mp4",
-      "hhmi-mobile2.jpg",
-      "/videos/hhmi2.mp4"
+      "hhmi-mobile2.jpg"
     ]
   },
   {
@@ -66,9 +64,7 @@
     "offcolor": "linear-gradient(130deg, #f05a26, #FAAF40)",
     "media": [
       "/videos/fudtruk.mp4",
-      "fudtruk-uc.jpg",
-      "/videos/fudtruk2.mp4"
-    ]
+      "fudtruk-uc.jpg"    ]
   },
   {
     "title": "Lehigh Portal Redesign",
@@ -90,9 +86,8 @@
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(-35deg, rgb(37, 21, 0) 0%, rgb(115, 45, 2) 100%)",
     "media": [
-      "/videos/connectlehigh.mp4",
-      "portal-outside.jpg",
-      "/videos/portal-mobile.mp4"
+      "/videos/portal-mobile.mp4",
+      "portal-outside.jpg"
     ]
   },
   {
