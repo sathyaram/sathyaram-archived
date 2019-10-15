@@ -141,7 +141,7 @@ $breakpoint-max: 1184px;
 
   .code {
     padding: 20px;
-    animation: 8s scrolling 2s forwards ease infinite;
+    // animation: 8s scrolling 2s forwards ease infinite;
 
     .bar {
       width: 100%;
@@ -319,7 +319,7 @@ $breakpoint-max: 1184px;
   margin: 0 auto;
   padding: 30px 20px;
   backface-visibility: hidden;
-  animation: 6s zoom 3s forwards ease infinite;
+  // animation: 6s zoom 3s forwards ease infinite;
 }
 
 .anchor {
@@ -408,7 +408,7 @@ $breakpoint-max: 1184px;
   }
 
   .letters {
-    animation: 4s disappear 3s reverse forwards ease infinite;
+    // animation: 4s disappear 3s reverse forwards ease infinite;
     margin-top: -9px;
   }
 }

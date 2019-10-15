@@ -1,6 +1,7 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component, Suspense } from 'react';
 import projects from './../projects.json';
-const Project = lazy(() => import('../Project/Project'));
+import Project from '../Project/Project';
+
 
 class Main extends Component {
   render() {

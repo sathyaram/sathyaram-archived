@@ -106,7 +106,7 @@
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(160deg, rgb(37, 111, 134) 0%, rgb(25, 61, 72) 100%)",
     "media": [
-      "/videos/scllr.mp4",
+      "chocolate.jpg",
       "scllr.jpg"
     ]
   },
@@ -126,9 +126,9 @@
     "color": "cyan",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(0deg,#0ff,#1497d4)",
+    "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.8), rgba(20, 151, 212, 0.95)), url('/images/coolwebsite.png')",
     "media": [
-      "/videos/coolwebsite.mp4",
+      "coolwebsite.png",
       "coolwebsite.png"
     ]
   },
@@ -168,9 +168,9 @@
     "color": "#e5d09a",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "radial-gradient(ellipse at center, #9a5fa3 0%, #561562 100%)",
+    "offcolor": "radial-gradient(at center center, rgba(154, 95, 163, 0.8) 0%, rgb(86, 21, 98) 100%), url(/images/chocolate.jpg)",
     "media": [
-      "/videos/hawkchocolate.mp4",
+      "chocolate.jpg",
       "chocolate.jpg"
     ]
   },
@@ -189,9 +189,9 @@
     "color": "#ee5c23",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
+    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%), url(/images/astral.jpg)",
     "media": [
-      "/videos/astral.mp4",
+      "astral.jpg",
       "astral.jpg"
     ]
   },
@@ -210,9 +210,9 @@
     "color": "#f8b700",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "linear-gradient(to left top, rgb(251, 199, 82), rgb(49, 48, 35), rgb(0, 0, 0))",
+    "offcolor": "linear-gradient(to left top, rgba(251, 199, 82, 0.8), rgba(49, 48, 35, 0.7), rgb(0, 0, 0)), url(/images/keystone.jpg)",
     "media": [
-      "/videos/keystone.mp4",
+      "paulknakk.jpg",
       "keystone.jpg"
     ]
   },
@@ -233,21 +233,6 @@
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, #973141, #862937, #75222e, #641a25, #54131d)",
     "media": [
-      "/videos/paulknakk.mp4",
-      "paulknakk.jpg"
-    ]
-  },
-  {
-    "title": "Portraits",
-    "subtitle": "A Collection of People I've Shot",
-    "description": "A Large Collection",
-    "link": "http://paulknakk.com",
-    "type": "Photography",
-    "media": [
-      "RAM_0030.jpg",
-      "paulknakk.jpg",
-      "paulknakk.jpg",
-      "paulknakk.jpg",
       "paulknakk.jpg",
       "paulknakk.jpg"
     ]

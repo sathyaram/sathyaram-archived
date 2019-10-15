@@ -11,9 +11,9 @@ class Loader extends Component {
     loader.onclick = function () {
       window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     };
-    setTimeout(function () {
+    window.onload = function() {
       loader.classList.add('gone');
-    }, 2000);
+    };
   }
 
   render() {

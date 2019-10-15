@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './Menu.scss'
 import resume from './../SathyaRam_Resume2020.pdf';
 
