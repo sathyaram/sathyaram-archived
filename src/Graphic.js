@@ -34,32 +34,33 @@ const Graphic = () => {
         <Tilt className="hover" options={{ max: 25 }} >
           <img alt="ram photography" src="graphic/sexyad1.jpg" />
         </Tilt>
+        <Tilt className="hover" options={{ max: 25 }} >
+          <img alt="ram photography" src="graphic/arctic.jpg" />
+        </Tilt>
+           <Tilt className="hover" options={{ max: 25 }} >
+          <img alt="ram photography" src="graphic/treeteck_logos.jpg" />
+        </Tilt>  
+        <Tilt className="hover" options={{ max: 25 }} >
+          <img alt="ram photography" src="graphic/loewy.jpg" />
+        </Tilt>
         <Tilt className="hover" options={{ max: 25 }}>
-
           <img alt="ram photography" src="graphic/pokelogos/houndoom.jpg" />
         </Tilt>
         <Tilt className="hover" options={{ max: 25 }}>
-
           <img alt="ram photography" src="graphic/pokelogos/steelixcorp.jpg" />
         </Tilt>
-
-
         <Tilt className="hover" options={{ max: 25 }}>
           <img alt="ram photography" src="graphic/pokelogos/wingullssurfshop.jpg" />
         </Tilt>
-
         <Tilt className="hover" options={{ max: 25 }}>
           <img alt="ram photography" src="graphic/pokelogos/vanilliteicecream.jpg" />
         </Tilt>
-
         <Tilt className="hover" options={{ max: 25 }}>
           <img alt="ram photography" src="graphic/pokelogos/honedgepictures.jpg" />
         </Tilt>
-
         <Tilt className="hover" options={{ max: 25 }}>
           <img alt="ram photography" src="graphic/pokelogos/growlithehoundservices.jpg" />
         </Tilt>
-
       </section>
     </>
   );
