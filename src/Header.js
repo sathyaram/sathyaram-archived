@@ -31,6 +31,7 @@ class Header extends Component {
       <header>
         <div id="planet"></div>
         <Tilt style={{width: `fit-content`}}>
+          <div className="pronounce">/ Saa-thee-uh · Ram /</div>
           <h1>Sathya Ram</h1>
         </Tilt>
         <h2><div className="skills"><span>Front-End</span>Developer</div><div className="skills"><span>Graphic &amp; Web</span>Designer</div><div className="skills"><span>Professional</span>Photographer</div></h2>

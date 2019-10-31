@@ -2,6 +2,7 @@ aside {
   display: flex;
   flex-direction: column;
   color: white;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   width: 200px;
@@ -120,6 +121,27 @@ p {
   z-index: 2;
 }
 
+.pronounce {
+  margin-top: -0.5rem;
+  color: white;
+  border-radius: 12px;
+  font-size: 13px;
+  padding: 0.45rem 1.5rem 0.35rem;
+  display: inline-block;
+  font-style: italic;
+  border-top: 1px solid rgba(80, 220, 255, 0.7);
+  border-bottom: 1px solid rgba(80, 220, 255, 0.7);
+  opacity: 0;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  transition: opacity 300ms ease;
+}
+
+header > div:hover .pronounce {
+ opacity: 1;
+}
+
 h1 {
   font-size: 6rem;
   letter-spacing: 0.5rem;
@@ -232,7 +254,7 @@ nav.contact {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  left: -125px;
+  left: -102px;
 }
 
 nav.social-media {
@@ -321,7 +343,7 @@ nav::before {
 
 nav::after {
   content: "";
-  width: 302px;
+  width: 300px;
   height: 1px;
   background-color: white;
   position: absolute;
@@ -444,10 +466,6 @@ nav.social-media a:nth-child(5)::after {
   transition: all 300ms ease;
 }
 
-.fade-in .logo {
-  width: 110px;
-  margin-top: -10px;
-}
 
 section {
   display: grid;
@@ -459,8 +477,12 @@ section {
   z-index: 3;
 }
 
+section#photography, section#graphic {
+  overflow: hidden;
+}
+
 section#web {
-  grid-gap: 3rem;
+  grid-gap: 4rem;
   margin: 0 2rem;
 }
 
@@ -645,7 +667,7 @@ a.designs {
 }
 
 a.github::before {
-  content: url("/github.svg");
+  content: url("/icons/github.svg");
   width: 1rem;
   position: absolute;
   top: 4px;
@@ -654,7 +676,7 @@ a.github::before {
 }
 
 a.designs::before {
-  content: url("/dribbble.svg");
+  content: url("/icons/dribbble.svg");
   width: 1rem;
   position: absolute;
   top: 5px;
@@ -1056,10 +1078,64 @@ a.designs:hover {
     width: 100%;
     height: auto;
     flex-direction: row;
+    z-index: 9;
+    padding: 1rem;
   }
   main {
     margin: 0;
     width: 100%;
   }
 
+
+  aside::before {
+    left: 0;
+  }
+  aside::after {
+    content: none;
+  }
+
+  .shape {
+    transform: scale(0.7);
+  }
+  .scroll-more {
+    display: none;
+  }
+
+  .photo {
+    margin: -5px auto 0;
+  }
+
+  .menu {
+    right: 0.5rem;
+  }
+
+  main, .menu {
+    margin-top: 4rem;
+  }
+
+  nav.contact {
+    left: auto;
+    right: 1rem;
+  }
+  nav.social-media {
+    top: 23rem;
+    right: -0.5rem;
+    position: absolute;
+  }
+  .logo {
+    width: 90px;
+  }
+  nav::after {
+    right: 0;
+    width: calc(100% - 8px);
+  }
+  nav::before {
+   right: 0; 
+  }
+}
+
+@media screen and (max-width: 388px) { 
+  h1 {
+    font-size: 3rem;
+  }
 }
