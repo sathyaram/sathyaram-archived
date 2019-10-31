@@ -38,7 +38,6 @@ const Web = props => {
         style={{ borderColor: `${props.project.color}` }}
       >{props.project.link.replace("https://", "").replace("http://", "")}</a>
     </Tilt>
-  );
-};
+    )};
 
 export default Web;
