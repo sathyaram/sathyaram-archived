@@ -5,8 +5,8 @@ const Footer = () => {
     <footer>
       <div className="hire-me">
         <p>
-          <span>Available for freelance work. </span> 
-          <br></br><br></br> 
+          <span>Available for freelance work. </span>
+          <br></br><br></br>
           ↣ from-scratch websites
           <br></br>
           ↣ cutting-edge web designs

@@ -39,8 +39,8 @@ aside::after {
   border-color: transparent transparent #fff;
   border-style: solid;
   left: 50%;
-    transform: translateX(-50%);
-    border-width: 0 160px 70px;
+  transform: translateX(-50%);
+  border-width: 0 160px 70px;
 }
 
 aside a {
@@ -101,7 +101,7 @@ main {
 }
 
 main::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: fixed;
@@ -140,7 +140,7 @@ p {
 }
 
 header > div:hover .pronounce {
- opacity: 1;
+  opacity: 1;
 }
 
 h1 {
@@ -200,7 +200,6 @@ h2 span {
   animation: spin 10s linear infinite;
 }
 
-
 h3 {
   color: white;
   font-size: 1rem;
@@ -221,7 +220,7 @@ h3:nth-child(1) {
 }
 
 .fade-in h3:nth-child(1) {
-opacity: 1;
+  opacity: 1;
 }
 
 section:nth-of-type(2) h3 {
@@ -244,15 +243,14 @@ p {
   margin-top: 2rem;
 }
 
-
 .menu {
   display: flex;
   flex-direction: column;
   position: absolute;
-    top: 2rem;
-    z-index: 9;
-    right: 0;
-    align-items: flex-end;
+  top: 2rem;
+  z-index: 9;
+  right: 0;
+  align-items: flex-end;
 }
 
 nav.contact {
@@ -281,8 +279,8 @@ nav.social-media a {
   font-size: 10px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
- text-align: center;
- transition: letter-spacing 300ms ease, color 300ms ease;
+  text-align: center;
+  transition: letter-spacing 300ms ease, color 300ms ease;
 }
 
 nav.social-media a:not(:last-child) {
@@ -380,11 +378,12 @@ nav.social-media a::before {
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
-  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275), top 300ms ease;
+  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    top 300ms ease;
 }
 
 nav.social-media a::after {
-  content: '';
+  content: "";
   border-radius: 50%;
   width: 54px;
   height: 54px;
@@ -409,7 +408,7 @@ nav.social-media a:hover::before {
 }
 
 nav.social-media a:nth-child(1)::before {
-  content: url('/icons/instagram.svg');
+  content: url("/icons/instagram.svg");
 }
 
 nav.social-media a:nth-child(1)::after {
@@ -420,19 +419,19 @@ nav.social-media a:nth-child(1)::after {
     #d92e7f 62%,
     #9b36b7 85%,
     #515ecf
-    );
-  }
-  
-  nav.social-media a:nth-child(2)::before {
-    content: url('/icons/dribbble.svg');
-  }
-  
-  nav.social-media a:nth-child(2)::after {
-    background: #e83e80;
-  }
+  );
+}
+
+nav.social-media a:nth-child(2)::before {
+  content: url("/icons/dribbble.svg");
+}
+
+nav.social-media a:nth-child(2)::after {
+  background: #e83e80;
+}
 
 nav.social-media a:nth-child(3)::before {
-  content: url('/icons/github.svg');
+  content: url("/icons/github.svg");
 }
 
 nav.social-media a:nth-child(3)::after {
@@ -440,7 +439,7 @@ nav.social-media a:nth-child(3)::after {
 }
 
 nav.social-media a:nth-child(4)::before {
-  content: url('/icons/flickr.svg');
+  content: url("/icons/flickr.svg");
 }
 
 nav.social-media a:nth-child(4)::after {
@@ -454,13 +453,12 @@ nav.social-media a:nth-child(4)::after {
 }
 
 nav.social-media a:nth-child(5)::before {
-  content: url('/icons/codepen.svg');
+  content: url("/icons/codepen.svg");
 }
 
 nav.social-media a:nth-child(5)::after {
   background: rgb(24, 24, 24);
 }
-
 
 .logo {
   width: 100px;
@@ -472,7 +470,6 @@ nav.social-media a:nth-child(5)::after {
   transition: all 300ms ease;
 }
 
-
 section {
   display: grid;
   position: relative;
@@ -483,8 +480,9 @@ section {
   z-index: 3;
 }
 
-section#photography, section#graphic {
-  /* overflow-x: hidden; */
+section#photography,
+section#graphic {
+  overflow-x: hidden;
 }
 
 section#web {
@@ -751,7 +749,7 @@ a.designs:hover {
   height: 75px;
   margin: -0.65rem auto 0;
   border: 7px solid #f2f2f2;
-    border-bottom-width: 18px;
+  border-bottom-width: 18px;
   background-color: #131822;
   border-radius: 2px;
 }
@@ -850,21 +848,24 @@ a.designs:hover {
 .shape:hover::before {
   opacity: 1;
   transform: translateY(25px);
-
 }
 
 .shape::before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   top: 100%;
   left: 5%;
   height: 10px;
   width: 100%;
   opacity: 0;
   transform: translateY(20px);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
   transition: opacity 400ms ease, transform 300ms ease;
 }
 
@@ -969,22 +970,26 @@ a.designs:hover {
 }
 
 @keyframes bounce {
-  0%,100%,20%,50%,80% {
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform:  translateY(0);
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 
   40% {
-      -webkit-transform:  translateY(-15px);
-      -ms-transform:translateY(-15px);
-      transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 
   60% {
-      -webkit-transform: rotateY(180deg)translateY(-8px);
-      -ms-transform: rotateY(180deg) translateY(-8px);
-      transform: rotateY(180deg) translateY(-8px);
+    -webkit-transform: rotateY(180deg) translateY(-8px);
+    -ms-transform: rotateY(180deg) translateY(-8px);
+    transform: rotateY(180deg) translateY(-8px);
   }
 }
 
@@ -1004,11 +1009,12 @@ a.designs:hover {
 }
 
 @media screen and (min-width: 1080px) {
-  .title, .website-link, .tags {
+  .title,
+  .website-link,
+  .tags {
     transform: translateZ(80px);
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .tags li:not(:last-child) {
@@ -1043,7 +1049,6 @@ a.designs:hover {
 }
 
 @media screen and (max-width: 1080px) {
-
   h1 {
     font-size: 4rem;
   }
@@ -1057,7 +1062,6 @@ a.designs:hover {
     margin-top: 0.75rem;
   }
 
-
   aside {
     width: 100px;
   }
@@ -1068,7 +1072,7 @@ a.designs:hover {
 
   footer a {
     font-size: 14px;
-  } 
+  }
   .title {
     margin-left: -2rem;
     font-size: 2rem;
@@ -1109,7 +1113,6 @@ a.designs:hover {
     letter-spacing: 0.75rem;
     word-break: break-all;
   }
- 
 }
 
 @media screen and (max-width: 468px) {
@@ -1150,7 +1153,8 @@ a.designs:hover {
     right: 0.5rem;
   }
 
-  main, .menu {
+  main,
+  .menu {
     margin-top: 4rem;
   }
 
@@ -1171,19 +1175,15 @@ a.designs:hover {
     width: calc(100% - 8px);
   }
   nav::before {
-   right: 0; 
+    right: 0;
   }
 
   .hire-me {
     padding: 2rem 1rem;
   }
-
-  footer {
-
-  }
 }
 
-@media screen and (max-width: 388px) { 
+@media screen and (max-width: 388px) {
   h1 {
     font-size: 3rem;
   }

@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import Aside from './Aside';
 import Menu from './Menu';
 import Header from './Header';
@@ -10,8 +10,6 @@ import Footer from './Footer';
 import './Reset.css';
 import './App.css';
 
-// const Project = lazy(() => import('./Web'));
-
 function App() {
 
   return (
@@ -21,19 +19,19 @@ function App() {
         <Menu />
         <Header />
         <section id="web">
-        <h3>Websites</h3>
-        {projects.map(function (project, i) {
-          return (
-            <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>
-              <Web key={i} project={project} />
-            </Suspense>
-          )
-        }
-        )}
-       </section>
-       <Photography />
+          <h3>Websites</h3>
+          {projects.map(function (project, i) {
+            return (
+              <Suspense key={i} fallback={<div className="lazyLoading">Loading...</div>}>
+                <Web key={i} project={project} />
+              </Suspense>
+            )
+          }
+          )}
+        </section>
+        <Photography />
         <Graphic />
-      <Footer />
+        <Footer />
       </main>
     </>
   );

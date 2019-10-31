@@ -4,7 +4,7 @@ import Tilt from 'react-tilt'
 const Web = props => {
   return (
     <Tilt className="Tilt" style={{ background: `${props.project.offcolor}, url(${props.project.media[0]}) center center/cover no-repeat` }} options={{ max: 25 }}>
-       <div className="eyebrow">
+      <div className="eyebrow">
         <div
           className={`role ${props.project.role}`}
           style={{ color: `${props.project.textcolor}` }}
@@ -12,10 +12,10 @@ const Web = props => {
           {props.project.role}
         </div>
         <div className="links">
-        {props.project.designs ? <a className="designs" style={{ color: props.project.textcolor }} target="_blank" rel="noopener noreferrer" href={props.project.designs}>View Designs</a> : null}
-        {props.project.github ? <a className="github" style={{ color: props.project.textcolor }} target="_blank" rel="noopener noreferrer" href={props.project.github}>View Repo</a> : null}
+          {props.project.designs ? <a className="designs" style={{ color: props.project.textcolor }} target="_blank" rel="noopener noreferrer" href={props.project.designs}>View Designs</a> : null}
+          {props.project.github ? <a className="github" style={{ color: props.project.textcolor }} target="_blank" rel="noopener noreferrer" href={props.project.github}>View Repo</a> : null}
+        </div>
       </div>
-     </div>
       <h4 className="title" style={{ color: props.project.color }}>
         {props.project.title}
       </h4>
@@ -38,6 +38,7 @@ const Web = props => {
         style={{ borderColor: `${props.project.color}` }}
       >{props.project.link.replace("https://", "").replace("http://", "")}</a>
     </Tilt>
-    )};
+  )
+};
 
 export default Web;

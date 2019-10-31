@@ -5,19 +5,19 @@ import Tilt from 'react-tilt'
 class Header extends Component {
 
   componentDidMount = () => {
-    window.addEventListener('scroll', function() { 
+    window.addEventListener('scroll', function () {
       let scrollpos = window.scrollY;
-      if (scrollpos >= 500) { document.body.classList.add("fade-in");}
+      if (scrollpos >= 500) { document.body.classList.add("fade-in"); }
       else { document.body.classList.remove("fade-in") }
     })
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
+      });
     });
 
     var scrollMore = document.querySelector('.scroll-more');
@@ -30,7 +30,7 @@ class Header extends Component {
     return (
       <header>
         <div id="planet"></div>
-        <Tilt style={{width: `fit-content`}}>
+        <Tilt style={{ width: `fit-content` }}>
           <div className="pronounce">/ Saa-thee-uh · Ram /</div>
           <h1>Sathya Ram</h1>
         </Tilt>

@@ -6,7 +6,6 @@ const Graphic = () => {
     <>
       <section id="graphic" name="graphic" role="presentation">
         <h3>Graphic</h3>
-        
         <Tilt className="hover" options={{ max: 25 }} >
           <img alt="ram photography" src="graphic/andro.jpg" />
         </Tilt>
@@ -37,9 +36,9 @@ const Graphic = () => {
         <Tilt className="hover" options={{ max: 25 }} >
           <img alt="ram photography" src="graphic/arctic.jpg" />
         </Tilt>
-           <Tilt className="hover" options={{ max: 25 }} >
+        <Tilt className="hover" options={{ max: 25 }} >
           <img alt="ram photography" src="graphic/treeteck_logos.jpg" />
-        </Tilt>  
+        </Tilt>
         <Tilt className="hover" options={{ max: 25 }} >
           <img alt="ram photography" src="graphic/loewy.jpg" />
         </Tilt>
