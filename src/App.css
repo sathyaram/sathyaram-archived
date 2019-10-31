@@ -21,12 +21,12 @@ aside::before {
   position: absolute;
   height: 0;
   top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -3;
-    border-color: #fff transparent transparent;
-    border-style: solid;
-    border-width: 70px 160px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -3;
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 70px 160px 0;
 }
 
 aside::after {
@@ -70,6 +70,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  padding: 0 2rem;
   color: white;
   overflow: hidden;
 }
@@ -460,6 +461,7 @@ nav.social-media a:nth-child(5)::after {
 .logo {
   width: 100px;
   height: auto;
+  margin-left: -1px;
   transform: translateX(-50%);
   left: 50%;
   position: relative;
@@ -478,7 +480,7 @@ section {
 }
 
 section#photography, section#graphic {
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 
 section#web {
@@ -567,7 +569,7 @@ a.website-link {
   transition: color 300ms ease, top 300ms ease, box-shadow 300ms ease;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
-  border-bottom-width: 3px;
+  border-bottom-width: 5px;
   border-bottom-style: solid;
   z-index: 2;
   top: 0;
@@ -990,11 +992,18 @@ a.designs:hover {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  main {
+    margin-left: 100px;
+  }
+}
+
 @media screen and (min-width: 1080px) {
   .title, .website-link, .tags {
     transform: translateZ(80px);
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .tags li:not(:last-child) {
@@ -1028,7 +1037,7 @@ a.designs:hover {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1080px) {
   header {
     height: auto;
     padding: 3rem 5rem 5rem 2rem;
@@ -1057,6 +1066,9 @@ a.designs:hover {
 
   footer a {
     font-size: 14px;
+  } 
+  .title {
+    margin-left: -2rem;
   }
 }
 
@@ -1071,6 +1083,7 @@ a.designs:hover {
   p {
     font-size: 16px;
   }
+ 
 }
 
 @media screen and (max-width: 468px) {
@@ -1078,7 +1091,7 @@ a.designs:hover {
     width: 100%;
     height: auto;
     flex-direction: row;
-    z-index: 9;
+    z-index: 19;
     padding: 1rem;
   }
   main {
@@ -1089,6 +1102,8 @@ a.designs:hover {
 
   aside::before {
     left: 0;
+    border-width: 50px 300vw 0 0;
+    transform: none;
   }
   aside::after {
     content: none;
