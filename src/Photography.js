@@ -30,9 +30,17 @@ const Photography = () => {
       <Tilt className="hover" options={{ max: 25 }} >
         <img alt="ram photography" src="photography/portraits/RAM_9912.jpg" />
       </Tilt>
-    
       <Tilt className="hover" options={{ max: 25 }} >
         <img alt="ram photography" src="photography/portraits/RAM_0085.jpg" />
+      </Tilt>
+      <Tilt className="hover" options={{ max: 25 }} >
+        <img alt="ram photography" src="photography/portraits/RAM_0589.jpg" />
+      </Tilt>
+      <Tilt className="hover" options={{ max: 25 }} >
+        <img alt="ram photography" src="photography/portraits/RAM_0010.jpg" />
+      </Tilt>
+      <Tilt className="hover" options={{ max: 25 }} >
+        <img alt="ram photography" src="photography/portraits/RAM_9231.jpg" />
       </Tilt>
     </section>
     </>
