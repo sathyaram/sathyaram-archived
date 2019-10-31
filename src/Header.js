@@ -34,7 +34,19 @@ class Header extends Component {
           <div className="pronounce">/ Saa-thee-uh · Ram /</div>
           <h1>Sathya Ram</h1>
         </Tilt>
-        <h2><div className="skills"><span>Front-End</span>Developer</div><div className="skills"><span>Graphic &amp; Web</span>Designer</div><div className="skills"><span>Professional</span>Photographer</div></h2>
+        <h2>
+          <div className="skills">
+            <span>Front-End </span>
+            Developer</div>
+            <div className="skills">
+              <span>Graphic &amp; Web </span>
+              Designer
+              </div>
+              <div className="skills">
+                <span>Professional </span>
+                Photographer
+              </div>
+        </h2>
         <p>i design &amp; build digital experiences. my thing is handcrafted <u>websites</u>, vibrant, user-centric <u>designs</u> and lifestyle, portrait, studio <u>photography</u>. i'm all about making the internet sexier.</p>
       </header>
     );
