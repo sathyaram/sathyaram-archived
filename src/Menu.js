@@ -17,6 +17,7 @@ const Menu = () => {
         <a target="_blank" rel="noopener noreferrer" href="https://flickr.com/sathyaramphotography">Flickr</a>
         <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">Codepen</a>
       </nav>
+    
     </div>
   );
 };
