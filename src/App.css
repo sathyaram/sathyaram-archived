@@ -507,6 +507,7 @@ section img:hover {
   border-radius: 1rem;
 }
 
+
 .hover:hover {
   z-index: 3;
 }
@@ -1174,7 +1175,15 @@ a.designs:hover {
   }
 
   .hire-me {
-    padding: 2rem 1rem;
+    padding: 2rem 1.75rem;
+  }
+
+  footer {
+    padding: 0 1.5rem;
+  }
+  section#graphic,
+  section#photography {
+    pointer-events: none;
   }
 }
 
