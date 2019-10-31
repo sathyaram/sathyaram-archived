@@ -480,11 +480,6 @@ section {
   z-index: 3;
 }
 
-section#photography,
-section#graphic {
-  overflow-x: hidden;
-}
-
 section#web {
   grid-gap: 4rem;
   margin: 0 2rem;
