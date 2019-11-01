@@ -6,7 +6,7 @@ const Aside = () => {
       <a name="home logo" className="home" href="/">
         <img className="logo" alt="ram logo" src="/ram-logo-white.svg" />
       </a>
-      <a name="web anchor" href="#web">
+      <a className="shooter" name="web anchor" href="#web">
         <div className="monitor shape">
           <div className="letters">W</div>
           <div className="base">
@@ -14,12 +14,12 @@ const Aside = () => {
           </div>
         </div>
       </a>
-      <a name="photography anchor" href="#photography">
+      <a className="shooter" name="photography" href="#photography">
         <div className="photo shape">
           <div className="letters">P</div>
         </div>
       </a>
-      <a name="graphic anchor" href="#graphic">
+      <a className="shooter" name="graphic" href="#graphic">
         <div className="box shape">
           <div className="letters">G</div>
           <div className="anchor"></div>

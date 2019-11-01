@@ -4,6 +4,12 @@ const Footer = () => {
   return (
     <footer>
       <div className="hire-me">
+          <div class="island island1">
+            <div class="waterfall waterfall1"></div>
+          </div>
+          <div class="island island2">
+            <div class="waterfall waterfall2"></div>
+          </div>
         <p>
           <span>Available for freelance work. </span>
           <br></br><br></br>

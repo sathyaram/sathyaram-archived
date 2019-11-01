@@ -73,6 +73,7 @@ footer {
   padding: 0 2rem;
   color: white;
   overflow: hidden;
+  position: relative;
 }
 
 footer a {
@@ -208,26 +209,26 @@ figure {
 }
 
 #planet1::after {
-  content: '';
+  content: "";
   width: 140%;
   height: 140%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 2px solid #afdaf3;
   z-index: 2;
 }
 
 #planet1::before {
-  content: '';
+  content: "";
   width: 180%;
   height: 180%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 2px solid #365161;
   z-index: 2;
@@ -248,7 +249,7 @@ figure {
 #planet3 {
   left: auto;
   right: 20%;
-  top:0%;
+  top: 0%;
   width: 210px;
   height: 210px;
   filter: blur(1px);
@@ -257,21 +258,19 @@ figure {
 #planet4 {
   left: 40%;
   right: 0%;
-  top:80%;
+  top: 80%;
   width: 140px;
   height: 140px;
-  animation: spin 19s linear infinite;
-
 }
 
 #planet4::after {
-  content: '';
+  content: "";
   width: 145%;
   height: 145%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 2px solid #315164;
   z-index: 2;
@@ -283,8 +282,6 @@ figure {
   top: 10%;
   width: 60px;
   height: 60px;
-  animation: spin 5s linear infinite;
-
 }
 
 #planet6 {
@@ -335,17 +332,16 @@ header p {
   line-height: 150%;
   font-size: 20px;
   margin-top: 2rem;
-  
 }
 
 .Tilt p {
-max-width: 300px;
-width: 100%;
-line-height: 150%;
-color: white;
-font-size: 16px;
-margin: 1.25rem auto 0;
-font-weight: bold;
+  max-width: 300px;
+  width: 100%;
+  line-height: 150%;
+  color: white;
+  font-size: 16px;
+  margin: 1.25rem auto 0;
+  font-weight: bold;
 }
 
 .menu {
@@ -613,7 +609,6 @@ section img:hover {
   border-radius: 1rem;
 }
 
-
 .hover:hover {
   z-index: 3;
 }
@@ -681,7 +676,7 @@ a.website-link {
 }
 
 a.website-link.https::after {
-  content: 'https';
+  content: "https";
   color: #5bc543;
   position: absolute;
   left: -23px;
@@ -775,7 +770,7 @@ a.website-link:active:before {
 .eyebrow {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
   font-size: 12px;
 }
 
@@ -819,8 +814,9 @@ a.designs:hover {
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
   border: 8px solid #0a65ce;
-  padding: 2rem 3rem;
+  padding: 2rem 3.5rem;
   outline: 10px solid #1c2741;
   transition: box-shadow 400ms ease;
   background-color: transparent;
@@ -988,6 +984,27 @@ a.designs:hover {
   transition: opacity 400ms ease, transform 300ms ease;
 }
 
+.shooter {
+  position: relative;
+}
+
+.shooter::after {
+  content: "";
+  position: absolute;
+  top: 41%;
+  transition: content 300ms ease;
+  transform: translateY(-50%);
+  right: 100%;
+  width: 200%;
+  background-color: white;
+  height: 2px;
+  z-index: -1;
+}
+
+.fade-in .shooter::after {
+  content: none;
+}
+
 .base {
   position: absolute;
   width: 13px;
@@ -1011,14 +1028,14 @@ a.designs:hover {
   border-left: 3px solid transparent;
   border-right: 0px solid transparent;
   border-bottom: 12px solid #f2f2f2;
-  left: -3px;
+  left: -2.5px;
 }
 
 .base:after {
   border-right: 3px solid transparent;
   border-left: 0px solid transparent;
   border-bottom: 12px solid #f2f2f2;
-  right: -3px;
+  right: -2.5px;
 }
 
 .base > div {
@@ -1061,7 +1078,7 @@ a.designs:hover {
 }
 
 .foot.bottom {
-  width: 32px;
+  width: 30px;
   height: 5px;
   border-radius: 5px;
   bottom: -1px;
@@ -1086,6 +1103,99 @@ a.designs:hover {
 
 .fade-in .scroll-more:hover {
   color: #131822;
+}
+
+
+.island {
+  width: 110px;
+  height: 16px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgb(0, 252, 0), limegreen);
+  background: linear-gradient(0deg, #1ab306, #acf036);
+  position: absolute;
+  opacity: 0.95;
+  animation: title-hover 2s ease-in-out infinite alternate;
+}
+
+.island::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: -1;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  height: 30px;
+  background: #bb8738;
+  background: #dd9c42;
+  background: #bd7c26;
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  transform: translateX(-50%);
+}
+
+.island1 {
+  top: -17px;
+  right: -5%;
+  z-index: 7;
+}
+
+.island2 {
+  position: absolute;
+  top: -105px;
+  left: -110px;
+  width: 150px;
+}
+.island2::after {
+  height: 60px;
+  width: 135px;
+}
+
+.island3 {
+  top: 15%;
+  right: 38%;
+  transform: scale(0.3);
+}
+
+.waterfall {
+  width: 15px;
+  height: 200px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(115, 225, 255, 0),
+    #73e1ff,
+    #0da6ff
+  );
+  margin-left: 25px;
+  margin-top: 0px;
+  border-top-left-radius: 4px;
+}
+.waterfall2 {
+      width: 45px;
+    height: 400px;
+    margin-left: 75px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 6px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(115, 225, 255, 0),
+    rgba(115, 225, 255, 0.7),
+    #0da6ff
+  );
+}
+
+.waterfall3 {
+  width: 5px;
+}
+
+
+@keyframes title-hover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes bounce {
@@ -1133,7 +1243,6 @@ a.designs:hover {
   .tags {
     transform: translateZ(80px) !important;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -1162,7 +1271,7 @@ a.designs:hover {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1420px) {
   section#web {
     grid-template-columns: 1fr 1fr;
   }
@@ -1196,7 +1305,7 @@ a.designs:hover {
   .title {
     margin-left: -2rem;
     font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   a.website-link {
     font-size: 18px;
@@ -1237,15 +1346,12 @@ a.designs:hover {
     letter-spacing: 0.75rem;
     word-break: break-all;
   }
-
- 
 }
 
 @media screen and (max-width: 540px) {
   h1 {
     font-size: 3.5rem;
   }
-  
 }
 
 @media screen and (max-width: 468px) {
@@ -1284,6 +1390,10 @@ a.designs:hover {
 
   .menu {
     right: 0.5rem;
+  }
+
+  .shooter::after {
+    content: none;
   }
 
   main,
