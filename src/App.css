@@ -184,7 +184,7 @@ h2 span {
   text-transform: uppercase;
 }
 
-#planet {
+.planet {
   position: absolute;
   top: 43%;
   left: 19%;
@@ -196,7 +196,93 @@ h2 span {
     inset 0 8px 10px 3px #4bb8ec, inset 0 6px 10px 3px #4bb8ec,
     0 0 10px 3px #91cbf5;
   border-radius: 50%;
+}
+
+#planet1::after {
+  content: '';
+  width: 140%;
+  height: 140%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 2px solid #afdaf3;
+  z-index: 2;
+}
+
+#planet1::before {
+  content: '';
+  width: 180%;
+  height: 180%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 2px solid #365161;
+  z-index: 2;
+}
+
+#planet1 {
   animation: spin 10s linear infinite;
+}
+
+#planet2 {
+  left: auto;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  filter: blur(5px);
+}
+
+#planet3 {
+  left: auto;
+  right: 20%;
+  top:0%;
+  width: 210px;
+  height: 210px;
+  filter: blur(1px);
+}
+
+#planet4 {
+  left: 40%;
+  right: 0%;
+  top:80%;
+  width: 140px;
+  height: 140px;
+  animation: spin 19s linear infinite;
+
+}
+
+#planet4::after {
+  content: '';
+  width: 145%;
+  height: 145%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 2px solid #315164;
+  z-index: 2;
+}
+
+#planet5 {
+  left: 40%;
+  right: 0%;
+  top: 10%;
+  width: 60px;
+  height: 60px;
+  animation: spin 5s linear infinite;
+
+}
+
+#planet6 {
+  left: 95%;
+  top: 90%;
+  width: 250px;
+  height: 250px;
 }
 
 h3 {
@@ -751,7 +837,7 @@ a.designs:hover {
 
 .box {
   width: 55px;
-  height: 55px;
+  height: 58px;
   border: 4px solid #f2f2f2;
   background: #131822;
   margin: 0 auto;

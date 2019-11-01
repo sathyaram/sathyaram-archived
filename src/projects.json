@@ -11,7 +11,7 @@
     "textcolor": "#ffffff",
     "type": "Web",
     "offcolor": "linear-gradient(325deg, rgba(49, 49, 49, 0.7), rgba(9, 9, 9, 0.95))",
-    "media": ["/web/en-grid.png"]
+    "media": ["assets/web/en-grid.png"]
   },
   {
     "title": "HHMI",
@@ -175,63 +175,63 @@
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_4378.jpg",
+    "image": "photography/RAM_4378.jpg",
     "desc": "Shoot with @LuisOrtiz"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_0645.jpg"
+    "image": "photography/RAM_0645.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_0701.jpg"
+    "image": "photography/RAM_0701.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_2435.jpg"
+    "image": "photography/RAM_2435.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_1145.jpg"
+    "image": "photography/RAM_1145.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_9879.jpg"
+    "image": "photography/RAM_9879.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_6210.jpg"
+    "image": "photography/RAM_6210.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_9912.jpg"
+    "image": "photography/RAM_9912.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_0085.jpg"
+    "image": "photography/RAM_0085.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_0589.jpg"
+    "image": "photography/RAM_0589.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_0010.jpg"
+    "image": "photography/RAM_0010.jpg"
   },
   {
     "title": "Luis",
     "type": "Photography",
-    "image": "photography/portraits/RAM_9231.jpg"
+    "image": "photography/RAM_9231.jpg"
   },
   {
     "title": "Poke",
@@ -296,31 +296,31 @@
   {
     "title": "Poke",
     "type": "Graphic",
-    "image": "graphic/pokelogos/houndoom.jpg"
+    "image": "graphic/houndoom.jpg"
   },
   {
     "title": "Poke",
     "type": "Graphic",
-    "image": "graphic/pokelogos/steelixcorp.jpg"
+    "image": "graphic/steelixcorp.jpg"
   },
   {
     "title": "Poke",
     "type": "Graphic",
-    "image":"graphic/pokelogos/wingullssurfshop.jpg"
+    "image":"graphic/wingullssurfshop.jpg"
   },
   {
     "title": "Poke",
     "type": "Graphic",
-    "image": "graphic/pokelogos/vanilliteicecream.jpg"
+    "image": "graphic/vanilliteicecream.jpg"
   },
   {
     "title": "Poke",
     "type": "Graphic",
-    "image": "graphic/pokelogos/honedgepictures.jpg"
+    "image": "graphic/honedgepictures.jpg"
   },
   {
     "title": "Poke",
     "type": "Graphic",
-    "image":"graphic/pokelogos/growlithehoundservices.jpg"
+    "image":"graphic/growlithehoundservices.jpg"
   }
 ]

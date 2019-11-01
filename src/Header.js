@@ -4,6 +4,7 @@ import Tilt from 'react-tilt'
 
 class Header extends Component {
 
+
   componentDidMount = () => {
     window.addEventListener('scroll', function () {
       let scrollpos = window.scrollY;
@@ -29,7 +30,14 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div id="planet"></div>
+        <figure>
+          <div className="planet" id="planet1"></div>
+          <div className="planet" id="planet2"></div>
+          <div className="planet" id="planet3"></div>
+          <div className="planet" id="planet4"></div>
+          <div className="planet" id="planet5"></div>
+          <div className="planet" id="planet6"></div>
+        </figure>
         <Tilt style={{ width: `fit-content` }}>
           <div className="pronounce">/ Saa-thee-uh · Ram /</div>
           <h1>Sathya Ram</h1>
