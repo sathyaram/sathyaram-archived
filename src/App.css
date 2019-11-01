@@ -327,6 +327,78 @@ section:nth-of-type(1) h3 {
   top: 5px;
 }
 
+.gamer {
+  font-size: 16px;
+}
+
+.battlenet {
+  color: #0b94dd;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.battlenet:hover::after,
+.discord:hover::after{
+  opacity: 1;
+}
+
+.battlenet::after {
+  content:"Sathya#1492";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  color: rgb(125, 207, 255);
+  padding: 0 0.5rem;
+  background-color: rgba(56, 137, 236, 0.6);
+  opacity: 0;
+  box-shadow: 2px 2px 0 0 rgb(125, 207, 255);
+}
+
+.discord {
+  color: #7289da;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.discord::after {
+  content:"Sathex#6172";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  color: rgb(214, 152, 255);
+  padding: 0 0.5rem;
+  background-color: rgba(74, 85, 189, 0.6);
+  opacity: 0;
+  box-shadow: 2px 2px 0 0 rgb(214, 152, 255);
+
+}
+
+.discord::before {
+  content: url("/icons/discord.svg");
+  width: 19px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  display: block;
+  z-index: 9;
+}
+
+.battlenet::before {
+  content: url("/icons/battlenet.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  z-index: 9;
+}
+
 header p {
   max-width: 640px;
   line-height: 150%;
@@ -1171,9 +1243,9 @@ a.designs:hover {
   border-top-left-radius: 4px;
 }
 .waterfall2 {
-      width: 45px;
-    height: 400px;
-    margin-left: 75px;
+  width: 35px;
+  height: 400px;
+    margin-left: 90px;
     border-top-left-radius: 0px;
     border-top-right-radius: 6px;
   background-image: linear-gradient(

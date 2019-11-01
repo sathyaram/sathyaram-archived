@@ -136,7 +136,7 @@
   {
     "title": "SCLLR",
     "subtitle": "South Carolina Department of Labor, Licensing & Regulation",
-    "description": "On this quick turn-around project,South Carolinas Labor and Licensing Department needed a lightweight, static site for their rigid hosting structure, a natural fit for Grav CMS, along with the BlackHole plugin that allows for static site generation.",
+    "description": "On this quick turn-around project, South Carolina's Labor and Licensing Department needed a lightweight, static site for their rigid hosting structure, a natural fit for Grav CMS, along with the BlackHole plugin that allows for static site generation.",
     "tags": ["Grav CMS", "Twig/YAML", "SASS", "PHP"],
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
