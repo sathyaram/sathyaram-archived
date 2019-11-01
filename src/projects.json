@@ -171,5 +171,156 @@
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, rgba(151,49,65,0.7), rgba(84,19,29,0.7))",
     "media": ["/web/paulknakk2.jpg"]
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_4378.jpg",
+    "desc": "Shoot with @LuisOrtiz"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_0645.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_0701.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_2435.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_1145.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_9879.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_6210.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_9912.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_0085.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_0589.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_0010.jpg"
+  },
+  {
+    "title": "Luis",
+    "type": "Photography",
+    "image": "photography/portraits/RAM_9231.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/andro.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/sexy_cover.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/shake.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/gapi.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/lehighracing.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/indify.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/charlierayban.jpg" 
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/envjustice.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/sexyad1.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/arctic.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/treeteck_logos.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/loewy.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/pokelogos/houndoom.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/pokelogos/steelixcorp.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image":"graphic/pokelogos/wingullssurfshop.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/pokelogos/vanilliteicecream.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image": "graphic/pokelogos/honedgepictures.jpg"
+  },
+  {
+    "title": "Poke",
+    "type": "Graphic",
+    "image":"graphic/pokelogos/growlithehoundservices.jpg"
   }
 ]
