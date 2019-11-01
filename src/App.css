@@ -330,11 +330,22 @@ section:nth-of-type(1) h3 {
   top: 5px;
 }
 
-p {
+header p {
   max-width: 640px;
   line-height: 150%;
   font-size: 20px;
   margin-top: 2rem;
+  
+}
+
+.Tilt p {
+max-width: 300px;
+width: 100%;
+line-height: 150%;
+color: white;
+font-size: 16px;
+margin: 1.25rem auto 0;
+font-weight: bold;
 }
 
 .menu {
@@ -622,7 +633,7 @@ section img:hover {
 }
 
 .subtitle {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   width: 70%;
   margin-top: 0.75rem;
 }
@@ -649,7 +660,8 @@ section img:hover {
 
 a.website-link {
   margin-top: 1rem;
-  font-size: 18px;
+  /* margin-left: -0.5rem; */
+  font-size: 22px;
   display: block;
   padding: 0.5rem 1.25rem;
   color: #131313;
@@ -666,6 +678,21 @@ a.website-link {
   z-index: 2;
   top: 0;
   transform: translateZ(20px);
+}
+
+a.website-link.https::after {
+  content: 'https';
+  color: #5bc543;
+  position: absolute;
+  left: -23px;
+  top: 52%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  background: rgba(225, 250, 218, 0.9);
+  padding: 4px 0.5rem 0.4rem;
+  border-radius: 10px;
+  /* opacity: 0; */
+  transition: opacity 300ms ease;
 }
 
 a.website-link::before {
@@ -804,7 +831,9 @@ a.designs:hover {
     96px 96px 0px 0px #1fadff, 104px 104px 0px 0px #1c2741,
     130px 130px 0px 0px #0a65ce, 137px 137px 0px 0px #1c2741,
     163px 168px 0px 0px #1fadff, 171px 175px 0px 0px #1c2741,
-    198px 200px 0px 0px #0a65ce;
+    198px 200px 0px 0px #0a65ce, 206px 208px 0px 0px #1c2741,
+    232px 240px 0px 0px #1fadff, 240px 249px 0px 0px #1c2741,
+    268px 300px 0px 0px #0a65ce;
 }
 
 .hire-me:hover {
@@ -1104,6 +1133,7 @@ a.designs:hover {
   .tags {
     transform: translateZ(80px) !important;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -1168,6 +1198,9 @@ a.designs:hover {
     font-size: 2rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   }
+  a.website-link {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1204,6 +1237,15 @@ a.designs:hover {
     letter-spacing: 0.75rem;
     word-break: break-all;
   }
+
+ 
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  
 }
 
 @media screen and (max-width: 468px) {

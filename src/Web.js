@@ -64,14 +64,18 @@ const Web = props => {
         ))}
       </ul>
       <a
-        className="website-link"
+        className={`website-link ${props.project.link.startsWith("https") ? "https" : null}`}
         target="_blank"
         rel="noopener noreferrer"
         href={props.project.link}
         style={{ borderColor: `${props.project.color}` }}
+
       >
         {props.project.link.replace("https://", "").replace("http://", "")}
       </a>
+      <p>
+        {props.project.description}
+      </p>
     </Tilt>
   );
 };

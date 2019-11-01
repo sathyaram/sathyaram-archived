@@ -10,26 +10,26 @@
     "color": "#f42737",
     "textcolor": "#ffffff",
     "type": "Web",
-    "offcolor": "linear-gradient(325deg, rgba(49, 49, 49, 0.7), rgba(9, 9, 9, 0.95))",
+    "offcolor": "linear-gradient(325deg, rgba(49, 49, 49, 0.6), rgba(9, 9, 9, 0.85))",
     "media": ["/web/en-grid.png"]
   },
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
-    "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with scientific practices. I had the opporunity to theme and develop a good amount of the new and improved HHMI in Drupal 8.",
+    "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.",
     "tags": ["Drupal 8", "Pattern Lab", "Twig/YAML", "SCSS"],
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(130deg, rgba(130,187,68, 0.7), rgba(23,131,135, 0.9))",
+    "offcolor": "linear-gradient(130deg, rgba(130,187,68, 0.6), rgba(23,131,135, 0.8))",
     "media": ["/web/hhmi-mobile2.jpg"]
   },
   {
     "title": "FudTruk",
     "subtitle": "Lehigh Valley's Freshest Food Truck",
-    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
+    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.",
     "type": "Web",
     "tags": [
       "Drupal 7",
@@ -43,15 +43,15 @@
     "role": "Freelance Project",
     "color": "#ffda67",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(130deg, rgba(240,90,38, 0.7), rgba(250,175,64, 0.9))",
+    "offcolor": "linear-gradient(130deg, rgba(240,90,38, 0.6), rgba(250,175,64, 0.8))",
     "media": ["/web/fudtruk-uc.jpg"]
   },
   {
     "title": "Amanda Foundation",
     "subtitle": "A Mission Driven Adoption Shelter",
-    "description": "The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, quality breakfast/lunch foods and unique dishes. I actually completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all of which I incorporated in the website I made for them. It was an amazing experience, check'em out!",
+    "description": "An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site.",
     "type": "Web",
-    "tags": ["Squarespace", "Web Design", "JavaScript"],
+    "tags": ["Squarespace", "Web Design", "CSS", "JavaScript"],
     "link": "https://amandafoundation.org",
     "role": "Forum One",
     "color": "purple",
@@ -62,7 +62,7 @@
   {
     "title": "Lehigh Portal Redesign",
     "subtitle": "Lehigh's Campus Portal",
-    "description": "While working at Lehigh, I was the Campus Portal administrator and completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested coat of paint as well as added development improvements, like layout restructure for easily accessible information, browser compatability and continually updating content for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
+    "description": "While working at Lehigh, I was the Campus Portal administrator and completely redesign how it looked and functioned. It was built on older software but I was able to give it a very fresh, user-tested coat of paint as well as added development improvements for students. My redesign was graced with PABUG's Best College Portal Redesign for 2017.",
     "tags": [
       "Luminis 5",
       "JavaScript",
@@ -76,7 +76,7 @@
     "role": "Lehigh University",
     "color": "#d0a678",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(-35deg, rgba(37, 21, 0, 0.7) 0%, rgba(115, 45, 2, 0.7) 100%)",
+    "offcolor": "linear-gradient(-35deg, rgba(37, 21, 0, 0.7) 0%, rgba(115, 45, 2, 0.5) 100%)",
     "media": ["/web/portal-outside.jpg"]
   },
   {
@@ -90,7 +90,7 @@
     "color": "cyan",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.7), rgba(20, 151, 212, 0.95))",
+    "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.95), rgba(20, 151, 212, 0.8))",
     "media": ["/web/coolwebsite.png"]
   },
   {
@@ -104,7 +104,7 @@
     "color": "#d49600",
     "type": "Web",
     "textcolor": "#000000",
-    "offcolor": "linear-gradient(-45deg, rgba(224, 201, 87, 0.7), rgba(255, 243, 154, 0.95))",
+    "offcolor": "linear-gradient(-45deg, rgba(202, 175, 40, 0.9), rgba(255, 243, 154, 0.8))",
     "media": ["/web/oscarsanimated.png"]
   },
   {
@@ -117,26 +117,26 @@
     "color": "#e5d09a",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "radial-gradient(at center center, rgba(154, 95, 163, 0.8) 0%, rgb(86, 21, 98) 100%)",
+    "offcolor": "radial-gradient(at center center, rgba(154, 95, 163, 0.4) 0%, rgba(86, 21, 98, 0.8) 100%)",
     "media": ["/web/chocolate.jpg"]
   },
   {
     "title": "Astral Air Parts",
     "subtitle": "Aircraft Part Supplier",
-    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A three but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
+    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A three but mighty industry, these little nuts are the glue that holds America tight.",
     "tags": ["WordPress", "JavaScript", "HTML/SCSS", "PHP"],
     "link": "http://astralairparts.com",
     "role": "Weidenhammer",
     "color": "#ee5c23",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.9), rgba(0, 66, 129, 0.9) 80%)",
+    "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.7), rgba(0, 66, 129, 0.8) 80%)",
     "media": ["/web/astral.jpg"]
   },
   {
     "title": "SCLLR",
     "subtitle": "South Carolina Department of Labor, Licensing & Regulation",
-    "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A three but mighty industry, these little nuts are the glue that holds America tight. I was given designs and tasked to bring this website to life exactly.",
+    "description": "On this quick turn-around project,South Carolinas Labor and Licensing Department needed a lightweight, static site for their rigid hosting structure, a natural fit for Grav CMS, along with the BlackHole plugin that allows for static site generation.",
     "tags": ["Grav CMS", "Twig/YAML", "SASS", "PHP"],
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
@@ -156,7 +156,7 @@
     "color": "#f8b700",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
-    "offcolor": "linear-gradient(to left top, rgba(251, 199, 82, 0.8), rgba(49, 48, 35, 0.7), rgb(0, 0, 0))",
+    "offcolor": "linear-gradient(to left top, rgba(251, 199, 82, 0.3), rgba(49, 48, 35, 0.7), rgb(0, 0, 0))",
     "media": ["/web/keystone.jpg"]
   },
   {
@@ -169,7 +169,7 @@
     "color": "#e4ce87",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(270deg, rgba(151,49,65,0.7), rgba(84,19,29,0.7))",
+    "offcolor": "linear-gradient(270deg, rgba(151,49,65,0.3), rgba(84,19,29,0.7))",
     "media": ["/web/paulknakk2.jpg"]
   },
   {
@@ -266,7 +266,7 @@
   {
     "title": "Poke",
     "type": "Graphic",
-    "image": "graphic/charlierayban.jpg" 
+    "image": "graphic/charlierayban.jpg"
   },
   {
     "title": "Poke",
@@ -306,7 +306,7 @@
   {
     "title": "Poke",
     "type": "Graphic",
-    "image":"graphic/wingullssurfshop.jpg"
+    "image": "graphic/wingullssurfshop.jpg"
   },
   {
     "title": "Poke",
@@ -321,6 +321,6 @@
   {
     "title": "Poke",
     "type": "Graphic",
-    "image":"graphic/growlithehoundservices.jpg"
+    "image": "graphic/growlithehoundservices.jpg"
   }
 ]
