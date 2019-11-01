@@ -11,7 +11,7 @@
     "textcolor": "#ffffff",
     "type": "Web",
     "offcolor": "linear-gradient(325deg, rgba(49, 49, 49, 0.7), rgba(9, 9, 9, 0.95))",
-    "media": ["assets/web/en-grid.png"]
+    "media": ["/web/en-grid.png"]
   },
   {
     "title": "HHMI",
