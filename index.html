@@ -17,8 +17,8 @@
   <link rel="preload" href="%PUBLIC_URL%/fonts/Barlow-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="%PUBLIC_URL%/fonts/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png">
@@ -40,59 +40,139 @@
 
 <body>
   <!-- <aside role="complementary"> -->
-  <div class="logo">
-    <img src="images/ram-logo-white.svg" alt="ram logo" />
-  </div>
-  <nav class="social-media" role="navigation">
-    <!-- <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Instagram</a>
+  <nav class="menu" role="navigation">
+    <ul>
+      <li><a href="about.html"><span>Home</span>Take me back!</a></li>
+      <li><a href="about.html"><span>About</span>Who is this guy?</a></li>
+      <li><a href="about.html"><span>Websites</span>Real sites I've made</a></li>
+      <li><a href="about.html"><span>Designs</span>Graphic, Web, UI</a></li>
+      <li><a href="about.html"><span>Photography</span>So many photos</a></li>
+      <li><a href="about.html"><span>Playground</span>My nerdy sandbox</a></li>
+    </ul>
+    <div class="logo">
+      <a class="menuTrigger" href="javascript:void(0);" name="menu trigger">
+        <img src="images/ram-logo-white.svg" alt="ram logo" aria-label="ram logo" />
+      </a>
+    </div>
+  </nav>
+  <div class="triangles"></div>
+  <div class="eyebrow">
+    <nav class="social-media" role="navigation">
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Instagram</a>
+
       <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/sathyaram">Dribbble</a>
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/sathyaram">Github</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://flickr.com/sathyaramphotography">Flickr</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">Codepen</a> -->
-  </nav>
-  <nav class="menu" role="navigation">
-    <!-- <a target="_blank" rel="noopener noreferrer" href="/SathyaRam_Resume2020.pdf">Resume</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">Codepen</a>
+    </nav>
+    <nav class="contact">
+      <a target="_blank" rel="noopener noreferrer" href="/SathyaRam_Resume2020.pdf">Resume</a>
+      <a class="music" target="_blank" rel="noopener noreferrer"
+        href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
       <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=cq3fwlZdWhw">✧</a>
-      <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Email</a> -->
-  </nav>
-  <nav class="contact">
+      <a class="music" target="_blank" rel="noopener noreferrer"
+        href="https://www.youtube.com/watch?v=cq3fwlZdWhw">✧</a>
+      <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Email</a>
+    </nav>
+  </div>
 
-  </nav>
   <!-- </aside> -->
   <header role="banner">
-    <div>
+    <div class="headings">
       <h1><span>Sathya Ram</span></h1>
-      <h2>Front-End Developer = Web/UI Designer = Photographer</h2>
+      <h2>Web Developer <span>✧</span> Digital Designer <span>✧</span> Photographer</h2>
+      <div class="pronounce">/ Saa-thee-uh · Ram /</div>
+      <a href="#maincontent" class="scroll-more">↓</a>
+    </div>
     </div>
   </header>
-  <main role="main">
+  <div class="aboutMe">
+    <p>
+      Design, honesty, and a bit of magic. <br></br> I design & build digital experiences. My thing is handcrafted
+      websites,
+      vibrant, user-centric designs and lifestyle, portrait, studio photography. I'm all about making the internet
+      sexier.
+    </p>
+    <br></br>
+    <p class="gamer">*I'm also a huge gamer - Add me on <span class="battlenet">Battlenet</span> or <span
+        class="discord">Discord</span>!</p>
+  </div>
+  <main id="maincontent" role="main">
+    <section id="websites">
+      <a href="#">
+        <h3>Websites</h3>
+        <div class="track">
+          <img class="desktop" src="images/fudtruk2.gif" />
+          <img class="tablet" src="images/paulknakk.jpg" />
+          <img class="phone" src="images/ex.png" />
+        </div>
+      </a>
+    </section>
+    <section id="designs">
+      <a href="#">
+        <h3>Designs</h3>
+        <div class="grid">
+          <img src="images/loewy.png">
+          <img src="images/treeteck.png">
+          <img src="images/lehighracing.png">
+          <img src="images/arcticlogo.png">
+        </div>
+      </a>
+    </section>
+    <section id="photography">
+      <a href="#">
+        <h3>Photography</h3>
+        <img src="images/RAM_2145.jpg" />
+      </a>
+    </section>
+    <section id="about">
+      <a href="#">
+        <h3>About</h3>
+        <div class="container">
+          <img src="images/RAM_2497.jpg" />
+          <img src="images/RAM_2489.jpg" />
+       </div>
+      </a>
+    </section id="playground">
     <section>
-      <h3>About</h3>
+      <a href="#">
+        <h3>Playground</h3>
+        <div class="scene">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+          <div class="island island1">
+            <div class="waterfall waterfall1"></div>
+          </div>
+          <div class="island island2">
+            <div class="waterfall waterfall2"></div>
+          </div>
+        </div>
+      </a>
     </section>
     <section>
-      <h3>Projects</h3>
+      <a href="#">
+        <h3>Explore</h3>
+      </a>
     </section>
-    <section>
-      <h3>Websites</h3>
-      <div class="track">
-        <!-- <div class="project">
-          Exhaust Notes
-        </div> -->
-      </div>
-    </section>
-    <section>
-      <h3>Graphics</h3>
-    </section>
-    <section>
-      <h3>Photos</h3>
-    </section>
-
   </main>
   <footer role="footer">
-
+      <div class="hire-me">
+        <p>
+          <span>Available for freelance work. </span>
+          <br>
+          <br>
+          ↣ from-scratch websites
+          <br>
+          ↣ cutting-edge web designs
+          <br>
+          ↣ lifestyle, portrait, &amp; studio photography
+          <br><br>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:sathyatheram@gmail.com">Hit me up to get <u>rates</u> or to get <u>real</u>.
+          </a>
+        </p>
+      </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
