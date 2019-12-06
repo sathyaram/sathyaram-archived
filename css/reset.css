@@ -59,6 +59,16 @@
 	}
 }
 
+@keyframes suspend {
+  0% {
+    transform: rotateY(40deg) rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateY(-40deg) rotateX(0deg);
+  }
+}
+
 html,
 body,
 div,
