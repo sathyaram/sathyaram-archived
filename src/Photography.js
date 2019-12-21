@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 
-class Photography extends Component {
-  render() {
+function Photography() {
+  // const mappedPhotos = [];
+  // const mappedWebsites = [];
+  // const mappedDesigns = [];
+
+  // projects.forEach((project, i) => {
+  //   if (project.type === "Web") {
+  //     mappedWebsites.push(<Websites key={i} project={project} />);
+  //   } else if (project.type === "Photography") {
+  //     mappedPhotos.push(<Photography key={i} photo={project} />);
+  //   } else if (project.type === "Graphic") {
+  //     mappedGraphic.push(<Designs key={i} graphic={project} />);
+  //   }
+  // });
     return (
       <div className="page">
         <div className="text">
@@ -25,6 +37,6 @@ class Photography extends Component {
       </div>
     );
   }
-}
+
 
 export default Photography;

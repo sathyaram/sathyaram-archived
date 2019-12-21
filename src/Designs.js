@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import projects from './projects.json';
 
-class Designs extends Component {
-  render() {
+
+function Designs() {
+  const mappedDesigns = [];
+
+  
     return (
       <div className="page">
       <div className="text">
@@ -31,6 +35,6 @@ class Designs extends Component {
     </div>
     );
   }
-}
+
 
 export default Designs;
