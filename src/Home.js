@@ -28,7 +28,7 @@ class Home extends Component {
             <p className="gamer">*I'm also a huge gamer - Add me on <span className="battlenet">Battlenet</span> or <span
               className="discord">Discord</span>!</p>
             <div className="framicons">
-              <a className="shooter" name="web anchor" href="#web">
+              <div className="shooter" name="web anchor">
                 <div className="monitor shape">
                   <div className="screen">
                     <div className="code">
@@ -53,11 +53,15 @@ class Home extends Component {
                     <div className="foot bottom"></div>
                   </div>
                 </div>
-              </a>
-
-              <a className="shooter" name="graphic" href="#graphic">
+              </div>
+              <div className="shooter" name="graphic">
                 <div className="box shape">
-                  <div className="letters">G</div>
+                  <div class="draw">
+                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 54.3">
+                    <path class="s-line" d="M36.4 14c-.4-.7-5-9.5-15.4-6.6h-.1c-3.4.9-5.8 3.5-6.8 6.8-1 3.6 1.2 7.1 3 10 1.5 2.5 4.3 5.8 1.8 8.7-.8.9-2.1 1.4-3.3 1.3-1.2 0-2.4-.5-3.5-1-2.7-1.3-6.3-4.2-5-7.6-1.7 4.8.9 9.8 4.9 12.5 2.3 1.5 5 2.3 7.8 2 4.4-.6 7.8-4.4 8-8.8.1-2.4-1.6-4.9-3-6.7-.7-.9-1.4-1.8-2.1-2.6-4-6.6 2.7-5.2 2.7-5.2s5.4 1.2 6.9 9.5c.4-2.6-.1-6.1 4.1-12.3z" />
+                    <path class="r-line" d="M71 27.2c1.3 3.5-3 6.3-6 7.5-1.3.5-2.6.9-4 .9s-2.8-.5-3.6-1.5c-2.7-3.1.6-6.3 2.4-8.7 2.1-2.9 4.7-6.4 3.8-10-.9-3.4-3.5-6.1-7.3-7.2h-.1c-3.5-1-7.4-.4-10.7 1-2.7 1.2-5 3-6.6 5.5-1.8 2.8-3.3 6.3-3.9 9.6-.2 1.1-.3 2.3-.4 3.4-.7 10.6 5.9 20.1 5.9 20.1-.8-4.9-.8-8.7-.4-11.8.5-3.9 1.3-7 2.3-9.5 3.6-9.5 8.5-9 8.5-9s7.5-1.1 2.8 5.4c-.9.8-1.7 1.7-2.5 2.6-1.6 1.8-3.6 4.2-3.6 6.7 0 4.5 3.8 8.5 8.6 9.2 3 .5 6.2-.2 8.8-1.7 4.6-2.8 7.8-7.7 6-12.5z" />
+                  </svg>
+                  </div>
                   <div className="anchor"></div>
                   <div className="anchor"></div>
                   <div className="anchor"></div>
@@ -68,12 +72,12 @@ class Home extends Component {
                   <div className="anchor"></div>
                   <div className="anchor"></div>
                 </div>
-              </a>
-              <a className="shooter" name="photography" href="#photography">
+              </div>
+              <div className="shooter" name="photography">
                 <div className="photo shape">
-                  <div className="letters">P</div>
+                <img src="/images/me.jpg" alt="me1"></img>
                 </div>
-              </a>
+              </div>
             </div>
           </section>
           <section className="routeMe">

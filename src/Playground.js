@@ -2,12 +2,26 @@ import React, { Component } from 'react';
 
 
 class Playground extends Component {
+
+  loadScript() {
+    let body = document.body;
+    let script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = 'https://static.codepen.io/assets/embed/ei.js';
+    script.async = true;
+    script.defer = true;
+    body.appendChild(script);
+    console.log('done');
+  }
+  componentDidMount() {
+    this.loadScript();
+  }
   render() {
     return (
       <div className="page appears">
         <div className="text">
-          <h2>Playground</h2>
-          <p>Some random code stuff I've been working on.</p>
+          <h2><div>Playground</div></h2>
+          <h6><div>Some random code stuff I've been working on.</div></h6>
         </div>
         <div className="content">
           <div className="play-item appear">

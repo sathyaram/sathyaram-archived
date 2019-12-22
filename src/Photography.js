@@ -2,17 +2,17 @@ import React from 'react';
 
 function Photography() {
     return (
-      <div className="page appears">
+      <div className="page photography appears">
         <div className="text">
         <h2><div>Photography</div></h2>
-        <p><div>A collection of all my photos.</div></p>
+        <h6><div>A collection of all my photos.</div></h6>
         </div>
-        <div className="sticky-filter">
+        {/* <div className="sticky-filter">
           <button>Featured</button>
           <button>Portraits</button>
           <button>Space</button>
           <button>Lifestyle</button>
-        </div>
+        </div> */}
         <div className="content">
         <img className="appear" loading="lazy" alt="Peter" src="/images/photography/RAM_4378.jpg"></img>
         <img className="appear" loading="lazy" alt="Luis" src="/images/photography/RAM_0645.jpg"></img>
