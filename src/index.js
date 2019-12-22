@@ -3,19 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import ScrollToTop from 'react-router-scroll-top'
 
-export default function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
-
-ReactDOM.render(<Router><App />
+ReactDOM.render(<Router><ScrollToTop><App /></ScrollToTop>
 </Router>, document.getElementById('root'));
 serviceWorker.unregister();

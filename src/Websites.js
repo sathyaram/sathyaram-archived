@@ -3,29 +3,88 @@ import projects from "./projects.json";
 
 
 function Websites() {
-  // const mappedPhotos = [];
-  // const mappedWebsites = [];
-  // const mappedDesigns = [];
-
-  // projects.forEach((project, i) => {
-  //   if (project.type === "Web") {
-  //     mappedWebsites.push(<Websites key={i} project={project} />);
-  //   } else if (project.type === "Photography") {
-  //     mappedPhotos.push(<Photography key={i} photo={project} />);
-  //   } else if (project.type === "Graphic") {
-  //     mappedGraphic.push(<Designs key={i} graphic={project} />);
-  //   }
-  // });
 
     return (
-      <div className="page">
+      <div className="page appears">
       <div className="text">
-      <h2>Websites</h2>
-      <p>A collection of all my websites.</p>
+      <h2><div>Websites</div></h2>
+      <p><div>A collection of all my websites.</div></p>
       </div>
       <div className="content">
-        
+        {projects.map(function(project,i) {
+          return (
+
+<div
+className="project"
+style={{background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat`}}
+>
+<div className="eyebrow">
+  <div
+    className={`role ${project.role}`}
+    style={{ color: `${project.textcolor}` }}
+  >
+    {project.role}
   </div>
+  <div className="links">
+    {project.designs ? (
+      <a
+        className="designs"
+        style={{ color: project.textcolor }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={project.designs}
+      >
+        View Designs
+      </a>
+    ) : null}
+    {project.github ? (
+      <a
+        className="github"
+        style={{ color: project.textcolor }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={project.github}
+      >
+        View Repo
+      </a>
+    ) : null}
+  </div>
+</div>
+<h4 className="title" style={{ color: project.color }}>
+  {project.title}
+</h4>
+<h5 className="subtitle" style={{ color: `${project.textcolor}` }}>
+  {project.subtitle}
+</h5>
+<ul className="tags">
+  {project.tags.map(item => (
+    <li
+      style={{
+        borderColor: project.color,
+        color: project.textcolor
+      }}
+      key={item}
+    >
+      {item}
+    </li>
+  ))}
+</ul>
+<a
+  className={`website-link ${project.link.startsWith("https") ? "https" : null}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  href={project.link}
+  style={{ borderColor: `${project.color}` }}
+>
+  {project.link.replace("https://", "").replace("http://", "")}
+</a>
+<p>
+  {project.description}
+</p>
+</div>
+          )
+        })}
+      </div>
     </div>
     );
 }

@@ -5,15 +5,11 @@ class About extends Component {
     return (
       <div className="page">
         <div className="text">
-          <h2>About</h2>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
-          <p>A collection of all my photos.</p>
+          <h2><div>About</div></h2>
+          <p><div>Stirrin' up trouble since 1994</div></p>
+          <div className="about">
+           
+          </div>
         </div>
       </div>
     );
@@ -21,3 +17,5 @@ class About extends Component {
 }
 
 export default About;
+
+

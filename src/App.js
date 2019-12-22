@@ -16,14 +16,14 @@ function App() {
   return (
     <>
       <Menu />
-      <Switch>
-        <Route path="/about" render={() => <About />} />
-        <Route path="/websites" render={() => <Websites />} />
-        <Route path="/designs" render={() => <Designs />} />
-        <Route path="/playground" render={() => <Playground />} />
-        <Route path="/photography" render={() => <Photography />} />
-        <Route path="/" render={() => <Home />} />
-      </Switch>
+        <Switch>
+          <Route path="/about" render={() => <About />} />
+          <Route path="/websites" render={() => <Websites />} />
+          <Route path="/designs" render={() => <Designs />} />
+          <Route path="/playground" render={() => <Playground />} />
+          <Route path="/photography" render={() => <Photography />} />
+          <Route path="/" render={() => <Home />} />
+        </Switch>
       <Footer />
     </>
   );
