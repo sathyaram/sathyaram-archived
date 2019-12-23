@@ -455,7 +455,6 @@ a.router {
 
     @media screen and (max-width: $screen) {
       width: 95px;
-      top: 34px;
     }
   }
 
@@ -753,7 +752,7 @@ a.router {
     content: "";
     position: fixed;
     height: 0;
-    bottom: 100%;
+    bottom: calc(100% - 1px);
     left: 50%;
     transition: transform 300ms ease 300ms, opacity 300ms ease 300ms, border 300ms ease;
     transform: translateX(-50%) translateY(0);

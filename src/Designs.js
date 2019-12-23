@@ -7,7 +7,7 @@ function Designs() {
     <div className="page designs appears">
       <div className="text">
         <h2><div>Designs</div></h2>
-        <h6><div>A collection of all my designs.</div></h6>
+        <h6><div>A small set of my designs.</div></h6>
       </div>
       <div className="content">
         <img className="appear" loading="lazy" alt="andromeda" src="images/graphic/andro.jpg"></img>
