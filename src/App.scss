@@ -41,7 +41,6 @@ h1 {
   font-family: "Aquatico", sans-serif;
   text-shadow: 0 0 5px #fff, 0 0 15px #fff;
   text-shadow: 0 0 5px #fff, 0 0 15px rgba(255, 255, 255, 0.3), 0 3px 0 #37b6f5, 0 0 30px #60c0f0;
-
   position: relative;
   line-height: 100%;
   padding-bottom: 0.5rem;
@@ -50,6 +49,10 @@ h1 {
   @media screen and (max-width: $tablet) {
     font-size: 4rem;
   }
+
+  @media screen and (max-width: $iphone) {
+    font-size: 3.1rem;
+  }
 }
 
 h2 {
@@ -57,6 +60,10 @@ h2 {
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: letter-spacing 300ms ease;
+
+  @media screen and (max-width: $phone) {
+    font-size: 1rem;
+  }
 
   span {
     color: #65adf1;
@@ -69,7 +76,7 @@ h2 {
 }
 
 main {
-  padding: 0 2rem 2rem;
+  padding: 2rem;
 
   ~ footer {
     margin: 0;
@@ -290,6 +297,10 @@ a.router {
   transition: transform 300ms ease;
   cursor: url("/images/ram-logo-white.png"), auto;
 
+  @media screen and (max-width: $tablet) {
+    margin-top: -10rem;
+  }
+
   &:hover {
     transform: skewY(-5deg);
 
@@ -441,6 +452,11 @@ a.router {
       opacity: 0;
       background-color: rgb(129, 177, 253);
     }
+
+    @media screen and (max-width: $screen) {
+      width: 95px;
+      top: 34px;
+    }
   }
 
   &::after {
@@ -584,7 +600,7 @@ a.router {
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05));
 
   @media screen and (max-width: $screen) {
-    padding: 7rem 2.5rem 2.5rem;
+    padding: 5rem 2.5rem 0.5rem;
   }
 
   &::after {
@@ -702,6 +718,11 @@ a.router {
           display: block;
           transition: letter-spacing 300ms ease;
           letter-spacing: -2px;
+
+          @media screen and (max-width: $screen) {
+            font-size: 1.5rem;
+            letter-spacing: 0;
+          }
         }
       }
     }
@@ -907,7 +928,6 @@ a.router {
   }
 
   .logo {
-    top: 60px;
     transform: translateX(-50%) translateY(-50%) scale(1);
   }
 
@@ -1345,8 +1365,16 @@ footer {
 
 .photobooth {
   position: absolute;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 40%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet) {
+    top: 55%;
+  }
 
   &:hover {
     &::before {
@@ -1365,13 +1393,22 @@ footer {
     background-color: transparent;
     position: absolute;
     top: 70px;
-    left: 24%;
+    left: 50%;
+      transform: translateX(-50%);
     z-index: 0;
     animation: appearing 7s ease;
+
+    @media screen and (max-width: $tablet) {
+      width: 215px;
+      height: 215px;
+    }
+
+    
   }
 
   div {
     transition: opacity 300ms ease, transform 550ms ease;
+    position: relative;
 
     &:nth-child(1) {
       transform: translateY(0px);
@@ -1401,7 +1438,11 @@ footer {
       top: 0;
       left: 0;
       z-index: 0;
+      @media screen and (max-width: $iphone) {
+        content: none;
+      }
     }
+
   }
 }
 
