@@ -1,6 +1,8 @@
+$iphone: 360px;
 $phone: 420px;
 $tablet: 640px;
 $screen: 1080px;
+$desktop: 1440px;
 
 header {
   height: 100vh;
@@ -13,18 +15,8 @@ header {
   background-repeat: no-repeat;
   background-position: right;
   background-color: #0a0a15;
-
   background-image: radial-gradient(800px 720px at 54% 72%, rgba(0, 0, 0, 0.25), #100e17, #100e17, #100e17);
-  // background-image: radial-gradient(
-  //   ellipse at 50% 36%,
-  //   #092b48 0,
-  //   #0d1323 45%,
-  //   #100e17 60%
-  // );
-
-  // background-size: cover;
   background-position: 50% 140%;
-
   color: white;
 }
 
@@ -81,6 +73,7 @@ main {
 
   ~ footer {
     margin: 0;
+    padding: 14rem 2rem;
     &::before {
       content: none;
     }
@@ -96,11 +89,6 @@ main {
   min-height: 200px;
   max-width: 1280px;
   margin: 0 auto;
-
-  // @media screen and (max-width: $screen) {
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   grid-template-rows: 1fr 1fr;
-  // }
 
   @media screen and (max-width: $tablet) {
     grid-template-columns: 1fr;
@@ -123,27 +111,48 @@ h3 {
   border: 1px solid transparent;
 
   @media screen and (max-width: $tablet) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 a.router {
-  // flex: 1 1 0;
   margin: 4% 0 0;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 1%;
   font-size: 2rem;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 
   @media screen and (max-width: $tablet) {
     max-width: 325px;
     width: 100%;
     margin: 4% auto 0;
+  }
+
+  @media screen and (max-width: $tablet) {
+    max-width: 225px;
+  }
+
+  &#playground {
+    &:hover {
+      .scene {
+        background-image: linear-gradient(
+          to right top,
+          #8c1257,
+          #801e65,
+          #712971,
+          #5e327a,
+          #473980,
+          #3f3a83,
+          #353c87,
+          #273d8a,
+          #323a8f,
+          #3d3592,
+          #4a3095,
+          #572896
+        );
+      }
+    }
   }
 
   &#photography {
@@ -260,7 +269,7 @@ a.router {
     img:nth-of-type(2) {
       position: absolute;
       z-index: -1;
-      top: 0;
+      top: 10px;
       left: 0;
     }
 
@@ -354,6 +363,44 @@ a.router {
   z-index: 2;
 }
 
+.role {
+  padding: 5px 10px 7px 20px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+.role::before {
+  width: 26px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
+}
+.Forum::before {
+  content: url("/icons/f1.svg");
+}
+.Lehigh::before {
+  width: 20px;
+  left: -10px;
+  top: calc(50% + 1px);
+  content: url("/icons/lehigh.svg");
+}
+.Project::before {
+  content: url("/images/ram-logo-white.svg");
+}
+.Weidenhammer::before {
+  width: 24px;
+  left: -11px;
+  top: calc(50% + 1px);
+  content: url("/icons/weidenhammer.svg");
+}
+
 .pronounce {
   margin-top: -0.75rem;
   color: white;
@@ -392,6 +439,7 @@ a.router {
     &::after {
       transform: translateX(-50%) translateY(-50%) scale(0);
       opacity: 0;
+      background-color: rgb(129, 177, 253);
     }
   }
 
@@ -408,7 +456,7 @@ a.router {
     pointer-events: none;
     transform: translateX(-50%) translateY(-50%) scale(10);
     z-index: -1;
-    transition: opacity 1s ease, transform, transform 800ms ease;
+    transition: opacity 1s ease, transform, transform 800ms ease, background 900ms ease;
   }
 
   &:hover {
@@ -497,7 +545,6 @@ a.router {
     top: 0;
     right: 0;
     z-index: 5;
-    /* opacity: 0; */
     transition: transform 300ms ease, border 300ms ease;
     transform: translateX(50px);
     border-style: solid;
@@ -534,7 +581,7 @@ a.router {
   opacity: 1;
   transition: all 500ms ease;
   border-bottom: 1px solid white;
-  // filter: drop-shadow(0px 5px 15px rgba(72, 123, 168, 0.25));
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05));
 
   @media screen and (max-width: $screen) {
     padding: 7rem 2.5rem 2.5rem;
@@ -594,7 +641,11 @@ a.router {
         font-weight: normal;
         font-size: 0.75rem;
         text-align: center;
-        transition: color 300ms ease;
+        transition: all 300ms ease;
+
+        &.is-active span {
+          color: rgba(10, 153, 248, 0.9);
+        }
 
         &:hover {
           color: rgb(8, 77, 122);
@@ -630,7 +681,7 @@ a.router {
           content: "";
           position: absolute;
           width: 0;
-          bottom: 0;
+          top: 40px;
           height: 13px;
           z-index: -1;
           background-color: #63b5f8;
@@ -790,20 +841,6 @@ a.router {
       background: #552775;
     }
 
-    // &:nth-child(4)::before {
-    //   content: url("/flickr.svg");
-    // }
-
-    // &:nth-child(4)::after {
-    //   background: linear-gradient(
-    //     to right,
-    //     rgba(0, 99, 220, 1) 0%,
-    //     rgba(0, 99, 220, 1) 50%,
-    //     rgba(255, 0, 132, 1) 51%,
-    //     rgba(255, 0, 132, 1) 100%
-    //   );
-    // }
-
     &:nth-child(4)::before {
       content: url("/icons/codepen.svg");
     }
@@ -822,6 +859,10 @@ a.router {
     color: rgb(192, 192, 192);
     position: relative;
     transition: color 300ms ease-in-out;
+
+    @media screen and (max-width: $phone) {
+      padding: 0.25rem;
+    }
 
     &:first-child {
       color: #63b5f8;
@@ -878,7 +919,6 @@ a.router {
   }
   .menu {
     transform: translateY(0);
-    // filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.2));
 
     li {
       opacity: 1;
@@ -928,6 +968,10 @@ a.router {
   min-height: 305px;
   border-bottom: 1rem solid #100e17;
   margin: 0 1rem;
+
+  @media screen and (max-width: $desktop) {
+    min-height: 230px;
+  }
 }
 
 .cloud {
@@ -1052,7 +1096,15 @@ a.router {
 }
 
 .aboutMe {
-  padding: 0 1rem;
+  max-width: 640px;
+  line-height: 150%;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+
   p {
     max-width: 640px;
     line-height: 150%;
@@ -1066,6 +1118,7 @@ a.router {
 
   .gamer {
     font-size: 1rem;
+    margin-top: 2rem;
   }
 
   h4 {
@@ -1166,12 +1219,17 @@ a.router {
 footer {
   bottom: 0;
   align-items: center;
-  padding: 14rem 2rem;
+  padding: 9rem 2rem;
   margin-top: 3rem;
   position: relative;
   z-index: 3;
   background-image: radial-gradient(ellipse at 50% 46%, #092b48 0, #0d1323 45%, #100e17 60%);
-
+  @media screen and (max-width: $tablet) {
+    margin-top: 6rem;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 10rem 1rem;
+  }
   &::before {
     content: "";
     border-style: solid;
@@ -1192,16 +1250,17 @@ footer {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 2rem 5rem;
+  padding: 3rem 5rem;
   transition: box-shadow 400ms ease;
   background-color: #100e17;
   color: #fff;
-  border: 3px solid #fff;
-  // box-shadow: -25px -25px 0px 0px #1fadff;
   cursor: url("/images/ram-logo-white.png"), auto;
 
   @media screen and (max-width: $tablet) {
     padding: 2rem 3rem;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 2rem;
   }
 
   &::before {
@@ -1306,9 +1365,9 @@ footer {
     background-color: transparent;
     position: absolute;
     top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 24%;
     z-index: 0;
+    animation: appearing 7s ease;
   }
 
   div {
@@ -1316,7 +1375,7 @@ footer {
 
     &:nth-child(1) {
       transform: translateY(0px);
-      opacity: 1;
+      animation: appearing 2s ease;
     }
 
     &:nth-child(2) {
@@ -1330,18 +1389,12 @@ footer {
     &::after {
       background-image: radial-gradient(
         820px 700px at 50% 28%,
-        rgba(16, 14, 23, 0.2),
-        rgba(16, 14, 23, 0.94),
+        rgba(16, 14, 23, 0.1),
+        rgba(16, 14, 23, 0.3),
         rgb(16, 14, 23),
         #100e17
       );
       content: "";
-      // background-image: linear-gradient(
-      //   180deg,
-      //   rgba(16, 14, 23, 0) 40%,
-      //   rgba(16, 14, 23, 0.5) 80%,
-      //   #100e17
-      // );
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1349,6 +1402,24 @@ footer {
       left: 0;
       z-index: 0;
     }
+  }
+}
+
+@keyframes background {
+  0% {
+    background-image: url(/images/me.jpg);
+  }
+  25% {
+    background-image: url(/images/RAM_2051.jpg);
+  }
+  50% {
+    background-image: url(/images/RAM_2059.jpg);
+  }
+  75% {
+    background-image: url(/images/RAM_2007.jpg);
+  }
+  100% {
+    background-image: url(/images/me.jpg);
   }
 }
 
@@ -1361,6 +1432,10 @@ footer {
   background-color: #131822;
   border-radius: 2px;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: background 16s ease 1s forwards infinite;
 
   &::after {
     content: "";
@@ -1369,11 +1444,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    animation: 4s flash 3s forwards infinite;
-  }
-
-  .letters {
-    animation: 4s disappear 3s reverse forwards ease infinite;
+    animation: flash 3s forwards 3s infinite;
   }
 }
 
@@ -1417,7 +1488,7 @@ footer {
   width: 60px;
   height: 60px;
   border: 4px solid #f2f2f2;
-  background: #131822;
+  background: #080b11;
   margin: 0 auto;
   position: relative;
 
@@ -1503,7 +1574,7 @@ footer {
   width: 90px;
   height: 55px;
   margin: 0 auto;
-  background-color: #131822;
+  background-color: #080b11;
   border: 6px solid #f2f2f2;
   border-radius: 8px;
   position: relative;
@@ -1514,6 +1585,15 @@ footer {
   width: 100%;
   height: 100%;
   padding: 0.45rem;
+}
+
+@keyframes bar-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .code {
@@ -1528,18 +1608,24 @@ footer {
 
     &:nth-child(1) {
       width: 20%;
+      animation: bar-width 3s infinite ease-in-out alternate;
     }
+
     &:nth-child(2) {
       width: 40%;
       background-color: #1e95f7;
+      animation: bar-width 5s infinite ease-in-out alternate;
     }
+
     &:nth-child(3) {
       width: 50%;
       background-color: white;
+      animation: bar-width 5s infinite ease-in-out alternate;
     }
     &:nth-child(4) {
       width: 70%;
       background-color: rgb(40, 185, 252);
+      animation: bar-width 7s infinite ease-in-out alternate;
     }
 
     &:nth-child(5) {
@@ -1548,6 +1634,7 @@ footer {
 
     &:nth-child(6) {
       background-color: white;
+      animation: bar-width 2s infinite ease-in-out alternate;
     }
 
     &:nth-child(7) {
@@ -1558,6 +1645,7 @@ footer {
     &:nth-child(8) {
       width: 40%;
       background-color: white;
+      animation: bar-width 1s infinite ease-in-out alternate;
     }
     &:nth-child(9) {
       width: 30%;
@@ -1570,6 +1658,7 @@ footer {
     &:nth-child(11) {
       width: 65%;
       background-color: rgb(40, 185, 252);
+      animation: bar-width 9s infinite ease-in-out alternate;
     }
     &:nth-child(12) {
       width: 95%;
@@ -1578,6 +1667,7 @@ footer {
 
     &:nth-child(12) {
       width: 95%;
+      animation: bar-width 2s infinite ease-in-out alternate;
       background-color: rgb(218, 238, 248);
     }
 
@@ -1589,6 +1679,7 @@ footer {
     &:nth-child(14) {
       width: 25%;
       background-color: rgb(218, 238, 248);
+      animation: bar-width 5s infinite ease-in-out alternate;
     }
 
     &:last-child {
@@ -1630,22 +1721,9 @@ footer {
 .shooter {
   position: relative;
   flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 100%;
+  flex-shrink: 1;
+  flex-basis: 100%;
 }
-
-// .shooter::after {
-//   content: "";
-//   position: absolute;
-//   top: 41%;
-//   transition: content 300ms ease;
-//   transform: translateY(-50%);
-//   right: 100%;
-//   width: 200%;
-//   background-color: white;
-//   height: 2px;
-//   z-index: -1;
-// }
 
 .base {
   position: absolute;
@@ -1772,13 +1850,6 @@ footer {
   padding-bottom: 2rem;
 
   button {
-    // border: 1px solid black;
-    // outline: none;
-    // background: none;
-    // margin: 0;
-    // padding: 0.5rem;
-    // -webkit-appearance: none;
-
     &:target,
     &:focus,
     &:active {
@@ -1808,9 +1879,23 @@ footer {
   width: 100%;
   padding: 2rem 2rem 5rem;
 
+  @media screen and (max-width: $phone) {
+    padding: 2rem 1rem 5rem;
+  }
+
   h2 {
     font-size: 4.5rem;
     overflow: hidden;
+
+    @media screen and (max-width: $screen) {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: $phone) {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
 
     div {
       animation: appearing 1s ease forwards;
@@ -1822,6 +1907,8 @@ footer {
     overflow: hidden;
     padding: 0.25rem;
     display: block;
+    max-width: 550px;
+    width: 100%;
 
     div {
       animation: appearing 1.25s linear forwards;
@@ -1829,12 +1916,16 @@ footer {
   }
 
   .text {
-    margin: 5rem 0 2rem;
+    margin: 8rem 0 6rem;
+    width: 100%;
+
+    @media screen and (max-width: $screen) {
+      text-align: center;
+      margin: 5rem 0;
+    }
   }
 
   .content {
-    overflow: hidden;
-
     img {
       width: 100%;
       display: block;
@@ -1846,11 +1937,11 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
 
-      @media screen and (max-width:$screen) {
+      @media screen and (max-width: $screen) {
         grid-template-columns: 1fr 1fr;
       }
-      
-      @media screen and (max-width:$tablet) {
+
+      @media screen and (max-width: $tablet) {
         grid-template-columns: 1fr;
       }
     }
@@ -1862,13 +1953,12 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 2rem;
 
-      @media screen and (max-width:$screen) {
+      @media screen and (max-width: $screen) {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
-
       }
 
-      @media screen and (max-width:$tablet) {
+      @media screen and (max-width: $tablet) {
         grid-template-columns: 1fr;
       }
     }
@@ -1879,6 +1969,13 @@ footer {
   padding: 7rem 0 0;
   max-width: 550px;
   margin: 0 auto;
+  animation: appearing 3s forwards;
+  font-size: 2rem;
+
+  a {
+    color: rgb(13, 166, 226);
+    border-bottom: 4px dotted rgb(13, 166, 226);
+  }
 }
 
 @keyframes line-animate {
@@ -1925,4 +2022,206 @@ stop {
   to {
     stop-opacity: 1;
   }
+}
+
+.websites .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-rows: auto;
+
+  @media screen and (max-width: $screen) {
+    display: block;
+  }
+}
+
+.project {
+  width: 100%;
+  padding: 4rem 2.5rem 3rem;
+  position: relative;
+  border-left-width: 16px;
+  border-style: solid;
+  transition: all 300ms ease;
+  border-radius: 5px;
+
+  @media screen and (max-width: $screen) {
+    border-left-width: 0px;
+    border-top-width: 10px;
+    padding: 2.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  @media screen and (min-width: $screen) {
+    &:hover {
+      border-left-width: 11px;
+      border-style: dashed;
+      transform: scale(1.05);
+    }
+  }
+  .title {
+    font-size: 3rem;
+    font-family: "Aquatico";
+    letter-spacing: 2px;
+    position: relative;
+    font-weight: bold;
+    padding-right: 2.5rem;
+
+    @media screen and (max-width: $screen) {
+      font-size: 2rem;
+    }
+  }
+
+  .etc {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: $screen) {
+      font-size: 0.75rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+
+    @media screen and (max-width: $screen) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .tags {
+    position: absolute;
+    top: 25px;
+    right: -5px;
+    font-size: 0.6rem;
+
+    @media screen and (max-width: $screen) {
+      position: static;
+      padding-top: 1rem;
+    }
+  }
+  .tags li {
+    display: inline-block;
+    margin: 2px;
+    padding: 0.35rem;
+    border-radius: 2px;
+    border-width: 2px;
+    letter-spacing: -0.5px;
+    border-right-width: 2px;
+    border-left-width: 5px;
+    border-style: solid;
+    font-weight: bold;
+
+    @media screen and (min-width: $screen) {
+      &:not(:last-child) {
+        margin: 0 0 0.35rem;
+      }
+      & {
+        padding: 0.25rem 0.5rem;
+        border-left-width: 2px;
+        border-right-width: 5px;
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 1.1rem;
+    max-width: 580px;
+    margin-top: 1.5rem;
+    line-height: 150%;
+  }
+
+  a.website-link {
+    margin-top: 1.5rem;
+    font-size: 22px;
+    display: block;
+    padding: 0.5rem 1.25rem;
+    color: #131313;
+    border-radius: 3px;
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    transition: color 300ms ease, top 300ms ease, box-shadow 300ms ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    z-index: 2;
+    top: 0;
+    transform: translateZ(20px);
+  }
+  a.website-link.https::after {
+    content: "https";
+    color: #5bc543;
+    position: absolute;
+    left: -23px;
+    top: 52%;
+    transform: translateY(-50%);
+    font-size: 0.65rem;
+    background: rgba(225, 250, 218, 0.9);
+    padding: 4px 0.5rem 0.4rem;
+    border-radius: 10px;
+    transition: opacity 300ms ease;
+  }
+  a.website-link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  a.website-link:hover,
+  a.website-link:focus,
+  a.website-link:active {
+    color: #24afda;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  a.website-link:hover:before,
+  a.website-link:focus:before,
+  a.website-link:active:before {
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+}
+
+a.github,
+a.designs {
+  padding: 5px 10px 7px 1.75rem;
+  display: inline-block;
+  transition: background 300ms ease;
+  position: relative;
+  margin-left: 0.25rem;
+}
+a.github::before {
+  content: url("/icons/github.svg");
+  width: 1rem;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  height: auto;
+}
+a.designs::before {
+  content: url("/icons/dribbble.svg");
+  width: 1rem;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  height: auto;
+}
+a.github:hover {
+  background: rgba(85, 39, 117, 0.5);
+}
+a.designs:hover {
+  background: rgba(232, 62, 128, 0.5);
 }

@@ -5,7 +5,7 @@ import projects from "./projects.json";
 function Websites() {
 
   return (
-    <div className="page appears">
+    <div className="page websites appears">
       <div className="text">
         <h2><div>Websites</div></h2>
         <h6><div>A collection of all my websites.</div></h6>
@@ -15,10 +15,10 @@ function Websites() {
           return (
             <div
               key={i}
-              className="project"
-              style={{ background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat` }}
+              className="project appear"
+              style={{ borderColor: project.color, background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat` }}
             >
-              <div className="eyebrow">
+              <div className="etc">
                 <div
                   className={`role ${project.role}`}
                   style={{ color: `${project.textcolor}` }}

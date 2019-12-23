@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Menu.scss';
+
+
 
 class Menu extends Component {
-  
+
   componentDidMount() {
     document.querySelector('.logo').addEventListener("click", classToggle);
     function classToggle() {
@@ -12,6 +15,13 @@ class Menu extends Component {
     document.querySelectorAll('.menu a').forEach((ix) => {
       ix.addEventListener('click', () => {
         document.body.classList.remove('is-open');
+        
+        var elems = document.querySelectorAll('.menu a');
+        
+        [].forEach.call(elems, function(el) {
+          el.classList.remove("is-active");
+        });
+        ix.classList.add('is-active');
       });
     });
 
@@ -25,11 +35,6 @@ class Menu extends Component {
     scrollMore.onclick = function () {
       window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     };
-    const svg = document.querySelectorAll(".svg1 path");
-
-    for (let i = 0; i < svg.length; i++) {
-      console.log(`Letter ${i} is ${svg[i].getTotalLength()}`);
-    }
 
     setTimeout(function () {
       document.querySelector('.logo').classList.add("loaded");
