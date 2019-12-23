@@ -48,7 +48,7 @@ class Menu extends Component {
       <>
         <div className="logo">
           <button className="menuTrigger" aria-label="menu trigger" name="menu trigger">
-            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 54.3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.2 54.3">
               <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-9.3" y1="29.5" x2="86.5" y2="29.5" gradientTransform="matrix(1 0 0 -1 0 56)">
                 <stop offset="0" stopColor="#29abe2" />
                 <stop offset="1" stopColor="#0059bc" />
