@@ -7,4 +7,4 @@ import ScrollToTop from 'react-router-scroll-top'
 
 ReactDOM.render(<Router><ScrollToTop><App /></ScrollToTop>
 </Router>, document.getElementById('root'));
-serviceWorker.unregister();
+serviceWorker.register();
