@@ -1395,7 +1395,6 @@ footer {
     left: 50%;
       transform: translateX(-50%);
     z-index: 0;
-    animation: appearing 7s ease;
 
     @media screen and (max-width: $tablet) {
       width: 215px;
