@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Menu.scss';
-
 
 
 class Menu extends Component {
@@ -85,7 +83,7 @@ class Menu extends Component {
             <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/sathyaram">Codepen</a>
           </nav>
           <nav className="contact">
-            <a target="_blank" rel="noopener noreferrer" href="/SathyaRam_Resume2020.pdf">Resume</a>
+            <a target="_blank" rel="noopener noreferrer" href="/images/SathyaRam_Resume2020.pdf">Resume</a>
             <a className="music" target="_blank" rel="noopener noreferrer"
               href="https://www.youtube.com/watch?v=vpbblMR_jUo">✧</a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sathya-ram/">LinkedIn</a>
