@@ -3,8 +3,8 @@
     "short_name": "Sathya Ram",
     "icons": [
         {
-            "src": "/images/favicon/mstile-310x310.png",
-            "sizes": "310x310",
+            "src": "/images/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
