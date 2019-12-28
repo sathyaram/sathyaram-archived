@@ -7,7 +7,7 @@ class About extends Component {
         <div className="text">
           <h2><div>About</div></h2>
           <h6><div>Stirrin' up trouble since 1994</div></h6>
-          <img className="appear" loading="lazy" alt="Peter" src="/images/Untitled-3.png"></img>
+          <img className="appear" alt="Peter" src="/images/Untitled-3.png"></img>
           <div className="about">
             Hey hey! 
             I'm <strong>Sathya Ram</strong>, 
