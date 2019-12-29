@@ -74,13 +74,10 @@ h2 {
   transition: letter-spacing 300ms ease;
 
   @media screen and (max-width: $tablet) {
-    // padding-top: 1rem;
-  }
-  
-  @media screen and (max-width: $phone) {
     font-size: 1rem;
+    padding-top: 1rem;
   }
-
+ 
   span {
     color: #65adf1;
     transition: transform 300ms linear;
@@ -338,7 +335,7 @@ a.router {
   cursor: url("/images/ram-logo-white.png"), auto;
 
   @media screen and (max-width: $tablet) {
-    margin-top: -15rem;
+    margin-top: -11rem;
   }
 
   &:hover {
