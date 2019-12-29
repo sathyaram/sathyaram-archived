@@ -498,7 +498,6 @@ a.router {
     &::after {
       transform: translateX(-50%) translateY(-50%) scale(0);
       opacity: 0;
-      background-color: rgb(129, 177, 253);
     }
 
     @media screen and (max-width: $screen) {
@@ -517,9 +516,9 @@ a.router {
     transform-origin: center center;
     border-radius: 50%;
     pointer-events: none;
-    border: 150px solid #37b6f5;
+    // border: 150px solid #37b6f5;
     animation: growMe 1s ease forwards;
-    transform: translateX(-50%) translateY(-50%) scale(2);
+    transform: translateX(-50%) translateY(-50%) scale(4);
     z-index: -1;
     transition: opacity 1s ease, transform, transform 800ms ease,
       background 900ms ease;
@@ -534,6 +533,8 @@ a.router {
       opacity: 1;
     }
 
+
+
     ~ header {
       .photobooth div {
         &:nth-child(1) {
@@ -545,6 +546,20 @@ a.router {
           opacity: 1;
         }
       }
+    }
+
+    .st1 {
+      stroke: #100e17;
+    }
+
+    
+    .s-line {
+      stroke-width: 0;
+    }
+
+    .r-line {
+      stroke-width: 0.75px;
+
     }
   }
 
@@ -601,6 +616,7 @@ a.router {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 1;
+    transition: stroke 300ms ease;
   }
 }
 
@@ -749,6 +765,10 @@ a.router {
           right: 0;
           transform: skew(-12deg);
           transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
+
+          @media screen and (max-width: $screen) {
+            top: 19px;
+          }
         }
 
         &::after {
@@ -767,6 +787,10 @@ a.router {
           );
           left: 0;
           transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
+
+          @media screen and (max-width: $screen) {
+            top: 30px;
+          }
         }
 
         @media screen and (max-width: $screen) {
