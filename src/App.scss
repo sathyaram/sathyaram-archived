@@ -1383,6 +1383,7 @@ footer {
     z-index: -1;
     transition: all 300ms ease;
     background-image: linear-gradient(180deg, #1fadff 0%, #8fd5fd 100%);
+    pointer-events: none;
 
     @media screen and (max-width: $tablet) {
       width: calc(100% + 60px);
