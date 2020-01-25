@@ -475,6 +475,10 @@ a.router {
       fill: #100e17;
     }
 
+    path.s-line {
+      stroke-width: 0px;
+    }
+
     &::after {
       transform: translateX(-50%) translateY(-50%) scale(0);
       opacity: 0;
@@ -719,6 +723,7 @@ a.router {
         font-size: 0.75rem;
         text-align: center;
         transition: all 300ms ease;
+        color: #3a5779;
 
         &.is-active span {
           color: rgba(10, 153, 248, 0.9);
@@ -794,6 +799,7 @@ a.router {
           display: block;
           transition: letter-spacing 300ms ease;
           letter-spacing: -2px;
+          color: #100e17;
 
           @media screen and (max-width: $desktop) {
             font-size: 1.75rem;
