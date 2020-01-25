@@ -13,74 +13,76 @@ function Websites() {
       <div className="content">
         {projects.map(function (project, i) {
           return (
-            <div
-              key={i}
-              className="project appear"
-              style={{ borderColor: project.color, background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat` }}
-            >
-              <div className="etc">
-                <div
-                  className={`role ${project.role}`}
-                  style={{ color: `${project.textcolor}` }}
-                >
-                  {project.role}
-                </div>
-                <div className="links">
-                  {project.designs ? (
-                    <a
-                      className="designs"
-                      style={{ color: project.textcolor }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={project.designs}
-                    >
-                      View Designs
-      </a>
-                  ) : null}
-                  {project.github ? (
-                    <a
-                      className="github"
-                      style={{ color: project.textcolor }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={project.github}
-                    >
-                      View Repo
-      </a>
-                  ) : null}
-                </div>
-              </div>
-              <h4 className="title" style={{ color: project.color }}>
-                {project.title}
-              </h4>
-              <h5 className="subtitle" style={{ color: `${project.textcolor}` }}>
-                {project.subtitle}
-              </h5>
-              <ul className="tags">
-                {project.tags.map(item => (
-                  <li
-                    style={{
-                      borderColor: project.color,
-                      color: project.textcolor
-                    }}
-                    key={item}
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a
-                className={`website-link ${project.link.startsWith("https") ? "https" : null}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={project.link}
-                style={{ borderColor: `${project.color}` }}
+            <div className="appear">
+              <div
+                key={i}
+                className="project"
+                style={{ borderColor: project.color, background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat` }}
               >
-                {project.link.replace("https://", "").replace("http://", "")}
-              </a>
-              <p>
-                {project.description}
-              </p>
+                <div className="etc">
+                  <div
+                    className={`role ${project.role}`}
+                    style={{ color: `${project.textcolor}` }}
+                  >
+                    {project.role}
+                  </div>
+                  <div className="links">
+                    {project.designs ? (
+                      <a
+                        className="designs"
+                        style={{ color: project.textcolor }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={project.designs}
+                      >
+                        View Designs
+      </a>
+                    ) : null}
+                    {project.github ? (
+                      <a
+                        className="github"
+                        style={{ color: project.textcolor }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={project.github}
+                      >
+                        View Repo
+      </a>
+                    ) : null}
+                  </div>
+                </div>
+                <h4 className="title" style={{ color: project.color }}>
+                  {project.title}
+                </h4>
+                <h5 className="subtitle" style={{ color: `${project.textcolor}` }}>
+                  {project.subtitle}
+                </h5>
+                <ul className="tags">
+                  {project.tags.map(item => (
+                    <li
+                      style={{
+                        borderColor: project.color,
+                        color: project.textcolor
+                      }}
+                      key={item}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  className={`website-link ${project.link.startsWith("https") ? "https" : null}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                  style={{ borderColor: `${project.color}` }}
+                >
+                  {project.link.replace("https://", "").replace("http://", "")}
+                </a>
+                <p style={{ backgroundColor: `${project.color}` }}>
+                  {project.description}
+                </p>
+              </div>
             </div>
           )
         })}
