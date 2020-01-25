@@ -3,7 +3,7 @@ $phone: 420px;
 $tablet: 640px;
 $edge: 860px;
 $screen: 1080px;
-$desktop: 1340px;
+$desktop: 1320px;
 
 header {
   height: 100vh;
@@ -26,7 +26,6 @@ header,
 main,
 footer {
   background-color: #100e17;
-  width: 100vw;
 }
 
 aside {
@@ -42,7 +41,7 @@ h1 {
   letter-spacing: 0.5rem;
   font-family: "Aquatico", sans-serif;
   text-shadow: 0 0 5px #fff, 0 0 15px #fff;
-  text-shadow: 0 0 5px #fff, 0 0 15px rgba(255, 255, 255, 0.3), 0 3px 0 #37b6f5, 0 0 30px #60c0f0;
+  text-shadow: 0 0 5px #fff, 0 0 15px rgba(255, 255, 255, 0.3), 0 4px 0 #37b6f5, 0 0 30px #60c0f0;
   position: relative;
   line-height: 100%;
   padding-bottom: 0.5rem;
@@ -94,7 +93,7 @@ main {
     padding: 14rem 2rem;
 
     @media screen and (max-width: $tablet) {
-      padding: 5rem 1.75rem 3rem;
+      padding: 5rem 1.75rem 6rem;
       margin-top: -1px;
     }
 
@@ -454,15 +453,6 @@ a.router {
   transition: opacity 300ms ease, transform 300ms ease;
 }
 
-@keyframes growMe {
-  0% {
-    border-color: white;
-  }
-
-  100% {
-    border-color: #37b6f5;
-  }
-}
 
 .logo {
   width: 200px;
@@ -480,8 +470,9 @@ a.router {
     width: 122px;
     pointer-events: auto;
 
-    path {
+    path.r-line {
       animation: none;
+      fill: #100e17;
     }
 
     &::after {
@@ -505,7 +496,6 @@ a.router {
     transform-origin: center center;
     border-radius: 50%;
     pointer-events: none;
-    // border: 150px solid #37b6f5;
     animation: growMe 1s ease forwards;
     transform: translateX(-50%) translateY(-50%) scale(6);
     z-index: -1;
@@ -543,7 +533,7 @@ a.router {
     }
 
     .r-line {
-      stroke-width: 0.75px;
+      fill: white !important;
     }
   }
 
@@ -569,6 +559,23 @@ a.router {
     width: 100%;
     height: auto;
     display: inline-block;
+    
+    &::before,
+    &::after {
+      width: 0;
+      height: 0;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      border: 1px solid #1fadff;
+      opacity: 0;
+      z-index: -1;
+      transform: translateZ(-1px);
+      transform-style: preserve-3d;
+    }
   }
 
   svg {
@@ -588,6 +595,7 @@ a.router {
     stroke-width: 0.5px;
     stroke-dasharray: 199;
     stroke-dashoffset: 199;
+    transition: fill 300ms ease;
     fill: transparent;
     animation: line-animate 2.5s ease forwards 0.2s, white-stroke 800ms ease forwards 2.6s,
       fill-black 3s ease forwards 1.5s;
@@ -859,7 +867,6 @@ a.router {
     font-weight: bold;
     color: transparent;
     text-transform: uppercase;
-    filter: drop-shadow(2px 2px 5px rgba(91, 181, 255, 0.3));
 
     @media screen and (max-width: $tablet) {
       &:nth-of-type(2),
@@ -1209,6 +1216,16 @@ a.router {
   width: 5px;
 }
 
+.gamer {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  max-width: 250px;
+  margin: 9rem auto 0;
+  line-height: 180%;
+  padding: 1rem 0;
+}
+
 .aboutMe {
   max-width: 640px;
   line-height: 150%;
@@ -1230,10 +1247,7 @@ a.router {
     text-align: center;
   }
 
-  .gamer {
-    font-size: 1rem;
-    margin-top: 2rem;
-  }
+  
 
   h4 {
     font-size: 2rem;
@@ -1278,7 +1292,7 @@ a.router {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2.15rem;
+  top: 25px;
   color: rgb(125, 207, 255);
   padding: 0 0.5rem;
   background-color: rgba(56, 137, 236, 0.6);
@@ -1299,7 +1313,7 @@ a.router {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2.15rem;
+  top: 25px;
   color: rgb(214, 152, 255);
   padding: 0 0.5rem;
   background-color: rgba(74, 85, 189, 0.6);
@@ -1390,8 +1404,9 @@ footer {
     pointer-events: none;
 
     @media screen and (max-width: $tablet) {
-      width: calc(100% + 60px);
-      height: calc(100% + 90px);
+      top:-15px;
+      left:0;
+      height: calc(100% + 30px);
     }
   }
 
@@ -1556,23 +1571,6 @@ footer {
   }
 }
 
-@keyframes background {
-  0% {
-    background-image: url(/images/me.jpg);
-  }
-  25% {
-    background-image: url(/images/RAM_2051.jpg);
-  }
-  50% {
-    background-image: url(/images/RAM_2059.jpg);
-  }
-  75% {
-    background-image: url(/images/RAM_2007.jpg);
-  }
-  100% {
-    background-image: url(/images/me.jpg);
-  }
-}
 
 .photo {
   width: 60px;
@@ -1843,30 +1841,29 @@ footer {
 .shape {
   position: relative;
   transition: transform 300ms ease;
-}
 
-.shape:hover {
-  transform: translateY(-5px);
-}
+  &:hover {
+    transform: translateY(-5px);
+    &::before {
+      opacity: 1;
+      transform: translateX(-50%) translateY(30px);
+    }
+  }
 
-.shape:hover::before {
-  opacity: 1;
-  transform: translateY(25px);
-}
-
-.shape::before {
-  pointer-events: none;
-  position: absolute;
-  z-index: 0;
-  content: "";
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 100%;
-  opacity: 0;
-  transform: translateY(20px);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
-  transition: opacity 400ms ease, transform 300ms ease;
+  &::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    content: "";
+    top: 100%;
+    left: 50%;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(25px);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
+    transition: opacity 400ms ease, transform 300ms ease;
+  }
 }
 
 .shooter {
@@ -1899,14 +1896,14 @@ footer {
   border-left: 3px solid transparent;
   border-right: 0px solid transparent;
   border-bottom: 12px solid #f2f2f2;
-  left: -2.5px;
+  left: -2px;
 }
 
 .base:after {
   border-right: 3px solid transparent;
   border-left: 0px solid transparent;
   border-bottom: 12px solid #f2f2f2;
-  right: -2.5px;
+  right: -2px;
 }
 
 .base > div {
@@ -1950,7 +1947,7 @@ footer {
 
 .foot.bottom {
   width: 30px;
-  height: 5px;
+  height: 3px;
   border-radius: 5px;
   bottom: -1px;
   left: 50%;
@@ -1958,10 +1955,35 @@ footer {
   z-index: 5;
 }
 
+@keyframes pulse {
+  0% {
+      opacity: 1;
+  }
+
+  100% {
+      margin-left: -100px;
+      margin-top: -100px;
+      border-width: 100px;
+      opacity: 0;
+  }
+}
+
 .fade-in {
   .scroll-more {
     opacity: 0;
     animation: none;
+  }
+
+  .menuTrigger {
+   &::before,
+   &::after {
+     opacity: 1;
+     -webkit-animation: pulse 2s 1;
+     animation: pulse 2s 1;
+   }
+   &::after {
+     animation-delay: 0.45s;
+   }
   }
 }
 
@@ -2071,6 +2093,11 @@ footer {
     }
   }
 
+  a {
+    color: rgb(13, 166, 226);
+    border-bottom: 4px dotted rgb(13, 166, 226);
+  }
+  
   .text {
     margin: 8rem 0 6rem;
     width: 100%;
@@ -2127,11 +2154,6 @@ footer {
   margin: 0 auto;
   animation: appearing 3s forwards;
   font-size: 2rem;
-
-  a {
-    color: rgb(13, 166, 226);
-    border-bottom: 4px dotted rgb(13, 166, 226);
-  }
 }
 
 @keyframes line-animate {
@@ -2193,6 +2215,7 @@ stop {
 
 .project {
   width: 100%;
+  height: 100%;
   padding: 4rem 2.5rem 3rem;
   position: relative;
   border-left-width: 16px;
@@ -2203,6 +2226,7 @@ stop {
   min-height: 500px;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 
   @media screen and (max-width: $screen) {
     border-left-width: 0px;
@@ -2213,13 +2237,6 @@ stop {
   @media screen and (min-width: $screen) {
     &:hover {
       transform: scale(1.1);
-    }
-  }
-
-  &:hover {
-    p {
-      padding: 1rem;
-      max-height: 100%;
     }
   }
 
@@ -2291,15 +2308,15 @@ stop {
   }
 
   p {
-    color: white;
-    font-size: 1.25rem;
+    padding: 1.25rem;
+    transition: all 300ms ease;
+    color: #33373f;
+    font-size: 1rem;
     max-width: 580px;
     margin-top: 1.5rem;
-    line-height: 150%;
-    padding: 1rem;
-    position: absolute;
-    top: 100px;
-    transition: all 300ms ease;
+    font-weight: bold;
+    line-height: 140%;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   a.website-link {
@@ -2372,7 +2389,9 @@ a.designs {
   transition: background 300ms ease;
   position: relative;
   margin-left: 0.25rem;
+  border: none;
 }
+
 a.github::before {
   content: url("/icons/github.svg");
   width: 1rem;

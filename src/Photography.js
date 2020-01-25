@@ -5,7 +5,7 @@ function Photography() {
     <div className="page photography appears">
       <div className="text">
         <h2><div>Photography</div></h2>
-        <h6><div>A few of my portraits. More to come!</div></h6>
+        <h6><div>A few of my portraits. See more on my <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Instagram</a>.</div></h6>
       </div>
       {/* <div className="sticky-filter">
           <button>Featured</button>
@@ -14,18 +14,42 @@ function Photography() {
           <button>Lifestyle</button>
         </div> */}
       <div className="content">
-        <img className="appear" alt="Peter" src="/images/photography/RAM_4378.jpg"></img>
-        <img className="appear" alt="Luis" src="/images/photography/RAM_0645.jpg"></img>
-        <img className="appear" alt="Katrina" src="/images/photography/RAM_0701.jpg"></img>
-        <img className="appear" alt="Kellyn" src="/images/photography/RAM_2435.jpg"></img>
-        <img className="appear" alt="Farrah" src="/images/photography/RAM_1145.jpg"></img>
-        <img className="appear" alt="Purple" src="/images/photography/RAM_9879.jpg"></img>
-        <img className="appear" alt="Ash" src="/images/photography/RAM_6210.jpg"></img>
-        <img className="appear" alt="Ting" src="/images/photography/RAM_9912.jpg"></img>
-        <img className="appear" alt="Helena" src="/images/photography/RAM_0085.jpg"></img>
-        <img className="appear" alt="Danielle" src="/images/photography/RAM_0589.jpg"></img>
-        <img className="appear" alt="Rachel" src="/images/photography/RAM_0010.jpg"></img>
-        <img className="appear" alt="Hayden" src="/images/photography/RAM_9231.jpg"></img>
+        <div className="appear">
+          <img alt="Peter" src="/images/photography/RAM_4378.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Luis" src="/images/photography/RAM_0645.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Katrina" src="/images/photography/RAM_0701.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Kellyn" src="/images/photography/RAM_2435.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Farrah" src="/images/photography/RAM_1145.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Purple" src="/images/photography/RAM_9879.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Ash" src="/images/photography/RAM_6210.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Ting" src="/images/photography/RAM_9912.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Helena" src="/images/photography/RAM_0085.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Danielle" src="/images/photography/RAM_0589.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Rachel" src="/images/photography/RAM_0010.jpg"></img>
+        </div>
+        <div className="appear">
+          <img alt="Hayden" src="/images/photography/RAM_9231.jpg"></img>
+        </div>
       </div>
     </div>
   );

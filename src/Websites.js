@@ -8,7 +8,7 @@ function Websites() {
     <div className="page websites appears">
       <div className="text">
         <h2><div>Websites</div></h2>
-        <h6><div>A collection of all my websites.</div></h6>
+        <h6><div>A collection of the websites I've worked on.</div></h6>
       </div>
       <div className="content">
         {projects.map(function (project, i) {
@@ -79,7 +79,7 @@ function Websites() {
                 >
                   {project.link.replace("https://", "").replace("http://", "")}
                 </a>
-                <p style={{ backgroundColor: `${project.color}` }}>
+                <p>
                   {project.description}
                 </p>
               </div>

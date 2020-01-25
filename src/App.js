@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from './Home'
-import Photography from './Photography'
-import Playground from './Playground'
-import Websites from './Websites'
-import Designs from './Designs'
-import About from './About'
-import Menu from './Menu/Menu'
-import Footer from './Footer'
+import Home from './Home';
+import Photography from './Photography';
+import Playground from './Playground';
+import Websites from './Websites';
+import Designs from './Designs';
+import About from './About';
+import Menu from './Menu';
+import Footer from './Footer';
 import './Reset.scss';
 import './App.scss';
 

@@ -23,8 +23,7 @@ class Home extends Component {
               vibrant, user-centric designs and lifestyle, portrait, studio photography. I'm all about making the internet
               sexier.
             <br></br>
-            <p className="gamer">*I'm also a huge gamer - Add me on <span className="battlenet">Battlenet</span> or <span
-              className="discord">Discord</span>!</p>
+          
             <div className="framicons">
               <div className="shooter" name="web anchor">
                 <div className="monitor shape">
@@ -120,6 +119,11 @@ class Home extends Component {
               </div>
             </Link>
           </section>
+          <div className="gamer">
+          <p>*I'm also a huge gamer - Add me on: <span className="battlenet">Battlenet</span>&nbsp; or <span
+              className="discord">Discord</span>
+            </p>
+            </div>
         </main>
       </>
     );

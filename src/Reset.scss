@@ -111,6 +111,36 @@
   }
 }
 
+@keyframes growMe {
+  0% {
+    border-color: white;
+  }
+
+  100% {
+    border-color: #37b6f5;
+  }
+}
+
+
+@keyframes background {
+  0% {
+    background-image: url(/images/me.jpg);
+  }
+  25% {
+    background-image: url(/images/RAM_2051.jpg);
+  }
+  50% {
+    background-image: url(/images/RAM_2059.jpg);
+  }
+  75% {
+    background-image: url(/images/RAM_2007.jpg);
+  }
+  100% {
+    background-image: url(/images/me.jpg);
+  }
+}
+
+
 html,
 body,
 div,
@@ -254,7 +284,6 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   background-color: #eef4f6;
-  width: 100vw;
 
   &::after {
     content: "";
