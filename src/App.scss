@@ -78,6 +78,7 @@ h2 {
     font-size: 1rem;
     display: inline-block;
     position: relative;
+    top: -2px;
 
     @media screen and (max-width: $tablet) {
       display: block;
@@ -2419,4 +2420,30 @@ a.github:hover {
 }
 a.designs:hover {
   background: rgba(232, 62, 128, 0.5);
+}
+
+a.skip-main {
+  left:-999px;
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color:rgba(0,0,0,0.8);
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow:auto;
+  margin: 10px 35%;
+  padding:5px;
+  border-radius: 15px;
+  border:4px solid #31b4d5;
+  text-align:center;
+  font-size:1.2em;
+  z-index:999;
 }

@@ -73,7 +73,7 @@ class Menu extends Component {
         </nav>
         <div className="triangles"></div>
         <div className="eyebrow">
-          <a className="scroll-more" href="#maincontent">↓</a>
+          <div className="scroll-more">↓</div>
           <nav className="social-media" role="navigation">
             <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Instagram</a>
 

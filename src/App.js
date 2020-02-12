@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+      <a className="skip-main" href="#maincontent">Skip to Main Content</a>
       <Menu />
       <Switch>
         <Route path="/about" render={() => <About />} />
