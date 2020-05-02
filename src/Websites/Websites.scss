@@ -1,0 +1,269 @@
+.page {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  // transform: translateY(100%);
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8rem 0;
+
+  .text {
+    padding: 2rem 0;
+  }
+
+  a {
+    animation: rainbow1 75s ease infinite 3s;
+  }
+  
+  h2 {
+    font-size: 5rem;
+    letter-spacing: 12px;
+    text-align: center;
+    background: -webkit-linear-gradient(#eee, rgb(111, 111, 136));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 10px;
+  }
+
+  h6 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &.designs {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.content {
+  .project:nth-child(even) {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+
+    .media {
+      left: auto;
+      right: 50%;
+      @media screen and (max-width: 600px) {
+        right: 20%;
+      }
+    }
+  }
+}
+.media {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  left: 50%;
+  max-width: 450px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 600px) {
+    left: 20%;
+  }
+}
+
+.project {
+  margin-top: 8rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
+
+  .description {
+    padding: 2rem 2rem 2.25rem;
+    background-color: rgba(55, 55, 93, 0.7);
+    color: white;
+    max-width: 480px;
+    width: 100%;
+    line-height: 130%;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.etc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3.75rem;
+  font-family: "Zefani";
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.85rem;
+  letter-spacing: 1px;
+}
+
+.tags {
+  display: flex;
+  margin-top: 1.35rem;
+  margin-bottom: -2.75rem;
+  justify-content: center;
+
+  li {
+    color: #d5d3dd;
+    text-shadow: 0 0 5px #e7e4f0;
+    font-size: 15px;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &:not(:first-child) {
+      border-left-width: 1px;
+      border-style: solid;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.role {
+  padding: 5px 10px 7px 20px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.role::before {
+  width: 26px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
+}
+.Forum::before {
+  content: url("/icons/f1.svg");
+}
+.Lehigh::before {
+  width: 20px;
+  left: -10px;
+  top: calc(50% + 1px);
+  content: url("/icons/lehigh.svg");
+}
+.Project::before {
+  content: url("/ram-logo-white.svg");
+}
+.Weidenhammer::before {
+  width: 24px;
+  left: -11px;
+  top: calc(50% + 1px);
+  content: url("/icons/weidenhammer.svg");
+}
+
+a.website-link {
+  margin: 1rem 0 1.5rem;
+  font-size: 22px;
+  display: block;
+  padding: 0.5rem 2rem 0.75rem;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid white;
+  align-items: center;
+  position: relative;
+  // background: rgba(255, 255, 255, 0.7);
+  transition: color 300ms ease, top 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  z-index: 2;
+  top: 0;
+  transform: translateZ(20px);
+}
+a.website-link.https::after {
+  content: "https";
+  color: #449e2f;
+  position: absolute;
+  left: -23px;
+  top: 52%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  background: rgba(225, 250, 218, 0.9);
+  padding: 4px 0.5rem 0.4rem;
+  border-radius: 10px;
+  transition: opacity 300ms ease;
+}
+a.website-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+a.website-link:hover,
+a.website-link:focus,
+a.website-link:active {
+  color: #24afda;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+a.website-link:hover:before,
+a.website-link:focus:before,
+a.website-link:active:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+a.github,
+a.designs {
+  padding: 5px 10px 7px 1.5rem;
+  display: inline-block;
+  transition: background 300ms ease;
+  position: relative;
+  margin-left: 0.75rem;
+  border: none;
+  font-size: 14px;
+}
+
+a.github::before {
+  content: url("/icons/github.svg");
+  width: 1.6rem;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  height: auto;
+  opacity: 0.5;
+}
+a.designs::before {
+  content: url("/icons/dribbble.svg");
+  width: 1.6rem;
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  height: auto;
+  opacity: 0.5;
+}
+a.github:hover {
+  background: rgba(85, 39, 117, 0.5);
+}
+a.designs:hover {
+  background: rgba(232, 62, 128, 0.5);
+}

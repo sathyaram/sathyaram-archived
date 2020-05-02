@@ -1,0 +1,16 @@
+.photography {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

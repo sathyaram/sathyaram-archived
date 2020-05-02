@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zefani";
+  src: url("/fonts/Zefani-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-ThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+strong {
+  font-weight: bold;
+}
+u {
+  text-decoration: underline;
+}
+body {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: #040411;
+  &::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 14;
+    height: 100%;
+    display: block;
+    background: rgba(112, 213, 255, 0.6);
+    background: linear-gradient(135deg, rgba(112, 213, 255, 0.8), rgba(0, 89, 188, 0.9));
+    transition: transform 500ms ease, opacity 300ms ease;
+    pointer-events: none;
+    animation: height 3s ease forwards;
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    background: rgba(112, 213, 255, 0.6);
+    // background: linear-gradient(90deg, #11c7ff, #1e9b41, #a5d22d, #2d4196, #c30a28, #11c7ff);
+    // background-size: 1000% 1000%;
+    transition: transform 500ms ease, opacity 300ms ease;
+    pointer-events: none;
+    animation: rainbow 75s ease infinite 3s;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+::-moz-selection {
+  background-color: rgba(112, 213, 255, 0.25);
+}
+::selection {
+  background-color: rgba(112, 213, 255, 0.25);
+}
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+a.skip-main:focus,
+a.skip-main:active {
+color: #fff;
+background-color: rgba(0, 0, 0, 0.8);
+left: auto;
+top: auto;
+width: 30%;
+height: auto;
+overflow: auto;
+margin: 10px 35%;
+padding: 5px;
+border-radius: 15px;
+border: 4px solid #31b4d5;
+text-align: center;
+font-size: 1.2em;
+z-index: 999;
+}
+
+@keyframes height {
+  0% {
+    height: 0%;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color:#11c7ff;
+  }
+  20% {
+    background-color: #1e9b41;
+  }
+  40% {
+    background-color: #a5d22d;
+  }
+  60% {
+    background-color: #2d4196;
+  }
+  80%{ 
+    background-color: #c30a28;
+  }
+  100% {
+    background-color:#11c7ff;
+}
+}
+
+@keyframes rainbow1 {
+    0% {
+      color:#11c7ff;
+    }
+    20% {
+      color: #1e9b41;
+    }
+    40% {
+      color: #a5d22d;
+    }
+    60% {
+      color: #2d4196;
+    }
+    80%{ 
+      color: #c30a28;
+    }
+    100% {
+      color:#11c7ff;
+  }
+}
+
+@keyframes rainbow2 {
+  0% {
+    fill:#11c7ff;
+  }
+  20% {
+    fill: #1e9b41;
+  }
+  40% {
+    fill: #a5d22d;
+  }
+  60% {
+    fill: #2d4196;
+  }
+  80%{ 
+    fill: #c30a28;
+  }
+  100% {
+    fill:#11c7ff;
+  }
+}
