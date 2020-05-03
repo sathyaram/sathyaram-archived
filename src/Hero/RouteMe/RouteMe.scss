@@ -1,4 +1,3 @@
-
 .routerGrid {
   display: grid;
   position: relative;
@@ -11,7 +10,6 @@
   -webkit-animation: suspend 5s ease-in-out infinite alternate;
   animation: suspend 5s ease-in-out infinite alternate;
 
-
   img {
     background: white;
   }
@@ -22,45 +20,45 @@
     .track {
       img {
         border: 8px solid #ccc;
-     border-radius: 5px;
+        border-radius: 5px;
       }
     }
   }
 }
 
 #photography {
+  .container {
+    position: relative;
+    margin: 0 1.5rem;
+    // height: 105%;
+    // overflow: hidden;
 
-.container {
-  position: relative;
-  margin: 0 1.5rem;
-  // height: 105%;
-  // overflow: hidden;
-
-  .photoOne, .photoTwo {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    z-index: 1;
-    transition: all 300ms ease;
-  }
-  .photoOne {
-    z-index: 2;
-    // left: 3px;
-    height: 390px;
-    overflow:hidden;
-    // opacity: 0.2;
-  }
-
-  .photoTwo {
-    left: -1px;
-  }
-
-  &:hover {
+    .photoOne,
+    .photoTwo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: all 300ms ease;
+    }
     .photoOne {
-      opacity: 0;
+      z-index: 2;
+      // left: 3px;
+      height: 390px;
+      overflow: hidden;
+      // opacity: 0.2;
+    }
+
+    .photoTwo {
+      left: -1px;
+    }
+
+    &:hover {
+      .photoOne {
+        opacity: 0;
+      }
     }
   }
-}
 }
 
 .routeMe {
@@ -77,25 +75,26 @@
   align-items: center;
   transform-style: preserve-3d;
 
-  > .animated { 
+  > .animated {
     .tilt {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     position: relative;
     width: 100%;
     height: 100%;
     }
 
     &:hover {
-
       h4 {
         border: 2px solid #b9d6fb;
-        box-shadow: 0 0 7px 0 rgba(203,226,255,.6), 0 0 10px 0 rgba(0,110,255,.6);
+        box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6);
         transform: translateZ(50px);
       }
-
-      
     }
   }
-  
 
   @media screen and (max-width: 600px) {
     display: block;
@@ -104,7 +103,7 @@
   .router {
     min-height: 360px;
     margin: 3rem 0 0;
-    border: 2px solid hsla(0,0%,100%,.2);
+    border: 2px solid hsla(0, 0%, 100%, 0.2);
     background-color: #040411;
     color: white;
     padding: 2rem 0.75rem;
@@ -113,8 +112,6 @@
     height: 100%;
     position: relative;
     text-align: center;
-
-   
 
     &::before,
     &::after {
@@ -171,7 +168,6 @@
   }
 }
 
-
 .track {
   position: absolute;
   width: 105%;
@@ -180,7 +176,7 @@
   z-index: 4;
   transition: perspective 300ms ease;
   left: -5%;
-  
+
   img {
     position: absolute;
     border: 0 solid white;

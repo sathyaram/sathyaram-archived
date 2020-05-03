@@ -152,9 +152,8 @@ u {
   text-decoration: underline;
 }
 body {
-  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -218,20 +217,20 @@ a.skip-main {
 }
 a.skip-main:focus,
 a.skip-main:active {
-color: #fff;
-background-color: rgba(0, 0, 0, 0.8);
-left: auto;
-top: auto;
-width: 30%;
-height: auto;
-overflow: auto;
-margin: 10px 35%;
-padding: 5px;
-border-radius: 15px;
-border: 4px solid #31b4d5;
-text-align: center;
-font-size: 1.2em;
-z-index: 999;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid #31b4d5;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
 }
 
 @keyframes height {
@@ -249,7 +248,7 @@ z-index: 999;
 
 @keyframes rainbow {
   0% {
-    background-color:#11c7ff;
+    background-color: #11c7ff;
   }
   20% {
     background-color: #1e9b41;
@@ -260,38 +259,38 @@ z-index: 999;
   60% {
     background-color: #2d4196;
   }
-  80%{ 
+  80% {
     background-color: #c30a28;
   }
   100% {
-    background-color:#11c7ff;
-}
+    background-color: #11c7ff;
+  }
 }
 
 @keyframes rainbow1 {
-    0% {
-      color:#11c7ff;
-    }
-    20% {
-      color: #1e9b41;
-    }
-    40% {
-      color: #a5d22d;
-    }
-    60% {
-      color: #2d4196;
-    }
-    80%{ 
-      color: #c30a28;
-    }
-    100% {
-      color:#11c7ff;
+  0% {
+    color: #11c7ff;
+  }
+  20% {
+    color: #1e9b41;
+  }
+  40% {
+    color: #a5d22d;
+  }
+  60% {
+    color: #2d4196;
+  }
+  80% {
+    color: #c30a28;
+  }
+  100% {
+    color: #11c7ff;
   }
 }
 
 @keyframes rainbow2 {
   0% {
-    fill:#11c7ff;
+    fill: #11c7ff;
   }
   20% {
     fill: #1e9b41;
@@ -302,10 +301,10 @@ z-index: 999;
   60% {
     fill: #2d4196;
   }
-  80%{ 
+  80% {
     fill: #c30a28;
   }
   100% {
-    fill:#11c7ff;
+    fill: #11c7ff;
   }
 }
