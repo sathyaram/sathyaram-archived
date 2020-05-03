@@ -230,26 +230,7 @@
   }
 }
 
-// @keyframes photoMe {
-//   0% {
-//     background-image: url(/images/me.jpg);
-//   }
-//   25% {
-//     background-image: url(/images/RAM_2051.jpg);
-//   }
-//   50% {
-//     background-image: url(/images/RAM_2059.jpg);
-//   }
-//   75% {
-//     background-image: url(/images/RAM_2007.jpg);
-//   }
-//   99% {
-//     background-image: url(/images/RAM_2007.jpg);
-//   }
-//   100% {
-//     background-image: url(/images/me.jpg);
-//   }
-// }
+
 
 @keyframes flash {
   10% {
@@ -273,7 +254,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   animation: photoMe 16s infinite;
-  background-image: url(/images/RAM_2059.jpg);
+  background-image: url("/images/RAM_2059.jpg");
 
 
   &::after {

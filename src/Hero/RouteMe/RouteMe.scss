@@ -167,66 +167,68 @@
       }
     }
   }
-}
 
-
-
-.tilt {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  &:hover {
-    a {
-      border: 2px solid #b9d6fb;
-      box-shadow: 0 0 7px 0 rgba(#cbe2ff, 0.6), 0 0 10px 0 rgba(#006eff, 0.6);
-
-      h3 {
+  .tilt {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+    &:hover {
+      a {
         border: 2px solid #b9d6fb;
         box-shadow: 0 0 7px 0 rgba(#cbe2ff, 0.6), 0 0 10px 0 rgba(#006eff, 0.6);
-        transform: translateY(-1.5rem) translateZ(50px);
+  
+        h3 {
+          border: 2px solid #b9d6fb;
+          box-shadow: 0 0 7px 0 rgba(#cbe2ff, 0.6), 0 0 10px 0 rgba(#006eff, 0.6);
+          transform: translateY(-1.5rem) translateZ(50px);
+        }
+      }
+    }
+  
+    &:nth-child(1) {
+      a {
+        color: rgb(249, 183, 252);
+      }
+    }
+  
+    &:nth-child(2) {
+      a {
+        color: rgb(252, 183, 206);
+      }
+    }
+  
+    &:nth-child(3) {
+      a {
+        color: rgb(253, 228, 161);
+      }
+    }
+  
+    &:nth-child(4) {
+      a {
+        color: rgb(161, 253, 184);
+      }
+    }
+  
+    &:nth-child(5) {
+      a {
+        color: rgb(161, 250, 253);
+      }
+    }
+  
+    &:nth-child(6) {
+      a {
+        color: rgb(253, 161, 161);
       }
     }
   }
-
-  &:nth-child(1) {
-    a {
-      color: rgb(249, 183, 252);
-    }
-  }
-
-  &:nth-child(2) {
-    a {
-      color: rgb(252, 183, 206);
-    }
-  }
-
-  &:nth-child(3) {
-    a {
-      color: rgb(253, 228, 161);
-    }
-  }
-
-  &:nth-child(4) {
-    a {
-      color: rgb(161, 253, 184);
-    }
-  }
-
-  &:nth-child(5) {
-    a {
-      color: rgb(161, 250, 253);
-    }
-  }
-
-  &:nth-child(6) {
-    a {
-      color: rgb(253, 161, 161);
-    }
-  }
 }
+
+
+
+
 
 a.router {
 

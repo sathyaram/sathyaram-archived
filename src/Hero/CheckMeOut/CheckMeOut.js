@@ -2,13 +2,23 @@
 import React from 'react';
 import './CheckMeOut.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Tilt from 'react-tilt';
 
 function CheckMeOut() {
   return (
     <section className="checkMeOut">
       <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-        <h3>Check me out across the internet</h3>
+        <Tilt className="tilt">
+          <h3>
+          <span>Check</span>
+          <span> me</span>
+          <span> out</span>
+          <span> across</span>
+          <span> the</span>
+          <span> internet</span>
+            <div className="scroll-more">↓</div>
+            </h3>
+          </Tilt>
       </ScrollAnimation>
       <a className="instaLink" target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">
         <h4>Instagram <span>@sathya.ram</span></h4>

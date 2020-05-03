@@ -36,7 +36,7 @@ function RouteMe() {
       <Tilt className="tilt">
         <Link to="photography" id="photography" className="router">
           <h4>Photography</h4>
-          <div class="container">
+          <div className="container">
             <div className="photoOne">
               <img alt="lol" src="/images/RAM_2145.jpg"></img>
             </div>

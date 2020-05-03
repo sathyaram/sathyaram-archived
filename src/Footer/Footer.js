@@ -10,7 +10,7 @@ function Footer() {
       <div className="footerCTAs">
       <Tilt className="tilt">
 
-        <div className="footerCTA">Email Me <span>sathyatheram@gmail.com</span></div>
+        <div className="footerCTA">Email Me <a href="mailto:sathyatheram@gmail.com">sathyatheram@gmail.com</a></div>
         </Tilt>
       </div>
       <div className="copyright">

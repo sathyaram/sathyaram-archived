@@ -3,14 +3,15 @@ import './About.scss';
 
 function About() {
   return (
-    <div className="page appears">
+    <div className="page about appears">
       <div className="text">
         <h2><div>About</div></h2>
         <h6><div>Stirrin' up trouble since 1994</div></h6>
-        <div className="content">
-        <div className="appear">
+        <div className="picsOfMe">
           <img alt="Me" src="/images/Untitled-3.png"></img>
         </div>
+        <div className="content">
+       
         <div className="about">
           Hey hey!
         I'm <strong>Sathya Ram</strong>,

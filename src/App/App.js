@@ -11,9 +11,9 @@ import About from './../About/About';
 
 
 function App() {
-  const colorChange = (e) => {
-    e.target.style.color = "rgba(10, 153, 248, 0.9)";
-  }
+  // const colorChange = (e) => {
+  //   e.target.style.color = "rgba(10, 153, 248, 0.9)";
+  // }
 
   window.addEventListener('scroll', function () {
     if (window.scrollY >= 485) {
@@ -26,7 +26,6 @@ function App() {
   setTimeout(function () {
     document.querySelector('.logo').classList.add("loaded");
   }, 2000);
-
 
   return (
     <>

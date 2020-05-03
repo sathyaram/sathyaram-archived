@@ -3,7 +3,7 @@
   justify-content: center;
   max-width: 880px;
   margin: 0 auto;
-  padding: 8rem 0 5rem;
+  padding: 8rem 1.5rem 5rem;
   width: 100%;
 
   .text {
@@ -11,7 +11,13 @@
   }
 
   a {
-    animation: rainbow1 75s ease infinite;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 15px #fff, 
+    0 0 20px #228dff, 
+    0 0 35px #228dff, 
+    0 0 40px #228dff;
   }
 
   h2 {
@@ -25,7 +31,7 @@
     word-wrap: anywhere;
 
     @media screen and (max-width: 500px) {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -127,7 +133,7 @@
 .etc {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -236,6 +242,7 @@ a.website-link {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   z-index: 2;
+  text-shadow: 0 0 5px #fff, 0 0 20px #228dff, 0 0 40px #228dff;
   top: 0;
   transform: translateZ(20px);
 
@@ -280,6 +287,7 @@ a.website-link:focus,
 a.website-link:active {
   color: #24afda;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: none;
 }
 
 a.website-link:hover:before,
