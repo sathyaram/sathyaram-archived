@@ -276,7 +276,8 @@ h2 {
 }
 
 .svg1 {
-      width: 660px;
+      max-width: 660px;
+      width: 100%;
     position: absolute;
     left: calc(50% - 2px);
     transform: translateX(-50%);

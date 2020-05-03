@@ -171,6 +171,10 @@
   margin-bottom: -2.75rem;
   justify-content: center;
 
+  @media screen and (max-width: 500px) {
+    margin-bottom: -2.5rem;
+  }
+
   li {
     color: #d5d3dd;
     text-shadow: 0 0 5px #e7e4f0;

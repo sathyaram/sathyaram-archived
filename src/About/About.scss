@@ -1,15 +1,10 @@
 .about {
   max-width: 550px;
-  margin: 0 auto;
   font-size: 2rem;
   color: #ced1f1;
 
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;
-  }
-
-  .text {
-    padding:  4rem 0 2rem;
   }
 }
 

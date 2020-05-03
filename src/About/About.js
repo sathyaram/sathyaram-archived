@@ -22,7 +22,7 @@ function About() {
         I love all things film/TV - I live on iMDB, check out <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last">what I've rated</a>.
         <br></br>
           <br></br>
-        I'm a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/lightbringer/sathex">World of Warcraft</a> player, and amateur voice actor.
+        I'm a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya">World of Warcraft</a> player, and amateur voice actor.
         <br></br>
           <br></br>
         I post my photography on <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">my Instagram</a>, so follow me if you want a little vibrance on your daily scrolls.
