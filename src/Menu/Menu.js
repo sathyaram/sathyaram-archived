@@ -27,9 +27,9 @@ function Menu() {
     const loaderTl = gsap.timeline();
     loaderTl.to(".slide",
       {
-        duration: 2,
+        duration: 3,
         height: 0,
-        delay: 3,
+        delay: 1,
         ease: Power3.easeOut,
         stagger: 0.25
       });

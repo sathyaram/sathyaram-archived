@@ -71,7 +71,7 @@ function AboutMe() {
         </ScrollAnimation>
         <br></br>
         <br></br>
-        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
           <p>I design &amp; build digital experiences. My thing is  vibrant, handcrafted websites, user-centric designs and lifestyle, portrait, studio photography. I'm all about making the internet sexier.</p>
         </ScrollAnimation>
       </div>

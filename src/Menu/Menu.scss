@@ -86,7 +86,7 @@ stop {
   width: 200px;
   height: auto;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   z-index: 16;
   transition: all 500ms ease;
@@ -114,6 +114,7 @@ stop {
 
     @media screen and (max-width: 1080px) {
       width: 95px;
+      top: 40px;
     }
   }
 

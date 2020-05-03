@@ -12,6 +12,32 @@ function Hero() {
 
   useEffect(() => {
 
+    const loaderTl = gsap.timeline();
+    loaderTl.from("h1 span",
+      {
+        duration: 2,
+        opacity: 0,
+        ease: Power3.easeOut,
+        stagger: 0.5
+      });
+
+      gsap.from("h2", 
+      {
+        duration:2,
+         opacity: 0,
+         delay: 3,
+         top: "115px"
+        }
+      );
+
+      gsap.from(".photobooth", 
+      {
+        duration:2,
+         opacity: 0,
+          delay: 4,
+         top: "115px"
+        }
+      );
 
     // const loaderTl = gsap.timeline();
     // loaderTl.from(".instagramItem",
@@ -54,7 +80,6 @@ function Hero() {
           <div className="rain"></div>
         </div>
         <div className="info">
-          <ScrollAnimation animateIn="fadeIn" delay={6000} animateOnce={true}>
 
             <div class="photobooth">
               <div>
@@ -64,17 +89,24 @@ function Hero() {
                 <img src="/images/me2.png" alt="melol"></img>
                 </div></div>
           <div className="pronounce">Saa-thee-uh · Ram</div>
-          </ScrollAnimation>
 
           <div className="heading">
-          <ScrollAnimation animateIn="fadeInUp" delay={4000} animateOnce={true}>
-            <h1>Sathya Ram</h1>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" delay={5000} animateOnce={true}>
-            <h2>Web Developer <span>× </span>
-              Digital Designer <span>× </span>
-              Photographer </h2>
-          </ScrollAnimation>
+          {/* <ScrollAnimation animateIn="fadeInUp" delay={4000} animateOnce={true}> */}
+            <h1>
+              <span>S</span>
+              <span>a</span>
+              <span>t</span>
+              <span>h</span>
+              <span>y</span>
+              <span>a</span> 
+              <span> R</span>
+              <span>a</span>
+              <span>m</span>
+              </h1>
+          {/* </ScrollAnimation> */}
+            <h2><div>Web Developer</div> <span>× </span>
+            <div>Digital Designer</div> <span>× </span>
+            <div>Photographer</div> </h2>
           </div>
         </div>
       </header>
