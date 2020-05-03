@@ -1,18 +1,17 @@
 .about {
-  max-width: 550px;
-  font-size: 2rem;
-  color: #ced1f1;
+  .content {
+    max-width: 550px;
+    font-size: 2rem;
+    color: #ced1f1;
+    margin: 0 auto;
+    width: 100%;
 
-  @media screen and (max-width: 600px) {
-    font-size: 1.5rem;
+    @media screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
   }
-}
-
-.picsOfMe {
-  width: 100%;
-  padding: 0 0 2rem;
-}
-
-.page.about {
-  max-width: 100%;
+  .picsOfMe {
+    width: 100%;
+    padding: 0 0 2rem;
+  }
 }
