@@ -1,17 +1,12 @@
 import React, { useEffect } from 'react';
+import { gsap, Power3 } from 'gsap';
 import './Hero.scss';
 import AboutMe from './AboutMe/AboutMe';
 import RouteMe from './RouteMe/RouteMe';
 import CheckMeOut from './CheckMeOut/CheckMeOut.js';
-import { gsap, Power3 } from 'gsap';
-import ScrollAnimation from 'react-animate-on-scroll';
-
 
 function Hero() {
-
-
   useEffect(() => {
-
     const loaderTl = gsap.timeline();
     loaderTl.from("h1 span",
       {
@@ -22,45 +17,33 @@ function Hero() {
         stagger: 0.5
       });
 
-      gsap.from("h2 div", 
+    gsap.from("h2 div",
       {
-        duration:2,
-         opacity: 0,
-         delay: 4,
-         top: "115px",
+        duration: 2,
+        opacity: 0,
+        delay: 4,
+        top: "115px",
         stagger: 0.5
-        }
-      );
-      gsap.from("h2 span", 
+      }
+    );
+    gsap.from("h2 span",
       {
-        duration:2,
-         opacity: 0,
-         delay: 4,
-         top: "115px",
+        duration: 2,
+        opacity: 0,
+        delay: 4,
+        top: "115px",
         stagger: 0.5
-        }
-      );
+      }
+    );
 
-      gsap.from(".photobooth", 
+    gsap.from(".photobooth",
       {
-        duration:2,
-         opacity: 0,
-          delay: 4,
-         top: "150px"
-        }
-      );
-
-    // const loaderTl = gsap.timeline();
-    // loaderTl.from(".instagramItem",
-    //   {
-    //     duration: 3,
-    //     y: "20px",
-    //     opacity: 0,
-    //     ease: Power3.easeOut,
-    //     stagger: 0.25,
-    //     scale: 1.5
-    //   });
-
+        duration: 2,
+        opacity: 0,
+        delay: 4,
+        top: "150px"
+      }
+    );
   });
 
   return (
@@ -91,40 +74,36 @@ function Hero() {
           <div className="rain"></div>
         </div>
         <div className="info">
-
-            <div class="photobooth">
-              <div>
-                <img src="/images/me1.png" alt="me1"></img>
-              </div>
-              <div>
-                <img src="/images/me2.png" alt="melol"></img>
-                </div></div>
+          <div class="photobooth">
+            <div>
+              <img src="/images/me1.png" alt="me1"></img>
+            </div>
+            <div>
+              <img src="/images/me2.png" alt="melol"></img>
+            </div></div>
           <div className="pronounce">Saa-thee-uh · Ram</div>
 
           <div className="heading">
-          {/* <ScrollAnimation animateIn="fadeInUp" delay={4000} animateOnce={true}> */}
             <h1>
               <span>S</span>
               <span>a</span>
               <span>t</span>
               <span>h</span>
               <span>y</span>
-              <span>a</span> 
+              <span>a</span>
               <span> R</span>
               <span>a</span>
               <span>m</span>
-              </h1>
-          {/* </ScrollAnimation> */}
+            </h1>
             <h2><div>Web Developer</div> <span>× </span>
-            <div>Digital Designer</div> <span>× </span>
-            <div>Photographer</div> </h2>
+              <div>Digital Designer</div> <span>× </span>
+              <div>Photographer</div> </h2>
           </div>
         </div>
       </header>
-
-     <AboutMe />
-    <RouteMe />
-     <CheckMeOut />
+      <AboutMe />
+      <RouteMe />
+      <CheckMeOut />
     </>
   );
 };
