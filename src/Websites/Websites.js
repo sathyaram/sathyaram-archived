@@ -24,7 +24,7 @@ function Websites() {
                 style={{ borderColor: project.color, background: `${project.offcolor}, url(${project.media[0]}) center center/cover no-repeat` }}>
               </div>
               </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeInUp">
+              <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
 
               <div className="etc">
 
@@ -76,7 +76,7 @@ function Websites() {
                 {project.link.replace("https://", "").replace("http://", "")}
               </a>
               <div className="description">
-                {project.description}
+                <p>{project.description}</p>
                 <ul className="tags">
                   {project.tags.map(item => (
                     <li

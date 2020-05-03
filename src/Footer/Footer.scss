@@ -1,9 +1,8 @@
 footer {
   align-items: center;
-  background-image: url('/images/RAM_185-galaxy-bg.jpg');
-  background-size: auto;
+  background-image: url("/images/RAM_185-galaxy-bg.jpg");
+  background-size: cover;
   background-position: 50% 50%;
-  // background-position: center center;
   color: white;
   display: flex;
   flex-direction: column;
@@ -17,19 +16,15 @@ footer {
   animation: galaxy 35s ease infinite;
 
   @keyframes galaxy {
-    0%{
-      // background-position:0% 50%;
+    0% {
       background-size: 100% 100%;
-
     }
-    50%{
-      // background-position:100% 50%;
-  background-position: 30% 50%;
+    50% {
+      background-position: 30% 50%;
 
       background-size: 180% 180%;
     }
-    100%{
-      // background-position:0% 50%;
+    100% {
       background-size: 100% 100%;
     }
   }
@@ -92,7 +87,8 @@ footer {
       &::after {
         border-bottom-color: white;
         border-left-color: white;
-        transition: border-color 0s ease-out 0.3s, width 0.2s ease-out 0.3s, height 0.1s ease-out 0.5s;
+        transition: border-color 0s ease-out 0.3s, width 0.2s ease-out 0.3s,
+          height 0.1s ease-out 0.5s;
       }
 
       &::before,

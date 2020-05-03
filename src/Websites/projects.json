@@ -113,15 +113,15 @@
   {
     "title": "Arts, Architecture & Design",
     "subtitle": "Lehigh's AAD Department",
-    "description": "Another website for designspiration? Well, actually, this one is a website of websites, but specifically designer, developer, and agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
+    "description": "After being a student at Lehigh University, I was asked to do the design and development for their new website, highlighting the modern programs and facilities that would make students attracted to the synergy of Lehigh's programs. A cleaner, contemporary design with flat colors and legible text.",
     "tags": ["React", "SASS", "Web Design", "Netlify"],
     "link": "https://aad.lehigh.edu",
     "role": "Lehigh University",
     "color": "#FFA726",
     "type": "Web",
     "textcolor": "#ffffff",
-    "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.85), rgba(20, 151, 212, 0.4))",
-    "media": ["/images/web/coolwebsite.png"],
+    "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.15), rgba(255, 167, 38, 0.4))",
+    "media": ["/images/web/aad.png"],
     "year": "2018"
   },
   {
