@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import projects from "./projects.json";
 import ScrollAnimation from 'react-animate-on-scroll';
-
 import './Websites.scss';
-
 
 function Websites() {
   return (

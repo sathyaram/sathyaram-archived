@@ -83,10 +83,10 @@ stop {
 }
 
 .logo {
-  width: 200px;
+  width: 230px;
   height: auto;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   z-index: 16;
   transition: all 500ms ease;
@@ -223,7 +223,7 @@ stop {
     stroke-dashoffset: 147;
     fill: transparent;
     transition: fill 300ms ease;
-    animation: line-animate 2.7s ease forwards, fill 3s forwards 1.5s, rainbow2 75s ease infinite 3s;
+    animation: line-animate 1.7s ease forwards, fill 2s forwards 1.5s, rainbow2 75s ease infinite 3s;
   }
   path.r-line {
     stroke: #14111d;
@@ -232,8 +232,8 @@ stop {
     stroke-dashoffset: 199;
     transition: fill 300ms ease;
     fill: transparent;
-    animation: line-animate 2.5s ease forwards 0.2s, white-stroke 800ms ease forwards 2.6s,
-      fill-black 3s ease forwards 1.5s;
+    animation: line-animate 1.5s ease forwards 0.2s, white-stroke 800ms ease forwards 2s,
+      fill-black 2s ease forwards 1.5s;
   }
   .st1 {
     fill: #14111d;
@@ -347,6 +347,25 @@ stop {
         }
       }
 
+      &.is-active {
+        a {
+          span {
+          color: rgb(8, 77, 122);
+          }
+          &::before {
+            left: 0;
+            right: auto;
+            width: 105%;
+          }
+
+          &::after {
+            left: auto;
+            right: 0;
+            width: 105%;
+          }
+        }
+      }
+
       a {
         display: inline-block;
         color: #100e17;
@@ -354,14 +373,9 @@ stop {
         font-size: 0.75rem;
         text-align: center;
         transition: all 300ms ease;
-        animation: rainbow1 75s ease infinite 3s;
 
-        &.is-active span {
-          color: rgba(10, 153, 248, 0.9);
-        }
-
+       
         &:hover {
-          color: rgb(8, 77, 122);
 
           &::before {
             left: 0;

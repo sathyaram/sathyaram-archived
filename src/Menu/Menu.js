@@ -11,11 +11,11 @@ function Menu() {
 
   useEffect(() => {
 
-    document.querySelectorAll('.menu a').forEach((ix) => {
+    document.querySelectorAll('.menu li').forEach((ix) => {
       ix.addEventListener('click', () => {
         document.body.classList.remove('is-open');
         
-        var elems = document.querySelectorAll('.menu a');
+        var elems = document.querySelectorAll('.menu li');
         
         [].forEach.call(elems, function(el) {
           el.classList.remove("is-active");
@@ -29,12 +29,32 @@ function Menu() {
       {
         duration: 3,
         height: 0,
-        delay: 1,
+        delay: 2,
         ease: Power3.easeOut,
         stagger: 0.25
       });
 
   });
+
+  gsap.from(".menu:after", 
+  {
+    duration:2,
+     opacity: 0,
+     delay: 7,
+     y: "115px",
+    }
+  );
+  gsap.from(".eyebrow:after", 
+  {
+    duration:2,
+     opacity: 0,
+     delay: 7,
+     y: "-115px",
+    }
+  );
+
+  
+
   return (
     <>
       
@@ -76,7 +96,7 @@ function Menu() {
         <nav className="menu" role="navigation">
           <ul>
             <li><Link to="/"><span>Home</span>Take me back!</Link></li>
-            {/* <li><Link to="/about"><span>About</span>Who even is this guy?</Link></li> */}
+            <li><Link to="/about"><span>About</span>Who even is this guy?</Link></li>
             <li><Link to="/websites"><span>Websites</span>Real sites. Real code.</Link></li>
             <li><Link to="/designs"><span>Designs</span>Graphic, Web, UI</Link></li>
             <li><Link to="/photography"><span>Photography</span>Life through lenses</Link></li>

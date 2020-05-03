@@ -8,7 +8,7 @@
 }
 
 .appears {
-  animation: appears 1s linear forwards;
+  animation: appears 1.5s linear forwards;
 }
 
 .page {
@@ -23,7 +23,7 @@
   }
 
   a {
-    animation: rainbow1 75s ease infinite 3s;
+    animation: rainbow1 75s ease infinite;
   }
 
   h2 {
@@ -56,6 +56,10 @@
     align-items: flex-end;
     text-align: right;
 
+    .description, .role {
+      margin-left: auto;
+    }
+
     .media {
       left: auto;
       right: 50%;
@@ -78,6 +82,7 @@
 
   @media screen and (max-width: 600px) {
     left: 20%;
+    height: 70%;
   }
 }
 
@@ -134,14 +139,15 @@
   li {
     color: #d5d3dd;
     text-shadow: 0 0 5px #e7e4f0;
-    font-size: 15px;
+    font-size: 14px;
+
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
     &:not(:first-child) {
       border-left-width: 1px;
       border-style: solid;
-      padding-left: 1rem;
+      padding-left: 0.5rem;
     }
   }
 }
@@ -256,6 +262,7 @@ a.designs {
   margin-left: 0.75rem;
   border: none;
   font-size: 14px;
+  animation: none;
 }
 
 a.github::before {

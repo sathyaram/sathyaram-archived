@@ -17,16 +17,27 @@ function Hero() {
       {
         duration: 2,
         opacity: 0,
+        delay: 1,
         ease: Power3.easeOut,
         stagger: 0.5
       });
 
-      gsap.from("h2", 
+      gsap.from("h2 div", 
       {
         duration:2,
          opacity: 0,
-         delay: 3,
-         top: "115px"
+         delay: 4,
+         top: "115px",
+        stagger: 0.5
+        }
+      );
+      gsap.from("h2 span", 
+      {
+        duration:2,
+         opacity: 0,
+         delay: 4,
+         top: "115px",
+        stagger: 0.5
         }
       );
 
@@ -35,7 +46,7 @@ function Hero() {
         duration:2,
          opacity: 0,
           delay: 4,
-         top: "115px"
+         top: "150px"
         }
       );
 

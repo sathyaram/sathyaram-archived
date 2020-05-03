@@ -62,7 +62,7 @@ function AboutMe() {
         </ScrollAnimation>
       </div>
       <div className="wrapper">
-        <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
+        <ScrollAnimation animateIn="fadeInUp" delay={750} animateOnce={true}>
           <h3>
             <span>Design</span>,
         <span> strategy</span>,
@@ -71,13 +71,13 @@ function AboutMe() {
         </ScrollAnimation>
         <br></br>
         <br></br>
-        <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <p>I design &amp; build digital experiences. My thing is  vibrant, handcrafted websites, user-centric designs and lifestyle, portrait, studio photography. I'm all about making the internet sexier.</p>
         </ScrollAnimation>
       </div>
       {/* <ScrollAnimation animateIn="fadeIn" offset={}> */}
       <div className="spaceScene">
-        <div className="planet"></div>
+        <div className="planet"><div className="surface"></div></div>
         <div className="planet"></div>
         <div className="planet"></div>
         <div className="planet"></div>

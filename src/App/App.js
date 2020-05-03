@@ -8,6 +8,7 @@ import Footer from './../Footer/Footer';
 import Websites from './../Websites/Websites';
 import Designs from './../Designs/Designs';
 import Photography from './../Photography/Photography';
+import About from './../About/About';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
 
   setTimeout(function () {
     document.querySelector('.logo').classList.add("loaded");
-  }, 3200);
+  }, 2000);
 
   useEffect(() => {
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="/photography" render={() => <Photography />} />
           <Route path="/designs" render={() => <Designs />} />
           <Route path="/websites" render={() => <Websites />} />
+          <Route path="/about" render={() => <About />} />
           <Route path="/" render={() => <Hero />} />
         </Switch>
       </main>
