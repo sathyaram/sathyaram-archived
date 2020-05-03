@@ -4,10 +4,7 @@ import { gsap, Power3 } from 'gsap';
 
 
 function Photography() {
-
-
   useEffect(() => {
-
     const loaderTl = gsap.timeline();
     loaderTl.from(".photograph",
       {
@@ -18,12 +15,6 @@ function Photography() {
         stagger: 0.25,
         scale: 1.5
       });
-    // loaderTl.to(box.current,
-    //   {
-    //     duration: 1,
-    //     y: "0",
-    //     ease: Power3.easeIn
-    //   });
   });
 
   return (
@@ -33,7 +24,7 @@ function Photography() {
         <h6><div>A few of my portraits. See more on my <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">Instagram</a>.</div></h6>
       </div>
       <div className="content">
-      <div className="photograph">
+        <div className="photograph">
           <img alt="Peter" src="/images/photography/RAM_4378.jpg"></img>
         </div>
         <div className="photograph">

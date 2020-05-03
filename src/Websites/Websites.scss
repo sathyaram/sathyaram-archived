@@ -1,14 +1,13 @@
-
 .page {
   align-items: center;
   justify-content: center;
   max-width: 880px;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 8rem 0 5rem;
   width: 100%;
 
   .text {
-    padding: 2rem 0 8rem;
+    padding: 2rem 0 7rem;
   }
 
   a {
@@ -16,7 +15,7 @@
   }
 
   h2 {
-    font-size: 5rem;
+    font-size: 7rem;
     letter-spacing: 0.5rem;
     text-align: center;
     background: -webkit-linear-gradient(#eee, rgb(111, 111, 136));
@@ -55,7 +54,8 @@
     align-items: flex-end;
     text-align: right;
 
-    .description, .role {
+    .description,
+    .role {
       margin-left: auto;
     }
 
@@ -69,7 +69,6 @@
     }
   }
 }
-
 
 .media {
   position: absolute;
@@ -118,11 +117,10 @@
     margin-bottom: 2rem;
     box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.4);
 
-    // p {
-    //   @media screen and (max-width: 500px) {
-    //     display: none;
-    //   }
-    // }
+    @media screen and (max-width: 500px) {
+      font-size: 14px
+    }
+  
   }
 }
 
@@ -169,6 +167,7 @@
     &:not(:last-child) {
       margin-right: 0.5rem;
     }
+
     &:not(:first-child) {
       border-left-width: 1px;
       border-style: solid;
@@ -197,18 +196,22 @@
   transform: translateY(-50%);
   left: -13px;
 }
+
 .Forum::before {
   content: url("/icons/f1.svg");
 }
+
 .Lehigh::before {
   width: 20px;
   left: -10px;
   top: calc(50% + 1px);
   content: url("/icons/lehigh.svg");
 }
+
 .Project::before {
   content: url("/ram-logo-white.svg");
 }
+
 .Weidenhammer::before {
   width: 24px;
   left: -11px;
@@ -227,7 +230,6 @@ a.website-link {
   align-items: center;
   position: relative;
   animation: none;
-  // background: rgba(255, 255, 255, 0.7);
   transition: color 300ms ease, top 300ms ease, box-shadow 300ms ease;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
@@ -239,10 +241,10 @@ a.website-link {
 
   @media screen and (max-width: 500px) {
     font-size: 18px;
-  padding: 0.25rem 2rem 0.5rem;
-
+    padding: 0.25rem 2rem 0.5rem;
   }
 }
+
 a.website-link.https::after {
   content: "https";
   color: #449e2f;
@@ -256,6 +258,7 @@ a.website-link.https::after {
   border-radius: 10px;
   transition: opacity 300ms ease;
 }
+
 a.website-link::before {
   content: "";
   position: absolute;
@@ -271,12 +274,14 @@ a.website-link::before {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
+
 a.website-link:hover,
 a.website-link:focus,
 a.website-link:active {
   color: #24afda;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 }
+
 a.website-link:hover:before,
 a.website-link:focus:before,
 a.website-link:active:before {
@@ -305,6 +310,7 @@ a.github::before {
   height: auto;
   opacity: 0.5;
 }
+
 a.designs::before {
   content: url("/icons/dribbble.svg");
   width: 1.6rem;
@@ -314,9 +320,11 @@ a.designs::before {
   height: auto;
   opacity: 0.5;
 }
+
 a.github:hover {
   background: rgba(85, 39, 117, 0.5);
 }
+
 a.designs:hover {
   background: rgba(232, 62, 128, 0.5);
 }

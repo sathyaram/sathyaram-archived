@@ -61,8 +61,6 @@ h2 {
   }
 }
 
-
-
 .pronounce {
   letter-spacing: 0.1rem;
   font-size: 0.75rem;
@@ -85,7 +83,6 @@ h2 {
   width: 100%;
   margin: 0 auto -80px;
 }
-
 
 @keyframes rain {
   0% {
@@ -186,29 +183,8 @@ h2 {
       opacity: 0;
       transform: translateY(50px);
     }
-
-    // &::after {
-    //   background-image: radial-gradient(
-    //     820px 700px at 50% 28%,
-    //     rgba(16, 14, 23, 0.1),
-    //     rgba(16, 14, 23, 0.3),
-    //     rgb(16, 14, 23),
-    //     #100e17
-    //   );
-    //   content: "";
-    //   width: 100%;
-    //   height: 100%;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: 0;
-    //   @media screen and (max-width: 420px) {
-    //     content: none;
-    //   }
-    // }
   }
 }
-
 
 .raindrops {
   position: absolute;

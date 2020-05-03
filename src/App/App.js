@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { gsap, Power3 } from 'gsap';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './Reset.scss';
 import Menu from './../Menu/Menu';
@@ -28,15 +27,6 @@ function App() {
     document.querySelector('.logo').classList.add("loaded");
   }, 2000);
 
-  useEffect(() => {
-
-    // loaderTl.to(box.current,
-    //   {
-    //     duration: 1,
-    //     y: "0",
-    //     ease: Power3.easeIn
-    //   });
-  });
 
   return (
     <>
@@ -50,8 +40,6 @@ function App() {
           <Route path="/" render={() => <Hero />} />
         </Switch>
       </main>
-      {/* <button onClick={colorChange}>Arun</button>
-      <div onClick={toggleMenu} className="logo">Hello!</div> */}
       <Footer />
     </>
   );

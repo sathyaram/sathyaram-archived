@@ -3,14 +3,20 @@
     "title": "Vilcek Foundation",
     "subtitle": "Arts + Immigration Foundation",
     "description": "I had the opportunity to help with the front-end development for The Vilcek Foundation, who raise awareness of immigrant contributions in the United States and foster appreciation of the arts and sciences.",
-    "tags": ["WordPress", "JavaScript", "HTML/SCSS"],
+    "tags": [
+      "WordPress",
+      "JavaScript",
+      "HTML/SCSS"
+    ],
     "link": "https://vilcek.org",
     "role": "Forum One",
     "color": "#e4ce87",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, rgba(228, 206, 135, 0.3), rgba(173, 150, 76, 0.4))",
-    "media": ["/images/web/vilcek.jpg"],
+    "media": [
+      "/images/web/vilcek.jpg"
+    ],
     "year": "2020"
   },
   {
@@ -18,20 +24,33 @@
     "subtitle": "A Mission Driven Adoption Shelter",
     "description": "An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site.",
     "type": "Web",
-    "tags": ["Squarespace", "Web Design", "CSS", "JavaScript"],
+    "tags": [
+      "Squarespace",
+      "Web Design",
+      "CSS",
+      "JavaScript"
+    ],
     "link": "https://amandafoundation.org",
     "role": "Forum One",
     "color": "purple",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg, rgba(204,0,153, 0.4), rgba(0, 157, 194, 0.6) 85%)",
-    "media": ["/images/web/amanda1.png"],
+    "media": [
+      "/images/web/amanda1.png"
+    ],
     "year": "2020"
   },
   {
     "title": "Exhaust Notes",
     "subtitle": "A Car Engine Sound Library",
     "description": "As a huge car enthusiast, I was surprised to find there wasn't a place on the internet to hear exhaust notes, or car engine rev sounds. So, I made a hotrod haven to enjoy the loud hums and furious notes of naturally aspired vehicles. Check out the engine rev noises of some of the coolest cars today.",
-    "tags": ["React", "Express", "Web Design", "SCSS", "Netlify"],
+    "tags": [
+      "React",
+      "Express",
+      "Web Design",
+      "SCSS",
+      "Netlify"
+    ],
     "link": "https://exhaustnotes.co",
     "github": "https://github.com/sathyaram/exhaustnotes",
     "role": "Personal Project",
@@ -39,21 +58,30 @@
     "textcolor": "#ffffff",
     "type": "Web",
     "offcolor": "linear-gradient(325deg, rgba(49, 49, 49, 0.3), rgba(9, 9, 9, 0.45))",
-    "media": ["/images/web/en-grid.png"],
+    "media": [
+      "/images/web/en-grid.png"
+    ],
     "year": "2019"
   },
   {
     "title": "HHMI",
     "subtitle": "Howard Hughes Medical Institute",
     "description": "At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.",
-    "tags": ["Drupal 8", "Pattern Lab", "Twig/YAML", "SCSS"],
+    "tags": [
+      "Drupal 8",
+      "Pattern Lab",
+      "Twig/YAML",
+      "SCSS"
+    ],
     "link": "https://biointeractive.org",
     "role": "Forum One",
     "color": "#0c6d79",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg, rgba(130,187,68, 0.6), rgba(23,131,135, 0.8))",
-    "media": ["/images/web/hhmi-mobile2.jpg"],
+    "media": [
+      "/images/web/hhmi-mobile2.jpg"
+    ],
     "year": "2019"
   },
   {
@@ -73,7 +101,9 @@
     "color": "#ffda67",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(130deg, rgba(240,90,38, 0.6), rgba(250,175,64, 0.8))",
-    "media": ["/images/web/fudtruk-uc.jpg"],
+    "media": [
+      "/images/web/fudtruk-uc.jpg"
+    ],
     "year": "2018"
   },
   {
@@ -93,42 +123,63 @@
     "color": "rgb(208, 166, 120)",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(-35deg, rgba(37, 21, 0, 0.7) 0%, rgba(115, 45, 2, 0.5) 100%)",
-    "media": ["/images/web/portal-outside.jpg"],
+    "media": [
+      "/images/web/portal-outside.jpg"
+    ],
     "year": "2018"
   },
   {
     "title": "SCLLR",
     "subtitle": "South Carolina Department of Labor, Licensing & Regulation",
     "description": "On this quick turn-around project, South Carolina's Labor and Licensing Department needed a lightweight, static site for their rigid hosting structure, a natural fit for Grav CMS, along with the BlackHole plugin that allows for static site generation.",
-    "tags": ["Grav CMS", "Twig/YAML", "SASS", "PHP"],
+    "tags": [
+      "Grav CMS",
+      "Twig/YAML",
+      "SASS",
+      "PHP"
+    ],
     "link": "https://www.llr.sc.gov",
     "role": "Forum One",
     "color": "#7db956",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(60deg, rgba(37, 111, 134, 0.7), rgba(0, 66, 129, 0.9) 80%)",
-    "media": ["/images/web/scllr.jpg"],
+    "media": [
+      "/images/web/scllr.jpg"
+    ],
     "year": "2019"
   },
   {
     "title": "Arts, Architecture & Design",
     "subtitle": "Lehigh's AAD Department",
     "description": "After being a student at Lehigh University, I was asked to do the design and development for their new website, highlighting the modern programs and facilities that would make students attracted to the synergy of Lehigh's programs. A cleaner, contemporary design with flat colors and legible text.",
-    "tags": ["React", "SASS", "Web Design", "Netlify"],
+    "tags": [
+      "React",
+      "SASS",
+      "Web Design",
+      "Netlify"
+    ],
     "link": "https://aad.lehigh.edu",
     "role": "Lehigh University",
     "color": "#FFA726",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.15), rgba(255, 167, 38, 0.4))",
-    "media": ["/images/web/aad.png"],
+    "media": [
+      "/images/web/aad.png"
+    ],
     "year": "2018"
   },
   {
     "title": "That's A Cool Website",
     "subtitle": "A Curated Collection of Cool Websites",
     "description": "Another website for designspiration? Well, actually, this one is a website of websites, but specifically designer, developer, and agency websites that are the cream of the crop. It is curated by yours truly so you know it'll be quality work and I'm always taking suggestions.",
-    "tags": ["React", "SASS", "Web Design", "Netlify"],
+    "tags": [
+      "React",
+      "SASS",
+      "Web Design",
+      "Netlify"
+    ],
     "link": "https://thatsacoolwebsite.com",
     "github": "https://github.com/sathyaram/thatsacoolwebsite",
     "role": "Personal Project",
@@ -136,14 +187,20 @@
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(0deg, rgba(0, 255, 255, 0.85), rgba(20, 151, 212, 0.4))",
-    "media": ["/images/web/coolwebsite.png"],
+    "media": [
+      "/images/web/coolwebsite.png"
+    ],
     "year": "2018"
   },
   {
     "title": "Oscars Trivia",
     "subtitle": "Browser Game",
     "description": "This is a single player trivia game based on the 2018 Academy Awards (The Oscars). It tests your Oscars knowledge on two levels: a 10 question quiz that asks who won the Oscar for the most popular categories, or all the 24 Oscar categories, for the movie buffs.",
-    "tags": ["JavaScript", "HTML/CSS", "Web Design"],
+    "tags": [
+      "JavaScript",
+      "HTML/CSS",
+      "Web Design"
+    ],
     "link": "https://oscarstrivia.com",
     "role": "Personal Project",
     "github": "https://github.com/sathyaram/oscarstriviagame",
@@ -151,78 +208,114 @@
     "type": "Web",
     "textcolor": "#fff",
     "offcolor": "linear-gradient(-45deg, rgba(202, 175, 40, 0.7), rgba(255, 243, 154, 0.6))",
-    "media": ["/images/web/oscarsanimated.png"],
+    "media": [
+      "/images/web/oscarsanimated.png"
+    ],
     "year": "2018"
   },
   {
     "title": "Gertrude Hawk Goodies",
     "subtitle": "Rewards Program Microsite",
     "description": "While working at Weidenhammer, I developed a microsite for renowned chocolatiers Gertrude Hawk Chocolates. They wanted a clear cut, and simple rewards website where chocolate lovers can sign up to be a part of their rewards program designed to reward you with free chocolate!",
-    "tags": ["WordPress", "JavaScript", "HTML/SCSS", "PHP"],
+    "tags": [
+      "WordPress",
+      "JavaScript",
+      "HTML/SCSS",
+      "PHP"
+    ],
     "link": "https://gertrudehawkgoodies.com",
     "role": "Weidenhammer",
     "color": "#e5d09a",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "radial-gradient(at center center, rgba(154, 95, 163, 0.4) 0%, rgba(86, 21, 98, 0.8) 100%)",
-    "media": ["/images/web/chocolate.jpg"],
+    "media": [
+      "/images/web/chocolate.jpg"
+    ],
     "year": "2017"
   },
   {
     "title": "Astral Air Parts",
     "subtitle": "Aircraft Part Supplier",
     "description": "Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of types of major products across many industries, like space shuttles, commerical aircrafts, jets and cars. A three but mighty industry, these little nuts are the glue that holds America tight.",
-    "tags": ["WordPress", "JavaScript", "HTML/SCSS", "PHP"],
+    "tags": [
+      "WordPress",
+      "JavaScript",
+      "HTML/SCSS",
+      "PHP"
+    ],
     "link": "http://astralairparts.com",
     "role": "Weidenhammer",
     "color": "#ee5c23",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(60deg, rgba(0, 0, 4, 0.6), rgba(0, 66, 129, 0.7) 80%)",
-    "media": ["/images/web/astral.jpg"],
+    "media": [
+      "/images/web/astral.jpg"
+    ],
     "year": "2017"
   },
-
   {
     "title": "Keystone Munitions",
     "subtitle": "Premium Ammunition",
     "description": "You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website was a resounding success, with their product now being available in over 20 locations than before and counting.",
-    "tags": ["Drupal 7", "JavaScript", "HTML/SCSS", "Web Design"],
+    "tags": [
+      "Drupal 7",
+      "JavaScript",
+      "HTML/SCSS",
+      "Web Design"
+    ],
     "link": "http://keystonemunitions.com",
     "role": "Freelance Project",
     "color": "#f8b700",
     "type": "Web",
     "textcolor": "rgb(242, 233, 243)",
     "offcolor": "linear-gradient(to left top, rgba(251, 199, 82, 0.4), rgba(49, 48, 35, 0.3), rgb(0, 0, 0))",
-    "media": ["/images/web/keystone.jpg"],
+    "media": [
+      "/images/web/keystone.jpg"
+    ],
     "year": "2016"
   },
   {
     "title": "Paul Knakk",
     "subtitle": "Country Musician",
     "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus.",
-    "tags": ["Drupal 7", "JavaScript", "HTML/SCSS", "Web Design"],
+    "tags": [
+      "Drupal 7",
+      "JavaScript",
+      "HTML/SCSS",
+      "Web Design"
+    ],
     "link": "http://paulknakk.com",
     "role": "Freelance Project",
     "color": "#e4ce87",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, rgba(151,49,65,0.3), rgba(84,19,29,0.7))",
-    "media": ["/images/web/paulknakk2.jpg"],
+    "media": [
+      "/images/web/paulknakk2.jpg"
+    ],
     "year": "2015"
   },
   {
     "title": "Powerhouse",
     "subtitle": "Lehigh's Powerhouse",
     "description": "Country artist Paul Knakk wanted a fresh, modern website that he could easily maintain; a perfect candidate for a Drupal site! He was able to update content with ease and I integrated his Google Calendar to populate showtimes on the site. He is unfortunately currently in hiatus.",
-    "tags": ["Drupal 7", "JavaScript", "HTML/SCSS", "Web Design"],
+    "tags": [
+      "Drupal 7",
+      "JavaScript",
+      "HTML/SCSS",
+      "Web Design"
+    ],
     "link": "https://powerhouse.lehigh.edu",
     "role": "Freelance Project",
     "color": "#e4ce87",
     "type": "Web",
     "textcolor": "#ffffff",
     "offcolor": "linear-gradient(270deg, rgba(151,49,65,0.1), rgba(84,19,29,0.2))",
-    "media": ["/images/web/powerhouse.jpg"],
+    "media": [
+      "/images/web/powerhouse.jpg"
+    ],
     "year": "2015"
   }
 ]

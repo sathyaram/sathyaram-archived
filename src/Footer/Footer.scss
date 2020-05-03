@@ -48,7 +48,6 @@ footer {
   .footerCTA {
     background-color: rgba(4, 4, 17, 0.75);
     padding: 3rem;
-    // border: 1px solid hsla(0, 0%, 100%, 0.5);
     margin-right: -1px;
     color: #7996af;
     font-size: 0.75rem;
@@ -76,7 +75,6 @@ footer {
     }
 
     &:hover {
-      // border: 1px solid hsla(0, 0%, 100%, 1);
 
       &::before {
         border-top-color: white;

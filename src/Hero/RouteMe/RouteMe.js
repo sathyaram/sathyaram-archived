@@ -19,7 +19,6 @@ function RouteMe() {
           </Link>
         </Tilt>
       </ScrollAnimation>
-
       <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true}>
         <Tilt className="tilt">
           <Link to="/designs" id="designs" className="router">
@@ -33,7 +32,6 @@ function RouteMe() {
           </Link>
         </Tilt>
       </ScrollAnimation>
-
       <ScrollAnimation animateIn="fadeInUp" delay={1000} animateOnce={true}>
       <Tilt className="tilt">
         <Link to="photography" id="photography" className="router">
