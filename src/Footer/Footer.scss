@@ -24,8 +24,8 @@ footer {
     font-size: 1.5rem;
     word-break: break-all;
     transform: translateZ(50px);  
-    text-shadow: 0 0 5px #fff, 0 0 10px, 0 0 20px #228dff;
-  }
+    text-shadow: 0 0 5px #fff;
+  } 
 
   @keyframes galaxy {
     0% {
@@ -33,7 +33,6 @@ footer {
     }
     50% {
       background-position: 30% 50%;
-
       background-size: 180% 180%;
     }
     100% {

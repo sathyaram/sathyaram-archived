@@ -37,12 +37,12 @@ function Menu() {
   });
   return (
     <>
-      {/* <div className="loader">
+      <div className="loader">
         <div className="slide"></div>
         <div className="slide"></div>
         <div className="slide"></div>
         <div className="slide"></div>
-      </div> */}
+      </div>
       <div className="logo" onClick={toggleMenu}>
           <button className="menuTrigger" aria-label="menu trigger" name="menu trigger">
             <svg viewBox="0 0 78.2 54.3">

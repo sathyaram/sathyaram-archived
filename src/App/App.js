@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <Menu />
-      <main>
+      <main role="main" name="main">
         <Switch>
           <Route path="/photography" render={() => <Photography />} />
           <Route path="/designs" render={() => <Designs />} />

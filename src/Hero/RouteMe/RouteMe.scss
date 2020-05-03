@@ -89,6 +89,10 @@
     grid-gap: 4rem;
   }
 
+  @media screen and (max-width: 400px) {
+    padding: 5rem 1rem;
+  }
+
   h4 {
     text-shadow: 0 0 5px white, 0 0 5px white;
     font-size: 1.75rem;
@@ -374,21 +378,6 @@ a.router {
       letter-spacing: 6px;
     }
   }
-}
-
-.scroll-more {
-  width: 26px;
-  position: absolute;
-  bottom: 110px;
-  left: calc(50% - 13px);
-  margin: 0 auto;
-  font-size: 2rem;
-  color: white;
-  opacity: 1;
-  transition: opacity 300ms ease;
-  pointer-events: none;
-  text-align: center;
-  animation: bounce 3s infinite cubic-bezier(0.37, 0, 0.21, 1.02);
 }
 
 .track {

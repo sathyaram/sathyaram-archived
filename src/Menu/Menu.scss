@@ -215,7 +215,7 @@ stop {
     stroke-dashoffset: 199;
     transition: fill 300ms ease;
     fill: transparent;
-    animation: line-animate 1.5s ease forwards 0.2s, white-stroke 800ms ease forwards 2s,
+    animation: line-animate 1.5s ease forwards 0.2s, white-stroke 300ms ease forwards 2s,
       fill-black 2s ease forwards 1.5s;
   }
   .st1 {
