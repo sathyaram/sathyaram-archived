@@ -104,7 +104,6 @@ function Hero() {
               <img src="/images/me2.png" alt="melol"></img>
         </div>
         </div>
-       
       </header>
       <AboutMe />
       <RouteMe />
