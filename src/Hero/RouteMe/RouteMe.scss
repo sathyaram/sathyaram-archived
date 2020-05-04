@@ -75,15 +75,14 @@
   position: relative;
   align-items: center;
   transform-style: preserve-3d;
-  overflow: hidden;
   padding: 5rem 2rem;
 
-  @media screen and (max-width: 1080px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+  // @media screen and (max-width: 1080px) {
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr;
+  // }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 1080px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 4rem;
@@ -126,6 +125,12 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
+
+    @media screen and (max-width: 1080px) {
+      max-width: 325px;
+      width: 100%;
+      margin: 4% auto 0;
+    }
 
     &::before,
     &::after {
@@ -230,19 +235,8 @@
   }
 }
 
-
-
-
-
 a.router {
-
-  @media screen and (max-width: 720px) {
-    max-width: 325px;
-    width: 100%;
-    margin: 4% auto 0;
-  }
-
-
+ 
   &#about {
     &:hover {
       img:nth-of-type(1) {

@@ -121,10 +121,12 @@ stop {
   &:hover {
     transform: translateX(-50%) translateY(-45%) scale(1.1);
 
+    @media screen and (min-width: 900px) {
     ~ .triangles::after,
     ~ .triangles::before {
       transform: translate(0, 0);
       opacity: 1;
+    }
     }
 
     ~ header {
@@ -334,17 +336,6 @@ stop {
         a {
           span {
             color: rgb(8, 77, 122);
-          }
-          &::before {
-            left: 0;
-            right: auto;
-            width: 105%;
-          }
-
-          &::after {
-            left: auto;
-            right: 0;
-            width: 105%;
           }
         }
       }
@@ -711,6 +702,33 @@ stop {
       &:nth-of-type(4) {
         display: inline-block;
       }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-left: -100px;
+    margin-top: -100px;
+    border-width: 100px;
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  .menuTrigger {
+    &::before,
+    &::after {
+      opacity: 1;
+      -webkit-animation: pulse 2s 1;
+      animation: pulse 2s 1;
+    }
+    &::after {
+      animation-delay: 0.45s;
     }
   }
 }

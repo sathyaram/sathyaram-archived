@@ -59,7 +59,7 @@ function Websites() {
                   </div>
                 </div>
                 <h4 className="title" style={{ color: project.color }}>
-                  {project.title}
+                  <a rel="noopener noreferrer" href={project.link}>{project.title}</a>
                 </h4>
                 <h5 className="subtitle" style={{ color: `${project.textcolor}` }}>
                   {project.subtitle}

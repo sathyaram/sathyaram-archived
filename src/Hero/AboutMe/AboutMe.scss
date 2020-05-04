@@ -144,7 +144,6 @@
       color: #4dbef6;
       z-index: -1;
       transform: rotate(3deg);
-      cursor: pointer;
       font-size: 3.5rem;
       background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
       -webkit-background-clip: text;
@@ -160,11 +159,6 @@
         background: linear-gradient(to right, #f5af19, #f12711);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-      }
-
-      &:hover {
-        color: white;
-        text-shadow: 0 0 5px #ffffff, 0 0 14px #37b6f5;
       }
     }
   }

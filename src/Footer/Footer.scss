@@ -15,6 +15,10 @@ footer {
   text-align: center;
   animation: galaxy 35s ease infinite;
 
+  @media screen and (max-width: 800px) {
+    height: 70vh;
+  }
+
   a {
     color: white;
     display: block;

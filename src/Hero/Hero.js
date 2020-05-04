@@ -73,14 +73,13 @@ function Hero() {
           <div className="rain"></div>
           <div className="rain"></div>
         </div>
+      
         <div className="info">
           <div className="photobooth">
-            <div>
+            <div className="photoOfMe1">
               <img src="/images/me1.png" alt="me1"></img>
             </div>
-            <div>
-              <img src="/images/me2.png" alt="melol"></img>
-            </div>
+            
           </div>
           <div className="pronounce">Saa-thee-uh · Ram</div>
          
@@ -101,7 +100,11 @@ function Hero() {
               <div>Digital Designer</div> <span>× </span>
               <div>Photographer</div> </h2>
           </div>
+          <div className="photoOfMe2">
+              <img src="/images/me2.png" alt="melol"></img>
         </div>
+        </div>
+       
       </header>
       <AboutMe />
       <RouteMe />
