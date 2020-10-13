@@ -1,0 +1,106 @@
+/*
+========[Colors]========
+*/
+
+$grey: #e1e8ef;
+$petal: #d0d3de;
+$black: #1a1a1a;
+$midnight: #040411;
+$lavender: #161631;
+$lilac: #17172d;
+$velvet: #404066;
+$darkgray: #44465c;
+$deep: #7979a7;
+$lightning: #2baae2;
+$waterfall: #0071bc;
+$ocean: #0f305c;
+$gradient: linear-gradient(135deg, rgba(112, 213, 255, 0.9), rgba(0, 89, 188, 0.9));
+
+/*
+========[Breakpoints]========
+*/
+
+$zero: 0px;
+$s5: 300px;
+$blazeit: 420px;
+$surface: 540px;
+$tablet: 768px;
+$ipad: 880px;
+$screen: 992px;
+$mac: 1090px;
+$desktop: 1280px;
+
+/*
+========[Fonts]========
+*/
+
+$maison: "Maison", sans-serif;
+$work: "Work Sans", sans-serif;
+
+$h1: 70px;
+$h2: 42px;
+$h3: 36px;
+$h4: 30px;
+$h5: 24px;
+$h6: 20px;
+
+$body: 14px;
+$trans: all 300ms ease;
+$shadow-big: 30px 30px 60px 20px rgba(0, 0, 0, 0.1);
+
+/*
+========[Layout]========
+*/
+
+@mixin container-small {
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+@mixin container {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+}
+
+@mixin padding {
+    padding: 50px;
+
+    @media screen and (max-width: $blazeit) {
+        padding: 36px;
+    }
+}
+
+@mixin trans($type, $anim) {
+    transition: $type 300ms $anim;
+}
+
+@mixin gradient-text {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin arrow {
+    position: relative;
+
+    &:hover {
+        &::before {
+            transform: translateY(-50%) translateX(0);
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        content: "⤏";
+        font-size: 20px;
+        position: absolute;
+        color: $midnight;
+        top: 48%;
+        right: -14px;
+        opacity: 0;
+        transition: transform 300ms ease, opacity 300ms ease;
+        transform: translateY(-50%) translateX(-20px);
+    }
+}
