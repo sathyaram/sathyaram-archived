@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Hero from "./hero"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Hero siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
       >
         <main>{children}</main>
