@@ -168,7 +168,6 @@ body {
       }
     }
 
-    
     section#websites,
     section#designs,
     section#photography,
@@ -185,11 +184,11 @@ body {
         border-radius: 5px;
         display: inline-block;
       }
-  
+
       .subtitle {
         color: white;
       }
-  
+
       .tilt .url {
         font-size: 13px;
         color: white;
@@ -201,7 +200,7 @@ body {
       }
     }
   }
-  
+
   &.fade-in {
     &:not(.midnight) {
       .background {
@@ -217,9 +216,6 @@ body {
 
   &.menu-open {
     .eyebrow {
-      position: fixed;
-      z-index: 5;
-
       .contact a:not(.music),
       .social-media a {
         color: white;
@@ -314,7 +310,7 @@ body {
 
 h1,
 h2 {
-  width: 250px;
+  width: 259px;
 }
 
 h1 {
@@ -368,8 +364,6 @@ h1 {
     font-size: 60px;
   }
 }
-
-
 
 h2 {
   text-align: right;

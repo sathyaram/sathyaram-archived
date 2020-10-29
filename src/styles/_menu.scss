@@ -38,7 +38,7 @@ nav.menu {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  overflow: hidden;
+  // overflow: hidden;
   text-align: center;
   background: $gradient;
 
@@ -340,6 +340,7 @@ nav.utility {
   text-transform: uppercase;
   width: 100%;
   padding: 36px 50px;
+  // transform: translateX(-100%);
 
   @media screen and (max-width: $blazeit) {
     padding: 36px;

@@ -1,6 +1,6 @@
 import React from "react"
 import Tilt from "react-tilt";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Image from "../components/image"
 import Menu from "../components/menu"
