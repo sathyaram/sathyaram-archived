@@ -1,5 +1,6 @@
 import React from "react"
 import Tilt from "react-tilt";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default function Main() {
 
@@ -19,8 +20,7 @@ export default function Main() {
         <div className="section-text">
           <h3 className="section-title">Website Development</h3>
           <p className="section-desc">
-            I build and activate brands through cultural insight and strategic
-            vision.
+            I craft and develop full-scale websites and engaging UI with a variety of technologies.
             </p>
         </div>
         <div className="section-content">
@@ -32,10 +32,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    {" "}
-                      Everything everything Everything everything Everything
-                      everything Everything everything Everything everything
-                      Everything everything Everything everything.
+                    I had the opportunity to help with the front-end development for The Vilcek Foundation, who raise awareness of immigrant contributions in the United States and foster appreciation of the arts and sciences.
                     </p>
                 </div>
               </div>
@@ -86,10 +83,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    {" "}
-                      Everything everything Everything everything Everything
-                      everything Everything everything Everything everything
-                      Everything everything Everything everything.
+                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
                     </p>
                 </div>
               </div>
@@ -141,10 +135,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    {" "}
-                      Everything everything Everything everything Everything
-                      everything Everything everything Everything everything
-                      Everything everything Everything everything.
+                  At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
                     </p>
                 </div>
               </div>
@@ -198,10 +189,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    {" "}
-                      Everything everything Everything everything Everything
-                      everything Everything everything Everything everything
-                      Everything everything Everything everything.
+                    An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site.
                     </p>
                 </div>
               </div>
@@ -249,7 +237,7 @@ export default function Main() {
         <div className="section-text">
           <h3 className="section-title">Web &amp; Interface Design</h3>
           <p className="section-desc">
-            I build and activate brands through cultural insight and strategic
+            I build and activate brands with cultural insight and strategic
             vision.
             </p>
         </div>
@@ -340,7 +328,7 @@ export default function Main() {
       <section id="projects" className="projects">
         <div className="section-text">
           <h3 className="section-title">Projects</h3>
-          <p className="section-desc">A multi award winning photographer</p>
+          <p className="section-desc">I'm a passionate nerd, and I toy around with new tech while making things for the internet.</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
@@ -446,12 +434,14 @@ export default function Main() {
       <section id="photography" className="photography">
         <div className="section-text">
           <h3 className="section-title">Photography</h3>
-          <p className="section-desc">A multi award winning photographer</p>
+          <p className="section-desc">I'm an award winning photographer interested in a variety of disciplines but focused on people, specifically portraits and lifestyle.</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
-            <h5>Portraits</h5>
-            <img alt="me" src="https://sathyaram.com/images/chance.jpg" />
+            <AniLink cover direction="right" to="/portraits">
+              <h5>Portraits</h5>
+              <img alt="me" src="https://sathyaram.com/images/chance.jpg" />
+            </AniLink>
           </Tilt>
           <Tilt className="tilt">
             <h5>Lifestyle</h5>
@@ -487,7 +477,7 @@ export default function Main() {
       <section className="testimonials">
         <div className="testimonial-text">
           <h4>Real folks. Real results.</h4>
-          <p>
+          <p className="section-desc">
             I've worked with many brands and it seems people like my work.
             </p>
         </div>
@@ -495,8 +485,7 @@ export default function Main() {
           <div className="testimonial">
             <div className="quote">
               <div className="quote-text">
-                Sathya delivered on his skill set, he gave us the exact kind
-                of photos we wanted.
+                Sathya was a pleasure to work with! Prompt, fun, engaging and professional.
                 </div>
               <div className="quote-cite">Thaisi Da Silva</div>
               <div className="quote-role">Director, Reporting Labs</div>
@@ -594,8 +583,7 @@ export default function Main() {
           <div className="testimonial">
             <div className="quote">
               <div className="quote-text">
-                Sathya delivered on his skill set, he gave us the exact kind
-                of photos we wanted.
+                Sathya executed on our jumble of thoughts and made a beautiful branding scheme and website.
                 </div>
               <div className="quote-cite">David Joseph</div>
               <div className="quote-role">Executive Director</div>
@@ -635,8 +623,7 @@ export default function Main() {
           <div className="testimonial">
             <div className="quote">
               <div className="quote-text">
-                Sathya delivered on his skill set, he gave us the exact kind
-                of photos we wanted.
+                Easily one of my best employee's and a genuine creative force.
                 </div>
               <div className="quote-cite">Greg Skinner</div>
               <div className="quote-role">
@@ -778,8 +765,7 @@ export default function Main() {
           <div className="testimonial">
             <div className="quote">
               <div className="quote-text">
-                Sathya delivered on his skill set, he gave us the exact kind
-                of photos we wanted.
+                Sathya's creativity and energy was exactly what we and our website needed!
                 </div>
               <div className="quote-cite">Emily Farr</div>
               <div className="quote-role">Agency Director</div>

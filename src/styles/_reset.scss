@@ -2,6 +2,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Maison";
+  src: url("/fonts/Maison-Demi.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maison";
+  src: url("/fonts/Maison-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Maison";
+  src: url("/fonts/Maison-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorksSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html,
 body,
 div,

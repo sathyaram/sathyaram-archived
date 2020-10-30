@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-// import AniLink from "gatsby-plugin-transition-link/AniLink";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
@@ -14,6 +14,7 @@ export default function Menu() {
   };
 
   const closeMenu = (e) => {
+    console.log('clicked');
     document.body.classList.remove("menu-open");
   };
 
@@ -70,27 +71,26 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
           <span></span>
         </div>
       </button>
-
       <nav className="menu" role="navigation">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <AniLink onClick={closeMenu} cover direction="right" to="/">Home</AniLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <AniLink onClick={closeMenu} cover direction="right" to="/about">About</AniLink>
           </li>
-          <li>
-            <AnchorLink onClick={closeMenu} to="#websites" title="Our team">
+          <li onClick={closeMenu} >
+            <AnchorLink to="/#websites" title="Our team">
               <span>Websites</span>
             </AnchorLink>
           </li>
-          <li>
-            <AnchorLink onClick={closeMenu} to="#designs" title="Our team">
+          <li onClick={closeMenu}>
+            <AnchorLink to="/#designs" title="Our team">
               <span>Designs</span>
             </AnchorLink>
           </li>
-          <li>
-            <AnchorLink onClick={closeMenu} to="#photography" title="Our team">
+          <li onClick={closeMenu} >
+            <AnchorLink to="/#photography" title="Our team">
               <span>Photography</span>
             </AnchorLink>
           </li>

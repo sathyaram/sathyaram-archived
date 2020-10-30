@@ -1,0 +1,52 @@
+.about-page {
+  h1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  header {
+    padding: 200px 50px;
+    text-align: center;
+    @include container-small;
+
+    @media screen and (max-width: $tablet) {
+      padding: 150px 36px;
+    }
+  }
+
+  main {
+    @include container;
+    .content {
+      font-size: 30px;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+
+    .about-title {
+      width: 300px;
+      padding-right: 50px;
+      font-family: $maison;
+      font-size: $h5;
+    }
+
+    .about-content {
+      font-size: 30px;
+      width: calc(100% - 250px);
+    }
+  }
+}
+
+.photography-content {
+  padding: 50px;
+  max-width: 500px;
+
+  img {
+    width: 100%;
+  }
+}

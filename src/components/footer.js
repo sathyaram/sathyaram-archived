@@ -9,7 +9,7 @@ const Footer = () => (
           <h5>Let's work together.</h5>
           <p>I'm available to make you a website, or take photos.</p>
         </div>
-        <button>Let's Chat!</button>
+        <button>Hit me up!</button>
       </a>
     </Tilt>
     <div className="villain">
