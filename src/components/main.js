@@ -2,6 +2,7 @@ import React from "react"
 import Tilt from "react-tilt";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+
 export default function Main() {
 
   const openDesc = (e) => {
@@ -434,7 +435,7 @@ export default function Main() {
       <section id="photography" className="photography">
         <div className="section-text">
           <h3 className="section-title">Photography</h3>
-          <p className="section-desc">I'm an award winning photographer interested in a variety of disciplines but focused on people, specifically portraits and lifestyle.</p>
+          <p className="section-desc">I'm an award winning photographer accomplished in a variety of disciplines but focused on people, specifically portraits and lifestyle.</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
@@ -444,12 +445,13 @@ export default function Main() {
             </AniLink>
           </Tilt>
           <Tilt className="tilt">
+          <AniLink cover direction="right" to="/lifestyle">
             <h5>Lifestyle</h5>
-
             <img
               alt="me"
               src="https://sathyaram.com/images/rachel-americana.jpg"
             />
+            </AniLink>
           </Tilt>
           <Tilt className="tilt">
             <h5>Cosplay</h5>

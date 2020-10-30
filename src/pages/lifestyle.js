@@ -1,51 +1,20 @@
 import React from "react"
-import Swiper from "react-id-swiper";
 
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import SEO from "../components/seo"
 
-const params = {
-  grabCursor: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  freeMode: true,
-  loop: true,
-};
-
-const params1 = {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  thumbs: {
-    swiper: params2
-  }
-}
-const params2 = {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-}
 
 
-const Portraits = () => (
-  <div className="portraits-page">
+const Lifestyle = () => (
+  <div className="lifestyle-page">
    <Sky />
     <Menu />
-    <SEO title="Portraits" />
+    <SEO title="Lifestyle" />
     <header>
-      <h1>Portraits</h1>
+      <h1>Lifestyle</h1>
     </header>
     <div className="photography-content">
-    <Swiper {...params1}>
 
     <img
       alt="me"
@@ -72,9 +41,8 @@ const Portraits = () => (
       src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
     />
 
-    </Swiper>
     </div>
   </div>
 )
 
-export default Portraits
+export default Lifestyle

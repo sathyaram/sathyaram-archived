@@ -30,7 +30,7 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
           />
         </svg>
       </div>
-      <a className="logo" href="/" name="logo">
+      <AniLink className="logo" name="logo" cover direction="right" to="/">
         <svg version="1.1" viewBox="0 0 62.5 28.7">
           <g>
             <polygon
@@ -43,7 +43,7 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             />
           </g>
         </svg>
-      </a>
+        </AniLink>
       <nav className="utility" role="navigation">
         <ul>
           <li>

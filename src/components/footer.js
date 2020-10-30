@@ -69,7 +69,7 @@ const Footer = () => (
           <div>Made with Gatsby + (S)CSS</div>
           <div>All photos by Sathya Ram</div>
         </div>
-        <p className="copyright">© 2020 Sathya Ram. All rights reserved.</p>
+        <p className="copyright"> © {new Date().getFullYear()} Sathya Ram. All rights reserved.</p>
       </address>
     </div>
   </footer>

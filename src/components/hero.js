@@ -1,4 +1,6 @@
 import React from "react"
+import Image from '../components/Image';
+
 
 const Hero = () => (
   <header className="hero" role="banner">
@@ -24,12 +26,14 @@ const Hero = () => (
       <div className="me">
         <div className="photoOfMe">
           <img alt="me" src="https://sathyaram.com/images/me1.png" />
+          {/* <Image alt="me" filename="me1.png" /> */}
         </div>
         <div className="photoOfMe2">
           <img
             src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/15sL-me2.png"
             alt="me1"
           />
+          {/* <Image alt="me2" filename="me2.png" /> */}
         </div>
       </div>
       <h2>
