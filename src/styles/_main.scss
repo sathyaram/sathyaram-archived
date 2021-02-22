@@ -19,7 +19,7 @@ main {
 
   .container {
     @include container;
-    max-width: 980px;
+    max-width: 1000px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -32,7 +32,7 @@ main {
 }
 
 .about-me {
-  max-width: 340px;
+  max-width: 400px;
 
   @media screen and (max-width: $screen) {
     margin: 0 auto;
@@ -71,7 +71,7 @@ main {
 }
 
 .skills {
-  max-width: 340px;
+  max-width: 400px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -82,7 +82,7 @@ main {
 
   li {
     padding: 1.25rem 0.25rem;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
 
     @media screen and (max-width: $tablet) {
@@ -641,6 +641,10 @@ section#websites {
       transform: translateZ(20px) translateX(3px);
     }
 
+    .description p {
+      color: black;
+    }
+
     &:hover {
       .section-media {
         transform: translateX(-50%) scale(1.1);
@@ -966,22 +970,42 @@ section#photography {
 
       &:nth-child(1) {
         color: #0071bc;
+
+        a {
+          color: #0071bc;
+        }
       }
 
       &:nth-child(2) {
         color: #769e36;
+
+        a {
+          color: #769e36;
+        }
       }
 
       &:nth-child(3) {
         color: #ed1c24;
+
+        a {
+          color: #ed1c24;
+        }
       }
 
       &:nth-child(4) {
         color: rgb(82, 82, 82);
+
+        a {
+          color: rgb(82, 82, 82);
+        }
       }
 
       &:nth-child(5) {
         color: #4a6396;
+
+        a {
+          color: #4a6396;
+        }
       }
     }
   }

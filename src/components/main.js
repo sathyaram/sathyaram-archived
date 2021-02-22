@@ -480,7 +480,7 @@ export default function Main() {
         <div className="testimonial-text">
           <h4>Real folks. Real results.</h4>
           <p className="section-desc">
-            I've worked with many brands and it seems people like my work.
+            I've worked with many brands, enterprises and individuals and it seems people like my work.
             </p>
         </div>
         <div className="testimonial-content">
