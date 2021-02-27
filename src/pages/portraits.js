@@ -1,6 +1,5 @@
 import React from "react"
 import Swiper from "react-id-swiper";
-
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import SEO from "../components/seo"
@@ -17,6 +16,14 @@ const params = {
   loop: true,
 };
 
+const params2 = {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+}
+
 const params1 = {
   spaceBetween: 10,
   navigation: {
@@ -27,14 +34,6 @@ const params1 = {
     swiper: params2
   }
 }
-const params2 = {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-}
-
 
 const Portraits = () => (
   <div className="portraits-page">

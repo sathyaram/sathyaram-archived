@@ -1,13 +1,12 @@
 import React from "react"
-import Tilt from "react-tilt";
-// import AniLink from "gatsby-plugin-transition-link/AniLink";
-
 import Image from "../components/image"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import Hero from "../components/hero"
 import Main from "../components/main"
 import Footer from "../components/footer"
+import { window, document, exists } from 'browser-monads';
+
 
 export default function App() {
   let letters = document.querySelectorAll("#bob span");
@@ -33,6 +32,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <div className="loader"></div>
       <Sky />
       <Menu />
       <Hero />

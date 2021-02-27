@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { window, document, exists } from 'browser-monads';
 
 
 export default function Menu() {
@@ -17,8 +18,7 @@ export default function Menu() {
     console.log('clicked');
     document.body.classList.remove("menu-open");
   };
-
-
+  
   return (
     <aside role="region">
       <div className="eclipse" onClick={eclipse}>
