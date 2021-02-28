@@ -133,6 +133,14 @@ section {
   display: block;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
 ol,
 ul {
   list-style: none;
@@ -161,6 +169,7 @@ body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased; 
 }
 
 strong {

@@ -2,17 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import { window, document, exists } from 'browser-monads';
-
+import { document } from 'browser-monads';
 
 export default function Menu() {
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      // eslint-disable-next-line global-require
-      require("smooth-scroll")('a[href*="#"]')
-    }
-
-  }, [])
   const eclipse = (e) => {
     document.body.classList.toggle("midnight");
   };
@@ -25,10 +17,10 @@ export default function Menu() {
     console.log('clicked');
     document.body.classList.remove("menu-open");
   };
-  
+
   return (
     <aside role="region">
-      <div className="eclipse" onClick={eclipse}>
+      <button className="eclipse" onClick={eclipse} role="button">
         <svg className="moon" viewBox="0 0 11.6 11.7">
           <path
             className="st0"
@@ -36,7 +28,7 @@ export default function Menu() {
 c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.2,4.1,7.2z"
           />
         </svg>
-      </div>
+      </button>
       <AniLink className="logo" name="logo" cover direction="right" to="/">
         <svg version="1.1" viewBox="0 0 62.5 28.7">
           <g>
@@ -50,7 +42,7 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             />
           </g>
         </svg>
-        </AniLink>
+      </AniLink>
       <nav className="utility" role="navigation">
         <ul>
           <li>
@@ -84,12 +76,11 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <AniLink onClick={closeMenu} cover direction="right" to="/">Home</AniLink>
           </li>
           <li>
-            <AniLink onClick={closeMenu} cover direction="right" to="/about">About</AniLink>
+            <AniLink onClick={closeMenu} cover direction="right" to="/about"
+            >About</AniLink>
           </li>
           <li onClick={closeMenu} >
-       
             <AniLink onClick={closeMenu} cover direction="right" to="/#websites">Websites</AniLink>
-
           </li>
           <li onClick={closeMenu}>
             <Link to="/#designs" title="Our team">

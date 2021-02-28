@@ -1,18 +1,18 @@
-import React from "react"
+import React from 'react';
 
-const Sky = () => (
-  <div className="sky background">
-    <div className="rays">
-      <div className="ray"></div>
-      <div className="ray"></div>
-      <div className="ray"></div>
+const Sky = ({ bgClass = '' }) => (
+    <div className={`sky background ${bgClass}`}>
+        <div className="rays">
+            <div className="ray"></div>
+            <div className="ray"></div>
+            <div className="ray"></div>
+        </div>
+        <div className="raindrops">
+            <div className="rain"></div>
+            <div className="rain"></div>
+            <div className="rain"></div>
+        </div>
     </div>
-    <div className="raindrops">
-      <div className="rain"></div>
-      <div className="rain"></div>
-      <div className="rain"></div>
-    </div>
-  </div>
-)
+);
 
-export default Sky
+export default Sky;

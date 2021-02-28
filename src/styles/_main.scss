@@ -623,6 +623,7 @@ section#websites {
     transition: transform 300ms ease;
     perspective: 1000px;
     z-index: -1;
+    -webkit-transform: translate3d(-50%, 0, 0);
   }
 
   .overflow-wrapper {

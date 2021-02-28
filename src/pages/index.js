@@ -5,14 +5,10 @@ import Sky from "../components/sky"
 import Hero from "../components/hero"
 import Main from "../components/main"
 import Footer from "../components/footer"
-import { window, document, exists } from 'browser-monads';
+import { window, document } from 'browser-monads';
 
 
 export default function App() {
-  let letters = document.querySelectorAll("#bob span");
-  let bg = document.querySelector(".background");
-
-
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 10) {
       document.body.classList.add("fade-in");
@@ -21,21 +17,14 @@ export default function App() {
     }
   });
 
-  for (let i = 0; i < letters.length; i++) {
-    letters[i].addEventListener("mouseover", function () {
-      bg.classList.add("color-" + i);
-    });
-    letters[i].addEventListener("mouseout", function () {
-      bg.classList.remove("color-" + i);
-    });
-  }
+  const [bgClass, setBgClass] = React.useState('');
 
   return (
     <div className="App">
       <div className="loader"></div>
-      <Sky />
+      <Sky bgClass={bgClass} />
       <Menu />
-      <Hero />
+      <Hero setBgClass={setBgClass}/>
       <section className="about">
         <div className="container">
           <div className="about-me">

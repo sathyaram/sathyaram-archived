@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React from "react"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import SEO from "../components/seo"
@@ -22,7 +22,7 @@ const Portraits = () => {
     //   captionTextTransform: "uppercase",
     // }
   };
-  
+
   return (
     <div className="internal-page portraits-page">
       <Sky />

@@ -605,6 +605,8 @@
   transform: rotateY(30deg);
   position: relative;
   transition: transform 300ms ease, box-shadow 300ms ease;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
   img {
     border-radius: 8px;
