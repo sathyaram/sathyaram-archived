@@ -1,53 +1,28 @@
-import React, {useEffect, useRef, useState} from "react"
-import Swiper from "react-id-swiper";
+import React, { useEffect, useRef, useState } from "react"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import SEO from "../components/seo"
+import { SRLWrapper } from "simple-react-lightbox";
 
 const Portraits = () => {
-  var galleryParams = {
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    thumbs: {
-      swiper: thumbParams
-    }
-  }
-
-  var thumbParams = {
-    // spaceBetween: 10,
-    // slidesPerView: 4,
-    // freeMode: true,
-    // watchSlidesVisibility: true,
-    // watchSlidesProgress: true,
-    // slideToClickedSlide: true
-
-    spaceBetween: 10,
-      // centeredSlides: true,
-    slidesPerView: 4,
-
-      // slidesPerView: 'auto',
-      touchRatio: 0.2,
-      slideToClickedSlide: true
-  }
-
-  const gallerySwiperRef = useRef(null);
-  const thumbnailSwiperRef = useRef(null);
-
-  useEffect(() => {
-    const gallerySwiper = gallerySwiperRef.current.swiper;
-    const thumbnailSwiper = thumbnailSwiperRef.current.swiper;
-    if (gallerySwiper.controller && thumbnailSwiper.controller
-    ) {
-      gallerySwiper.controller.control = thumbnailSwiper;
-      thumbnailSwiper.controller.control = gallerySwiper;
-    }
-  }, []);
+  const options = {
+    // settings: {
+    //   overlayColor: "rgb(25, 136, 124)",
+    //   autoplaySpeed: 1500,
+    //   transitionSpeed: 900,
+    // },
+    // buttons: {
+    //   backgroundColor: "#1b5245",
+    //   iconColor: "rgba(126, 172, 139, 0.8)",
+    // },
+    // caption: {
+    //   captionColor: "#a6cfa5",
+    //   captionFontFamily: "Raleway, sans-serif",
+    //   captionFontWeight: "300",
+    //   captionTextTransform: "uppercase",
+    // }
+  };
   
-  
-
   return (
     <div className="portraits-page">
       <Sky />
@@ -57,58 +32,40 @@ const Portraits = () => {
         <h1>Portraits</h1>
       </header>
       <div className="photography-content">
-        <Swiper {...galleryParams} ref={gallerySwiperRef}>
-        <img
-        alt="me"
-        src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-        />
 
-        <img
-          alt="me"
-          src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-        />
+        <SRLWrapper options={options}>
+          <div class="photography-image">
+            <img
+              alt="me"
+              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
+            />
+          </div>
+          <div class="photography-image">
+            <img
+              alt="me"
+              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
+            />
+          </div>
+          <div class="photography-image">
+            <img
+              alt="me"
+              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
+            />
+          </div>
+          <div class="photography-image">
 
-        <img
-          alt="me"
-          src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-        />
-
-        <img
-          alt="me"
-          src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-        />
-
-        <img
-          alt="me"
-          src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-        />
-        </Swiper>
-        <Swiper {...thumbParams} ref={thumbnailSwiperRef}>
-          <img
-          alt="me"
-          src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-          />
-
-          <img
-            alt="me"
-            src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-          />
-
-          <img
-            alt="me"
-            src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-          />
-
-          <img
-            alt="me"
-            src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-          />
-
-          <img
-            alt="me"
-            src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-          />
-        </Swiper>
+            <img
+              alt="me"
+              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
+            />
+          </div>
+          <div class="photography-image">
+            <img
+              alt="me"
+              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
+            />
+          </div>
+        </SRLWrapper>
       </div>
     </div>
   )

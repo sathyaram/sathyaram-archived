@@ -60,7 +60,8 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <AnchorLink to="#photography" title="Our team">
               <span>Photos</span>
             </AnchorLink>
-          </li>
+          
+        </li>
         </ul>
       </nav>
       <button className="menu-toggle" onClick={menuOpen}>

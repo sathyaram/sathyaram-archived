@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 
 const Lifestyle = () => (
-  <div className="lifestyle-page">
+  <div className="internal-page lifestyle-page">
    <Sky />
     <Menu />
     <SEO title="Lifestyle" />

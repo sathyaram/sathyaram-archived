@@ -42,7 +42,7 @@
   }
 }
 
-.portraits-page {
+.internal-page {
   header {
     text-align: center;
     padding: 41px;
@@ -57,18 +57,25 @@
 
 .photography-content {
   padding: 50px;
-  max-width: 600px;
+  max-width: 1200px;
   position: relative;
   margin: 0 auto;
 
-  .swiper-container {
-    position: static;
-  }
+  > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 
-  // img {
-  //   height: 80vh;
-  //   width: auto !important;
-  // }
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photography-image {
+      flex-basis: 32%;
+      cursor: pointer;
+      margin: 1%;
+    }
+  }
 }
 
 .lifestyle-page {

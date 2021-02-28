@@ -7,3 +7,9 @@
 // You can delete this file if you're not using it
 
 import "./src/styles/styles.scss";
+import React from "react"
+import SimpleReactLightbox from 'simple-react-lightbox'
+
+export const wrapRootElement = ({ element }) => (
+  <SimpleReactLightbox>{element}</SimpleReactLightbox>
+)
