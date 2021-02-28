@@ -1,11 +1,18 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { window, document, exists } from 'browser-monads';
 
 
 export default function Menu() {
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      // eslint-disable-next-line global-require
+      require("smooth-scroll")('a[href*="#"]')
+    }
+
+  }, [])
   const eclipse = (e) => {
     document.body.classList.toggle("midnight");
   };
@@ -47,21 +54,20 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
       <nav className="utility" role="navigation">
         <ul>
           <li>
-            <AnchorLink to="#websites" title="Our team">
+            <Link to="#websites" title="Our team">
               <span>Websites</span>
-            </AnchorLink>
+            </Link>
           </li>
           <li>
-            <AnchorLink to="#designs" title="Our team">
+            <Link to="#designs" title="Our team">
               <span>Designs</span>
-            </AnchorLink>
+            </Link>
           </li>
           <li>
-            <AnchorLink to="#photography" title="Our team">
+            <Link to="#photography" title="Our team">
               <span>Photos</span>
-            </AnchorLink>
-          
-        </li>
+            </Link>
+          </li>
         </ul>
       </nav>
       <button className="menu-toggle" onClick={menuOpen}>
@@ -81,21 +87,19 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <AniLink onClick={closeMenu} cover direction="right" to="/about">About</AniLink>
           </li>
           <li onClick={closeMenu} >
-            {/* <AnchorLink to="/#websites" title="Our team">
-              <span>Websites</span>
-            </AnchorLink> */}
+       
             <AniLink onClick={closeMenu} cover direction="right" to="/#websites">Websites</AniLink>
 
           </li>
           <li onClick={closeMenu}>
-            <AnchorLink to="/#designs" title="Our team">
+            <Link to="/#designs" title="Our team">
               <span>Designs</span>
-            </AnchorLink>
+            </Link>
           </li>
           <li onClick={closeMenu} >
-            <AnchorLink to="/#photography" title="Our team">
+            <Link to="/#photography" title="Our team">
               <span>Photography</span>
-            </AnchorLink>
+            </Link>
           </li>
         </ul>
         <div className="eyebrow">

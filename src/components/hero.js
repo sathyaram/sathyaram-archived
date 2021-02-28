@@ -7,23 +7,22 @@ import Img from 'gatsby-image'
 const Hero = () => {
   const { me1, me2 } = useStaticQuery(graphql`
     query {
-        me1: file(name: { eq: "me1" }) {
-            childImageSharp {
-                fluid(maxWidth: 700) {
-                  ...GatsbyImageSharpFluid_noBase64
-                }
-            }
-          }
-          me2: file(name: { eq: "me2" }) {
-            childImageSharp {
-                fluid(maxWidth: 700) {
-                  ...GatsbyImageSharpFluid_noBase64
-                }
-            }
+      me1: file(name: { eq: "me1" }) {
+          childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
           }
         }
+        me2: file(name: { eq: "me2" }) {
+          childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+          }
+        }
+      }
   `)
-
   return (
     (
       <header className="hero" role="banner">
@@ -49,11 +48,11 @@ const Hero = () => {
           <div className="me">
             <div className="photoOfMe">
               {/* <img alt="me" src="https://sathyaram.com/images/me1.png" /> */}
-              <Img fluid={me1.childImageSharp.fluid}/>
+              <Img fluid={me1.childImageSharp.fluid} />
               {/* <Image alt="me" filename="me1.png" /> */}
             </div>
             <div className="photoOfMe2">
-              <Img fluid={me2.childImageSharp.fluid}/>
+              <Img fluid={me2.childImageSharp.fluid} />
               {/* <img
                 src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/15sL-me2.png"
                 alt="me1"

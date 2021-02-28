@@ -24,7 +24,7 @@ const Portraits = () => {
   };
   
   return (
-    <div className="portraits-page">
+    <div className="internal-page portraits-page">
       <Sky />
       <Menu />
       <SEO title="Portraits" />
