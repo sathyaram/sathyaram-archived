@@ -24,15 +24,15 @@ const Portraits = () => {
   };
 
   return (
-    <div className="internal-page portraits-page">
+    <div className="internal-page photography-page portraits-page">
       <Sky />
       <Menu />
       <SEO title="Portraits" />
       <header>
         <h1>Portraits</h1>
+        <p>Specifically selected bests.</p>
       </header>
       <div className="photography-content">
-
         <SRLWrapper options={options}>
           <div class="photography-image">
             <img

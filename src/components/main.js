@@ -77,9 +77,9 @@ export default function Main() {
           <Tilt className="tilt">
             <div className="section-info">
               <div className="left">
-                <div className="title">Fudtruk</div>
+                <div className="title">Gnarly Knots</div>
                 <div className="subtitle">
-                  Lehigh Valley's Freshest Food Truck
+                  Gourmet Pretzel Company
                   </div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
@@ -92,13 +92,14 @@ export default function Main() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://fudtruk.lehigh.edu"
+                  href="https://gnarlyknots.com"
                   className="link"
                 >
-                  fudtruk.lehigh.edu
+                  gnarlyknots.com
                   </a>
                 <ul className="tags">
-                  <li>Drupal 7</li>
+                  <li>WordPress</li>
+                  <li>JavaScript</li>
                   <li>Web Design</li>
                   <li>Graphic Design</li>
                   <li>Photo + Video</li>
@@ -109,7 +110,7 @@ export default function Main() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://fudtruk.lehigh.edu"
+                href="https://gnarlyknots.com"
               >
                 View Website
                 </a>
@@ -121,7 +122,7 @@ export default function Main() {
               <div className="section-media">
                 <img
                   alt="me"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/wjlR-fudtruk-uc.png"
+                  src="pretzel.png"
                 />
               </div>
             </div>
@@ -129,9 +130,9 @@ export default function Main() {
           <Tilt className="tilt">
             <div className="section-info">
               <div className="left">
-                <div className="title">HHMI</div>
+                <div className="title">Howard Hughes Medical Institute</div>
                 <div className="subtitle">
-                  Howard Hughes Medical Institute
+                Empowering Educators. Inspiring Students.
                   </div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
@@ -144,7 +145,7 @@ export default function Main() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://biointeractive.org"
+                  href="biointeractive.org"
                   className="link"
                 >
                   biointeractive.org
@@ -284,19 +285,17 @@ export default function Main() {
             <div className="section-media">
               <img
                 alt="me"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gV0Z-LehighEngineering.jpg"
+                src="fudtrukwebsite_4x.jpeg"
               />
             </div>
             <div className="section-info">
-              <div className="title">Lehigh Engineering</div>
-              <div className="subtitle">
-                P.C Rossin College of Engineering
-                </div>
+              <div className="title">Fudtruk</div>
+              <div className="subtitle">Lehigh Valley's Freshest Food Truck</div>
               <p className="description">So awesome.</p>
               <div className="links">
                 <a
                   rel="noopener noreferrer"
-                  href="https://dribbble.com/shots/5384304-Lehigh-Engineering-Website"
+                  href="https://dribbble.com/sathyaram/projects/915857-Fudtruk"
                 >
                   View Designs
                   </a>
@@ -307,12 +306,14 @@ export default function Main() {
             <div className="section-media">
               <img
                 alt="me"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/Vzbn-GnarlyKnots.jpg"
+                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gV0Z-LehighEngineering.jpg"
               />
             </div>
             <div className="section-info">
-              <div className="title">Gnarly Knots</div>
-              <div className="subtitle">Gourmet Pretzel Company</div>
+              <div className="title">Lehigh Engineering</div>
+              <div className="subtitle">
+                P.C Rossin College of Engineering
+                </div>
               <p className="description">So awesome.</p>
               <div className="links">
                 <a
@@ -476,9 +477,9 @@ export default function Main() {
           </Tilt>
         </div>
       </section>
-      <section className="testimonials">
-        <div className="testimonial-text">
-          <h4>Real folks. Real results.</h4>
+      <section id="testimonials" className="testimonials">
+        <div className="section-text">
+          <h3 className="section-title">Real folks. Real results.</h3>
           <p className="section-desc">
             I've worked with many brands, enterprises and individuals and it seems people like my work.
             </p>

@@ -80,7 +80,7 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             >About</AniLink>
           </li>
           <li onClick={closeMenu} >
-            <AniLink onClick={closeMenu} cover direction="right" to="/#websites">Websites</AniLink>
+            <Link to="/#websites">Websites</Link>
           </li>
           <li onClick={closeMenu}>
             <Link to="/#designs" title="Our team">
@@ -91,6 +91,28 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <Link to="/#photography" title="Our team">
               <span>Photography</span>
             </Link>
+          </li>
+        </ul>
+        <ul className="sub-menu">
+        <li>
+            <AniLink onClick={closeMenu} cover direction="right" to="/portraits"
+            >Portraits</AniLink>
+          </li>
+          <li>
+            <AniLink onClick={closeMenu} cover direction="right" to="/lifestyle"
+            >Lifestyle</AniLink>
+          </li>
+          <li>
+            <AniLink onClick={closeMenu} cover direction="right" to="/cosplay"
+            >Cosplay</AniLink>
+          </li>
+          <li>
+            <AniLink onClick={closeMenu} cover direction="right" to="/studio"
+            >Studio</AniLink>
+          </li>
+          <li>
+            <AniLink onClick={closeMenu} cover direction="right" to="/space"
+            >Space</AniLink>
           </li>
         </ul>
         <div className="eyebrow">
@@ -109,7 +131,6 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
               </svg>
               <span>Instagram</span>
             </a>
-
             <a
               target="_blank"
               rel="noopener noreferrer"

@@ -93,7 +93,7 @@ $shadow-big: 30px 30px 60px 20px rgba(0, 0, 0, 0.1);
     }
 
     &::before {
-        content: "⤏";
+        // content: "⤏";
         font-size: 20px;
         position: absolute;
         color: $midnight;
