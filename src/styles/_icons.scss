@@ -52,6 +52,8 @@
   flex-direction: column;
   max-width: 200px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 44px;
 
   @media screen and (max-width: $screen) {
     flex-direction: row;
@@ -59,18 +61,7 @@
     align-items: space-between;
     max-width: 400px;
     margin: 2.5rem auto;
-  }
-
-  a {
-    position: relative;
-    z-index: 3;
-    font-size: 14px;
-    min-height: 70px;
-    color: #fff;
-    line-height: 50px;
-    font-size: 1rem;
-    text-align: center;
-    flex-basis: 200px;
+    padding: 0;
   }
 }
 
@@ -434,6 +425,8 @@
     transform: translateY(25px);
     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
     transition: opacity 400ms ease, transform 300ms ease;
+    opacity: 1;
+    transform: translateX(-50%) translateY(30px);
   }
 }
 

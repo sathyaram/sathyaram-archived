@@ -44,7 +44,7 @@ export default function App() {
             </p>
           </div>
           <div className="framicons">
-            <div className="shooter" name="web anchor">
+            <a href="#websites" className="shooter" name="web anchor">
               <div className="monitor shape">
                 <div className="screen">
                   <div className="code">
@@ -69,8 +69,8 @@ export default function App() {
                   <div className="foot bottom"></div>
                 </div>
               </div>
-            </div>
-            <div className="shooter" name="graphic">
+            </a>
+            <a href="#designs" className="shooter" name="graphic">
               <div className="box shape">
                 <div className="draw">
                   <svg viewBox="0 0 78.2 54.3">
@@ -94,10 +94,10 @@ export default function App() {
                 <div className="anchor"></div>
                 <div className="anchor"></div>
               </div>
-            </div>
-            <div className="shooter" name="photography">
+            </a>
+            <a href="#photography" className="shooter" name="photography">
               <div className="photo shape"></div>
-            </div>
+            </a>
           </div>
           <div className="skills">
             <ul>

@@ -13,9 +13,15 @@ main {
   @include padding;
   padding: 100px 50px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(50, 38, 53, 0.1);
-  box-shadow: 30px 30px 60px 20px rgba(0, 0, 0, 0.1);
+  // box-shadow: 30px 30px 60px 20px rgba(0, 0, 0, 0.05);
+  margin: 0 50px;
+  
+
+  @media screen and (max-width: $blazeit) {
+    margin: 0 18px;
+  }
 
   .container {
     @include container;
@@ -33,6 +39,7 @@ main {
 
 .about-me {
   max-width: 400px;
+  width: 100%;
 
   @media screen and (max-width: $screen) {
     margin: 0 auto;
@@ -40,7 +47,7 @@ main {
 
   h3 {
     margin-bottom: 1rem;
-    font-size: 26px;
+    font-size: 32px;
     position: relative;
 
     &::before,
@@ -53,7 +60,7 @@ main {
       position: absolute;
       top: 40%;
       left: -110%;
-      z-index: -1;
+      z-index: 1;
     }
 
     &::after {
@@ -64,7 +71,7 @@ main {
   }
 
   p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 135%;
     font-weight: 300;
   }
@@ -379,7 +386,7 @@ section#testimonials {
     }
   }
   .section-title {
-    font-size: 38px;
+    font-size: 40px;
     line-height: 100%;
     font-weight: 600;
     position: relative;
@@ -493,18 +500,21 @@ section#testimonials {
         padding: 0.5rem;
         font-size: 16px;
         font-weight: bold;
-        border-radius: 3px;
+        border-radius: 8px;
         text-align: center;
         z-index: 3;
         background-color: rgba($lightning, 0.25);
         color: $midnight;
-        border: 2px solid transparent;
+        border: 3px solid transparent;
+        border-left-width: 3px;
         transition: all 300ms ease;
+        box-shadow: 3px 3px 1px 0px rgb(242, 242, 242);
         @include arrow;
 
         &:hover {
           color: $waterfall;
-          border: 2px solid $lightning;
+          border: 3px solid $lightning;
+          border-left-width: 10px;
           background: transparent;
 
           &::after {
@@ -521,6 +531,7 @@ section#testimonials {
           left: 0;
           right: 0;
           bottom: 0;
+          border-radius: 5px;
           background: rgba(255, 255, 255, 0.95);
           transform: scaleX(0);
           transform-origin: 0 50%;
@@ -674,7 +685,7 @@ section#websites {
     &:nth-child(1) {
       background-color: #fff7e3;
       .section-media {
-        top: 20%;
+        top: 40%;
         width: 110%;
         margin: 0;
       }
@@ -706,7 +717,7 @@ section#websites {
       .section-media {
         left: 42%;
         width: 650px;
-        transform: translateX(-60%) rotate(-10deg);
+        transform: translateX(-47%) translateY(60px) rotate(18deg);
 
         @media screen and (max-width: $blazeit) {
           top: 45%;
@@ -738,7 +749,7 @@ section#websites {
     &:nth-child(3) {
       background-color: #8fc9bc;
       .section-media {
-        top: 29%;
+        top: 49%;
         width: 100%;
         margin: 0;
       }
@@ -775,7 +786,7 @@ section#websites {
     &:nth-child(4) {
       background-color: #b7a7c6;
       .section-media {
-        top: 23%;
+        top: 33%;
         width: 100%;
         margin: 0;
         transition: all 300ms ease;
@@ -828,6 +839,10 @@ section#designs {
     text-align: center;
   }
 
+  .section-content {
+    gap: 4rem 2rem;
+  }
+
   .section-media {
     height: 110px;
     width: 100%;
@@ -845,7 +860,6 @@ section#designs {
   .tilt {
     height: auto;
     @include padding;
-    margin: 2.5rem 0 3rem;
 
     @media screen and (max-width: $ipad) {
       width: 100%;
@@ -1024,6 +1038,28 @@ section#photography {
 }
 
 section#projects {
+  .section-title {
+    width: 200px;
+    margin: 0 auto;
+
+    &::before {
+      content: "Passion";
+      position: absolute;
+      font-size: 23px;
+      top: -20px;
+      // background-color: #3990da2b;
+      left: -40px;
+      opacity: 0.75;
+      letter-spacing: 1px;
+      z-index: -1;
+      text-transform: uppercase;
+      padding: 0 21px;
+      border-radius: 20px;
+      color: #3990da;
+      transform: rotate(-5deg);
+      text-shadow: none;
+    }
+  }
   .section-content {
     .tilt {
       width: calc(25% - 6rem);
@@ -1304,7 +1340,8 @@ section#projects {
   @media screen and (max-width: $mac) {
     // display: none;
     z-index: -1;
-    width: 100%;
+    // width: 100%;
+    width: 300px;
     bottom: -200px;
     height: 400px;
   }

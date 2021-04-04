@@ -1,7 +1,7 @@
 footer {
   font-size: 10px;
   width: 100%;
-  padding: 50px 50px 0;
+  padding: 50px 18px 0;
 
   .freelance {
     @include container;
@@ -14,7 +14,7 @@ footer {
 
     @media screen and (max-width: $tablet) {
       margin: 0 auto;
-      padding: 36px;
+      padding: 36px 0;
     }
 
     a {
@@ -188,7 +188,7 @@ footer {
     z-index: 1;
 
     @media screen and (max-width: $surface) {
-      padding: 100px 36px;
+      padding: 100px 0px;
     }
 
     h6 {

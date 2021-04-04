@@ -11,12 +11,21 @@ body {
         background-position: 0% 60%;
       }
     }
+    
+    .me {
+      &:hover {
+        &::before {
+          border: 1.5px solid #80ddff;
+          box-shadow: 0 0 4px 0 #66d5ff, 0 0 4px 0 #66d5ff, 0 0 6px 0 #66d5ff, 0 0 12px 0 #66d5ff;
+        }
+      }
+    }
 
     .background {
       background: $midnight;
       background-image: url("/midnight-sky.jpg");
       background-position: 20% 60%;
-      animation: moves 40s ease alternate infinite;
+      // animation: moves 40s ease alternate infinite;
 
       &::after {
         opacity: 30%;
@@ -56,7 +65,7 @@ body {
       }
       &::before {
         color: $ocean;
-        opacity: 0.6;
+        opacity: 0.4;
       }
 
       .background {
@@ -94,6 +103,19 @@ body {
       border: 2px solid #b9d6fb;
       box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6);
       fill: white;
+
+      .quote {
+        background-color:rgba($midnight, 0.65);
+        color: white;
+
+        .quote-cite {
+          color: $lightning;
+
+        }
+        .quote-company {
+          color: $petal;
+        }
+      }
     }
 
     .eclipse .moon path {
@@ -108,15 +130,20 @@ body {
       fill: white;
     }
 
-    .logo {
-      &:hover {
-        .s-line {
-          fill: white !important;
-        }
-        .r-line {
-          fill: $lightning !important;
-        }
-      }
+    // .logo {
+    //   &:hover {
+    //     .s-line {
+    //       fill: white !important;
+    //     }
+    //     .r-line {
+    //       fill: $lightning !important;
+    //     }
+    //   }
+    // }
+
+    .s-line {
+      fill: white;
+      stroke: white;
     }
 
     footer {
@@ -148,19 +175,19 @@ body {
       }
     }
 
-    .s-line {
-      stroke: white;
-      animation: line-animate 2s ease forwards;
-    }
+    // .s-line {
+    //   stroke: white;
+    //   animation: line-animate 2s ease forwards;
+    // }
 
-    .r-line {
-      animation: line-animate 1.4s ease forwards 0.2s;
-    }
+    // .r-line {
+    //   animation: line-animate 1.4s ease forwards 0.2s;
+    // }
 
-    .s-line,
-    .r-line {
-      fill: transparent !important;
-    }
+    // .s-line,
+    // .r-line {
+    //   fill: transparent !important;
+    // }
 
     .menu-toggle {
       &:hover {
@@ -198,7 +225,7 @@ body {
     }
 
     .about {
-      background-color: rgba(19, 19, 39, 0.95);
+      background-color: rgba(19, 19, 39, 0.6);
       color: white;
     }
 
@@ -299,6 +326,7 @@ body {
           text-shadow: 0 0 4px white, 0 0 2px white;
         }
       }
+      
     }
 
     .menu-title {
@@ -322,6 +350,11 @@ body {
 
           &:nth-child(1) {
             transform: translateY(0px) rotate(315deg) translateX(-4px);
+          
+            &::before {
+              background-color: #77cff5;
+            }
+          
           }
 
           &:nth-child(2) {
@@ -339,10 +372,20 @@ body {
       }
     }
 
+    .triangles {
+      &::before, &::after {
+        opacity: 1;
+      }
+    }
+
     nav.menu {
       transform: scale(1);
       opacity: 1;
       pointer-events: auto;
+
+      &::after {
+        opacity: 1;
+      }
 
       li {
         @for $i from 1 through 6 {
@@ -374,11 +417,28 @@ body {
   }
 
   &.midnight.menu-open {
+
+    .eclipse {
+      &::before {
+        border-color: white transparent transparent !important;
+      }
+
+      .moon {
+        path {
+          fill: $lilac;
+    
+          &:hover {
+            fill: lightblue;
+          }
+        }
+      }
+    }
+
     .logo {
       &:hover {
-        .r-line {
-          fill: $waterfall !important;
-        }
+        // .r-line {
+        //   fill: $waterfall !important;
+        // }
       }
     }
   }

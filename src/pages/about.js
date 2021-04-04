@@ -20,13 +20,13 @@ const About = () => (
         </div>
         <div className="about-content">
           Hi there! 👋🏽 I'm <u>Sathya Ram</u>.
+        
         <br></br><br></br>
-        At heart, I am a creator: <br></br>I believe in aesthetics with purpose.
-        <br></br><br></br>
-        I design and develop modern websites; I build engaging layouts, and user interfaces; and I hand-craft delightful animations and interactions. I am also an avid photographer and freelancer.
+        I design and develop modern websites; I build engaging layouts, and user interfaces; and I hand-craft delightful animations and interactions.  
+        <br></br><br></br> I am also an avid photographer and freelancer.
         <br></br> <br></br>
         Combining these skills, I bring beautiful digital experiences to life.
-        My ultimate goal is to make the internet sexier.
+        At heart, I am a creator: I believe in aesthetics with purpose. My ultimate goal is to make the internet sexier.
         </div>
       </div>
       <div className="about-section">
