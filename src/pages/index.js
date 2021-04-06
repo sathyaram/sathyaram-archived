@@ -1,10 +1,10 @@
 import React from "react"
-import Image from "../components/image"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import Hero from "../components/hero"
 import Main from "../components/main"
 import Footer from "../components/footer"
+import SEO from "../components/seo"
 import { window, document } from 'browser-monads';
 
 
@@ -22,6 +22,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="loader"></div>
+      <SEO title="Home" />
       <Sky bgClass={bgClass} />
       <Menu />
       <Hero setBgClass={setBgClass}/>
@@ -44,7 +45,7 @@ export default function App() {
             </p>
           </div>
           <div className="framicons">
-            <a href="#websites" className="shooter" name="web anchor">
+            <a href="#websites" className="shooter" name="web anchor" aria-label="web anchor">
               <div className="monitor shape">
                 <div className="screen">
                   <div className="code">
@@ -70,7 +71,7 @@ export default function App() {
                 </div>
               </div>
             </a>
-            <a href="#designs" className="shooter" name="graphic">
+            <a href="#designs" className="shooter" name="designs" aria-label="designs anchor">
               <div className="box shape">
                 <div className="draw">
                   <svg viewBox="0 0 78.2 54.3">
@@ -95,7 +96,7 @@ export default function App() {
                 <div className="anchor"></div>
               </div>
             </a>
-            <a href="#photography" className="shooter" name="photography">
+            <a href="#photography" className="shooter" name="photography" aria-label="photography anchor">
               <div className="photo shape"></div>
             </a>
           </div>

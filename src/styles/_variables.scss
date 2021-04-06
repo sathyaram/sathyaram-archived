@@ -12,6 +12,7 @@ $galaxy: #353561;
 $velvet: #404066;
 $darkgray: #44465c;
 $deep: #7979a7;
+$soft: #a6a6c7;
 $lightning: #2baae2;
 $waterfall: #0071bc;
 $ocean: #0f305c;
@@ -61,7 +62,7 @@ $shadow-big: 30px 30px 60px 20px rgba(0, 0, 0, 0.1);
 
 @mixin container {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1000px;
     width: 100%;
 }
 

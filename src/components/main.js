@@ -1,5 +1,6 @@
 import React from "react"
 import Tilt from "react-tilt";
+import Image from "../components/image"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
@@ -58,6 +59,7 @@ export default function Main() {
                 target="_blank"
                 href="https://vilcek.org"
                 rel="noopener noreferrer"
+                className="website-link"
               >
                 View Website
                 </a>
@@ -67,10 +69,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-                <img
-                  alt="me"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/EImO-pngguru.com.png"
-                />
+                <Image alt="Vilcek Pot" filename="vilcek.png" />
               </div>
             </div>
           </Tilt>
@@ -111,6 +110,7 @@ export default function Main() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://gnarlyknots.com"
+                className="website-link"
               >
                 View Website
                 </a>
@@ -120,10 +120,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-                <img
-                  alt="me"
-                  src="pretzel.png"
-                />
+              <Image alt="Gnarly Knots Pretzel Co" filename="pretzel.png" />
               </div>
             </div>
           </Tilt>
@@ -132,12 +129,12 @@ export default function Main() {
               <div className="left">
                 <div className="title">Howard Hughes Medical Institute</div>
                 <div className="subtitle">
-                Empowering Educators. Inspiring Students.
+                  Empowering Educators. Inspiring Students.
                   </div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                  At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
                     </p>
                 </div>
               </div>
@@ -163,6 +160,7 @@ export default function Main() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://biointeractive.org"
+                className="website-link"
               >
                 View Website
                 </a>
@@ -217,6 +215,107 @@ export default function Main() {
                 href="https://amandafoundation.org"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="website-link"
+              >
+                View Website
+                </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
+            </div>
+            <div className="overflow-wrapper">
+              <div className="section-media">
+              <Image alt="Amanda Foundation Dog" filename="amanda-dog.png" />
+              </div>
+            </div>
+          </Tilt>
+          <Tilt className="tilt">
+            <div className="section-info">
+              <div className="left">
+                <div className="title">Fudtruk</div>
+                <div className="subtitle">
+                  Lehigh Valley's Freshest Food Truck
+                  </div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
+                    </p>
+                </div>
+              </div>
+              <div className="right">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://fudtruk.lehigh.edu"
+                  className="link"
+                >
+                  fudtruk.lehigh.edu
+                  </a>
+                <ul className="tags">
+                  <li>Drupal 7</li>
+                  <li>Web Design</li>
+                  <li>Graphic Design</li>
+                  <li>Photo + Video</li>
+                </ul>
+              </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://fudtruk.lehigh.edu"
+                className="website-link"
+              >
+                View Website
+                </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
+            </div>
+            <div className="overflow-wrapper">
+              <div className="section-media">
+              <Image alt="Fudtruk Truck" filename="fudtruk.png" />
+              </div>
+            </div>
+          </Tilt>
+          <Tilt className="tilt">
+            <div className="section-info">
+              <div className="left">
+                <div className="title">Keystone Munitions</div>
+                <div className="subtitle">
+                  Premium Ammunition
+                  </div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    </p>
+                </div>
+              </div>
+              <div className="right">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://keystonemunitions.com"
+                  className="link"
+                >
+                  keystonemunitions.com
+                  </a>
+                <ul className="tags">
+                  <li>Drupal 8</li>
+                  <li>Pattern Lab</li>
+                  <li>Twig/YAML</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="website-link"
+                href="http://keystonemunitions.com"
               >
                 View Website
                 </a>
@@ -228,8 +327,111 @@ export default function Main() {
               <div className="section-media">
                 <img
                   alt="me"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/SxIr-dog_PNG50329.png"
+                  src="keystone.png"
                 />
+              </div>
+            </div>
+          </Tilt>
+          <Tilt className="tilt">
+            <div className="section-info">
+              <div className="left">
+                <div className="title">Astral Air Parts</div>
+                <div className="subtitle">
+                  Aircraft Part Supplier
+                  </div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
+                    </p>
+                </div>
+              </div>
+              <div className="right">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://astralairparts.com"
+                  className="link"
+                >
+                  astralairparts.com
+                  </a>
+                <ul className="tags">
+                  <li>Drupal 7</li>
+                  <li>Web Design</li>
+                  <li>Graphic Design</li>
+                  <li>Photo + Video</li>
+                </ul>
+              </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                className="website-link"
+                rel="noopener noreferrer"
+                href="http://astralairparts.com"
+              >
+                View Website
+                </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
+            </div>
+            <div className="overflow-wrapper">
+              <div className="section-media">
+                <img
+                  alt="me"
+                  src="astral.png"
+                />
+              </div>
+            </div>
+          </Tilt>
+          <Tilt className="tilt">
+            <div className="section-info">
+              <div className="left">
+                <div className="title">Lehigh's Art College</div>
+                <div className="subtitle">
+                  Lehigh's Arts, Architecture &amp; Design Department
+                  </div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    </p>
+                </div>
+              </div>
+              <div className="right">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://aad.lehigh.edu"
+                  className="link"
+                >
+                  aad.lehigh.edu
+                  </a>
+                <ul className="tags">
+                  <li>Drupal 8</li>
+                  <li>Pattern Lab</li>
+                  <li>Twig/YAML</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                className="website-link"
+                rel="noopener noreferrer"
+                href="https://aad.lehigh.edu"
+              >
+                View Website
+                </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
+            </div>
+            <div className="overflow-wrapper">
+              <div className="section-media">
+              <Image alt="Lehigh Arts, Architecture and Design" filename="aad.jpg" />
               </div>
             </div>
           </Tilt>
@@ -254,10 +456,20 @@ export default function Main() {
             <div className="section-info">
               <div className="title">Frost</div>
               <div className="subtitle">Financial Stock App</div>
-              <p className="description">So awesome.</p>
-              <div className="links">
-                <a href="/">View Designs</a>
+              <div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    </p>
+                </div>
               </div>
+            </div>
+            <div className="links">
+              <a href="/">View Designs</a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
             </div>
           </Tilt>
           <Tilt className="tilt">
@@ -283,19 +495,17 @@ export default function Main() {
           </Tilt>
           <Tilt className="tilt">
             <div className="section-media">
-              <img
-                alt="me"
-                src="fudtrukwebsite_4x.jpeg"
-              />
+            <Image alt="Lehigh Connect Portal" filename="portalshot.jpeg" />
+
             </div>
             <div className="section-info">
-              <div className="title">Fudtruk</div>
-              <div className="subtitle">Lehigh Valley's Freshest Food Truck</div>
+              <div className="title">Connect Portal</div>
+              <div className="subtitle">Lehigh University's Campus Hub</div>
               <p className="description">So awesome.</p>
               <div className="links">
                 <a
                   rel="noopener noreferrer"
-                  href="https://dribbble.com/sathyaram/projects/915857-Fudtruk"
+                  href="https://dribbble.com/shots/5308923-Lehigh-Portal"
                 >
                   View Designs
                   </a>
@@ -340,6 +550,7 @@ export default function Main() {
             <a
               href="https://exhaustnotes.co"
               rel="noopener noreferrer"
+              target="_blank"
               className="url"
             >
               exhaustnotes.co
@@ -362,6 +573,7 @@ export default function Main() {
             <a
               href="https://thatsacoolwebsite.com"
               rel="noopener noreferrer"
+              target="_blank"
               className="url"
             >
               thatsacoolwebsite.com
@@ -386,6 +598,7 @@ export default function Main() {
             <a
               href="https://oscarstrivia.com"
               rel="noopener noreferrer"
+              target="_blank"
               className="url"
             >
               oscarstrivia.com
@@ -408,6 +621,7 @@ export default function Main() {
             <a
               href="https://dribbble.com/sathyaram/projects/3425099-Pok-Logos"
               rel="noopener noreferrer"
+              target="_blank"
               className="url"
             >
               View All Logos
@@ -440,41 +654,34 @@ export default function Main() {
         </div>
         <div className="section-content">
           <Tilt className="tilt">
-            <AniLink cover direction="right" to="/portraits">
-              <h5>Portraits</h5>
-              <img alt="me" src="https://sathyaram.com/images/chance.jpg" />
+            <AniLink cover direction="right" to="/portraits" >
+              <div>Portraits</div>
+              <img alt="me" src="chance-two.jpg" />
             </AniLink>
           </Tilt>
+          {/* <Tilt className="tilt">
+            <AniLink cover direction="right" to="/lifestyle">
+              <h5>Lifestyle</h5>
+              <img
+                alt="me"
+                src="https://sathyaram.com/images/rachel-americana.jpg"
+              />
+            </AniLink>
+          </Tilt> */}
           <Tilt className="tilt">
-          <AniLink cover direction="right" to="/lifestyle">
-            <h5>Lifestyle</h5>
-            <img
-              alt="me"
-              src="https://sathyaram.com/images/rachel-americana.jpg"
-            />
+            <AniLink cover direction="right" to="/cosplay">
+              <div>Cosplay</div>
+              <Image alt="Cosplay Holly Peppermint" filename="hollypeppermint.jpg" />
+
             </AniLink>
           </Tilt>
-          <Tilt className="tilt">
-            <h5>Cosplay</h5>
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </Tilt>
-          <Tilt className="tilt">
-            <h5>Studio</h5>
-            <img
-              alt="me"
-              src="https://sathyaram.com/images/photography/RAM_0645.jpg"
-            />
-          </Tilt>
-          <Tilt className="tilt">
-            <h5>Space</h5>
+          {/* <Tilt className="tilt">
+            <h5>Nature</h5>
             <img
               alt="me"
               src="https://live.staticflickr.com/577/22402285915_8e46315458_n.jpg"
             />
-          </Tilt>
+          </Tilt> */}
         </div>
       </section>
       <section id="testimonials" className="testimonials">
@@ -890,7 +1097,7 @@ export default function Main() {
         >
           <div className="social-wrapper">
             <div className="social-text">
-              <h5>Instagram</h5>
+              <div className="social-name">Instagram</div>
               <span>@sathya.ram</span>
             </div>
             <div className="social-images">
@@ -928,7 +1135,7 @@ export default function Main() {
         >
           <div class="social-wrapper">
             <div className="social-text">
-              <h5>Dribbble</h5>
+              <div className="social-name">Dribbble</div>
               <span>sathyaram</span>
             </div>
             <div className="social-images">
@@ -942,14 +1149,14 @@ export default function Main() {
               <div className="social-image">
                 <img
                   alt="me"
-                  src="https://sathyaram.com/images/graphic/shake.jpg"
+                  src="https://sathyaram.com/images/graphic/lehighracing.jpg"
                 />
               </div>
               <div className="social-image">
                 {" "}
                 <img
                   alt="me"
-                  src="https://sathyaram.com/images/graphic/lehighracing.jpg"
+                  src="https://sathyaram.com/images/graphic/sexy_cover.jpg"
                 />
               </div>
               <div className="social-image">

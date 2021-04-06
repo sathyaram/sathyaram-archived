@@ -19,14 +19,13 @@ const About = () => (
           TL;DR
         </div>
         <div className="about-content">
-          Hi there! 👋🏽 I'm <u>Sathya Ram</u>.
-        
+          Hi there! <span aria-label="hand wave" role="img">👋🏽</span> I'm <u>Sathya Ram</u>.
         <br></br><br></br>
-        I design and develop modern websites; I build engaging layouts, and user interfaces; and I hand-craft delightful animations and interactions.  
+        I design and develop modern websites; <br></br>I build engaging layouts, and user interfaces; and I craft delightful web animations and interactions.
         <br></br><br></br> I am also an avid photographer and freelancer.
         <br></br> <br></br>
         Combining these skills, I bring beautiful digital experiences to life.
-        At heart, I am a creator: I believe in aesthetics with purpose. My ultimate goal is to make the internet sexier.
+        At heart, I am a creator: I believe in aesthetics with purpose. 
         </div>
       </div>
       <div className="about-section">
@@ -34,7 +33,7 @@ const About = () => (
           Bio
         </div>
         <div className="about-content">
-          Double Majored in Design, with a concentration in Graphic Design and Studio Art, with a concentration of Photography. In my last year of college, I taught myself to code and found freelance opportunities that allowed me to grow my web skills. <br></br><br></br> I recently with to a Coding Bootcamp called General Assembly where I learned JavaScript and React indepthly. Now, I work at agencies while also manning my own freelance website and photography business.
+          I Double Majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level. Soon after, I found freelance opportunities that allowed me to grow my web skills. <br></br><br></br> I recently graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React in a rigerous environment. Now, I work at agencies while also manning my own freelance website and professional photography business.
         </div>
       </div>
       <div className="about-section">
@@ -64,29 +63,18 @@ const About = () => (
       </div>
       <div className="about-section">
         <div className="about-title">
-          Inspiration
+          Etc
         </div>
         <div className="about-content">
           Passionate nerd, CSS Junkie, and avid conversationalist.
         <br></br><br></br>
         I love all things film/TV - I live on iMDB, check out
-        <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last">what I've rated </a>.<br></br><br></br>I'm a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya">World of Warcraft</a> player, and amateur voice actor.<br></br><br></br>I post my photography on
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">my Instagram</a>, so follow me if you want a little vibrance on your daily scrolls.
+        <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last"> what I've rated</a>.<br></br><br></br>I'm a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya"> World of Warcraft</a> player, and amateur voice actor.<br></br><br></br>I post my photography on
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram"> my Instagram</a>, so follow me if you want a little vibrance on your daily scrolls.
         </div>
       </div>
       <div className="about-section">
-        <div className="about-title">
-          Learnings
-        </div>
-        <div className="about-content">
-          Hey hey! I'm Sathya Ram,
-        <br></br>
-        a passionate nerd, CSS Junkie, and avid conversationalist.
-        <br></br><br></br>
-        I love all things film/TV - I live on iMDB, check out
-        <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last">what I've rated </a>.<br></br><br></br>I'm a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya">World of Warcraft</a> player, and amateur voice actor.<br></br><br></br>I post my photography on
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram">my Instagram</a>, so follow me if you want a little vibrance on your daily scrolls.
-        </div>
+     
       </div>
     </main>
     <Footer />

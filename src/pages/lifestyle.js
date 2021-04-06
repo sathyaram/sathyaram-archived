@@ -2,7 +2,10 @@ import React from "react"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 import { SRLWrapper } from "simple-react-lightbox";
+import Image from "../components/image"
+import Masonry from 'react-masonry-css'
 
 const Lifestyle = () => {
   const options = {
@@ -22,6 +25,12 @@ const Lifestyle = () => {
     //   captionTextTransform: "uppercase",
     // }
   };
+  const breakpointColumnsObj = {
+    default: 3,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
 
   return (
     <div className="internal-page photography-page lifestyle-page">
@@ -34,39 +43,43 @@ const Lifestyle = () => {
       </header>
       <div className="photography-content">
         <SRLWrapper options={options}>
-          <div class="photography-image">
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </div>
-          <div class="photography-image">
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </div>
-          <div class="photography-image">
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </div>
-          <div class="photography-image">
-
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </div>
-          <div class="photography-image">
-            <img
-              alt="me"
-              src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gEp3-DSC00985.jpg"
-            />
-          </div>
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column">
+            <div class="photography-image">
+              <Image alt="peter" filename="katwild.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="andrewonphone.jpeg" />
+            </div>
+           
+            <div class="photography-image">
+              <Image alt="peter" filename="firegirl.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="path.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="fireinside.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="ting-union.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="firestarter.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="gwen.jpeg" />
+            </div>
+            <div class="photography-image">
+              <Image alt="peter" filename="erin-three.jpeg" />
+            </div>
+           
+          </Masonry>
         </SRLWrapper>
       </div>
+      <Footer/>
     </div>
   )
 }

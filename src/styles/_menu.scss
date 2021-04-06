@@ -155,7 +155,7 @@ nav.utility {
   li {
     a {
       @include trans(color, ease);
-      color: $midnight;
+      color: black;
       display: inline-block;
       padding: 0.5rem 1rem;
       font-size: $body;
@@ -197,6 +197,7 @@ nav.utility {
   top: 0;
   left: 0;
   width: 100%;
+  color: transparent;
 
   &::before {
     content: "";

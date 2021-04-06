@@ -20,7 +20,7 @@ export default function Menu() {
 
   return (
     <aside role="region">
-      <button className="eclipse" onClick={eclipse} role="button">
+      <button name="toggle" className="eclipse" onClick={eclipse}>
         <svg className="moon" viewBox="0 0 11.6 11.7">
           <path
             className="st0"
@@ -28,8 +28,9 @@ export default function Menu() {
 c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.2,4.1,7.2z"
           />
         </svg>
+        Toggle Night Mode
       </button>
-      <AniLink className="logo" name="logo" cover direction="right" to="/">
+      <AniLink onClick={closeMenu} aria-label="Logo Home Link" className="logo" name="logo" cover direction="right" to="/">
         <svg version="1.1" viewBox="0 0 62.5 28.7">
           <g>
             <polygon
@@ -47,17 +48,17 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
         <ul>
           <li>
             <Link to="#websites" title="Our team">
-              <span>Websites</span>
+              <div>Websites</div>
             </Link>
           </li>
           <li>
             <Link to="#designs" title="Our team">
-              <span>Designs</span>
+              <div>Designs</div>
             </Link>
           </li>
           <li>
             <Link to="#photography" title="Our team">
-              <span>Photos</span>
+              <div>Photos</div>
             </Link>
           </li>
         </ul>
@@ -80,41 +81,37 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <AniLink onClick={closeMenu} cover direction="right" to="/about"
             >About</AniLink>
           </li>
-          <li onClick={closeMenu} >
-            <Link to="/#websites">Websites</Link>
+          <li>
+            <Link onClick={closeMenu} to="/#websites">Websites</Link>
           </li>
-          <li onClick={closeMenu}>
-            <Link to="/#designs" title="Our team">
+          <li>
+            <Link onClick={closeMenu} to="/#designs" title="Our team">
               <span>Designs</span>
             </Link>
           </li>
-          <li onClick={closeMenu} >
-            <Link to="/#photography" title="Our team">
+          <li>
+            <Link onClick={closeMenu} to="/#photography" title="Our team">
               <span>Photography</span>
             </Link>
           </li>
         </ul>
         <ul className="sub-menu">
-        <li>
+          <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/portraits"
             >Portraits</AniLink>
           </li>
-          <li>
+          {/* <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/lifestyle"
             >Lifestyle</AniLink>
-          </li>
+          </li> */}
           <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/cosplay"
             >Cosplay</AniLink>
           </li>
-          <li>
-            <AniLink onClick={closeMenu} cover direction="right" to="/studio"
-            >Studio</AniLink>
-          </li>
-          <li>
+          {/* <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/space"
             >Space</AniLink>
-          </li>
+          </li> */}
         </ul>
         <div className="eyebrow">
           <nav className="social-media" role="navigation">

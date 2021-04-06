@@ -6,7 +6,7 @@ const Footer = () => (
     <Tilt className="freelance">
       <a href="mailto:sathyatheram@gmail.com">
         <div className="freelance-text">
-          <h5>Let's work together.</h5>
+          <div>Let's work together.</div>
           <p>I'm available to make you a website, or take photos.</p>
         </div>
         <button>Hit me up!</button>

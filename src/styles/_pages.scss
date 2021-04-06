@@ -1,11 +1,6 @@
 .internal-page {
-  // header {
-  //   text-align: center;
-  //   padding: 41px;
-  // }
-
   header {
-    padding: 200px 50px;
+    padding: 150px 50px;
     text-align: center;
     @include container-small;
 
@@ -17,10 +12,21 @@
   h1 {
     margin: 0;
     width: 100%;
+    margin-bottom: 12px;
   }
 
   nav.utility {
     display: none;
+  }
+}
+
+.photography-page {
+  footer {
+    padding: 120px 18px 0;
+
+    .freelance {
+      margin: 0px auto -30px;
+    }
   }
 }
 
@@ -33,13 +39,13 @@
     top: 500px;
     left: 50%;
     z-index: 0;
-    font-size: 26rem;
+    font-size: 33vw;
     background: linear-gradient(135deg, rgba(112, 213, 255, 0.9), rgba(0, 89, 188, 0.9), rgba(112, 213, 255, 0.9));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: endlessly 10s ease infinite;
     color: #d7dde6;
-    opacity: 0.25;
+    opacity: 0.2;
     transform: translateX(-50%) translateY(-50%);
   }
 
@@ -61,17 +67,30 @@
     justify-content: space-between;
     margin-bottom: 10%;
 
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
+
     .about-title {
-      width: 300px;
-      padding-right: 50px;
+      width: 200px;
       font-family: $maison;
       font-size: $h5;
       color: $ocean;
+
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        color: $soft !important;
+        padding: 0 0 1rem 0;
+      }
     }
 
     .about-content {
       font-size: 30px;
       width: calc(100% - 250px);
+
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
     }
 
     hr {
@@ -103,21 +122,25 @@
   position: relative;
   margin: 0 auto;
 
-  > div {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-
-    @media screen and (max-width: $tablet) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .photography-image {
-      flex-basis: 32%;
-      cursor: pointer;
-      margin: 1%;
-    }
+  .photography-image {
+    cursor: pointer;
   }
+
+  // > div {
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   gap: 1rem;
+
+  //   @media screen and (max-width: $tablet) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+
+  //   .photography-image {
+  //     flex-basis: 32%;
+  //     cursor: pointer;
+  //     margin: 1%;
+  //   }
+  // }
 }
 
 // .lifestyle-page {
@@ -134,4 +157,23 @@
   background-image: url("/midnight-sky.jpg") !important;
   background-size: cover;
   background: $lavender !important;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
 }

@@ -6,8 +6,14 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
+        <link rel="preload" href="/fonts/Maison-Demi.ttf" as="font" type="font/otf" crossOrigin />
+        <link rel="preload" href="/fonts/Maison-Medium.ttf" as="font" type="font/ttf" crossOrigin />
+        <link rel="preload" href="/fonts/Maison-Light.ttf" as="font" type="font/ttf" crossOrigin />
+        <link rel="preload" href="/fonts/WorkSans-Regular.ttf" as="font" type="font/ttf" crossOrigin />
+        <meta content="#142c63" name="theme-color" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="canonical" href="https://sathyaram.com" />
+        {/* <link rel="canonical" href="https://sathyaram.com" /> */}
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

@@ -21,6 +21,8 @@ body {
       }
     }
 
+    
+
     .background {
       background: $midnight;
       background-image: url("/midnight-sky.jpg");
@@ -28,7 +30,7 @@ body {
       // animation: moves 40s ease alternate infinite;
 
       &::after {
-        opacity: 30%;
+        opacity: 0.2;
       }
     }
 
@@ -65,7 +67,7 @@ body {
       }
       &::before {
         color: $ocean;
-        opacity: 0.4;
+        opacity: 0.3;
       }
 
       .background {
@@ -104,6 +106,10 @@ body {
       box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6);
       fill: white;
 
+      &:hover {
+        box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6), 0 0 25px 0 rgba(203, 226, 255, 0.6), 0 0 25px 0 rgba(203, 226, 255, 0.6) ;
+      }
+
       .quote {
         background-color:rgba($midnight, 0.65);
         color: white;
@@ -129,24 +135,15 @@ body {
     #circle svg {
       fill: white;
     }
-
-    // .logo {
-    //   &:hover {
-    //     .s-line {
-    //       fill: white !important;
-    //     }
-    //     .r-line {
-    //       fill: $lightning !important;
-    //     }
-    //   }
-    // }
-
     .s-line {
       fill: white;
       stroke: white;
     }
 
     footer {
+      .social-media-footer span {
+        color: white;
+      }
       .villain {
         background-image: transparent;
         background-position: 50% 60%;
@@ -157,37 +154,10 @@ body {
         }
       }
 
-      // .freelance {
-      //   a {
-      //     color: #7996af;
-      //     // background: rgba($lilac,.75);
-      //     border: 1px solid white;
-      //     box-shadow: 0 0 5px rgba(white, 0.7);
-
-      //     &::before {
-      //       background: none;
-      //     }
-      //   }
-      // }
-
       address {
         color: $grey;
       }
     }
-
-    // .s-line {
-    //   stroke: white;
-    //   animation: line-animate 2s ease forwards;
-    // }
-
-    // .r-line {
-    //   animation: line-animate 1.4s ease forwards 0.2s;
-    // }
-
-    // .s-line,
-    // .r-line {
-    //   fill: transparent !important;
-    // }
 
     .menu-toggle {
       &:hover {
@@ -231,7 +201,7 @@ body {
 
     .social-media-links a {
       background-color: $lilac;
-      h5 {
+      .social-name {
         color: white;
       }
     }
@@ -248,10 +218,11 @@ body {
 
     section#projects {
       .title {
-        background: rgba(255, 255, 255, 0.6);
-        padding: 8px;
-        border-radius: 5px;
+        // background: rgba(255, 255, 255, 0.6);
+        // padding: 8px;
+        // border-radius: 5px;
         display: inline-block;
+        color: #e9faff;
       }
 
       .subtitle {
@@ -275,25 +246,25 @@ body {
       .section-content .tilt {
         &:nth-child(1) {
           background-color: transparent;
-          border: 5px solid #d1d1d1;
-          background-color: #d1d1d1a1;
+          border: 2px solid #d1d1d1;
+          background-color: #d1d1d14f;
         }
         &:nth-child(2) {
           background-color: transparent;
-          border: 5px solid rgb(191, 242, 255);
-          background-color: rgba(191, 242, 255, 0.639);
+          border: 2px solid rgb(191, 242, 255);
+          background-color: rgba(191, 242, 255, 0.339);
         }
 
         &:nth-child(3) {
           background-color: transparent;
-          border: 5px solid rgb(255, 231, 151);
-          background-color: rgba(255, 231, 151, 0.604);
+          border: 2px solid rgb(255, 231, 151);
+          background-color: rgba(255, 231, 151, 0.304);
         }
 
         &:nth-child(4) {
           background-color: transparent;
-          border: 5px solid #ee9b9b;
-          background-color: #ee9b9ba1;
+          border: 2px solid #ee9b9b;
+          background-color: #ee9b9b4b;
         }
         .tech {
           padding: 0.25rem 1rem;
@@ -519,6 +490,11 @@ h2 {
   text-transform: uppercase;
   font-weight: 300;
   line-height: 185%;
+
+  div:nth-child(3) {
+    letter-spacing: 3.7px;
+    margin-right: -1.5px;
+  }
 
   span {
     &:hover {
