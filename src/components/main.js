@@ -609,7 +609,7 @@ export default function Main() {
               oscarstrivia.com
               </a>
             <div className="laptop">
-              <div class="laptop-top">
+              <div className="laptop-top">
                 <Image alt="Oscars website" filename="oscars.jpg" />
 
               </div>
@@ -1017,7 +1017,7 @@ export default function Main() {
                     <g className="st0">
                       <path
                         id="a_2_"
-                        class="st1"
+                        className="st1"
                         d="M-30,134.2h213.7V0.1H-30V134.2z"
                       />
                     </g>
@@ -1125,7 +1125,7 @@ export default function Main() {
           rel="noopener noreferrer"
           href="https://dribbble.com/sathyaram"
         >
-          <div class="social-wrapper">
+          <div className="social-wrapper">
             <div className="social-text">
               <div className="social-name">Dribbble</div>
               <span>sathyaram</span>

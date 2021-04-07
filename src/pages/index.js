@@ -22,10 +22,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="loader">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
+        <div className="slide"></div>
         <svg version="1.1" viewBox="0 0 62.5 28.7">
           <g>
             <polygon
