@@ -33,7 +33,7 @@ const About = () => (
           Bio
         </div>
         <div className="about-content">
-          I double majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level.<br></br><br></br> I recently graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React in a rigerous environment.<br></br><br></br> Now, I work at agencies while also manning my own freelance website and professional photography business.
+          I double majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level.<br></br><br></br> I recently graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React in a rigorous environment.<br></br><br></br> Now, I work at agencies while also manning my own freelance website and professional photography business.
         </div>
       </div>
       <div className="about-section">

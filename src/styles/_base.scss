@@ -320,7 +320,7 @@ body {
       &::after {
         opacity: 1;
         border-width: 50vh 0 50vh 55px;
-        transform: translateX(6px);
+        transform: translateX(0);
 
         @media screen and (max-width: $tablet) {
           border-width: 50vh 0 50vh 20px;
