@@ -11,15 +11,13 @@ main {
 
 .about {
   @include padding;
-  padding: 100px 50px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(50, 38, 53, 0.1);
-  // box-shadow: 30px 30px 60px 20px rgba(0, 0, 0, 0.05);
   margin: 0 50px;
-  
+
   @media screen and (max-width: $blazeit) {
-    margin: 0 18px;
+    margin: 0;
   }
 
   .container {
@@ -54,7 +52,6 @@ main {
       content: "";
       height: 1px;
       background-color: $lightning;
-      // opacity: 0.25;
       width: 100%;
       position: absolute;
       top: 40%;
@@ -87,7 +84,7 @@ main {
   }
 
   li {
-    padding: 1.25rem 0.25rem;
+    padding: 1.5rem 0.25rem;
     font-size: 12px;
     position: relative;
 
@@ -219,7 +216,6 @@ main {
         top: 0;
         right: 0;
         z-index: -1;
-        // opacity: 0;
         transform: translateX(-100%);
         transition: transform 600ms ease, width 300ms ease;
         background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
@@ -269,14 +265,6 @@ main {
 
       .social-wrapper {
         flex-direction: row-reverse;
-
-        img {
-          width: 135%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateY(-50%) translateX(-50%);
-        }
       }
     }
 
@@ -343,6 +331,11 @@ main {
         @media screen and (max-width: $surface) {
           width: 86px;
           height: 86px;
+        }
+
+        .gatsby-image-wrapper {
+          overflow: auto !important;
+          position: static !important;
         }
 
         &:nth-child(even) {
@@ -422,15 +415,19 @@ section#testimonials {
       font-size: 18px;
       margin: 0.5rem 0 0;
       line-height: 120%;
-      color:#3d3d56;
+      color: #3d3d56;
     }
 
     .tags {
       font-size: 10px;
       opacity: 0;
-      margin-top: 5px;
+      margin-top: 1rem;
       transform: translateZ(20px);
       transition: opacity 300ms ease;
+
+      @media screen and (max-width: $blazeit) {
+        opacity: 1;
+      }
 
       li {
         padding: 3px;
@@ -449,6 +446,14 @@ section#testimonials {
       .links {
         transform: none;
       }
+
+      .section-media {
+        transform: translateZ(0px);
+      }
+    }
+
+    .links {
+    
     }
 
     .description {
@@ -466,6 +471,7 @@ section#testimonials {
       align-items: center;
       pointer-events: none;
       transform: translateZ(21px);
+      font-size: 22px;
       transition: opacity 300ms ease;
 
       .active & {
@@ -603,7 +609,7 @@ section#testimonials {
     }
 
     .link {
-      font-family: "maison";
+      font-family: $maison;
       font-weight: 600;
       font-size: 13px;
       color: $midnight;
@@ -613,13 +619,15 @@ section#testimonials {
       display: inline-block;
 
       &:hover {
-        color: $lightning;
+        color: $lightning !important;
       }
     }
 
     .right {
       max-width: 170px;
+      margin-bottom:1rem;
       text-align: right;
+      
     }
 
     .section-info {
@@ -657,6 +665,7 @@ section#websites {
 
     .title {
       transform: translateZ(20px) translateX(3px);
+      padding-right: 1rem;
     }
 
     .description p {
@@ -679,7 +688,7 @@ section#websites {
       margin: 0 auto 4%;
     }
     @media screen and (max-width: $blazeit) {
-      height: 500px;
+      height: auto;
     }
 
     &:nth-child(1) {
@@ -823,8 +832,8 @@ section#websites {
       background-color: #ffd07b;
       .section-media {
         left: 42%;
-        top: 15%;
-        width: 650px;
+        top: 30%;
+        width: 600px;
 
         @media screen and (max-width: $blazeit) {
           top: 45%;
@@ -864,7 +873,9 @@ section#websites {
         }
       }
 
-      .title, .link, button {
+      .title,
+      .link,
+      button {
         color: white;
       }
 
@@ -890,7 +901,10 @@ section#websites {
       }
 
       .description {
-        background-color: #ffb476;
+        background-color: #1c1c1c;
+        p {
+          color: white !important;
+        }
       }
     }
     &:nth-child(7) {
@@ -905,7 +919,9 @@ section#websites {
         }
       }
 
-      .title, .link, button {
+      .title,
+      .link,
+      button {
         color: white;
       }
 
@@ -931,7 +947,10 @@ section#websites {
       }
 
       .description {
-        background-color: #ffb476;
+        background-color: #d63c00;
+        p {
+          color: white !important;
+        }
       }
     }
     &:nth-child(8) {
@@ -948,7 +967,9 @@ section#websites {
         }
       }
 
-      .title, .link, button {
+      .title,
+      .link,
+      button {
         color: white;
       }
 
@@ -956,6 +977,7 @@ section#websites {
         color: #dce0ed;
       }
       .links {
+        
         a {
           background-color: #294857;
           color: white;
@@ -975,6 +997,10 @@ section#websites {
 
       .description {
         background-color: #294857;
+
+        p {
+          color: white !important;
+        }
       }
     }
   }
@@ -998,65 +1024,102 @@ section#designs {
     text-align: center;
   }
 
-  .section-content{
-    gap: 5rem 2rem;
-  }
-
-  .section-text {
-    margin-bottom: 6rem;
-  }
-
   .section-media {
     height: 140px;
     width: 100%;
-    padding: 0 6rem;
+    padding: 0 3rem;
     margin: -6rem auto 2rem;
     overflow: hidden;
     transform: translateZ(10px);
     transition: transform 300ms ease;
 
     @media screen and (max-width: $mac) {
-      padding: 0 3rem;
+      padding: 0;
+      height: auto;
+    }
+
+    .gatsby-image-wrapper {
+      box-shadow: 0 15px 28px 5px rgba(0, 0, 0, 0.25);
     }
 
     img {
       border: 15px solid #f7f7f7;
       border-radius: 15px;
-      box-shadow: 0 15px 28px 5px rgba(0, 0, 0, 0.25);
+
+      @media screen and (max-width: $blazeit) {
+        border: 0;
+      }
     }
   }
 
-  
   .tilt {
     height: auto;
     @include padding;
-    padding: 50px 10px 36px;
-    
-    @media screen and (max-width: $ipad) {
+    padding: 50px 50px 36px;
+    margin: 4rem 1rem 0;
+    width: 46%;
+
+    @media screen and (max-width: $screen) {
       width: 100%;
       max-width: 450px;
-      margin: 0 auto;
+      margin: 6rem auto 0;
     }
-    
+
     .links {
       justify-content: center;
+
+      @media screen and (max-width: $screen) {
+        flex-direction: column;
+
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .description {
+      text-align: left;
     }
     &:nth-child(1) {
       background-color: #d8f1ff;
+
+      .description {
+        background-color: #d8f1ff; 
+        p {
+          color: black !important;
+        }
+      }
     }
 
     &:nth-child(2) {
       background-color: #ffdaa4;
+      .description {
+        background-color: #ffdaa4; 
+        p {
+          color: black !important;
+        }
+      }
     }
-    
+
     &:nth-child(3) {
       background-color: #dac2a4;
+      .description {
+        background-color: #dac2a4; 
+        p {
+          color: black !important;
+        }
+      }
     }
 
     &:nth-child(4) {
       background-color: rgb(197, 219, 238);
+      .description {
+        background-color: rgb(197, 219, 238); 
+        p {
+          color: black !important;
+        }
+      }
     }
-
   }
 }
 
@@ -1128,13 +1191,14 @@ section#photography {
         }
       }
 
-      div {
+      .photography-name {
         position: absolute;
         top: 8%;
         left: 0;
         transform: translateZ(40px);
         font-size: 24px;
         overflow: hidden;
+        z-index: 2;
 
         &::after {
           content: "";
@@ -1167,10 +1231,10 @@ section#photography {
       }
 
       &:nth-child(1) {
-        color: #40adf5;
+        color: #2783c1;
 
         a {
-          color: #40adf5;
+          color: #2783c1;
         }
       }
 
@@ -1327,19 +1391,14 @@ section#projects {
           max-width: 150px;
           width: 100%;
 
+          .section-image {
+            width: 68px;
+            margin: 3px;
+          }
+
           @media screen and (max-width: $tablet) {
             margin-left: 0;
             margin: 0.25rem auto;
-          }
-
-          img {
-            width: auto;
-            height: 52px;
-
-            &:nth-child(3),
-            &:nth-child(4) {
-              margin-top: 0.5rem;
-            }
           }
         }
       }
@@ -1514,9 +1573,7 @@ section#projects {
   width: 200px;
 
   @media screen and (max-width: $mac) {
-    // display: none;
     z-index: -1;
-    // width: 100%;
     width: 300px;
     bottom: -200px;
     height: 400px;

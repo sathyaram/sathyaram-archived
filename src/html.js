@@ -6,13 +6,18 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <link rel="preload" href="/fonts/Maison-Demi.ttf" as="font" type="font/otf" crossOrigin />
-        <link rel="preload" href="/fonts/Maison-Medium.ttf" as="font" type="font/ttf" crossOrigin />
-        <link rel="preload" href="/fonts/Maison-Light.ttf" as="font" type="font/ttf" crossOrigin />
-        <link rel="preload" href="/fonts/WorkSans-Regular.ttf" as="font" type="font/ttf" crossOrigin />
+        <link rel="preload" href="/fonts/Maison-Demi.ttf" as="font" type="font/otf" crossOrigin="true" />
+        <link rel="preload" href="/fonts/Maison-Medium.ttf" as="font" type="font/ttf" crossOrigin="true" />
+        <link rel="preload" href="/fonts/Maison-Light.ttf" as="font" type="font/ttf" crossOrigin="true" />
+        <link rel="preload" href="/fonts/WorkSans-Regular.ttf" as="font" type="font/ttf" crossOrigin="true" />
         <meta content="#142c63" name="theme-color" />
+        <meta property="og:title" content="Sathya Ram" />
+        <meta property="og:url" content="https://sathyaram.com" />
+        <meta property="og:type" content="portfolio" />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:description" content="Developer | Designer | Photographer" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        {/* <link rel="canonical" href="https://sathyaram.com" /> */}
+        <link rel="canonical" href="https://sathyaram.com" />
 
         <meta
           name="viewport"
@@ -20,7 +25,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body className="midnight" {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
           key={`body`}

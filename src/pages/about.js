@@ -25,7 +25,7 @@ const About = () => (
         <br></br><br></br> I am also an avid photographer and freelancer.
         <br></br> <br></br>
         Combining these skills, I bring beautiful digital experiences to life.
-        At heart, I am a creator: I believe in aesthetics with purpose. 
+        At heart, I am a creator: I believe in aesthetics with purpose.
         </div>
       </div>
       <div className="about-section">
@@ -33,7 +33,7 @@ const About = () => (
           Bio
         </div>
         <div className="about-content">
-          I Double Majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level. Soon after, I found freelance opportunities that allowed me to grow my web skills. <br></br><br></br> I recently graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React in a rigerous environment. Now, I work at agencies while also manning my own freelance website and professional photography business.
+          I double majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level.<br></br><br></br> I recently graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React in a rigerous environment.<br></br><br></br> Now, I work at agencies while also manning my own freelance website and professional photography business.
         </div>
       </div>
       <div className="about-section">
@@ -74,7 +74,7 @@ const About = () => (
         </div>
       </div>
       <div className="about-section">
-     
+
       </div>
     </main>
     <Footer />

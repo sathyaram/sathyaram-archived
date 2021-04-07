@@ -21,7 +21,24 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="loader"></div>
+      <div className="loader">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <svg version="1.1" viewBox="0 0 62.5 28.7">
+          <g>
+            <polygon
+              className="s-line"
+              points="27.9,14.4 13,8.1 23.4,19.8 4.5,28.4 15.7,18.4 0.4,0.3 27.9,7.1 	"
+            />
+            <polyline
+              className="r-line"
+              points="30.1,6.8 30.1,28.4 35.8,13.9 49.6,8.1 39.2,19.8 58,28.5 46.9,18.4 62.3,0.4 30.1,6.8 	"
+            />
+          </g>
+        </svg>
+      </div>
       <SEO title="Home" />
       <Sky bgClass={bgClass} />
       <Menu />
@@ -31,13 +48,11 @@ export default function App() {
           <div className="about-me">
             <h3>Digitally Driven.</h3>
             <p>
-              I'm Sathya, a creative front-end developer and web designer in the
-              D.C. area.
+              I'm Sathya, a creative technologist specializing in frontend development and web interface design.
               <br />
               <br /> I enjoy creating things that live on the internet, whether
               that be websites, applications, or anything in between. My goal is
-              to always build products that provide pixel-perfect, performant
-              experiences.
+              to always build pixel-perfect experiences.
               <br />
               <br /> After graduating from Lehigh University, I found joy in
               working with creative web agencies on making custom websites as a

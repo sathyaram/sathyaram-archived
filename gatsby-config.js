@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Sathya Ram`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Developer | Designer | Photographer`,
     author: `Sathya Ram`,
+    siteUrl: `https://sathyaram.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +17,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

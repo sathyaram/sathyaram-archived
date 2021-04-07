@@ -10,19 +10,6 @@ import "./src/styles/styles.scss";
 import React from "react"
 import SimpleReactLightbox from 'simple-react-lightbox'
 
-// gatsby-browser.js
-// export const shouldUpdateScroll = ({
-//   routerProps: { location },
-//   getSavedScrollPosition
-// }) => {
-
-//   if (location.hash) {
-//     return false;
-//   }
-
-//   return true;
-// };
-
 export const wrapRootElement = ({ element }) => (
   <SimpleReactLightbox>{element}</SimpleReactLightbox>
 )

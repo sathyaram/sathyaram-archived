@@ -125,55 +125,25 @@
   .photography-image {
     cursor: pointer;
   }
-
-  // > div {
-  //   display: grid;
-  //   grid-template-columns: repeat(4, 1fr);
-  //   gap: 1rem;
-
-  //   @media screen and (max-width: $tablet) {
-  //     grid-template-columns: repeat(2, 1fr);
-  //   }
-
-  //   .photography-image {
-  //     flex-basis: 32%;
-  //     cursor: pointer;
-  //     margin: 1%;
-  //   }
-  // }
 }
 
-// .lifestyle-page {
-//   .photography-content {
-//     overflow: hidden;
-//     img {
-//       float: left;
-//       width: 32%;
-//     }
-//   }
-// }
-
 .tl-cover-el {
-  background-image: url("/midnight-sky.jpg") !important;
+  background-image: url("/midnight-sky.jpeg") !important;
   background-size: cover;
   background: $lavender !important;
 }
 
 .my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -30px; /* gutter size offset */
+  margin-left: -30px;
   width: auto;
 }
 .my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
+  padding-left: 30px;
   background-clip: padding-box;
 }
 
-/* Style your items */
 .my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
   background: grey;
   margin-bottom: 30px;
 }

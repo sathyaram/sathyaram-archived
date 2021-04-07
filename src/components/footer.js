@@ -64,6 +64,45 @@ const Footer = () => (
           <span>Codepen</span>
         </a>
       </nav>
+      <nav className="contact" role="navigation">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="SathyaRam_Resume2021.pdf"
+          >
+            Resume
+              </a>
+          <a
+            className="music"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=MXkZ-eeGs6A"
+          >
+            ✧
+              </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/sathya-ram/"
+          >
+            LinkedIn
+              </a>
+          <a
+            className="music"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=-4FWJmHfLC0"
+          >
+            ✧
+              </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:sathyatheram@gmail.com"
+          >
+            Email
+              </a>
+        </nav>
       <address>
         <div className="credits">
           <div>Made with Gatsby + (S)CSS</div>

@@ -25,6 +25,24 @@ aside {
   }
 }
 
+.bottom-tri {
+  position: absolute;
+  &::after {
+    content: "";
+    position: fixed;
+    height: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(20px);
+    left: 50%;
+    transition: all 300ms ease;
+    z-index: 3;
+    border-color: transparent transparent white;
+    border-style: solid;
+    border-width: 0 50vw 30px;
+    opacity: 0;
+  }
+}
+
 .triangles {
   position: absolute;
 
@@ -35,22 +53,22 @@ aside {
     height: 0;
     top: 0;
     z-index: 5;
-    transition: transform 0.3s ease, opacity 4s ease, border 0.3s ease;
+    transition: all 300ms ease;
     border-style: solid;
   }
 
   &::before {
     right: 0;
-    // transform: translateX(50px);
+    transform: translateX(20px);
     border-color: transparent white transparent transparent;
-    border-width: 50vh 20px 50vh 0;
+    border-width: 50vh 30px 50vh 0;
     opacity: 0;
   }
   &::after {
     left: 0;
-    // transform: translateX(-20px);
+    transform: translateX(-20px);
     border-color: transparent transparent transparent white;
-    border-width: 50vh 0 50vh 20px;
+    border-width: 50vh 0 50vh 30px;
     opacity: 0;
   }
 }
@@ -74,22 +92,6 @@ nav.menu {
   // overflow: hidden;
   text-align: center;
   background: $gradient;
-
-  &::after {
-    content: "";
-    position: fixed;
-    height: 0;
-    bottom: 0;
-    transform: translateX(-50%);
-    left: 50%;
-    transition: transform 0.3s ease 0.3s, opacity 4s ease, border 0.3s ease;
-    z-index: 3;
-    border-color: transparent transparent white;
-    border-style: solid;
-    border-width: 0 50vw 20px;
-    opacity: 0;
-    // transition: opacity 600ms ease;
-  }
 
   @media screen and (max-width: $surface) {
     width: 100%;
@@ -126,7 +128,7 @@ nav.menu {
         display: inline-block;
         padding: 1rem 0.5rem;
         font-size: 16px;
-        
+
         @media screen and (max-width: $surface) {
           font-size: 13px;
           padding: 1rem 0.5rem 0;
@@ -135,6 +137,27 @@ nav.menu {
         &:hover {
           color: $midnight;
         }
+      }
+    }
+  }
+
+  .contact {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .eyebrow {
+    justify-content: space-between;
+    .social-media {
+      margin-left: -1.25rem;
+
+      @media screen and (max-width: $screen) {
+      margin-left: 0;
+
+      }
+      a {
+        padding: 0 1rem;
       }
     }
   }
@@ -191,13 +214,24 @@ nav.utility {
   }
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .eclipse {
   position: absolute;
   z-index: 6;
   top: 0;
   left: 0;
   width: 100%;
+  transform: translateY(-40px);
   color: transparent;
+  animation: slideDown 1s ease 4s forwards;
 
   &::before {
     content: "";
@@ -210,7 +244,7 @@ nav.utility {
     border-color: white transparent transparent;
     border-style: solid;
     border-width: 15px 50vw 0;
-    transition: border 400ms ease;
+    transition: all 300ms ease;
   }
 }
 
@@ -223,6 +257,8 @@ nav.utility {
   padding: 0.5rem;
   z-index: 9;
   width: 30px;
+  transform-origin: left;
+  transition: all 300ms ease;
 
   &:hover {
     path {
@@ -232,6 +268,7 @@ nav.utility {
 
   path {
     fill: $waterfall;
+    transition: all 300ms ease;
   }
 }
 
@@ -319,6 +356,37 @@ nav.utility {
   z-index: 5;
 
   &:hover {
+    ~ .triangles {
+      &::before {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      &::after {
+        transform: translateX(6px);
+        opacity: 1;
+      }
+    }
+    ~ .bottom-tri {
+      &::before, &::after {
+        // transform: translateX(0);
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    ~ .eclipse {
+      &::before {
+        border-color: white transparent transparent;
+        border-width: 20px 50vw 0;
+      }
+      .moon  {
+        top: 6px;
+        path {
+          fill: $lightning;
+        }
+      }
+    }
     .burger {
       span {
         &:nth-child(1),
@@ -404,7 +472,7 @@ nav.utility {
   bottom: 0px;
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   left: 0;
   z-index: 4;
   font-family: $work;
@@ -412,6 +480,7 @@ nav.utility {
   height: 100px;
   font-size: 12px;
   text-transform: uppercase;
+  align-items: center;
   width: 100%;
   padding: 36px 50px;
   // transform: translateX(-100%);
@@ -425,67 +494,69 @@ nav.utility {
     text-align: center;
     height: auto;
   }
+}
 
-  .contact {
-    margin-right: -0.75rem;
-    @media screen and (max-width: $screen) {
-      margin-right: 0;
-      margin-top: 0.25rem;
+.contact {
+  margin-right: -0.75rem;
+
+  @media screen and (max-width: $screen) {
+    margin-right: 0;
+    margin-top: 0.25rem;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    position: relative;
+    color: $midnight;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: $work;
+    transition: color 300ms ease;
+
+    @media screen and (max-width: $tablet) {
+      padding: 0.25rem;
     }
-    a {
-      display: inline-block;
-      padding: 0.5rem;
-      margin: 0.25rem;
-      position: relative;
-      color: $midnight;
-      font-weight: 500;
-      font-family: $work;
-      transition: color 300ms ease;
+
+    &:hover {
+      color: $waterfall;
+      text-shadow: none;
+
+      &:not(.music)::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      bottom: 0rem;
+      height: 1px;
+      background-color: #63b5f8;
+      right: 0;
+      -webkit-transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
+      transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
+    }
+
+    &.music {
+      padding: 0.25rem;
+      color: $lightning;
+      text-shadow: none;
 
       @media screen and (max-width: $tablet) {
-        padding: 0.25rem;
-      }
-
-      &:hover {
-        color: $waterfall;
-        text-shadow: none;
-
-        &:not(.music)::before {
-          left: 0;
-          right: auto;
-          width: 100%;
-        }
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 0;
-        bottom: 0rem;
-        height: 1px;
-        background-color: #63b5f8;
-        right: 0;
-        -webkit-transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
-        transition: width 0.3s cubic-bezier(0.37, 0, 0.21, 1.02);
-      }
-
-      &.music {
-        padding: 0.25rem;
-        color: $lightning;
-        text-shadow: none;
-
-        @media screen and (max-width: $tablet) {
-          padding: 0;
-          margin: 0;
-        }
+        padding: 0;
+        margin: 0;
       }
     }
   }
 }
-
 .social-media {
   display: flex;
-  margin-left: -1.25rem;
+  // margin-left: -1.25rem;
 
   @media screen and (max-width: $screen) {
     margin-left: 0;
@@ -493,7 +564,7 @@ nav.utility {
 
   a {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -630,6 +701,95 @@ nav.utility {
       animation-delay: -0.4s;
       border-bottom: 2px solid $waterfall;
       border-right: 2px solid $waterfall;
+    }
+  }
+}
+
+@keyframes height {
+  0% {
+    height: 100vh;
+  }
+
+  100% {
+    height: 0px;
+    z-index: 1;
+  }
+}
+
+@keyframes zindex {
+  0% {
+    z-index: 7;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+
+  svg {
+    max-width: 330px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 7;
+    animation: 1s zindex 3s ease forwards;
+    opacity: 0.4;
+
+    .s-line {
+      transition: fill 300ms ease;
+      fill: #040411;
+      stroke: #040411;
+      stroke-width: 0.7px;
+      stroke-dasharray: 126.93897247314453;
+      stroke-dashoffset: 126.93897247314453;
+      animation: line-animate 2.5s ease forwards;
+      fill: transparent;
+    }
+
+    .r-line {
+      transition: fill 300ms ease;
+      fill: #2baae2;
+      stroke: #2baae2;
+      stroke-width: 0.7px;
+      stroke-dasharray: 160.04493713378906;
+      stroke-dashoffset: 160.04493713378906;
+      animation: line-animate 1.7s ease forwards 0.2s;
+      fill: transparent;
+    }
+  }
+
+  .slide {
+    width: 25%;
+    height: 100vh;
+    background: #fff;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    animation: height 1.5s ease 2s forwards;
+
+    &:nth-child(2) {
+      left: 25%;
+      animation: height 1.5s ease 2.5s forwards;
+    }
+    &:nth-child(3) {
+      left: 50%;
+      animation: height 1.5s ease 3s forwards;
+    }
+    &:nth-child(4) {
+      left: 75%;
+      animation: height 1.5s ease 3.5s forwards;
     }
   }
 }

@@ -77,7 +77,6 @@ footer {
         outline: none;
         background-color: white;
         transition: background 300ms ease;
-        border-radius: 12px;
         padding: 0.25rem 2rem;
         height: 45px;
         box-shadow: 1px 3px 20px 0 rgba(128, 128, 128, 0.5);
@@ -92,7 +91,7 @@ footer {
   }
 
   .social-media-footer {
-    margin: 1rem 0 0;
+    margin: 1rem 0 3rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -191,11 +190,10 @@ footer {
   }
 
   .villain {
-    padding: 150px 50px;
+    padding: 130px 50px;
     text-align: center;
     position: relative;
     transition: background-image 300ms ease;
-    // background-image: url(https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gxCx-footer_bg2.jpg);
     background-size: cover;
     background-position: 50% bottom;
     z-index: 1;
@@ -239,7 +237,7 @@ footer {
       padding: 0 2rem;
       left: 0;
       width: 100%;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 8px;
       text-align: center;
       justify-content: center;

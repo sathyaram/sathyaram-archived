@@ -20,16 +20,7 @@ export default function Menu() {
 
   return (
     <aside role="region">
-      <button name="toggle" className="eclipse" onClick={eclipse}>
-        <svg className="moon" viewBox="0 0 11.6 11.7">
-          <path
-            className="st0"
-            d="M4.1,7.2c-1.5-2-1.1-4.8,0.8-6.3c0.4-0.3,0.8-0.5,1.3-0.7C4.9,0.1,3.6,0.5,2.4,1.4C0,3.3-0.5,6.8,1.4,9.3
-c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.2,4.1,7.2z"
-          />
-        </svg>
-        Toggle Night Mode
-      </button>
+    
       <AniLink onClick={closeMenu} aria-label="Logo Home Link" className="logo" name="logo" cover direction="right" to="/">
         <svg version="1.1" viewBox="0 0 62.5 28.7">
           <g>
@@ -71,8 +62,19 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
           <span></span>
         </div>
       </button>
+      <button name="toggle" className="eclipse" onClick={eclipse}>
+        <svg className="moon" viewBox="0 0 11.6 11.7">
+          <path
+            className="st0"
+            d="M4.1,7.2c-1.5-2-1.1-4.8,0.8-6.3c0.4-0.3,0.8-0.5,1.3-0.7C4.9,0.1,3.6,0.5,2.4,1.4C0,3.3-0.5,6.8,1.4,9.3
+c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.2,4.1,7.2z"
+          />
+        </svg>
+        Toggle Night Mode
+      </button>
+      <div className="triangles"></div>
+      <div className="bottom-tri"></div>
       <nav className="menu" role="navigation">
-        <div className="triangles"></div>
         <ul>
           <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/">Home</AniLink>
@@ -100,18 +102,11 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <AniLink onClick={closeMenu} cover direction="right" to="/portraits"
             >Portraits</AniLink>
           </li>
-          {/* <li>
-            <AniLink onClick={closeMenu} cover direction="right" to="/lifestyle"
-            >Lifestyle</AniLink>
-          </li> */}
+
           <li>
             <AniLink onClick={closeMenu} cover direction="right" to="/cosplay"
             >Cosplay</AniLink>
           </li>
-          {/* <li>
-            <AniLink onClick={closeMenu} cover direction="right" to="/space"
-            >Space</AniLink>
-          </li> */}
         </ul>
         <div className="eyebrow">
           <nav className="social-media" role="navigation">
@@ -169,7 +164,7 @@ c1.9,2.5,5.5,3,7.9,1.1c1.1-0.9,1.8-2,2.1-3.3c-0.3,0.4-0.6,0.7-1,1C8.4,9.6,5.6,9.
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="/images/SathyaRam_Resume2020.pdf"
+              href="SathyaRam_Resume2021.pdf"
             >
               Resume
           </a>

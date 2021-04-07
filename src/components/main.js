@@ -22,7 +22,7 @@ export default function Main() {
         <div className="section-text">
           <h3 className="section-title">Website Development</h3>
           <p className="section-desc">
-            I craft and develop full-scale websites and engaging UI with a variety of technologies.
+            I build and develop full-scale websites and engaging UI with a variety of technologies like Drupal, WordPress, React and Grav.
             </p>
         </div>
         <div className="section-content">
@@ -34,7 +34,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    I had the opportunity to help with the front-end development for The Vilcek Foundation, who raise awareness of immigrant contributions in the United States and foster appreciation of the arts and sciences.
+                    The Vilcek Foundation, which raises awareness of immigrant contributions in the United States and fosters appreciation of the arts and sciences. I had the opportunity at ForumOne to do a majority of the front-end WordPress development for the site, where I crafted components, animations, and interactions.
                     </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
+                    A wonderful freelance opportunity that I acquired through a World of Warcraft friend, Gnarly Knots is one of the best Pretzel joints in the midwest. I was bestowed the great task of redesigning and redeveloping their existing website to WordPress. It was a resounding success, with a heavy focus on imagery and typography.
                     </p>
                 </div>
               </div>
@@ -100,8 +100,7 @@ export default function Main() {
                   <li>WordPress</li>
                   <li>JavaScript</li>
                   <li>Web Design</li>
-                  <li>Graphic Design</li>
-                  <li>Photo + Video</li>
+                  <li>(S)CSS</li>
                 </ul>
               </div>
             </div>
@@ -120,7 +119,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-              <Image alt="Gnarly Knots Pretzel Co" filename="pretzel.png" />
+                <Image alt="Gnarly Knots Pretzel Co" filename="pretzel.png" />
               </div>
             </div>
           </Tilt>
@@ -134,7 +133,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    While working at ForumOne, I worked with a team at the Howard Hughies Medical Institute's Biointeractive.org, a website/images/web tool, with over a million page views. They bring together a variety of case studies, high-quality videos, and interactive media that are designed to connect students to big ideas in biology and promote engagement with science. There were over 100 styled components with the website being made in Drupal.
                     </p>
                 </div>
               </div>
@@ -149,7 +148,7 @@ export default function Main() {
                   </a>
                 <ul className="tags">
                   <li>Drupal 8</li>
-                  <li>Pattern Lab</li>
+                  <li>JavaScript</li>
                   <li>Twig/YAML</li>
                   <li>SCSS</li>
                 </ul>
@@ -171,10 +170,7 @@ export default function Main() {
             <div className="overflow-wrapper">
               <div className="section-media">
                 <div className="phone-screen">
-                  <img
-                    alt="me"
-                    src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/Lx_D-ss+(2020-10-11+at+05.32.59).png"
-                  />
+                  <Image alt="sexy ad" filename="hhmi.png" />
                 </div>
               </div>
             </div>
@@ -189,7 +185,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site.
+                    An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site - striving for a more colorful contemporary look.
                     </p>
                 </div>
               </div>
@@ -225,7 +221,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-              <Image alt="Amanda Foundation Dog" filename="amanda-dog.png" />
+                <Image alt="Amanda Foundation Dog" filename="amanda-dog.png" />
               </div>
             </div>
           </Tilt>
@@ -275,7 +271,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-              <Image alt="Fudtruk Truck" filename="fudtruk.png" />
+                <Image alt="Fudtruk Truck" filename="fudtruk.png" />
               </div>
             </div>
           </Tilt>
@@ -289,7 +285,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website has been a resounding success, with their products now being available in more than 20 locations and counting.
                     </p>
                 </div>
               </div>
@@ -304,7 +300,6 @@ export default function Main() {
                   </a>
                 <ul className="tags">
                   <li>Drupal 8</li>
-                  <li>Pattern Lab</li>
                   <li>Twig/YAML</li>
                   <li>SCSS</li>
                 </ul>
@@ -325,10 +320,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-                <img
-                  alt="me"
-                  src="keystone.png"
-                />
+                <Image alt="astral image" filename="keystone.png" />
               </div>
             </div>
           </Tilt>
@@ -342,7 +334,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
+                    Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of major products across many industries. Some of these include space shuttles, commercial aircrafts, jets and cars. A small but mighty industry, these little nuts are the glue that holds America tight.
                     </p>
                 </div>
               </div>
@@ -378,10 +370,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-                <img
-                  alt="me"
-                  src="astral.png"
-                />
+                <Image alt="astral image" filename="astral.png" />
               </div>
             </div>
           </Tilt>
@@ -395,7 +384,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    As an alumni from Lehigh University, I was asked to do the design and development for the university’s new website, highlighting the modern programs and facilities that would attract students to the synergy of Lehigh's programs. A cleaner, contemporary design with flat colors and legible text allows for a neater and more comprehensible design.
                     </p>
                 </div>
               </div>
@@ -431,7 +420,7 @@ export default function Main() {
             </div>
             <div className="overflow-wrapper">
               <div className="section-media">
-              <Image alt="Lehigh Arts, Architecture and Design" filename="aad.jpg" />
+                <Image alt="Lehigh Arts, Architecture and Design" filename="aad.jpg" />
               </div>
             </div>
           </Tilt>
@@ -441,17 +430,13 @@ export default function Main() {
         <div className="section-text">
           <h3 className="section-title">Web &amp; Interface Design</h3>
           <p className="section-desc">
-            I build and activate brands with cultural insight and strategic
-            vision.
+            I craft and activate brands with cultural insight, user data, strategic vision and attentive attention to aesthetics.
             </p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
             <div className="section-media">
-              <img
-                alt="me"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/Es1_-FrostShot.png"
-              />
+              <Image alt="Frost Website" filename="frostshot.png" />
             </div>
             <div className="section-info">
               <div className="title">Frost</div>
@@ -460,13 +445,16 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    At ForumOne, I worked with a team on HHMI's Biointeractive.org, a website/images/web tool, with over type a million page views, that brings together a variety of case studies, high-quality videos and interactive media, that are designed to connect students to big ideas in biology and promote engagement with science.
+                    Frost is a financial investment tool made to simplify the experience of purchasing the best stocks out there. I was graced with the opportunity to brand them completely, from logo to website and colors. The designs depicted are from their soon coming site.
                     </p>
                 </div>
               </div>
             </div>
             <div className="links">
-              <a href="/">View Designs</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dribbble.com/sathyaram">View Designs</a>
               <button onClick={openDesc} className="read-more">
                 Read More
                 </button>
@@ -474,65 +462,87 @@ export default function Main() {
           </Tilt>
           <Tilt className="tilt">
             <div className="section-media">
-              <img
-                alt="me"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/WPjP-AAD.jpg"
-              />
+              <Image alt="Lehigh Arts College Shot" filename="aadshot.jpeg" />
             </div>
             <div className="section-info">
               <div className="title">Lehigh AAD</div>
               <div className="subtitle">Arts, Architecture &amp; Design</div>
-              <p className="description">So awesome.</p>
-              <div className="links">
-                <a
-                  href="https://dribbble.com/shots/5383863-Art-Architecture-and-Design-Website"
-                  rel="noopener noreferrer"
-                >
-                  View Designs
-                  </a>
+              <div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    I worked extensively with the different department heads within the College of Arts and Sciences to create a new web experience that highlighted their intricate programs and facilities. These internal designs are a testament to that.
+                    </p>
+                </div>
               </div>
+            </div>
+            <div className="links">
+              <a href="https://dribbble.com/shots/5383863-Art-Architecture-and-Design-Website"
+                rel="noopener noreferrer">View Designs</a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
             </div>
           </Tilt>
           <Tilt className="tilt">
             <div className="section-media">
-            <Image alt="Lehigh Connect Portal" filename="portalshot.jpeg" />
-
+              <Image alt="Lehigh Connect Portal" filename="portalshot.jpeg" />
             </div>
             <div className="section-info">
               <div className="title">Connect Portal</div>
               <div className="subtitle">Lehigh University's Campus Hub</div>
-              <p className="description">So awesome.</p>
-              <div className="links">
-                <a
-                  rel="noopener noreferrer"
-                  href="https://dribbble.com/shots/5308923-Lehigh-Portal"
-                >
-                  View Designs
-                  </a>
+              <div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    While working at Lehigh University, I was in charge of the Portal software they used which everyone logged in on to check the campus news and facilities. Being a designer, I advocated for a full redesign of the look of the portal to create a more contemporary modern look - it was graced with a best portal design award.
+                    </p>
+                </div>
               </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dribbble.com/shots/5308923-Lehigh-Portal"
+              >
+                View Designs
+                  </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
             </div>
           </Tilt>
           <Tilt className="tilt">
             <div className="section-media">
-              <img
-                alt="me"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/gV0Z-LehighEngineering.jpg"
-              />
+              <Image alt="Lehigh Engineering Shot" filename="engshot.jpeg" />
+
             </div>
             <div className="section-info">
               <div className="title">Lehigh Engineering</div>
               <div className="subtitle">
                 P.C Rossin College of Engineering
                 </div>
-              <p className="description">So awesome.</p>
-              <div className="links">
-                <a
-                  rel="noopener noreferrer"
-                  href="https://dribbble.com/shots/5384304-Lehigh-Engineering-Website"
-                >
-                  View Designs
-                  </a>
+              <div>
+                <div className="description">
+                  <button onClick={closeDesc}>✕</button>
+                  <p>
+                    One of my most ambitious and exciting web designs - the college of Engineering asked for a full redesign of the website stratosphere. A massive undertaking that proved fruitful and carefully methodical.
+                    </p>
+                </div>
               </div>
+            </div>
+            <div className="links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dribbble.com/shots/5384304-Lehigh-Engineering-Website"
+              >
+                View Designs
+                  </a>
+              <button onClick={openDesc} className="read-more">
+                Read More
+                </button>
             </div>
           </Tilt>
         </div>
@@ -540,7 +550,7 @@ export default function Main() {
       <section id="projects" className="projects">
         <div className="section-text">
           <h3 className="section-title">Projects</h3>
-          <p className="section-desc">I'm a passionate nerd, and I toy around with new tech while making things for the internet.</p>
+          <p className="section-desc">I'm a passionate nerd that toys around with new tech while making interesting things for the internet!</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
@@ -557,10 +567,8 @@ export default function Main() {
               </a>
             <div className="laptop">
               <div className="laptop-top">
-                <img
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/fh5M-ss+(2020-10-10+at+08.07.49).jpg"
-                  alt="me"
-                />
+                <Image alt="exhaust notes website" filename="exhaust.jpg" />
+
               </div>
               <div className="laptop-base"></div>
             </div>
@@ -580,10 +588,7 @@ export default function Main() {
               </a>
             <div className="laptop">
               <div className="laptop-top">
-                <img
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/uYC9-ss+(2020-10-10+at+08.01.24).png"
-                  alt="me"
-                />
+                <Image alt="cool website" filename="cool.jpg" />
               </div>
               <div className="laptop-base"></div>
             </div>
@@ -605,10 +610,8 @@ export default function Main() {
               </a>
             <div className="laptop">
               <div class="laptop-top">
-                <img
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/nidg-ss+(2020-10-10+at+08.04.26).jpg"
-                  alt="me"
-                />
+                <Image alt="Oscars website" filename="oscars.jpg" />
+
               </div>
               <div className="laptop-base"></div>
             </div>
@@ -627,22 +630,24 @@ export default function Main() {
               View All Logos
               </a>
             <div className="section-media">
-              <img
-                alt="dang"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/NzsU-wingullssurfshop.jpg"
-              />
-              <img
-                alt="dang"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/0At3-sunkernhome_garden.jpg"
-              />
-              <img
-                alt="dang"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/rBM1-houndoom.jpg"
-              />
-              <img
-                alt="dang"
-                src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/ThZq-combeehoney.jpg"
-              />
+              <div className="section-image">
+                <Image alt="sexy ad" filename="surf.jpeg" />
+              </div>
+              <div className="section-image">
+
+                <Image alt="sexy ad" filename="sunkern.jpeg" />
+              </div>
+
+              <div className="section-image">
+
+                <Image alt="sexy ad" filename="houndoom.jpeg" />
+              </div>
+
+              <div className="section-image">
+
+                <Image alt="sexy ad" filename="honey.jpeg" />
+              </div>
+
             </div>
           </Tilt>
         </div>
@@ -650,13 +655,13 @@ export default function Main() {
       <section id="photography" className="photography">
         <div className="section-text">
           <h3 className="section-title">Photography</h3>
-          <p className="section-desc">I'm an award winning photographer accomplished in a variety of disciplines but focused on people, specifically portraits and lifestyle.</p>
+          <p className="section-desc">I'm an award winning photographer accomplished in a variety of disciplines with a focus on people, specifically portraits and lifestyle.</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
             <AniLink cover direction="right" to="/portraits" >
-              <div>Portraits</div>
-              <img alt="me" src="chance-two.jpg" />
+              <div className="photography-name">Portraits</div>
+              <Image alt="Chance Portrait" filename="chance-two.jpg" />
             </AniLink>
           </Tilt>
           {/* <Tilt className="tilt">
@@ -670,9 +675,8 @@ export default function Main() {
           </Tilt> */}
           <Tilt className="tilt">
             <AniLink cover direction="right" to="/cosplay">
-              <div>Cosplay</div>
+              <div className="photography-name">Cosplay</div>
               <Image alt="Cosplay Holly Peppermint" filename="hollypeppermint.jpg" />
-
             </AniLink>
           </Tilt>
           {/* <Tilt className="tilt">
@@ -1102,28 +1106,16 @@ export default function Main() {
             </div>
             <div className="social-images">
               <div className="social-image">
-                <img
-                  alt="jack"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/DpLw-120138295_216234946509729_2571446367039451377_n.jpg"
-                />
+                <Image alt="jack" filename="jack.jpeg" />
               </div>
               <div className="social-image">
-                <img
-                  alt="bossjane"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/dEKD-84157797_528666187744043_164292724461882664_n.jpg"
-                />{" "}
+                <Image alt="jane doe" filename="janedoeyo.jpeg" />
               </div>
               <div className="social-image">
-                <img
-                  alt="daniel"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/LoIS-93616582_228170555080866_5086578158414777207_n.jpg"
-                />{" "}
+                <Image alt="jane doe" filename="daniel.jpg" />
               </div>
               <div className="social-image">
-                <img
-                  alt="katrina"
-                  src="https://uploads.codesandbox.io/uploads/user/e07fd652-6bd5-4bc0-a542-41d98d7af4e0/nD2e-82457871_553548395242427_6843821579115814330_n.jpg"
-                />{" "}
+                <Image alt="kat" filename="katstreet.jpeg" />
               </div>
             </div>
           </div>
@@ -1140,31 +1132,16 @@ export default function Main() {
             </div>
             <div className="social-images">
               <div className="social-image">
-                {" "}
-                <img
-                  alt="me"
-                  src="https://sathyaram.com/images/graphic/sexyad1.jpg"
-                />
+                <Image alt="sexy ad" filename="sexyad1.jpeg" />
               </div>
               <div className="social-image">
-                <img
-                  alt="me"
-                  src="https://sathyaram.com/images/graphic/lehighracing.jpg"
-                />
+                <Image alt="lehigh racing" filename="lehighracing.jpeg" />
               </div>
               <div className="social-image">
-                {" "}
-                <img
-                  alt="me"
-                  src="https://sathyaram.com/images/graphic/sexy_cover.jpg"
-                />
+                <Image alt="sexy vitamins cover" filename="sexy_cover.jpeg" />
               </div>
               <div className="social-image">
-                {" "}
-                <img
-                  alt="me"
-                  src="https://sathyaram.com/images/graphic/indify.jpg"
-                />
+                <Image alt="indify logo" filename="indify.jpeg" />
               </div>
             </div>
           </div>

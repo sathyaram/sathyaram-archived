@@ -135,45 +135,6 @@ const Hero = ({ setBgClass }) => {
           <span></span>
           <span></span>
         </div>
-        <nav className="contact" role="navigation">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/images/SathyaRam_Resume2020.pdf"
-          >
-            Resume
-              </a>
-          <a
-            className="music"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/watch?v=MXkZ-eeGs6A"
-          >
-            ✧
-              </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/sathya-ram/"
-          >
-            LinkedIn
-              </a>
-          <a
-            className="music"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/watch?v=-4FWJmHfLC0"
-          >
-            ✧
-              </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:sathyatheram@gmail.com"
-          >
-            Email
-              </a>
-        </nav>
       </div>
     </header>
   );

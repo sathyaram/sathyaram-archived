@@ -11,7 +11,7 @@ body {
         background-position: 0% 60%;
       }
     }
-    
+
     .me {
       &:hover {
         &::before {
@@ -21,13 +21,15 @@ body {
       }
     }
 
-    
+    .loader svg {
+      opacity: 1;
+    }
 
     .background {
       background: $midnight;
-      background-image: url("/midnight-sky.jpg");
+      background-image: url("/midnight-sky.jpeg");
       background-position: 20% 60%;
-      // animation: moves 40s ease alternate infinite;
+      // animation: moves 40s linear 5s alternate infinite;
 
       &::after {
         opacity: 0.2;
@@ -53,11 +55,17 @@ body {
     }
 
     .pronounce,
-    .eyebrow .contact a:not(.music),
     .eyebrow .social-media a span,
     .logo::after,
     .menu-title {
       color: white;
+    }
+
+    .contact a:not(.music) {
+      color: white;
+      &:hover {
+        color: $lightning;
+      }
     }
 
     .about-page {
@@ -84,7 +92,7 @@ body {
     }
 
     p {
-      color: $grey !important;
+      color: #f0f4f8 !important;
     }
 
     nav.utility li a {
@@ -107,16 +115,16 @@ body {
       fill: white;
 
       &:hover {
-        box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6), 0 0 25px 0 rgba(203, 226, 255, 0.6), 0 0 25px 0 rgba(203, 226, 255, 0.6) ;
+        box-shadow: 0 0 7px 0 rgba(203, 226, 255, 0.6), 0 0 10px 0 rgba(0, 110, 255, 0.6),
+          0 0 25px 0 rgba(203, 226, 255, 0.6), 0 0 25px 0 rgba(203, 226, 255, 0.6);
       }
 
       .quote {
-        background-color:rgba($midnight, 0.65);
+        background-color: rgba($midnight, 0.65);
         color: white;
 
         .quote-cite {
           color: $lightning;
-
         }
         .quote-company {
           color: $petal;
@@ -145,7 +153,6 @@ body {
         color: white;
       }
       .villain {
-        background-image: transparent;
         background-position: 50% 60%;
 
         &::before {
@@ -297,7 +304,58 @@ body {
           text-shadow: 0 0 4px white, 0 0 2px white;
         }
       }
-      
+    }
+
+    .triangles {
+      &::before {
+        border-width: 50vh 55px 50vh 0;
+        opacity: 1;
+        transform: translateX(0);
+        
+        @media screen and (max-width: $tablet) {
+          border-width: 50vh 20px 50vh 0;
+        }
+      }
+
+      &::after {
+        opacity: 1;
+        border-width: 50vh 0 50vh 55px;
+        transform: translateX(6px);
+
+        @media screen and (max-width: $tablet) {
+          border-width: 50vh 0 50vh 20px;
+        }
+      }
+    }
+    .bottom-tri {
+      &::before,
+      &::after {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      &::after {
+        border-width: 0 50vw 50px;
+
+        @media screen and (max-width: $tablet) {
+          border-width: 0 50vw 20px;
+        }
+      }
+    }
+
+    .eclipse {
+      &::before {
+        border-color: white transparent transparent;
+        border-width: 40px 50vw 0;
+      }
+
+      .moon {
+        top: 24px;
+        transform: scale(1.5) translateX(-50%);
+        path {
+          fill: $lightning;
+        }
+      }
     }
 
     .menu-title {
@@ -321,11 +379,10 @@ body {
 
           &:nth-child(1) {
             transform: translateY(0px) rotate(315deg) translateX(-4px);
-          
+
             &::before {
               background-color: #77cff5;
             }
-          
           }
 
           &:nth-child(2) {
@@ -344,7 +401,14 @@ body {
     }
 
     .triangles {
-      &::before, &::after {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    .bottom-tri {
+      &::after {
         opacity: 1;
       }
     }
@@ -353,10 +417,6 @@ body {
       transform: scale(1);
       opacity: 1;
       pointer-events: auto;
-
-      &::after {
-        opacity: 1;
-      }
 
       li {
         @for $i from 1 through 6 {
@@ -388,7 +448,6 @@ body {
   }
 
   &.midnight.menu-open {
-
     .eclipse {
       &::before {
         border-color: white transparent transparent !important;
@@ -397,7 +456,7 @@ body {
       .moon {
         path {
           fill: $lilac;
-    
+
           &:hover {
             fill: lightblue;
           }
