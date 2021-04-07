@@ -28,14 +28,14 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "2e501b8eb5c60d59c18fd4e68e3a4b55"
+    "revision": "f38367f224c15cba0aa54061e6873b23"
   },
   {
     "url": "index.html",
-    "revision": "958662d4b5dcc544623e7a55baff676c"
+    "revision": "0c5b19e3d4aa654abc11899eb7cdf869"
   },
   {
-    "url": "styles.42c8348b62274632639c.css"
+    "url": "styles.7c4671a09271a8edde89.css"
   },
   {
     "url": "styles-1043fb1b9b9e69356781.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a5b6d641c33f7153a50a29672ff589d9"
+    "revision": "9efdda1a9a509f998140227e24c168aa"
   },
   {
     "url": "fonts/Maison-Demi.ttf",
@@ -70,7 +70,7 @@ self.__precacheManifest = [
     "revision": "92bbabfda96fb9e73100d90404d5383a"
   },
   {
-    "url": "webpack-runtime-da596f91e54fd9a8fcdf.js"
+    "url": "webpack-runtime-055a4760543af78a43aa.js"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-47c8d8b7529f7a984452.js"

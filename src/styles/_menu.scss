@@ -721,7 +721,6 @@ nav.utility {
   }
   100% {
     z-index: 1;
-    position: absolute;
   }
 }
 
@@ -739,7 +738,7 @@ nav.utility {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    position: fixed;
+    position: absolute;
     top: 47%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);

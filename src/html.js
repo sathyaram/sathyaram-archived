@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import ogImage from "./images/og-image.jpg"
 
 export default function HTML(props) {
   return (
@@ -14,12 +15,11 @@ export default function HTML(props) {
         <meta property="og:title" content="Sathya Ram" />
         <meta property="og:url" content="https://sathyaram.com" />
         <meta property="og:type" content="portfolio" />
-        <meta property="og:description" content="Developer | Designer | Photographer" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <link rel="canonical" href="https://sathyaram.com" />
-        <meta property="og:image" content="og-image.jpg" />
-        <meta property="twitter:image" content="og-image.jpg" />
-        <meta property="image" content="og-image.jpg" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="twitter:image" content={ogImage}/>
+        <meta property="image" content={ogImage}/>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

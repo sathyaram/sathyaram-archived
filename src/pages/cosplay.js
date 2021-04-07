@@ -9,15 +9,17 @@ import Masonry from 'react-masonry-css'
 
 const Lifestyle = () => {
   const options = {
-    // settings: {
-    //   overlayColor: "rgb(25, 136, 124)",
-    //   autoplaySpeed: 1500,
-    //   transitionSpeed: 900,
-    // },
-    // buttons: {
-    //   backgroundColor: "#1b5245",
-    //   iconColor: "rgba(126, 172, 139, 0.8)",
-    // },
+    settings: {
+      overlayColor: "rgb(4, 4, 17, 0.9)",
+      autoplaySpeed: 1500,
+      transitionSpeed: 900,
+    },
+    buttons: {
+      // backgroundColor: "#1b5245",
+      // iconColor: "rgba(126, 172, 139, 0.8)",
+      showDownloadButton: false,
+      showThumbnailsButton: false
+    },
     // caption: {
     //   captionColor: "#a6cfa5",
     //   captionFontFamily: "Raleway, sans-serif",
