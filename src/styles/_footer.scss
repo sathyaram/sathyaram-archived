@@ -55,6 +55,13 @@ footer {
 
         > div {
           transform: translateZ(30px) translateX(5px) translateY(7px);
+          margin-bottom: 0.5rem;
+          margin-top: -0.75rem;
+
+          @media screen and (max-width: $screen) {
+            transform: none;
+            margin-top: 0;
+          }
         }
       }
 
@@ -62,9 +69,12 @@ footer {
         font-size: 14px;
         color: $midnight;
         font-weight: 500;
+        line-height: 100%;
         transform: translateZ(20px) translateX(5px) translateY(5px);
+        // margin-top: 0.5rem;
 
         @media screen and (max-width: $screen) {
+          transform: none;
           margin-bottom: 1rem;
         }
       }

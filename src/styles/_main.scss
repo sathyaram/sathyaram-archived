@@ -729,7 +729,7 @@ section#websites {
         transform: translateX(-47%) translateY(60px) rotate(14deg);
 
         @media screen and (max-width: $blazeit) {
-          top: 45%;
+          top: 25%;
         }
       }
       .links {
@@ -761,6 +761,10 @@ section#websites {
         top: 49%;
         width: 100%;
         margin: 0;
+
+        @media screen and (max-width: $blazeit) {
+          top: 65%;
+        }
       }
       &:hover {
         .phone-screen {
@@ -799,11 +803,19 @@ section#websites {
         width: 100%;
         margin: 0;
         transition: all 300ms ease;
+
+        @media screen and (max-width: $blazeit) {
+          top: 47%;
+        }
       }
       &:hover {
         .section-media {
           top: 25%;
         }
+      }
+
+      .subtitle {
+        color: white;
       }
       .links {
         a {
@@ -869,7 +881,7 @@ section#websites {
         width: 450px;
 
         @media screen and (max-width: $blazeit) {
-          top: 45%;
+          top: 0%;
         }
       }
 
@@ -963,7 +975,7 @@ section#websites {
         box-shadow: 0 10px 20px 1px rgba(34, 34, 34, 0.769);
 
         @media screen and (max-width: $blazeit) {
-          top: 45%;
+          top: 60%;
         }
       }
 
@@ -1011,6 +1023,7 @@ section#websites {
 
       .right {
         text-align: left;
+        max-width: 100%;
       }
     }
   }
@@ -1046,9 +1059,7 @@ section#designs {
       border: 15px solid #f7f7f7;
       border-radius: 15px;
 
-      @media screen and (max-width: $blazeit) {
-        border: 0;
-      }
+      
     }
   }
 
@@ -1056,13 +1067,25 @@ section#designs {
     height: auto;
     @include padding;
     padding: 50px 50px 36px;
-    margin: 4rem 1rem 0;
+    margin: 2rem 1rem 0;
     width: 46%;
+
+    &:not(:first-child):not(:nth-child(2)) {
+      margin: 6rem 1rem 0;
+    }
 
     @media screen and (max-width: $screen) {
       width: 100%;
       max-width: 450px;
-      margin: 6rem auto 0;
+      margin: 2rem auto 0;
+
+      &:not(:first-child):not(:nth-child(2)) {
+        margin: 6rem auto 0;
+      }
+
+      &:not(:first-child) {
+        margin: 6rem auto 0;
+      }
     }
 
     .links {
@@ -1158,18 +1181,6 @@ section#photography {
         }
       }
 
-      &:nth-child(even) {
-        div {
-          @media screen and (max-width: $tablet) {
-            left: 1rem;
-          }
-
-          @media screen and (max-width: $blazeit) {
-            left: 50%;
-          }
-        }
-      }
-
       @media screen and (max-width: $mac) {
         width: 28%;
 
@@ -1179,7 +1190,8 @@ section#photography {
       }
 
       @media screen and (max-width: $tablet) {
-        width: 50%;
+        max-width: 325px;
+        width: 100%;
       }
 
       @media screen and (max-width: $blazeit) {
@@ -1320,6 +1332,10 @@ section#projects {
         padding: 36px;
         text-align: center;
         border-radius: 0;
+
+        &:not(:first-child) {
+          margin-top: -2px;   
+        }
 
         .title,
         .subtitle {

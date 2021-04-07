@@ -30,7 +30,7 @@ self.__precacheManifest = [
     "url": "webpack-runtime-cfd819c8ec9bb2af3e3d.js"
   },
   {
-    "url": "styles.3b3e780670e16794d42f.css"
+    "url": "styles.7c4671a09271a8edde89.css"
   },
   {
     "url": "styles-1043fb1b9b9e69356781.js"
@@ -46,7 +46,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "352fab03f2adc863124d4fa5d8a63417"
+    "revision": "da00f3305b4fb2224446d4cb0e612b6a"
   },
   {
     "url": "fonts/Maison-Demi.ttf",

@@ -311,7 +311,7 @@ body {
         border-width: 50vh 55px 50vh 0;
         opacity: 1;
         transform: translateX(0);
-        
+
         @media screen and (max-width: $tablet) {
           border-width: 50vh 20px 50vh 0;
         }
@@ -511,19 +511,19 @@ h1 {
   div {
     display: inline-block;
 
-    @media screen and (max-width: $blazeit) {
-      margin: 0 !important;
-    }
+    // @media screen and (max-width: $blazeit) {
+    //   margin: 0 !important;
+    // }
 
     &:nth-child(1) {
       @media screen and (max-width: $screen) {
-        margin: 0 0.5rem;
+        margin: 0 0.35rem;
       }
     }
 
     &:nth-child(2) {
       @media screen and (max-width: $screen) {
-        margin: 0 0.5rem;
+        margin: 0 0.35rem;
       }
     }
   }

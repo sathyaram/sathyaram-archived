@@ -599,7 +599,6 @@ nav.utility {
 
     svg {
       width: 32px;
-
       filter: drop-shadow(1px 1px 0.25px rgba($lightning, 0.2));
     }
 
@@ -756,6 +755,7 @@ nav.utility {
       stroke-dashoffset: 126.93897247314453;
       animation: line-animate 2.5s ease forwards;
       fill: transparent;
+      stroke-linecap: round;
     }
 
     .r-line {
@@ -767,6 +767,7 @@ nav.utility {
       stroke-dashoffset: 160.04493713378906;
       animation: line-animate 1.7s ease forwards 0.2s;
       fill: transparent;
+      stroke-linecap: round;
     }
   }
 
