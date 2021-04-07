@@ -3,7 +3,8 @@ module.exports = {
     title: `Sathya Ram`,
     description: `Developer | Designer | Photographer`,
     author: `Sathya Ram`,
-    siteUrl: `https://sathyaram.com`
+    siteUrl: `https://sathyaram.com`,
+    image: `og-image.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

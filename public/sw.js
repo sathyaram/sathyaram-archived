@@ -28,11 +28,11 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e76652c132aff3d84ef7c97a69e9d236"
+    "revision": "9a31b2f7e13df99c61cfbe541e056ba4"
   },
   {
     "url": "index.html",
-    "revision": "8d4e3c5a0192ac7de258b5168ed3daf1"
+    "revision": "3ca36e18ad47d80c715e9c2d364ad33a"
   },
   {
     "url": "styles.e45aea24e1de61bd0cac.css"
@@ -47,11 +47,11 @@ self.__precacheManifest = [
     "url": "dbf3ce33-eebea676cbd7efc13697.js"
   },
   {
-    "url": "app-91ae9bb040c695171fb7.js"
+    "url": "app-ebabadad8111cdb39c4a.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c40e270a9111a91617ccd26d8f9f066f"
+    "revision": "e16b53d229f94ede57d97716c7eae399"
   },
   {
     "url": "fonts/Maison-Demi.ttf",
@@ -172,7 +172,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-91ae9bb040c695171fb7.js`))) {
+  if (!resources || !(await caches.match(`/app-ebabadad8111cdb39c4a.js`))) {
     return await fetch(event.request)
   }
 
