@@ -377,7 +377,7 @@ export default function Main() {
           <Tilt className="tilt">
             <div className="section-info">
               <div className="left">
-                <div className="title">Lehigh's Art College</div>
+                <div className="title">Lehigh's College of Art & Design</div>
                 <div className="subtitle">
                   Lehigh's Arts, Architecture &amp; Design Department
                   </div>

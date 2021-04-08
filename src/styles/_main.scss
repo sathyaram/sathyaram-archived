@@ -14,7 +14,9 @@ main {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(50, 38, 53, 0.1);
-  margin: 0 50px;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
 
   @media screen and (max-width: $surface) {
     margin: 0;
@@ -50,19 +52,19 @@ main {
     &::before,
     &::after {
       content: "";
-      height: 1px;
+      height: 1.25px;
       background-color: $lightning;
-      width: 100%;
+      width: 140%;
       position: absolute;
       top: 40%;
-      left: -110%;
+      left: -150%;
       z-index: 1;
     }
 
     &::after {
       opacity: 0.85;
       top: 60%;
-      left: -105%;
+      left: -145%;
     }
   }
 
@@ -665,7 +667,7 @@ section#websites {
 
     .title {
       transform: translateZ(20px);
-      padding-right: 1rem;
+      padding-right: 1.25rem;
     }
 
     .description p {

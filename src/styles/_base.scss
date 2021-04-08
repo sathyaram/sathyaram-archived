@@ -21,6 +21,10 @@ body {
       }
     }
 
+    .credit {
+      display: block;
+    }
+
     .loader svg {
       opacity: 1;
     }
@@ -131,6 +135,97 @@ body {
         }
       }
     }
+    .background {
+    &.color-0 {
+      background-image: url("/backgrounds/rush.jpeg") !important;
+  
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+    }
+  
+    &.color-1 {
+      background-image: url("/backgrounds/baltimore.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+    }
+  
+    &.color-2 {
+      background-image: url("/backgrounds/backyardtornado.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+    }
+  
+    &.color-3 {
+      background-image: url("/backgrounds/skyfall.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+  
+    }
+  
+    &.color-4 {
+      background-image: url("/backgrounds/magichour.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+  
+    }
+  
+    &.color-5 {
+      background-image: url("/backgrounds/mexicowaterfalls.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+  
+    }
+  
+    &.color-6 {
+      background-image: url("/backgrounds/drive.jpeg") !important;
+      background-position: 25% 0% !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+  
+    }
+  
+    &.color-7 {
+      background-image: url("/backgrounds/momentsbeforeflight.jpeg") !important;
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+  
+    }
+  
+    &.color-8 {
+      background-image: url("/backgrounds/suijin.jpeg") !important;
+      background-position: 0% 0% !important;
+      
+      ~ aside .eclipse {
+        &::before {
+          border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+        }
+      }
+    }
+  }
 
     .eclipse .moon path {
       fill: white;

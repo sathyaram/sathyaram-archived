@@ -384,7 +384,7 @@ nav.utility {
 
     ~ .eclipse {
       &::before {
-        border-color: white transparent transparent;
+        border-color: white transparent transparent !important;
         border-width: 20px 50vw 0;
       }
       .moon  {

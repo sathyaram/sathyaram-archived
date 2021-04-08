@@ -37,7 +37,7 @@ const Hero = ({ setBgClass }) => {
     <header className="hero" role="banner">
       <div className="branding">
         <div className="heading">
-          <div className="pronounce">Saa-thee-uh · Ram</div>
+          <div className="pronounce">Sa-thee-uh · Ram</div>
           <h1 className="myName">
             <div>
               {letters_a.map((letter, i) => (
@@ -70,6 +70,7 @@ const Hero = ({ setBgClass }) => {
               ))}
             </div>
           </h1>
+          <div className="pronounce credit">All photos taken by Sathya Ram</div>
         </div>
         <div className="me">
           <div className="photoOfMe">

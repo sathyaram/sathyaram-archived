@@ -129,7 +129,7 @@ export default function App() {
               <li>Adobe Creative Suite</li>
             </ul>
             <ul>
-              <li>Art Direction</li>
+              <li>Photography</li>
               <li>Professional Editing</li>
               <li>Studio Lighting</li>
               <li>Videography</li>
