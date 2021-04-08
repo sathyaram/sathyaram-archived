@@ -26,9 +26,9 @@ body {
     }
 
     .background {
-      background: $midnight;
+      background-color: $midnight;
       background-image: url("/midnight-sky.jpeg");
-      background-position: 20% 60%;
+      background-position: 20% 40%;
       // animation: moves 40s linear 5s alternate infinite;
 
       &::after {
@@ -553,6 +553,16 @@ h2 {
   div:nth-child(3) {
     letter-spacing: 3.7px;
     margin-right: -1.5px;
+  }
+
+  div {
+    span {
+      transition: all 900ms ease;
+      &:hover {
+        text-shadow: 0 0 5px white,  0 0 15px white, 0 0 35px white, 0 0 5px rgba(255, 255, 255, 0.543);
+        transition: none;
+      }
+    }
   }
 
   span {

@@ -664,7 +664,7 @@ section#websites {
     margin-bottom: 4%;
 
     .title {
-      transform: translateZ(20px) translateX(3px);
+      transform: translateZ(20px);
       padding-right: 1rem;
     }
 
@@ -1347,7 +1347,7 @@ section#projects {
         font-size: 22px;
         font-weight: bold;
         width: fit-content;
-        transform: translateZ(45px) translateX(3px) translateY(4px);
+        transform: translateZ(45px) translateY(4px);
 
         @media screen and (max-width: $tablet) {
           margin: 0 auto 10px;

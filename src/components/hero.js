@@ -78,9 +78,58 @@ const Hero = ({ setBgClass }) => {
           </div>
         </div>
         <h2>
-          <div>Front-End Developer</div>
-          <div>UI/UX Web Designer</div>
-          <div>Photographer</div>
+          <div>
+          <span>F</span>
+          <span>r</span>
+          <span>o</span>
+          <span>n</span>
+          <span>t</span>
+          <span>-</span>
+          <span>E</span>
+          <span>n</span>
+          <span>d</span>
+          <span> D</span>
+          <span>e</span>
+          <span>v</span>
+          <span>e</span>
+          <span>l</span>
+          <span>o</span>
+          <span>p</span>
+          <span>e</span>
+          <span>r</span>
+          </div>
+          <div>
+          <span>U</span>
+          <span>I</span>
+          <span>/</span>
+          <span>U</span>
+          <span>X</span>
+          <span> W</span>
+          <span>e</span>
+          <span>b</span>
+          <span> D</span>
+          <span>e</span>
+          <span>s</span>
+          <span>i</span>
+          <span>g</span>
+          <span>n</span>
+          <span>e</span>
+          <span>r</span>
+        </div>
+          <div>
+          <span>P</span>
+          <span>h</span>
+          <span>o</span>
+          <span>t</span>
+          <span>o</span>
+          <span>g</span>
+          <span>r</span>
+          <span>a</span>
+          <span>p</span>
+          <span>h</span>
+          <span>e</span>
+          <span>r</span>
+          </div>
         </h2>
       </div>
       <div className="eyebrow">
