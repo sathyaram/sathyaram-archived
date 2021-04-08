@@ -555,6 +555,10 @@
 
   @media screen and (max-width: $tablet) {
     margin: 6px auto 0;
+    overflow: hidden;
+    width: 200px;
+    height: 143px;
+
   }
 
   .laptop-top {
@@ -563,6 +567,9 @@
     height: 70px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    @media screen and (max-width: $tablet) {
+    height: 95px;
+    }
   }
   .laptop-base {
     height: 9px;

@@ -67,11 +67,10 @@ footer {
 
       p {
         font-size: 14px;
-        color: $midnight;
+        color: $galaxy !important;
         font-weight: 500;
         line-height: 100%;
         transform: translateZ(20px) translateX(5px) translateY(5px);
-        // margin-top: 0.5rem;
 
         @media screen and (max-width: $screen) {
           transform: none;

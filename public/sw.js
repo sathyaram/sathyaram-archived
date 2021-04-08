@@ -28,14 +28,14 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9a31b2f7e13df99c61cfbe541e056ba4"
+    "revision": "a0f47a218902fd2533d24d719e688d2d"
   },
   {
     "url": "index.html",
-    "revision": "3ca36e18ad47d80c715e9c2d364ad33a"
+    "revision": "f2968657337c848e9df3eb454d76d335"
   },
   {
-    "url": "styles.e45aea24e1de61bd0cac.css"
+    "url": "styles.385ff087455ebfb10e1c.css"
   },
   {
     "url": "styles-1043fb1b9b9e69356781.js"
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e16b53d229f94ede57d97716c7eae399"
+    "revision": "62c443fd62f99a9321e0a376a9b6a79f"
   },
   {
     "url": "fonts/Maison-Demi.ttf",

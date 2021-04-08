@@ -9,6 +9,11 @@
   position: relative;
   padding: 36px 50px;
 
+  @media screen and (max-width: $ipad) {
+    height: 100vh;
+    justify-content: space-around;
+  }
+
   @media screen and (max-width: $blazeit) {
     padding: 36px;
   }

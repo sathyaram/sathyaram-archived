@@ -5,7 +5,7 @@
     @include container-small;
 
     @media screen and (max-width: $tablet) {
-      padding: 150px 36px;
+      padding: 150px 36px 105px;
     }
   }
 
@@ -36,10 +36,11 @@
   &::before {
     content: "சத்யா";
     position: fixed;
-    top: 500px;
+    top: 50%;
     left: 50%;
     z-index: 0;
-    font-size: 33vw;
+    font-size: 26vw;
+    padding: 0 36px;
     background: linear-gradient(135deg, rgba(112, 213, 255, 0.9), rgba(0, 89, 188, 0.9), rgba(112, 213, 255, 0.9));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
