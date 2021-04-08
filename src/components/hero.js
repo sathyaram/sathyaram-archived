@@ -4,15 +4,15 @@ import Img from 'gatsby-image'
 
 const Hero = ({ setBgClass }) => {
   const letters_a = ['S', 'a', 't', 'h', 'y', 'a'];
-  const letters_b = ['R', 'a', 'm'];
+  const letters_b = ['', '', '', '', '', '', 'R', 'a', 'm'];
 
   function setBgColor(i) {
     setBgClass(`color-${i}`);
   }
 
-  function clearBgColor() {
-    setBgColor('');
-  }
+  // function clearBgColor() {
+  //   setBgColor('');
+  // }
 
   const { me1, me2 } = useStaticQuery(graphql`
     query {
@@ -44,10 +44,11 @@ const Hero = ({ setBgClass }) => {
                 <span
                   key={i}
                   aria-hidden="true"
+                  onClick={() => setBgColor(i)}
                   onMouseOver={() => setBgColor(i)}
                   onFocus={() => setBgColor(i)}
-                  onMouseOut={clearBgColor}
-                  onBlur={clearBgColor}
+                  // onMouseOut={clearBgColor}
+                  // onBlur={clearBgColor}
                 >
                   {letter}
                 </span>
@@ -58,10 +59,11 @@ const Hero = ({ setBgClass }) => {
                 <span
                   key={i}
                   aria-hidden="true"
+                  onClick={() => setBgColor(i)}
                   onMouseOver={() => setBgColor(i)}
                   onFocus={() => setBgColor(i)}
-                  onMouseOut={clearBgColor}
-                  onBlur={clearBgColor}
+                  // onMouseOut={clearBgColor}
+                  // onBlur={clearBgColor}
                 >
                   {letter}
                 </span>

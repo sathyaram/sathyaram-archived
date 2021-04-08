@@ -232,6 +232,7 @@ nav.utility {
   transform: translateY(-40px);
   color: transparent;
   animation: slideDown 1s ease 4s forwards;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -245,6 +246,12 @@ nav.utility {
     border-style: solid;
     border-width: 15px 50vw 0;
     transition: all 300ms ease;
+  }
+
+  &:hover {
+    .moon path {
+      fill: $lightning !important;
+    }
   }
 }
 
@@ -733,23 +740,23 @@ nav.utility {
   pointer-events: none;
 
   svg {
-    max-width: 330px;
-    padding: 0 20px;
+    max-width: 440px;
+    padding: 0 60px;
     width: 100%;
     margin: 0 auto;
     height: auto;
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 7;
-    animation: 1s zindex 3s ease forwards;
+    animation: 1s zindex 2.5s ease forwards;
     opacity: 0.4;
 
     .s-line {
       transition: fill 300ms ease;
       fill: #040411;
-      stroke: #040411;
+      stroke: #999;
       stroke-width: 0.7px;
       stroke-dasharray: 126.93897247314453;
       stroke-dashoffset: 126.93897247314453;

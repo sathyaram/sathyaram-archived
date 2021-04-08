@@ -116,7 +116,7 @@
 
 .pronounce {
   letter-spacing: 0.1rem;
-  font-size: 10px;
+  font-size: 11px;
   margin-bottom: 1rem;
   position: absolute;
   z-index: 5;
@@ -135,8 +135,8 @@
   &::before,
   &::after {
     content: "/";
-    color: $waterfall;
-    padding: 0 1.2rem 0 1rem;
+    color: $lightning;
+    padding: 0 0.5rem;
   }
 }
 
@@ -242,7 +242,7 @@
   }
 
   &::before {
-    content: '';
+    // content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -253,59 +253,92 @@
   }
 
   &.color-0 {
-    &::before {
-      background-color: rgba(0, 255, 255, 0.459) !important;
+    background-image: url("/backgrounds/rush.jpeg") !important;
+
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
     }
-    // background: none !important;
-    // background-image: none !important;
   }
 
   &.color-1 {
-    // background: none !important;
-    // background-image: none !important;
-    &::before {
-    background-color: rgba(0, 255, 13, 0.623) !important;
+    background-image: url("/backgrounds/baltimore.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
     }
   }
 
   &.color-2 {
-    background: none !important;
-    background-image: none !important;
-    &::before {
-
-    background-color: rgba(255, 0, 234, 0.781) !important;
+    background-image: url("/backgrounds/backyardtornado.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
     }
   }
 
   &.color-3 {
-    background: none !important;
-    background-image: none !important;
-    background-color: rgb(243, 41, 68) !important;
+    background-image: url("/backgrounds/skyfall.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
+
   }
 
   &.color-4 {
-    background: none !important;
-    background-image: none !important;
-    background-color: rgb(218, 255, 53) !important;
+    background-image: url("/backgrounds/magichour.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
+
   }
 
   &.color-5 {
-    background: none !important;
-    background-image: none !important;
-    background-color: rgb(240, 164, 0) !important;
+    background-image: url("/backgrounds/mexicowaterfalls.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
+
   }
 
   &.color-6 {
-    background: none !important;
-    background-image: none !important;
-    background-color: rgb(20, 95, 235) !important;
+    background-image: url("/backgrounds/drive.jpeg") !important;
+    background-position: 25% 0% !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
+
   }
 
   &.color-7 {
-    background-color: rgb(0, 255, 200) !important;
+    background-image: url("/backgrounds/momentsbeforeflight.jpeg") !important;
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
+
   }
 
   &.color-8 {
-    background-color: rgb(224, 210, 5) !important;
+    background-image: url("/backgrounds/suijin.jpeg") !important;
+    background-position: 0% 0% !important;
+    
+    ~ aside .eclipse {
+      &::before {
+        border-color: rgba(19, 19, 39, 0.6) transparent transparent;
+      }
+    }
   }
 }

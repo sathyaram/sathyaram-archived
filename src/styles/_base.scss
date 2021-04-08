@@ -28,7 +28,7 @@ body {
     .background {
       background-color: $midnight;
       background-image: url("/midnight-sky.jpeg");
-      background-position: 20% 40%;
+      background-position: 50% 0%;
       // animation: moves 40s linear 5s alternate infinite;
 
       &::after {
@@ -197,7 +197,7 @@ body {
 
     .eclipse {
       &::before {
-        border-color: #353561 transparent transparent;
+        border-color: #32325b transparent transparent;
       }
     }
 
@@ -455,7 +455,7 @@ body {
 
       .moon {
         path {
-          fill: $lilac;
+          fill: $waterfall;
 
           &:hover {
             fill: lightblue;
