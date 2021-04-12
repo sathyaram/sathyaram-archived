@@ -714,11 +714,13 @@ nav.utility {
 @keyframes height {
   0% {
     height: 100vh;
+    background-color: white;
   }
 
   100% {
     height: 0px;
     z-index: 1;
+    background-color: $galaxy;
   }
 }
 
@@ -785,6 +787,7 @@ nav.utility {
     z-index: 6;
     position: fixed;
     top: 0;
+    transition: all 300ms ease;
     animation: height 1.5s ease 2s forwards;
 
     &:nth-child(2) {
