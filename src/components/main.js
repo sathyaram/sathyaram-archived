@@ -507,7 +507,7 @@ export default function Main() {
               <Image alt="Lehigh Arts College Shot" filename="aadshot.jpeg" />
             </div>
             <div className="section-info">
-              <div className="title">Lehigh's College of Art &amp; Design'</div>
+              <div className="title">Lehigh's College of Art &amp; Design</div>
               <div className="subtitle">Arts, Architecture &amp; Design</div>
               <div>
                 <div className="description">

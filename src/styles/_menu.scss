@@ -27,6 +27,8 @@ aside {
 
 .bottom-tri {
   position: absolute;
+  pointer-events: none;
+
   &::after {
     content: "";
     position: fixed;
@@ -45,6 +47,7 @@ aside {
 
 .triangles {
   position: absolute;
+  pointer-events: none;
 
   &::after,
   &::before {
