@@ -34,7 +34,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The Vilcek Foundation, which raises awareness of immigrant contributions in the United States and fosters appreciation of the arts and sciences. I had the opportunity at ForumOne to do a majority of the front-end WordPress development for the site, where I crafted components, animations, and interactions.
+                    The Vilcek Foundation raises awareness of immigrant contributions in America and fosters appreciation of the arts and sciences. They came to ForumOne, a creative agency I had worked at, for a complete redesign and development in a new CMS so they could manage their websphere with ease. I developed a majority of the front-end WordPress build for the site, crafting and styling component, and user interactions/hover animations.
                     </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    A wonderful freelance opportunity that I acquired through a World of Warcraft friend, Gnarly Knots is one of the best Pretzel joints in the midwest. I was bestowed the great task of redesigning and redeveloping their existing website to WordPress. It was a resounding success, with a heavy focus on imagery and typography.
+                    Gnarly Knots is one of the best gourmet Pretzel joints in the Midwest - trust me I've had them! I have a thing for making websites for restaurants. This freelance opportunity that I chased down, involved a complete redesign and redevelopment of their aging godaddy website. They wanted a colorful site that users could navigate easily, with key information and restaurant specials being visible at a glance. The owners also wanted to be able to edit any of their content at any time - a natural fit for WordPress and advanced custom fields. After intense work and collabarative iterations (being both the designer and the developer), the launch was a resounding success. What stood out for me most when working on this site was being able to play and design with savory imagery, expressive colors and bold typography. In addition to paying me, they also sent me a box of their delectable pretzels!
                     </p>
                 </div>
               </div>
@@ -133,7 +133,13 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    While working at ForumOne, I worked with a team at the Howard Hughies Medical Institute's Biointeractive.org, a website/images/web tool, with over a million page views. They bring together a variety of case studies, high-quality videos, and interactive media that are designed to connect students to big ideas in biology and promote engagement with science. There were over 100 styled components with the website being made in Drupal.
+                    Horward Hughes Medical Institute's BioInteractive brings the power of real science stories into tens of thousands of high school and undergraduate life science classrooms.
+                  <br></br>
+                    <br></br>
+                  While on the front-end team at ForumOne, I tasked with redeveloping and styling HMI's Biointeractive.org new Drupal 8 website build. I worked on styling a variety of elements, components, and website features (including the homepage!) The website was also an interactive web tool, with over a million yearly page views. They bring together a variety of case studies, high-quality videos, and interactive media that are designed to connect students to big ideas in biology and promote engagement with science.
+                  <br></br>
+                    <br></br>
+                  Pretty crazy knowing that my website contributions have helped bring content to students around the world.
                     </p>
                 </div>
               </div>
@@ -185,7 +191,13 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    An animal shelter that rises above the rest and aims to end pet homelessness. The only animal charity in LA that owns and operates a full service animal hospital. Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes. I was honored with designing and developing the site - striving for a more colorful contemporary look.
+                    The Amanda Foundation is an animal shelter that rises above the rest and aims to end pet homelessness - it's also the only animal charity in L.A. that owns and operates a full service animal hospital too.
+                    <br></br>
+                    <br></br>
+                    As a creative developer at ForumOne, I was bestowed the honor of designing this website from scratch as well as building it. Despite the simplicity of SquareSpace, I was able to push the level of design by incorporating fresh use of geometry, vibrant colors, a crisp San Serif, eye-catching interactions and modern design elements.
+                    <br></br>
+                    <br></br>
+                    Since 1976, they’ve rescued and placed 10,000s of dogs and cats into loving homes - I'm glad I was able to help them continue their mission. Gotta love those puppy eyes!
                     </p>
                 </div>
               </div>
@@ -199,7 +211,7 @@ export default function Main() {
                   amandafoundation.org
                   </a>
                 <ul className="tags">
-                  <li>Squarespace</li>
+                  <li>SquareSpace</li>
                   <li>Web Design</li>
                   <li>(S)CSS</li>
                   <li>JavaScript</li>
@@ -228,14 +240,14 @@ export default function Main() {
           <Tilt className="tilt">
             <div className="section-info">
               <div className="left">
-                <div className="title">Fudtruk</div>
+                <div className="title">Füdtruk</div>
                 <div className="subtitle">
                   Lehigh Valley's Freshest Food Truck
                   </div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The FudTruk is a mobile culinary unit on Lehigh University Campus that uses locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. I completely branded them, from their logo, to their color scheme, to the vinyl wrap for the truck, all incorporated in their website I made for them.
+                    The FüdTruk was a mobile culinary unit on Lehigh University Campus that used locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. This was one of my first freelance gigs and I branded them completely - from their logo, to their color scheme, to the vinyl wrap on their truck. It was an undertaking that lead to more and more opportunities with FüdTruk, as I was later tasked with all the photography, videography, web design and development! The site itself was a simple Drupal 7 build: a colorful, to the point one-pager with an emphasis on scrolling, content and ease of use. Being one of my first successful launches, I felt like a proud parent! (Note: Because of COVID, they've taken down the site I've developed in place of a COVID disclaimer page).
                     </p>
                 </div>
               </div>
@@ -285,7 +297,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with quality bullets. Their website has been a resounding success, with their products now being available in more than 20 locations and counting.
+                    You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with premium bullets. An earlier freelance project, developed in Drupal 7 with a clean branding scheme and a geolocation map of their available product. Their website has been rock-solid for the past 4 years now, with their products now being available in more than 30 locations and counting and an expansion to consumer goods. I'm going to be working on a new website redesign and redevelopment in React.js. Coming soon!
                     </p>
                 </div>
               </div>
@@ -334,7 +346,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of major products across many industries. Some of these include space shuttles, commercial aircrafts, jets and cars. A small but mighty industry, these little nuts are the glue that holds America tight.
+                    Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of major products across many industries. While at Weidenhammer Creative, I helped with this websites' development in WordPress, including advanced custom field creation, and component/page styling. A small but mighty industry, these little nuts are the glue that holds America tight!
                     </p>
                 </div>
               </div>
@@ -377,14 +389,14 @@ export default function Main() {
           <Tilt className="tilt">
             <div className="section-info">
               <div className="left">
-                <div className="title">Lehigh's College of Art & Design</div>
+                <div className="title">Lehigh's College of Art &amp; Design</div>
                 <div className="subtitle">
                   Lehigh's Arts, Architecture &amp; Design Department
                   </div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    As an alumni from Lehigh University, I was asked to do the design and development for the university’s new website, highlighting the modern programs and facilities that would attract students to the synergy of Lehigh's programs. A cleaner, contemporary design with flat colors and legible text allows for a neater and more comprehensible design.
+                    While employed at Lehigh University, and after other successful design and development endeavors at Lehigh, I was saught out by the College of Arts + Design for a complete redesign and development of their dated Drupal website. A bold, contemporary approach for their new vision was paramount: highlighting the modern programs, facilities and learning opportunities that would attract students to Lehigh's Arts programs for years to come was no easy feat. I designed a clean, lean UI scheme and website with a limited palette, flat colors, ample white space and easier navigation while development in Drupal 7 was a straightforward process. I wish I had this site when I was a student at Lehigh!
                     </p>
                 </div>
               </div>
@@ -398,10 +410,10 @@ export default function Main() {
                   aad.lehigh.edu
                   </a>
                 <ul className="tags">
-                  <li>Drupal 8</li>
-                  <li>Pattern Lab</li>
-                  <li>Twig/YAML</li>
-                  <li>SCSS</li>
+                  <li>Drupal 7</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>HTML/(S)CSS</li>
                 </ul>
               </div>
             </div>
@@ -445,7 +457,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    Frost is a financial investment tool made to simplify the experience of purchasing the best stocks out there. I was graced with the opportunity to brand them completely, from logo to website and colors. The designs depicted are from their soon coming site.
+                    Frost is a financial investment tool made to simplify the experience of purchasing the best stocks out there. I was graced with the opportunity to brand them completely, from logo to website and colors. The designs depicted are from their soon coming website!
                     </p>
                 </div>
               </div>
@@ -471,7 +483,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    I worked extensively with the different department heads within the College of Arts and Sciences to create a new web experience that highlighted their intricate programs and facilities. These internal designs are a testament to that.
+                    I worked extensively with the different department heads within the College of Arts and Design to create a new web experience that highlighted their intricate programs and facilities. These internal designs are a testament to that, where I worked extensively with the department heads on an aesthetic and content management.
                     </p>
                 </div>
               </div>
@@ -495,7 +507,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    While working at Lehigh University, I was in charge of the Portal software they used which everyone logged in on to check the campus news and facilities. Being a designer, I advocated for a full redesign of the look of the portal to create a more contemporary modern look - it was graced with a best portal design award.
+                    While working at Lehigh University, I was in charge of the Portal software they used which everyone logged in on to check the campus news and facilities. Being a designer and developer, I advocated for a full redesign of the portal with create a more contemporary, user focused look with extensive testing with retainability - it was graced with a best portal design award at PABug!
                     </p>
                 </div>
               </div>
@@ -519,15 +531,15 @@ export default function Main() {
 
             </div>
             <div className="section-info">
-              <div className="title">Lehigh Engineering</div>
+              <div className="title">Lehigh's College of Engineering</div>
               <div className="subtitle">
-                P.C Rossin College of Engineering
+                The P.C Rossin College of Engineering
                 </div>
               <div>
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    One of my most ambitious and exciting web designs - the college of Engineering asked for a full redesign of the website stratosphere. A massive undertaking that proved fruitful and carefully methodical.
+                    One of my most ambitious and exciting web designs - the college of Engineering at Lehigh University asked for a full redesign of the website and sub-sites. This was a pure design project where I was extensively with the head of the college and auxiliary professors on crafting and designing a branding theme and scheme that fit that the main college while also having assets and design elements trickle into the sub sites. An extensive undertaking that turned out to be very fruitful!
                     </p>
                 </div>
               </div>
@@ -655,7 +667,7 @@ export default function Main() {
       <section id="photography" className="photography">
         <div className="section-text">
           <h3 className="section-title">Photography</h3>
-          <p className="section-desc">I'm an award winning photographer accomplished in a variety of disciplines with a focus on people, specifically portraits and lifestyle.</p>
+          <p className="section-desc">I'm an award winning photographer accomplished in a variety of disciplines with a focus on people, specifically creative portraiture.</p>
         </div>
         <div className="section-content">
           <Tilt className="tilt">
@@ -664,28 +676,12 @@ export default function Main() {
               <Image alt="Chance Portrait" filename="chance-two.jpg" />
             </AniLink>
           </Tilt>
-          {/* <Tilt className="tilt">
-            <AniLink cover direction="right" to="/lifestyle">
-              <h5>Lifestyle</h5>
-              <img
-                alt="me"
-                src="https://sathyaram.com/images/rachel-americana.jpg"
-              />
-            </AniLink>
-          </Tilt> */}
           <Tilt className="tilt">
             <AniLink cover direction="right" to="/cosplay">
               <div className="photography-name">Cosplay</div>
               <Image alt="Cosplay Holly Peppermint" filename="hollypeppermint.jpg" />
             </AniLink>
           </Tilt>
-          {/* <Tilt className="tilt">
-            <h5>Nature</h5>
-            <img
-              alt="me"
-              src="https://live.staticflickr.com/577/22402285915_8e46315458_n.jpg"
-            />
-          </Tilt> */}
         </div>
       </section>
       <section id="testimonials" className="testimonials">

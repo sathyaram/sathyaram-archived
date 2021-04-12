@@ -54,9 +54,8 @@ export default function App() {
               that be websites, applications, or anything in between. My goal is
               to always build pixel-perfect experiences.
               <br />
-              <br /> After graduating from Lehigh University, I found joy in
-              working with creative web agencies on making custom websites as a
-              web developer and digital designer.
+              <br /> Since double majoring in Design and Photography at Lehigh University, I find joy in
+              working with creative web agencies on making custom websites as a web developer and digital designer.
             </p>
           </div>
           <div className="framicons">

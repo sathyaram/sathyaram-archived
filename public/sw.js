@@ -28,30 +28,30 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "bc1d6d7c496266e2e4c65c2f1e988264"
+    "revision": "75970b9e3d9ba7c961615848cfbaa130"
   },
   {
     "url": "index.html",
-    "revision": "05d539326550a3dcdeff2898e7040797"
+    "revision": "59262e1bb71a9ec890a016a0ce2812f0"
   },
   {
-    "url": "styles.c435705ae0c7f040192a.css"
+    "url": "styles.8f343302c9d35e015f59.css"
   },
   {
-    "url": "styles-1043fb1b9b9e69356781.js"
+    "url": "styles-e383b929d2d4095ae339.js"
   },
   {
-    "url": "framework-5a1b297d9adac74fe592.js"
+    "url": "framework-81279cacaab4bdba7685.js"
   },
   {
-    "url": "dbf3ce33-eebea676cbd7efc13697.js"
+    "url": "dbf3ce33-4780a471a3cadfd45123.js"
   },
   {
-    "url": "app-ebabadad8111cdb39c4a.js"
+    "url": "app-f587c0247d7509cabe22.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "d8037aa97aa774abc368e0bfd1b3e8d1"
+    "revision": "54cf779e3da9688f31041624f126e741"
   },
   {
     "url": "fonts/Maison-Demi.ttf",
@@ -70,13 +70,13 @@ self.__precacheManifest = [
     "revision": "92bbabfda96fb9e73100d90404d5383a"
   },
   {
-    "url": "webpack-runtime-388e016615e099f11207.js"
+    "url": "webpack-runtime-a9b3b6143d834896188d.js"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-47c8d8b7529f7a984452.js"
   },
   {
-    "url": "polyfill-b1e8269bf7d82e5fa523.js"
+    "url": "polyfill-25b73876df0a2c080a82.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -172,7 +172,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-ebabadad8111cdb39c4a.js`))) {
+  if (!resources || !(await caches.match(`/app-f587c0247d7509cabe22.js`))) {
     return await fetch(event.request)
   }
 

@@ -16,17 +16,9 @@ const Portraits = () => {
       transitionSpeed: 900,
     },
     buttons: {
-      // backgroundColor: "#1b5245",
-      // iconColor: "rgba(126, 172, 139, 0.8)",
       showDownloadButton: false,
       showThumbnailsButton: false
     },
-    // caption: {
-    //   captionColor: "#a6cfa5",
-    //   captionFontFamily: "Raleway, sans-serif",
-    //   captionFontWeight: "300",
-    //   captionTextTransform: "uppercase",
-    // }
   };
 
   const breakpointColumnsObj = {
