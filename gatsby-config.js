@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-68620459-1"
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,
@@ -43,4 +51,7 @@ module.exports = {
       }
     },
   ],
+  flags: {
+    DEV_SSR: false,
+  }
 }

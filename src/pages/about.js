@@ -2,13 +2,13 @@ import React from "react"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const About = () => (
   <div className="internal-page about-page">
     <Sky />
     <Menu />
-    <SEO title="About" />
+    <Seo title="About" />
     <header>
       <h1>About</h1>
       <p>Stirrin' up trouble since 1994</p>
@@ -33,17 +33,17 @@ const About = () => (
           TL;DR
         </div>
         <div className="about-content">
-        I build websites with WordPress, Drupal, Grav, React, and Gatsby.
+          I build websites with WordPress, Drupal, Grav, React, and Gatsby.
           <br></br>
           <br></br>
-          I write HTML, (S)CSS, front-end JavaScript, jQuery,  JSX, PHP, and Twig. 
+          I write HTML, (S)CSS, front-end JavaScript, jQuery,  JSX, PHP, and Twig.
           <br></br>
           <br></br>
           I design and prototype in Adobe XD, Figma, Sketch, Adobe Illustrator, and InVision.
           <br></br>
           <br></br>
           I capture photos with my Sony A7RIV and Fujifilm X100V.
-        
+
         </div>
       </div>
       <div className="about-section">
@@ -51,8 +51,13 @@ const About = () => (
           Bio
         </div>
         <div className="about-content">
-          I double majored in Design and Studio Art at Lehigh University, with a concentration in Graphic Design and Photography. In my last year of college, I taught myself how to code and learned to take my designs to the next level.<br></br><br></br> At the end of 2018, I graduated from a Coding Bootcamp called General Assembly where I learned JavaScript and React.js in a rigorous environment.<br></br><br></br> Now, I work at creative agencies while also manning my own freelance website development and professional photography business.
-         
+          I double majored in Design and Studio Art at Lehigh University, with a concentration in Design and Studio Art. In my last year of college, I taught myself how to code and push my designs to the world wide web.
+          <br></br>
+          <br></br>
+          After a couple years of agency experience, it became clear that web design and development was my passion. So, I decided to learn programming fundamentals in a formal setting, at a coding bootcamp called General Assembly, where I learned JavaScript and React.js in a rigorous environment.
+          <br></br>
+          <br></br>
+          Currently, I operate my own freelance website development, interface design and professional photography enterprise. Right now, I'm seeking a creative developer + designer role.
         </div>
       </div>
       <div className="about-section">
@@ -61,9 +66,9 @@ const About = () => (
         </div>
         <div className="about-content">
           <ul>
-            <li>Leonard B. Pool Prize <span> Competitive Entreprenurial Scholarship</span></li>
-            <li>Olympus InVision Photography Festival<span>Second Place</span></li>
-            <li>PA BUG Best Portal Design Award<span>First Place</span></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www2.lehigh.edu/news/36th-honors-convocation-celebrates-academic-excellence">Leonard B. Pool Prize</a><span> Competitive Entreprenurial Scholarship</span></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.bananafactory.org/2015/11/11/2015-olympus-invision-college-photo-competition-winners-announced/">Olympus InVision Photography Festival</a><span>Second Place</span></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://pabug.org/">PA BUG Best Portal Design Award</a><span>First Place</span></li>
             <li>Business Insider
               <span>Published Photography</span>
             </li>
@@ -84,10 +89,16 @@ const About = () => (
           Etc
         </div>
         <div className="about-content">
-        ENFP. Movie buff. Voice actor. CSS Wizard. Passionate nerd. Avid conversationalist. 
-        <br></br><br></br>
-        I live on iMDB: I love all things film/TV.<br></br>Check out
-        <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last"> what I've rated</a>.<br></br><br></br>I <u>used</u> to be a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya"> World of Warcraft</a> player.<br></br><br></br>I post my photography on
+          ENFP. Movie buff. Voice actor. CSS Wizard. Passionate nerd. Avid conversationalist.
+        <br></br>
+          <br></br>
+        I live on iMDB: I love all things film/TV.
+        <br></br>
+        Check out
+        <a target="_blank" rel="noopener noreferrer" href="https://www.imdb.com/user/ur37032307/ratings?sort=your_rating,desc&amp;ratingFilter=0&amp;mode=detail&amp;last"> what I've rated</a>.<br></br><br></br>I <u>used</u> to be a big <a target="_blank" rel="noopener noreferrer" href="https://worldofwarcraft.com/en-us/character/us/tichondrius/sathya"> World of Warcraft</a> player.
+        <br></br>
+          <br></br>
+        I post my photography on
         <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/sathya.ram"> my Instagram</a>, so follow me if you want a little vibrance on your daily scrolls.
         </div>
       </div>

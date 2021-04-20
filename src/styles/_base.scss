@@ -596,6 +596,7 @@ h1 {
     cursor: pointer;
     transition: all 100ms ease;
     position: relative;
+    transform: rotateY(0deg);
 
     &::before {
       content: "";

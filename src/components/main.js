@@ -34,7 +34,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The Vilcek Foundation raises awareness of immigrant contributions in America and fosters appreciation of the arts and sciences. 
+                    The Vilcek Foundation raises awareness of immigrant contributions in America and fosters appreciation of the arts and sciences.
                     <br></br>
                     <br></br>
                     They came to ForumOne, a creative agency I had worked at, for a complete redesign and development in a new CMS so they could manage their websphere with ease.
@@ -92,7 +92,7 @@ export default function Main() {
                     Gnarly Knots is one of the best gourmet Pretzel joints in the Midwest - trust me I've had them! I have a thing for making websites for restaurants. This freelance opportunity that I chased down, involved a complete redesign and redevelopment of their aging godaddy website.
                     <br></br>
                     <br></br>
-                     They wanted a colorful site that users could navigate easily, with key information and restaurant specials being visible at a glance. The owners also wanted to be able to edit any of their content at any time - a natural fit for WordPress and advanced custom fields. 
+                     They wanted a colorful site that users could navigate easily, with key information and restaurant specials being visible at a glance. The owners also wanted to be able to edit any of their content at any time - a natural fit for WordPress and advanced custom fields.
                      <br></br>
                     <br></br>
                     After intense work and collabarative iterations (being both the designer and the developer), the launch was a resounding success. What stood out for me most when working on this site was being able to play and design with savory imagery, expressive colors and bold typography. In addition to paying me, they also sent me a box of their delectable pretzels!
@@ -259,13 +259,16 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    The FüdTruk was a mobile culinary unit on Lehigh University Campus that used locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes. 
+                    (Note: Because of COVID, they've taken down the site I've developed in place of a COVID disclaimer page).
                     <br></br>
                     <br></br>
-                    This was one of my first freelance gigs and I branded them completely - from their logo, to their color scheme, to the vinyl wrap on their truck. It was an undertaking that lead to more and more opportunities with FüdTruk, as I was later tasked with all the photography, videography, web design and development! 
+                    The FüdTruk was a mobile culinary unit on Lehigh University Campus that used locally sourced food to make incredible sandwiches, breakfast, lunch foods and quality dishes.
                     <br></br>
                     <br></br>
-                    The site itself was a simple Drupal 7 build: a colorful, to the point one-pager with an emphasis on scrolling, content and ease of use. Being one of my first successful launches, I felt like a proud parent! (Note: Because of COVID, they've taken down the site I've developed in place of a COVID disclaimer page).
+                    This was one of my first freelance gigs and I branded them completely - from their logo, to their color scheme, to the vinyl wrap on their truck. It was an undertaking that lead to more and more opportunities with FüdTruk, as I was later tasked with all the photography, videography, web design and development!
+                    <br></br>
+                    <br></br>
+                    The site itself was a simple Drupal 7 build: a colorful, to the point one-pager with an emphasis on scrolling, content and ease of use. Being one of my first successful launches, I felt like a proud parent!
                     </p>
                 </div>
               </div>
@@ -315,7 +318,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with premium bullets. An earlier freelance project, developed in Drupal 7 with a clean branding scheme and a geolocation map of their available product. 
+                    You need solid, accurate, reliable ammunition? Keystone Munitions is where you go. Their passion is all about feeding your firearms with premium bullets. An earlier freelance project, developed in Drupal 7 with a clean branding scheme and a geolocation map of their available product.
                     <br></br>
                     <br></br>
                     Their website has been rock-solid for the past 4 years now, with their products now being available in more than 30 locations and counting and an expansion to consumer goods. I'm going to be working on a new website redesign and redevelopment in React.js. Coming soon!
@@ -367,7 +370,7 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of major products across many industries. 
+                    Astral Air Products is a vendor of strong, high-quality fasteners, screws, and bolts that can be found in dozens of major products across many industries.
                     <br></br>
                     <br></br>
                     While at Weidenhammer Creative, I helped with this websites' development in WordPress, including advanced custom field creation, and component/page styling. A small but mighty industry, these little nuts are the glue that holds America tight!
@@ -420,10 +423,10 @@ export default function Main() {
                 <div className="description">
                   <button onClick={closeDesc}>✕</button>
                   <p>
-                    While employed at Lehigh University, and after other successful design and development endeavors at Lehigh, I was saught out by the College of Arts + Design for a complete redesign and development of their dated Drupal website. 
+                    While employed at Lehigh University, and after other successful design and development endeavors at Lehigh, I was saught out by the College of Arts + Design for a complete redesign and development of their dated Drupal website.
                     <br></br>
                     <br></br>
-                    A bold, contemporary approach for their new vision was paramount: highlighting the modern programs, facilities and learning opportunities that would attract students to Lehigh's Arts programs for years to come was no easy feat. 
+                    A bold, contemporary approach for their new vision was paramount: highlighting the modern programs, facilities and learning opportunities that would attract students to Lehigh's Arts programs for years to come was no easy feat.
                     <br></br>
                     <br></br>
                     I designed a clean, lean UI scheme and website with a limited palette, flat colors, ample white space and easier navigation while development in Drupal 7 was a straightforward process. I wish this site around when I was a student at Lehigh!
@@ -496,7 +499,7 @@ export default function Main() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://dribbble.com/sathyaram">View Designs</a>
+                href="https://dribbble.com/sathyaram/projects/4714449-Frost">View Designs</a>
               <button onClick={openDesc} className="read-more">
                 Read More
                 </button>

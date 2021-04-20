@@ -1,7 +1,7 @@
 import React from "react"
 import Menu from "../components/menu"
 import Sky from "../components/sky"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Image from "../components/image"
 import Footer from "../components/footer"
 import { SRLWrapper } from "simple-react-lightbox";
@@ -32,7 +32,7 @@ const Portraits = () => {
     <div className="internal-page photography-page portraits-page">
       <Sky />
       <Menu />
-      <SEO title="Portraits" />
+      <Seo title="Portraits" />
       <header>
         <h1>Portraits</h1>
         <p>Specifically selected bests.</p>

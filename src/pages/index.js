@@ -4,7 +4,7 @@ import Sky from "../components/sky"
 import Hero from "../components/hero"
 import Main from "../components/main"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { window, document } from 'browser-monads';
 
 
@@ -39,7 +39,7 @@ export default function App() {
           </g>
         </svg>
       </div>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <Sky bgClass={bgClass} />
       <Menu />
       <Hero setBgClass={setBgClass}/>
