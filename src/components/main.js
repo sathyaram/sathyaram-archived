@@ -276,7 +276,7 @@ export default function Main() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://fudtruk.lehigh.edu"
+                  href="https://sathyaram.github.io/fudtruk/"
                   className="link"
                 >
                   fudtruk.lehigh.edu
@@ -293,7 +293,7 @@ export default function Main() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://dribbble.com/shots/5308730-Fudtruk-Website"
+                href="https://sathyaram.github.io/fudtruk/"
                 className="website-link"
               >
                 View Website
