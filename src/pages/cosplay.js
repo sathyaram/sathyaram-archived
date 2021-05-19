@@ -33,7 +33,7 @@ const Lifestyle = () => {
       <Seo title="Cosplay" />
       <header>
         <h1>Cosplay</h1>
-        <p>Specifically selected bests.</p>
+        <p>Specifically selected bests. See more on my <a href="https://instagram.com/sathya.ram" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
       </header>
       <div className="photography-content">
         <SRLWrapper options={options}>

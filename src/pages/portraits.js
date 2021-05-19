@@ -35,7 +35,7 @@ const Portraits = () => {
       <Seo title="Portraits" />
       <header>
         <h1>Portraits</h1>
-        <p>Specifically selected bests.</p>
+        <p>Vibrant, cinematic, but not too dramatic. See more on my <a href="https://instagram.com/sathya.ram" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
       </header>
       <div className="photography-content">
         <SRLWrapper options={options}>

@@ -7,7 +7,17 @@
     @media screen and (max-width: $tablet) {
       padding: 150px 36px 105px;
     }
+
+    a {
+      color: $lightning;
+  
+      &:hover {
+        color: $waterfall;
+      }
+    }
   }
+
+  
 
   h1 {
     margin: 0;
@@ -50,10 +60,6 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
-  a {
-    color: $lightning;
-  }
-
   main {
     @include container;
     .content {
@@ -70,6 +76,10 @@
 
     @media screen and (max-width: $tablet) {
       flex-direction: column;
+    }
+
+    a {
+      color: $lightning;
     }
 
     .about-title {

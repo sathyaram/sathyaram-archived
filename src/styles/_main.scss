@@ -734,6 +734,13 @@ section#websites {
           top: 25%;
         }
       }
+
+      &:hover {
+        .section-media {
+          transform: translateX(-47%) translateY(30px) rotate(14deg);
+        }
+      }
+
       .links {
         a {
           background-color: #8a7525;
@@ -978,6 +985,12 @@ section#websites {
 
         @media screen and (max-width: $blazeit) {
           top: 60%;
+        }
+      }
+
+      &:hover {
+        .section-media {
+          transform: translateY(-30px) rotate(5deg);
         }
       }
 
